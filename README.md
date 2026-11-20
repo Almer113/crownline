@@ -80,7 +80,7 @@ The tests run on every push (`.github/workflows/tests.yml`).
 
 ## Status
 
-Phases 0 to 8 are done: the research, the viewer, the chart format, the engine in TypeScript, a second chart, the editor, and the tools for language models. Phase 9, the release, is under way. The viewer and the editor are one app, the documentation is written, and the public repository and the demo site are built locally. Publishing them waits, and Firefox is still to be tested. This is version 0.1.0. The Mataram chart is current as of November 2026.
+Phases 0 to 8 are done: the research, the viewer, the chart format, the engine in TypeScript, a second chart, the editor, and the tools for language models. Version 0.1.0 is the first release (20 November 2026): the app, the documentation, and the demo at https://almer113.github.io/crownline/. Firefox is still to be tested. The Mataram chart is current as of November 2026.
 
 ## Public and private builds
 
