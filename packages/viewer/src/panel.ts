@@ -1,7 +1,7 @@
 // Card panel (PLAN Phase 3, item 1): a docked side panel with what the card can't hold. Docked, not floating,
 // so it never covers the chart: the viewer narrows while it is open (research 1.2). It shows only what the
 // layout file carries today (titles, dates, reign, notes, family); more fields can be added as data grows.
-import type { Kin, Layout, Person } from "./layout";
+import type { Cite, Claim, Kin, Layout, Person } from "./layout";
 import { pickText, t, type Lang } from "./i18n";
 import type { Glossary } from "./glossary";
 import { label, type Relation } from "./kinship";
@@ -37,6 +37,15 @@ export const PANEL_CSS = `
 .clp-panel .clp-about { padding: 0 18px 14px; }
 .clp-panel .clp-aka { color: #5E5848; font-size: 13.5px; margin: 0 0 8px; }
 .clp-panel .clp-bio { margin: 0; font-size: 15px; line-height: 1.5; }
+.clp-panel .clp-claim { margin: 0 0 4px; font-size: 14.5px; }
+.clp-panel .clp-claim .clp-or { color: #5E5848; font-style: italic; }
+.clp-panel .clp-claim sup { color: #5E5848; font-size: 11px; margin-left: 2px; cursor: default; }
+.clp-panel .clp-claim .clp-unsure { color: #8A5A1C; font-size: 12.5px; }
+.clp-panel .clp-claim .clp-cnote { display: block; color: #5E5848; font-size: 13px; line-height: 1.4; }
+.clp-panel .clp-life dd { display: block; }
+.clp-panel .clp-srcs { margin: 0; padding-left: 22px; font-size: 13.5px; color: #3A372F; }
+.clp-panel .clp-srcs li { margin: 0 0 4px; }
+.clp-panel .clp-srcs a { color: #2B5C8A; }
 .clp-panel .clp-facts { display: flex; flex-wrap: wrap; gap: 6px; padding: 0 18px 14px; }
 .clp-panel .clp-fact { font-size: 13px; padding: 3px 9px; border-radius: 12px; background: #E8E2D0; color: #3A372F; }
 .clp-panel .clp-fact.clp-crown { background: #F3E2B3; color: #5A4520; font-weight: 700; }
@@ -158,6 +167,28 @@ export class Panel {
       <button class="clp-small" data-act="clearrel">${esc(this.s("clear"))}</button></section>`;
   }
 
+  /** the birth and death claims, each with its source numbers, and the numbered list of the sources */
+  private life(p: Person): { dates: string; sources: string } {
+    const order: string[] = [];
+    const num = (c: Cite) => { if (!order.includes(c.source)) order.push(c.source); return order.indexOf(c.source) + 1; };
+    const refs = (cs: Cite[]) => cs.filter(c => this.layout.sources?.[c.source])
+      .map(c => `<sup${c.where ? ` title="${esc(c.where)}"` : ""}>[${num(c)}]</sup>`).join("");
+    const claims = (list: Claim[]) => list.map((c, i) => `<p class="clp-claim">${i ? `<span class="clp-or">${esc(this.s("orElse"))}</span> ` : ""}${
+      esc([c.date, c.place].filter(Boolean).join(", "))}${refs(c.sources)}${
+      c.certainty === "low" ? ` <span class="clp-unsure">(${esc(this.s("uncertain"))})</span>` : ""}${
+      c.note ? `<span class="clp-cnote">${esc(c.note)}</span>` : ""}</p>`).join("");
+    const rows = (["born", "died"] as const).filter(f => p[f]?.length).map(f => `<dt>${esc(this.s(f))}</dt><dd>${claims(p[f]!)}</dd>`);
+    for (const c of p.sources ?? []) if (this.layout.sources?.[c.source]) num(c);   // the person's own sources, after the dates' ones
+    const dates = rows.length ? `<section><h3>${esc(this.s("life"))}</h3><dl class="clp-rel clp-life">${rows.join("")}</dl></section>` : "";
+    const items = order.map(k => {
+      const s = this.layout.sources![k];
+      const by = [s.author, s.year].filter(Boolean).join(", ");
+      const t = s.url ? `<a href="${esc(s.url)}" target="_blank" rel="noopener noreferrer">${esc(s.title)}</a>` : esc(s.title);
+      return `<li>${t}${by ? ` · ${esc(by)}` : ""}</li>`;
+    });
+    return { dates, sources: items.length ? `<section><h3>${esc(this.s("sources"))}</h3><ol class="clp-srcs">${items.join("")}</ol></section>` : "" };
+  }
+
   show(id: string, rel: RelationView | null = null, keepScroll = false): void {
     const p: Person | undefined = this.layout.people[id];
     if (!p) return this.hide();
@@ -187,6 +218,7 @@ export class Panel {
     if (p.hatch) facts.push(`<span class="clp-fact">${esc(this.s("claimant"))}</span>`);
     const notes = (p.notes ?? []).map(n => `<p class="clp-note">${n.letter
       ? `<span class="clp-ltr" style="border-color:${esc(p.colour)}" title="${esc(this.s("noteOnChart", { l: n.letter }))}">${esc(n.letter)}</span>` : ""}${esc(n.text)}</p>`).join("");
+    const life = this.life(p);
     const rows = [[this.s("parents"), this.kin(f?.parents, true)], [this.s("spouses"), this.kin(f?.spouses, false)],
                   [this.s("children"), this.kin(f?.children, false)]].filter(r => r[1]);
     this.el.innerHTML = `
@@ -201,11 +233,13 @@ export class Panel {
       ${p.aka?.length || p.bio ? `<div class="clp-about">${p.aka?.length
         ? `<p class="clp-aka">${esc(this.s("aka"))}: ${esc(p.aka.join(" · "))}</p>` : ""}${p.bio
         ? `<p class="clp-bio">${esc(p.bio)}</p>` : ""}</div>` : ""}
+      ${life.dates}
       ${rel ? this.relation(rel, id) : ""}
       ${notes ? `<section><h3>${esc(this.s("notes"))}</h3>${notes}</section>` : ""}
       <section><h3>${esc(this.s("family"))}</h3>${rows.length
         ? `<dl class="clp-rel">${rows.map(([h, v]) => `<dt>${esc(h)}</dt><dd>${v}</dd>`).join("")}</dl>`
         : `<p class="clp-muted">${esc(this.s("noFamily"))}</p>`}</section>
+      ${life.sources}
       <section class="clp-actions">
         <button data-act="lineage" aria-pressed="${this.lineageOn}">${esc(this.s("lineage"))}</button>
         <button data-act="relate">${esc(this.s("relTo"))}</button>

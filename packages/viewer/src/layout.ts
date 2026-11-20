@@ -26,6 +26,11 @@ export interface Person {
   spanGuess?: boolean;
   /** the panel's words for the person's reigns, by language (from the court's `reign` template) */
   reign?: Record<string, string>;
+  /** birth and death claims, the preferred first; the date as written (layout_export.py, Phase 9) */
+  born?: Claim[];
+  died?: Claim[];
+  /** the person's own citations */
+  sources?: Cite[];
   /** other spellings to find the person by (not written by the engine; `aka` is searched too) */
   aliases?: string[];
 }
@@ -34,6 +39,10 @@ export interface Person {
 /** a relative; gap names generations the chart leaves out ("grandson", "descendant"); via "adoptive": an
  *  adoption the chart keeps but does not draw (the relationship finder does not follow it) */
 export interface Kin { id: string; gap: string | null; via?: "adoptive" }
+
+export interface Cite { source: string; where?: string }
+export interface Claim { date?: string; place?: string; note?: string; certainty?: "high" | "medium" | "low"; sources: Cite[] }
+export interface Source { kind: string; title: string; author?: string; year?: number; url?: string }
 
 export interface Line {
   owner: string;
@@ -67,6 +76,8 @@ export interface Layout {
   asOf?: string;
   /** the interface languages the viewer offers (panels.viewer.languages); absent: all */
   interface?: string[];
+  /** the works cited by people's records */
+  sources?: Record<string, Source>;
   /** the year the time slider opens at when no one is selected (panels.viewer.year) */
   startYear?: number;
 }

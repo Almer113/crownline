@@ -167,7 +167,23 @@ export function layoutFile(doc: Doc, env: Env, c: Composed, page: Page): Record<
     if (rec.bio) p.bio = plain(text(doc, rec.bio));
     const other: string[] = [...(rec.aka ?? []).flatMap((a: any) => (a && typeof a === "object" ? Object.values(a) : [a])), ...(rec.variants ?? [])];
     if (other.length) p.aka = other.map(plain);
+    for (const f of ["born", "died"]) if (rec[f]?.length) p[f] = rec[f].map((c: any) => claim(doc, c));
+    if (rec.sources?.length) p.sources = rec.sources.map(cite);
     people[n.id] = p;
+  }
+  const cited = new Set<string>();
+  for (const p of Object.values(people)) {
+    for (const c of p.sources ?? []) cited.add(c.source);
+    for (const f of ["born", "died"]) for (const cl of p[f] ?? []) for (const c of cl.sources) cited.add(c.source);
+  }
+  const registry: Record<string, any> = (doc as any).sources ?? {};
+  const sources: Record<string, any> = {};
+  for (const k of [...cited].sort()) {
+    if (!registry[k]) continue;
+    const s: Record<string, any> = {};
+    for (const f of ["kind", "title", "author", "year", "url"])
+      if (f in registry[k]) s[f] = ["kind", "year", "url"].includes(f) ? registry[k][f] : plain(text(doc, registry[k][f]));
+    sources[k] = s;
   }
 
   /** the people a line joins, from its owner id: d<i> = a descent, m<i> = a marriage */
@@ -214,5 +230,21 @@ export function layoutFile(doc: Doc, env: Env, c: Composed, page: Page): Record<
     asOf: AS_OF,
     ...(viewer.languages ? { interface: viewer.languages } : {}),
     ...(viewer.year ? { startYear: viewer.year } : {}),
+    ...(Object.keys(sources).length ? { sources } : {}),
   };
+}
+
+/** a citation for the panel: the source's id and where in it */
+function cite(c: any): Record<string, string> {
+  return { source: c.source, ...(c.where ? { where: c.where } : {}) };
+}
+
+/** a birth or death claim for the panel, as plain text: the date as written, place, note, certainty, sources */
+function claim(doc: Doc, c: any): Record<string, any> {
+  const out: Record<string, any> = {};
+  if (c.date) out.date = c.date.text || c.date.edtf;
+  for (const f of ["place", "note"]) if (c[f]) out[f] = plain(text(doc, c[f]));
+  if (c.certainty) out.certainty = c.certainty;
+  out.sources = (c.sources ?? []).map(cite);
+  return out;
 }

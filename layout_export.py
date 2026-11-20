@@ -26,6 +26,10 @@ Added for the interactive viewer (Phase 3, still format 1: fields are only ever 
                       when no end date is printed and the span is a 30-year guess
   stages              the map panel's stages: [{"id", "from", "title"}]; the map cells carry data-stage
   tours               guided tours from the chart document; every person and stage id is checked here
+  people[id].born     the birth claims, the preferred first: [{"date", "place", "note", "certainty", "sources"}], each
+  people[id].died     field only when given; date is the date as written; sources [{"source", "where"}] (Phase 9)
+  people[id].sources  the person's own citations, [{"source", "where"}]
+  sources             the works cited by anyone above: {id: {"kind", "title", "author", "year", "url"}} (only when some are)
 Coordinates are chart pixels (the HTML page's own coordinates), rectangles are [left, top, right, bottom].
 """
 import json
@@ -172,6 +176,18 @@ def collect(build):
         other += rec.get("variants", [])
         if other:
             people[n.id]["aka"] = [_plain(v) for v in other]
+        for f in ("born", "died"):
+            if rec.get(f):
+                people[n.id][f] = [claim(c) for c in rec[f]]
+        if rec.get("sources"):
+            people[n.id]["sources"] = [cite(c) for c in rec["sources"]]
+
+    cited = {c["source"] for p in people.values()
+             for c in p.get("sources", []) + [c for f in ("born", "died") for cl in p.get(f, []) for c in cl.get("sources", [])]}
+    registry = chartfile.DOC.get("sources", {})
+    sources = {k: {f: registry[k][f] if f in ("kind", "year", "url") else _plain(chartfile.text(registry[k][f]))
+                   for f in ("kind", "title", "author", "year", "url") if f in registry[k]}
+               for k in sorted(cited) if k in registry}
 
     def who(owner):
         """the people a line joins, from its owner id: d<i> = a descent, m<i> = a marriage"""
@@ -219,7 +235,28 @@ def collect(build):
         "asOf": build.AS_OF,
         **({"interface": viewer["languages"]} if viewer.get("languages") else {}),
         **({"startYear": viewer["year"]} if viewer.get("year") else {}),
+        **({"sources": sources} if sources else {}),
     }
+
+
+def cite(c):
+    """a citation for the panel: the source's id and where in it"""
+    return {"source": c["source"], **({"where": c["where"]} if c.get("where") else {})}
+
+
+def claim(c):
+    """a birth or death claim for the panel, as plain text: the date as written, place, note, certainty, sources"""
+    import chartfile
+    out = {}
+    if c.get("date"):
+        out["date"] = c["date"].get("text") or c["date"]["edtf"]
+    for f in ("place", "note"):
+        if c.get(f):
+            out[f] = _plain(chartfile.text(c[f]))
+    if c.get("certainty"):
+        out["certainty"] = c["certainty"]
+    out["sources"] = [cite(s) for s in c.get("sources", [])]
+    return out
 
 
 def ordinal(n):

@@ -485,7 +485,8 @@ The page is opened from a temporary copy at the repository root (`_print_<pid>.h
 
 `layoutFile()` in `layout.ts` writes `<id>.layout.json`, the contract between the engine and the viewer. In chart pixels, with rectangles as `[left, top, right, bottom]`, it holds:
 
-- every person's box, family, notes, reign order and date span;
+- every person's box, family, notes, reign order and date span, and, when the chart gives them, their biography, other names, birth and death claims (the preferred first, each with its sources) and citations;
+- the works those cite (`sources`), for the panel's numbered list;
 - every line with the people it joins;
 - notes, house headers and crowns;
 - the glossary, eras, map stages and tours;
@@ -524,6 +525,7 @@ How Mataram's boundary data is made is in `charts/wangsa-mataram/NOTES.md`.
 - `gantari`: Gantari regular and bold, for everything (static cuts of the variable font at 400 and 700).
 - `felipa`: Felipa, the script font for house names, drawn 1.21× larger than the size the type scale was set for.
 - `secondScript`: the title's second script. `noto` is Noto Sans Javanese (aksara Jawa); `noto-jp` is Noto Sans JP, cut by `tools/subset_font.py` to the characters the charts use (273 KB instead of 9.6 MB). After adding Japanese text, run `python tools/subset_font.py --check assets/fonts/open/NotoSansJP-Regular-subset.ttf --tag ja-Jpan`, and re-cut the font from the full download if it lists missing characters. The older name `javanese` still works.
+
 
 
 **Brand.** The licence badge and logo are in `assets/brand/`, named in `panels.badges`.
