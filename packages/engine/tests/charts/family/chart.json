@@ -1,0 +1,235 @@
+{
+  "$schema": "../../../../schema/chart.schema.json",
+  "format": 1,
+  "meta": {
+    "id": "test-family",
+    "title": "Family",
+    "asOf": {
+      "edtf": "2026-11",
+      "text": "November 2026"
+    },
+    "languages": [
+      "en"
+    ],
+    "defaultLang": "en",
+    "assetRoot": "../../../../.."
+  },
+  "people": {
+    "king": {
+      "name": "Aryan the First",
+      "title": "King",
+      "house": "alpha",
+      "reigns": [
+        {
+          "court": "alpha",
+          "n": 1
+        }
+      ],
+      "show": {
+        "box": "ruler",
+        "year": 1700,
+        "sub": "r. 1700 – 1730"
+      }
+    },
+    "queen": {
+      "name": "Queen Bela",
+      "show": {
+        "box": "text",
+        "beside": {
+          "of": "king",
+          "side": "r"
+        },
+        "sub": "1680 – 1740"
+      }
+    },
+    "prince": {
+      "name": "Aryan the Second",
+      "title": "King",
+      "house": "alpha",
+      "reigns": [
+        {
+          "court": "alpha",
+          "n": 2
+        }
+      ],
+      "show": {
+        "box": "ruler",
+        "year": 1730,
+        "sub": "r. 1730 – 1761"
+      }
+    },
+    "sister": {
+      "name": "Princess Cendra",
+      "house": "alpha",
+      "show": {
+        "box": "minor",
+        "year": 1732,
+        "sub": "1705 – 1770"
+      }
+    },
+    "brother": {
+      "name": "Prince Dewan",
+      "house": "alpha",
+      "show": {
+        "box": "minor",
+        "year": 1735,
+        "sub": "1708 – 1752"
+      }
+    },
+    "wife": {
+      "name": "Lady Elok",
+      "show": {
+        "box": "text",
+        "beside": {
+          "of": "prince",
+          "side": "l"
+        },
+        "sub": "1712 – 1780"
+      }
+    },
+    "grandson": {
+      "name": "Aryan the Third",
+      "title": "King",
+      "house": "alpha",
+      "reigns": [
+        {
+          "court": "alpha",
+          "n": 3
+        }
+      ],
+      "show": {
+        "box": "ruler",
+        "year": 1761,
+        "sub": "r. 1761 – 1790"
+      }
+    }
+  },
+  "unions": {
+    "u_king_queen": {
+      "partners": [
+        "king",
+        "queen"
+      ],
+      "kind": "marriage"
+    },
+    "u_prince_wife": {
+      "partners": [
+        "wife",
+        "prince"
+      ],
+      "kind": "marriage"
+    }
+  },
+  "descents": {
+    "d_king_prince": {
+      "parent": "king",
+      "union": "u_king_queen",
+      "child": "prince"
+    },
+    "d_king_sister": {
+      "parent": "king",
+      "union": "u_king_queen",
+      "child": "sister"
+    },
+    "d_king_brother": {
+      "parent": "king",
+      "union": "u_king_queen",
+      "child": "brother"
+    },
+    "d_prince_grandson": {
+      "parent": "prince",
+      "union": "u_prince_wife",
+      "child": "grandson"
+    }
+  },
+  "houses": {
+    "alpha": {
+      "name": "Alpha",
+      "colour": "#E3B23C"
+    },
+    "beta": {
+      "name": "Beta",
+      "colour": "#7FA7DB"
+    }
+  },
+  "glossary": {
+    "t_king": {
+      "group": "Titles",
+      "term": "King",
+      "gloss": "the ruler of a house"
+    },
+    "t_prince": {
+      "group": "Titles",
+      "term": "Prince",
+      "gloss": "a king's son, or the ruler of a junior house"
+    }
+  },
+  "timeline": {
+    "eras": [
+      {
+        "year": 1700,
+        "name": "The first age"
+      },
+      {
+        "year": 1760,
+        "name": "The second age"
+      }
+    ],
+    "episodes": []
+  },
+  "panels": {
+    "header": {
+      "x": 140,
+      "y": 130,
+      "width": 1200,
+      "height": 420,
+      "arrange": "top"
+    },
+    "intro": "Three generations of one house: the basic boxes, lines and crowns."
+  },
+  "theme": {
+    "palette": {
+      "background": "#EDE8D8",
+      "band": "#E6E0CD",
+      "ink": "#1F1F1F",
+      "noteInk": "#3A372F",
+      "muted": "#5E5848",
+      "faint": "#857D68",
+      "neutral": "#D5D1C3",
+      "greyLine": "#C2BBA8"
+    },
+    "type": {
+      "title": 14,
+      "name": 21,
+      "reign": 15,
+      "name2": 17,
+      "sub2": 14,
+      "note": 17,
+      "cap": 15,
+      "small": 14
+    },
+    "fonts": {
+      "sans": "gantari",
+      "script": "felipa"
+    }
+  },
+  "notes": {
+    "n_king": {
+      "anchor": "king",
+      "text": "Founded the house in <b>1700</b>.",
+      "show": {
+        "side": "l",
+        "width": 240,
+        "inline": true
+      }
+    },
+    "n_sister": {
+      "anchor": "sister",
+      "text": "Her dates are uncertain.",
+      "show": {
+        "side": "r",
+        "width": 240
+      }
+    }
+  }
+}

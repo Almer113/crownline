@@ -1,0 +1,3113 @@
+{
+ "$schema": "https://json-schema.org/draft/2020-12/schema",
+ "additionalProperties": false,
+ "$id": "https://almer113.github.io/crownline/schema/chart-1.json",
+ "title": "Crownline chart document, format 1",
+ "type": "object",
+ "required": [
+  "format",
+  "meta",
+  "people",
+  "houses",
+  "panels",
+  "theme"
+ ],
+ "properties": {
+  "$schema": {
+   "type": "string"
+  },
+  "format": {
+   "description": "the format version: 1",
+   "const": 1,
+   "type": "number"
+  },
+  "meta": {
+   "additionalProperties": false,
+   "description": "the chart itself: its id, title, the date its facts are current to (asOf, printed in the footer) and its languages",
+   "type": "object",
+   "required": [
+    "id",
+    "title",
+    "asOf",
+    "languages",
+    "defaultLang"
+   ],
+   "properties": {
+    "id": {
+     "pattern": "^[a-z][a-z0-9]*(-[a-z0-9]+)*$",
+     "description": "the chart's id: lowercase words joined by - (also its folder and output names)",
+     "type": "string"
+    },
+    "title": {
+     "description": "a plain string (the document's default language) or text by language tag",
+     "anyOf": [
+      {
+       "type": "string"
+      },
+      {
+       "minProperties": 1,
+       "additionalProperties": false,
+       "type": "object",
+       "patternProperties": {
+        "^[a-z]{2,3}(-[A-Za-z0-9]{2,8})*$": {
+         "type": "string"
+        }
+       }
+      }
+     ]
+    },
+    "subtitle": {
+     "description": "a plain string (the document's default language) or text by language tag",
+     "anyOf": [
+      {
+       "type": "string"
+      },
+      {
+       "minProperties": 1,
+       "additionalProperties": false,
+       "type": "object",
+       "patternProperties": {
+        "^[a-z]{2,3}(-[A-Za-z0-9]{2,8})*$": {
+         "type": "string"
+        }
+       }
+      }
+     ]
+    },
+    "asOf": {
+     "additionalProperties": false,
+     "description": "a date: the EDTF value and, optionally, the wording it came from",
+     "type": "object",
+     "required": [
+      "edtf"
+     ],
+     "properties": {
+      "edtf": {
+       "pattern": "^(?:-?[0-9X]{4}(?:-[0-9X]{2}(?:-[0-9X]{2})?)?[~?%]?|(?:-?[0-9X]{4}(?:-[0-9X]{2}(?:-[0-9X]{2})?)?[~?%]?|\\.\\.)?/(?:-?[0-9X]{4}(?:-[0-9X]{2}(?:-[0-9X]{2})?)?[~?%]?|\\.\\.)|-?[0-9X]{4}(?:-[0-9X]{2}(?:-[0-9X]{2})?)?[~?%]?/|[\\[{](?:-?[0-9X]{4}(?:-[0-9X]{2}(?:-[0-9X]{2})?)?[~?%]?(?:\\.\\.(?:-?[0-9X]{4}(?:-[0-9X]{2}(?:-[0-9X]{2})?)?[~?%]?)?)?|\\.\\.-?[0-9X]{4}(?:-[0-9X]{2}(?:-[0-9X]{2})?)?[~?%]?)(?:,(?:-?[0-9X]{4}(?:-[0-9X]{2}(?:-[0-9X]{2})?)?[~?%]?(?:\\.\\.(?:-?[0-9X]{4}(?:-[0-9X]{2}(?:-[0-9X]{2})?)?[~?%]?)?)?|\\.\\.-?[0-9X]{4}(?:-[0-9X]{2}(?:-[0-9X]{2})?)?[~?%]?))*[\\]}])$",
+       "description": "an EDTF date (Library of Congress, level 1, plus level 2 sets): 1587~, 1792/1810, 1989/.., [1822,1823]",
+       "type": "string"
+      },
+      "text": {
+       "description": "the date as written (c. 1587)",
+       "type": "string"
+      }
+     }
+    },
+    "languages": {
+     "minItems": 1,
+     "description": "the languages the chart's text is written in",
+     "type": "array",
+     "items": {
+      "pattern": "^[a-z]{2,3}(-[A-Za-z0-9]{2,8})*$",
+      "description": "a BCP 47 language tag (en, id, jv-Java)",
+      "type": "string"
+     }
+    },
+    "defaultLang": {
+     "pattern": "^[a-z]{2,3}(-[A-Za-z0-9]{2,8})*$",
+     "description": "a BCP 47 language tag (en, id, jv-Java)",
+     "type": "string"
+    },
+    "assetRoot": {
+     "description": "where media paths start, relative to this file",
+     "type": "string"
+    }
+   }
+  },
+  "people": {
+   "additionalProperties": false,
+   "description": "everyone on the chart, in the order they were added",
+   "type": "object",
+   "patternProperties": {
+    "^[a-z][a-z0-9_]*$": {
+     "additionalProperties": false,
+     "description": "a person on the chart",
+     "type": "object",
+     "required": [
+      "name",
+      "show"
+     ],
+     "properties": {
+      "name": {
+       "description": "a plain string (the document's default language) or text by language tag",
+       "anyOf": [
+        {
+         "type": "string"
+        },
+        {
+         "minProperties": 1,
+         "additionalProperties": false,
+         "type": "object",
+         "patternProperties": {
+          "^[a-z]{2,3}(-[A-Za-z0-9]{2,8})*$": {
+           "type": "string"
+          }
+         }
+        }
+       ]
+      },
+      "aka": {
+       "description": "other names (Ratu Ibu)",
+       "type": "array",
+       "items": {
+        "description": "a plain string (the document's default language) or text by language tag",
+        "anyOf": [
+         {
+          "type": "string"
+         },
+         {
+          "minProperties": 1,
+          "additionalProperties": false,
+          "type": "object",
+          "patternProperties": {
+           "^[a-z]{2,3}(-[A-Za-z0-9]{2,8})*$": {
+            "type": "string"
+           }
+          }
+         }
+        ]
+       }
+      },
+      "variants": {
+       "description": "other spellings (Getas Pendawa)",
+       "type": "array",
+       "items": {
+        "type": "string"
+       }
+      },
+      "title": {
+       "description": "as printed; each word should be a glossary term",
+       "type": "string"
+      },
+      "house": {
+       "pattern": "^[a-z][a-z0-9_]*$",
+       "description": "the birth house, a houses id: the card's colour (none: grey, outside the courts)",
+       "type": "string"
+      },
+      "sex": {
+       "description": "m, f or u (unknown)",
+       "anyOf": [
+        {
+         "const": "m",
+         "type": "string"
+        },
+        {
+         "const": "f",
+         "type": "string"
+        },
+        {
+         "const": "u",
+         "type": "string"
+        }
+       ]
+      },
+      "basis": {
+       "description": "what the facts rest on: legend, court chronicles, or documents (the default)",
+       "anyOf": [
+        {
+         "const": "legendary",
+         "type": "string"
+        },
+        {
+         "const": "traditional",
+         "type": "string"
+        },
+        {
+         "const": "documented",
+         "type": "string"
+        }
+       ]
+      },
+      "reigns": {
+       "description": "each reign, in order",
+       "type": "array",
+       "items": {
+        "additionalProperties": false,
+        "description": "one reign: of which court, its number there, and when",
+        "type": "object",
+        "required": [
+         "court",
+         "n"
+        ],
+        "properties": {
+         "court": {
+          "pattern": "^[a-z][a-z0-9_]*$",
+          "description": "the house whose throne it was: a houses id",
+          "type": "string"
+         },
+         "n": {
+          "minimum": 1,
+          "description": "the order of this reign in the court's list; the crown shows these numbers",
+          "type": "integer"
+         },
+         "when": {
+          "additionalProperties": false,
+          "description": "a date: the EDTF value and, optionally, the wording it came from",
+          "type": "object",
+          "required": [
+           "edtf"
+          ],
+          "properties": {
+           "edtf": {
+            "pattern": "^(?:-?[0-9X]{4}(?:-[0-9X]{2}(?:-[0-9X]{2})?)?[~?%]?|(?:-?[0-9X]{4}(?:-[0-9X]{2}(?:-[0-9X]{2})?)?[~?%]?|\\.\\.)?/(?:-?[0-9X]{4}(?:-[0-9X]{2}(?:-[0-9X]{2})?)?[~?%]?|\\.\\.)|-?[0-9X]{4}(?:-[0-9X]{2}(?:-[0-9X]{2})?)?[~?%]?/|[\\[{](?:-?[0-9X]{4}(?:-[0-9X]{2}(?:-[0-9X]{2})?)?[~?%]?(?:\\.\\.(?:-?[0-9X]{4}(?:-[0-9X]{2}(?:-[0-9X]{2})?)?[~?%]?)?)?|\\.\\.-?[0-9X]{4}(?:-[0-9X]{2}(?:-[0-9X]{2})?)?[~?%]?)(?:,(?:-?[0-9X]{4}(?:-[0-9X]{2}(?:-[0-9X]{2})?)?[~?%]?(?:\\.\\.(?:-?[0-9X]{4}(?:-[0-9X]{2}(?:-[0-9X]{2})?)?[~?%]?)?)?|\\.\\.-?[0-9X]{4}(?:-[0-9X]{2}(?:-[0-9X]{2})?)?[~?%]?))*[\\]}])$",
+            "description": "an EDTF date (Library of Congress, level 1, plus level 2 sets): 1587~, 1792/1810, 1989/.., [1822,1823]",
+            "type": "string"
+           },
+           "text": {
+            "description": "the date as written (c. 1587)",
+            "type": "string"
+           }
+          }
+         },
+         "note": {
+          "description": "a plain string (the document's default language) or text by language tag",
+          "anyOf": [
+           {
+            "type": "string"
+           },
+           {
+            "minProperties": 1,
+            "additionalProperties": false,
+            "type": "object",
+            "patternProperties": {
+             "^[a-z]{2,3}(-[A-Za-z0-9]{2,8})*$": {
+              "type": "string"
+             }
+            }
+           }
+          ]
+         },
+         "sources": {
+          "description": "the sources for this record",
+          "type": "array",
+          "items": {
+           "additionalProperties": false,
+           "description": "a source for a fact, and where in it",
+           "type": "object",
+           "required": [
+            "source"
+           ],
+           "properties": {
+            "source": {
+             "pattern": "^[a-z][a-z0-9_]*$",
+             "description": "the work cited: a sources id",
+             "type": "string"
+            },
+            "where": {
+             "description": "page, folio or section",
+             "type": "string"
+            },
+            "quay": {
+             "minimum": 0,
+             "maximum": 3,
+             "description": "GEDCOM 7 quality: 0 unreliable, 1 questionable, 2 secondary, 3 direct",
+             "type": "integer"
+            }
+           }
+          }
+         }
+        }
+       }
+      },
+      "born": {
+       "description": "the birth: one claim, or several when the sources differ",
+       "type": "array",
+       "items": {
+        "additionalProperties": false,
+        "description": "one claim about an event (a birth, a death); several claims make a list, the preferred first",
+        "type": "object",
+        "properties": {
+         "date": {
+          "additionalProperties": false,
+          "description": "a date: the EDTF value and, optionally, the wording it came from",
+          "type": "object",
+          "required": [
+           "edtf"
+          ],
+          "properties": {
+           "edtf": {
+            "pattern": "^(?:-?[0-9X]{4}(?:-[0-9X]{2}(?:-[0-9X]{2})?)?[~?%]?|(?:-?[0-9X]{4}(?:-[0-9X]{2}(?:-[0-9X]{2})?)?[~?%]?|\\.\\.)?/(?:-?[0-9X]{4}(?:-[0-9X]{2}(?:-[0-9X]{2})?)?[~?%]?|\\.\\.)|-?[0-9X]{4}(?:-[0-9X]{2}(?:-[0-9X]{2})?)?[~?%]?/|[\\[{](?:-?[0-9X]{4}(?:-[0-9X]{2}(?:-[0-9X]{2})?)?[~?%]?(?:\\.\\.(?:-?[0-9X]{4}(?:-[0-9X]{2}(?:-[0-9X]{2})?)?[~?%]?)?)?|\\.\\.-?[0-9X]{4}(?:-[0-9X]{2}(?:-[0-9X]{2})?)?[~?%]?)(?:,(?:-?[0-9X]{4}(?:-[0-9X]{2}(?:-[0-9X]{2})?)?[~?%]?(?:\\.\\.(?:-?[0-9X]{4}(?:-[0-9X]{2}(?:-[0-9X]{2})?)?[~?%]?)?)?|\\.\\.-?[0-9X]{4}(?:-[0-9X]{2}(?:-[0-9X]{2})?)?[~?%]?))*[\\]}])$",
+            "description": "an EDTF date (Library of Congress, level 1, plus level 2 sets): 1587~, 1792/1810, 1989/.., [1822,1823]",
+            "type": "string"
+           },
+           "text": {
+            "description": "the date as written (c. 1587)",
+            "type": "string"
+           }
+          }
+         },
+         "place": {
+          "description": "a plain string (the document's default language) or text by language tag",
+          "anyOf": [
+           {
+            "type": "string"
+           },
+           {
+            "minProperties": 1,
+            "additionalProperties": false,
+            "type": "object",
+            "patternProperties": {
+             "^[a-z]{2,3}(-[A-Za-z0-9]{2,8})*$": {
+              "type": "string"
+             }
+            }
+           }
+          ]
+         },
+         "certainty": {
+          "description": "how sure the sources are",
+          "anyOf": [
+           {
+            "const": "high",
+            "type": "string"
+           },
+           {
+            "const": "medium",
+            "type": "string"
+           },
+           {
+            "const": "low",
+            "type": "string"
+           }
+          ]
+         },
+         "note": {
+          "description": "a plain string (the document's default language) or text by language tag",
+          "anyOf": [
+           {
+            "type": "string"
+           },
+           {
+            "minProperties": 1,
+            "additionalProperties": false,
+            "type": "object",
+            "patternProperties": {
+             "^[a-z]{2,3}(-[A-Za-z0-9]{2,8})*$": {
+              "type": "string"
+             }
+            }
+           }
+          ]
+         },
+         "asOf": {
+          "description": "when this was last true or checked (2026-11)",
+          "type": "string"
+         },
+         "sources": {
+          "description": "the sources for this record",
+          "type": "array",
+          "items": {
+           "additionalProperties": false,
+           "description": "a source for a fact, and where in it",
+           "type": "object",
+           "required": [
+            "source"
+           ],
+           "properties": {
+            "source": {
+             "pattern": "^[a-z][a-z0-9_]*$",
+             "description": "the work cited: a sources id",
+             "type": "string"
+            },
+            "where": {
+             "description": "page, folio or section",
+             "type": "string"
+            },
+            "quay": {
+             "minimum": 0,
+             "maximum": 3,
+             "description": "GEDCOM 7 quality: 0 unreliable, 1 questionable, 2 secondary, 3 direct",
+             "type": "integer"
+            }
+           }
+          }
+         }
+        }
+       }
+      },
+      "died": {
+       "description": "the death, as born",
+       "type": "array",
+       "items": {
+        "additionalProperties": false,
+        "description": "one claim about an event (a birth, a death); several claims make a list, the preferred first",
+        "type": "object",
+        "properties": {
+         "date": {
+          "additionalProperties": false,
+          "description": "a date: the EDTF value and, optionally, the wording it came from",
+          "type": "object",
+          "required": [
+           "edtf"
+          ],
+          "properties": {
+           "edtf": {
+            "pattern": "^(?:-?[0-9X]{4}(?:-[0-9X]{2}(?:-[0-9X]{2})?)?[~?%]?|(?:-?[0-9X]{4}(?:-[0-9X]{2}(?:-[0-9X]{2})?)?[~?%]?|\\.\\.)?/(?:-?[0-9X]{4}(?:-[0-9X]{2}(?:-[0-9X]{2})?)?[~?%]?|\\.\\.)|-?[0-9X]{4}(?:-[0-9X]{2}(?:-[0-9X]{2})?)?[~?%]?/|[\\[{](?:-?[0-9X]{4}(?:-[0-9X]{2}(?:-[0-9X]{2})?)?[~?%]?(?:\\.\\.(?:-?[0-9X]{4}(?:-[0-9X]{2}(?:-[0-9X]{2})?)?[~?%]?)?)?|\\.\\.-?[0-9X]{4}(?:-[0-9X]{2}(?:-[0-9X]{2})?)?[~?%]?)(?:,(?:-?[0-9X]{4}(?:-[0-9X]{2}(?:-[0-9X]{2})?)?[~?%]?(?:\\.\\.(?:-?[0-9X]{4}(?:-[0-9X]{2}(?:-[0-9X]{2})?)?[~?%]?)?)?|\\.\\.-?[0-9X]{4}(?:-[0-9X]{2}(?:-[0-9X]{2})?)?[~?%]?))*[\\]}])$",
+            "description": "an EDTF date (Library of Congress, level 1, plus level 2 sets): 1587~, 1792/1810, 1989/.., [1822,1823]",
+            "type": "string"
+           },
+           "text": {
+            "description": "the date as written (c. 1587)",
+            "type": "string"
+           }
+          }
+         },
+         "place": {
+          "description": "a plain string (the document's default language) or text by language tag",
+          "anyOf": [
+           {
+            "type": "string"
+           },
+           {
+            "minProperties": 1,
+            "additionalProperties": false,
+            "type": "object",
+            "patternProperties": {
+             "^[a-z]{2,3}(-[A-Za-z0-9]{2,8})*$": {
+              "type": "string"
+             }
+            }
+           }
+          ]
+         },
+         "certainty": {
+          "description": "how sure the sources are",
+          "anyOf": [
+           {
+            "const": "high",
+            "type": "string"
+           },
+           {
+            "const": "medium",
+            "type": "string"
+           },
+           {
+            "const": "low",
+            "type": "string"
+           }
+          ]
+         },
+         "note": {
+          "description": "a plain string (the document's default language) or text by language tag",
+          "anyOf": [
+           {
+            "type": "string"
+           },
+           {
+            "minProperties": 1,
+            "additionalProperties": false,
+            "type": "object",
+            "patternProperties": {
+             "^[a-z]{2,3}(-[A-Za-z0-9]{2,8})*$": {
+              "type": "string"
+             }
+            }
+           }
+          ]
+         },
+         "asOf": {
+          "description": "when this was last true or checked (2026-11)",
+          "type": "string"
+         },
+         "sources": {
+          "description": "the sources for this record",
+          "type": "array",
+          "items": {
+           "additionalProperties": false,
+           "description": "a source for a fact, and where in it",
+           "type": "object",
+           "required": [
+            "source"
+           ],
+           "properties": {
+            "source": {
+             "pattern": "^[a-z][a-z0-9_]*$",
+             "description": "the work cited: a sources id",
+             "type": "string"
+            },
+            "where": {
+             "description": "page, folio or section",
+             "type": "string"
+            },
+            "quay": {
+             "minimum": 0,
+             "maximum": 3,
+             "description": "GEDCOM 7 quality: 0 unreliable, 1 questionable, 2 secondary, 3 direct",
+             "type": "integer"
+            }
+           }
+          }
+         }
+        }
+       }
+      },
+      "portrait": {
+       "pattern": "^[a-z][a-z0-9_]*$",
+       "description": "the picture on the card: a media id (none: a silhouette)",
+       "type": "string"
+      },
+      "bio": {
+       "description": "a plain string (the document's default language) or text by language tag",
+       "anyOf": [
+        {
+         "type": "string"
+        },
+        {
+         "minProperties": 1,
+         "additionalProperties": false,
+         "type": "object",
+         "patternProperties": {
+          "^[a-z]{2,3}(-[A-Za-z0-9]{2,8})*$": {
+           "type": "string"
+          }
+         }
+        }
+       ]
+      },
+      "exid": {
+       "description": "outside identifiers, e.g. {\"wikidata\": \"Q…\"}",
+       "type": "object",
+       "patternProperties": {
+        "^(.*)$": {
+         "type": "string"
+        }
+       }
+      },
+      "sources": {
+       "description": "the sources for this record",
+       "type": "array",
+       "items": {
+        "additionalProperties": false,
+        "description": "a source for a fact, and where in it",
+        "type": "object",
+        "required": [
+         "source"
+        ],
+        "properties": {
+         "source": {
+          "pattern": "^[a-z][a-z0-9_]*$",
+          "description": "the work cited: a sources id",
+          "type": "string"
+         },
+         "where": {
+          "description": "page, folio or section",
+          "type": "string"
+         },
+         "quay": {
+          "minimum": 0,
+          "maximum": 3,
+          "description": "GEDCOM 7 quality: 0 unreliable, 1 questionable, 2 secondary, 3 direct",
+          "type": "integer"
+         }
+        }
+       }
+      },
+      "ext": {
+       "additionalProperties": true,
+       "description": "extensions: anything, ignored by Crownline",
+       "type": "object",
+       "properties": {}
+      },
+      "show": {
+       "additionalProperties": false,
+       "description": "how the person is drawn",
+       "type": "object",
+       "required": [
+        "box"
+       ],
+       "properties": {
+        "box": {
+         "description": "ruler and heir: portrait and coloured label; minor: royal who did not reign; neutral: public figure outside the courts; text: spouse with no public role; legend: legendary ancestor",
+         "anyOf": [
+          {
+           "const": "ruler",
+           "type": "string"
+          },
+          {
+           "const": "heir",
+           "type": "string"
+          },
+          {
+           "const": "minor",
+           "type": "string"
+          },
+          {
+           "const": "neutral",
+           "type": "string"
+          },
+          {
+           "const": "text",
+           "type": "string"
+          },
+          {
+           "const": "legend",
+           "type": "string"
+          }
+         ]
+        },
+        "year": {
+         "description": "placement year on the time axis (when they began to reign or became notable); not needed with beside",
+         "type": "integer"
+        },
+        "beside": {
+         "additionalProperties": false,
+         "description": "drawn next to a partner, on the partner's row",
+         "type": "object",
+         "required": [
+          "of",
+          "side"
+         ],
+         "properties": {
+          "of": {
+           "pattern": "^[a-z][a-z0-9_]*$",
+           "description": "the partner: a person id",
+           "type": "string"
+          },
+          "side": {
+           "description": "l or r: which side of the partner",
+           "anyOf": [
+            {
+             "const": "l",
+             "type": "string"
+            },
+            {
+             "const": "r",
+             "type": "string"
+            }
+           ]
+          }
+         }
+        },
+        "sub": {
+         "description": "a plain string (the document's default language) or text by language tag",
+         "anyOf": [
+          {
+           "type": "string"
+          },
+          {
+           "minProperties": 1,
+           "additionalProperties": false,
+           "type": "object",
+           "patternProperties": {
+            "^[a-z]{2,3}(-[A-Za-z0-9]{2,8})*$": {
+             "type": "string"
+            }
+           }
+          }
+         ]
+        },
+        "hatch": {
+         "description": "rival or unrecognised claimant",
+         "type": "boolean"
+        },
+        "tag": {
+         "description": "a small badge (disputed)",
+         "type": "string"
+        },
+        "width": {
+         "exclusiveMinimum": 0,
+         "description": "fixed label width (neutral boxes with a wrapped line)",
+         "type": "number"
+        },
+        "portraitFrame": {
+         "description": "keep an empty portrait frame when there is no portrait",
+         "type": "boolean"
+        }
+       }
+      }
+     }
+    }
+   }
+  },
+  "unions": {
+   "additionalProperties": false,
+   "description": "marriages and other partnerships, in drawing order",
+   "type": "object",
+   "patternProperties": {
+    "^[a-z][a-z0-9_]*$": {
+     "additionalProperties": false,
+     "description": "a marriage or other partnership: two people, drawn joined by a line",
+     "type": "object",
+     "required": [
+      "partners",
+      "kind"
+     ],
+     "properties": {
+      "partners": {
+       "minItems": 2,
+       "maxItems": 2,
+       "description": "[left, right] as drawn",
+       "type": "array",
+       "items": {
+        "pattern": "^[a-z][a-z0-9_]*$",
+        "description": "a short readable id, unique in the document (hb9, ratuibu)",
+        "type": "string"
+       }
+      },
+      "kind": {
+       "anyOf": [
+        {
+         "const": "marriage",
+         "type": "string"
+        },
+        {
+         "const": "concubinage",
+         "type": "string"
+        },
+        {
+         "const": "unknown",
+         "type": "string"
+        }
+       ]
+      },
+      "from": {
+       "additionalProperties": false,
+       "description": "a date: the EDTF value and, optionally, the wording it came from",
+       "type": "object",
+       "required": [
+        "edtf"
+       ],
+       "properties": {
+        "edtf": {
+         "pattern": "^(?:-?[0-9X]{4}(?:-[0-9X]{2}(?:-[0-9X]{2})?)?[~?%]?|(?:-?[0-9X]{4}(?:-[0-9X]{2}(?:-[0-9X]{2})?)?[~?%]?|\\.\\.)?/(?:-?[0-9X]{4}(?:-[0-9X]{2}(?:-[0-9X]{2})?)?[~?%]?|\\.\\.)|-?[0-9X]{4}(?:-[0-9X]{2}(?:-[0-9X]{2})?)?[~?%]?/|[\\[{](?:-?[0-9X]{4}(?:-[0-9X]{2}(?:-[0-9X]{2})?)?[~?%]?(?:\\.\\.(?:-?[0-9X]{4}(?:-[0-9X]{2}(?:-[0-9X]{2})?)?[~?%]?)?)?|\\.\\.-?[0-9X]{4}(?:-[0-9X]{2}(?:-[0-9X]{2})?)?[~?%]?)(?:,(?:-?[0-9X]{4}(?:-[0-9X]{2}(?:-[0-9X]{2})?)?[~?%]?(?:\\.\\.(?:-?[0-9X]{4}(?:-[0-9X]{2}(?:-[0-9X]{2})?)?[~?%]?)?)?|\\.\\.-?[0-9X]{4}(?:-[0-9X]{2}(?:-[0-9X]{2})?)?[~?%]?))*[\\]}])$",
+         "description": "an EDTF date (Library of Congress, level 1, plus level 2 sets): 1587~, 1792/1810, 1989/.., [1822,1823]",
+         "type": "string"
+        },
+        "text": {
+         "description": "the date as written (c. 1587)",
+         "type": "string"
+        }
+       }
+      },
+      "to": {
+       "additionalProperties": false,
+       "description": "a date: the EDTF value and, optionally, the wording it came from",
+       "type": "object",
+       "required": [
+        "edtf"
+       ],
+       "properties": {
+        "edtf": {
+         "pattern": "^(?:-?[0-9X]{4}(?:-[0-9X]{2}(?:-[0-9X]{2})?)?[~?%]?|(?:-?[0-9X]{4}(?:-[0-9X]{2}(?:-[0-9X]{2})?)?[~?%]?|\\.\\.)?/(?:-?[0-9X]{4}(?:-[0-9X]{2}(?:-[0-9X]{2})?)?[~?%]?|\\.\\.)|-?[0-9X]{4}(?:-[0-9X]{2}(?:-[0-9X]{2})?)?[~?%]?/|[\\[{](?:-?[0-9X]{4}(?:-[0-9X]{2}(?:-[0-9X]{2})?)?[~?%]?(?:\\.\\.(?:-?[0-9X]{4}(?:-[0-9X]{2}(?:-[0-9X]{2})?)?[~?%]?)?)?|\\.\\.-?[0-9X]{4}(?:-[0-9X]{2}(?:-[0-9X]{2})?)?[~?%]?)(?:,(?:-?[0-9X]{4}(?:-[0-9X]{2}(?:-[0-9X]{2})?)?[~?%]?(?:\\.\\.(?:-?[0-9X]{4}(?:-[0-9X]{2}(?:-[0-9X]{2})?)?[~?%]?)?)?|\\.\\.-?[0-9X]{4}(?:-[0-9X]{2}(?:-[0-9X]{2})?)?[~?%]?))*[\\]}])$",
+         "description": "an EDTF date (Library of Congress, level 1, plus level 2 sets): 1587~, 1792/1810, 1989/.., [1822,1823]",
+         "type": "string"
+        },
+        "text": {
+         "description": "the date as written (c. 1587)",
+         "type": "string"
+        }
+       }
+      },
+      "ended": {
+       "description": "how it ended",
+       "anyOf": [
+        {
+         "const": "divorce",
+         "type": "string"
+        },
+        {
+         "const": "death",
+         "type": "string"
+        },
+        {
+         "const": "annulment",
+         "type": "string"
+        }
+       ]
+      },
+      "rank": {
+       "description": "a plain string (the document's default language) or text by language tag",
+       "anyOf": [
+        {
+         "type": "string"
+        },
+        {
+         "minProperties": 1,
+         "additionalProperties": false,
+         "type": "object",
+         "patternProperties": {
+          "^[a-z]{2,3}(-[A-Za-z0-9]{2,8})*$": {
+           "type": "string"
+          }
+         }
+        }
+       ]
+      },
+      "sources": {
+       "description": "the sources for this record",
+       "type": "array",
+       "items": {
+        "additionalProperties": false,
+        "description": "a source for a fact, and where in it",
+        "type": "object",
+        "required": [
+         "source"
+        ],
+        "properties": {
+         "source": {
+          "pattern": "^[a-z][a-z0-9_]*$",
+          "description": "the work cited: a sources id",
+          "type": "string"
+         },
+         "where": {
+          "description": "page, folio or section",
+          "type": "string"
+         },
+         "quay": {
+          "minimum": 0,
+          "maximum": 3,
+          "description": "GEDCOM 7 quality: 0 unreliable, 1 questionable, 2 secondary, 3 direct",
+          "type": "integer"
+         }
+        }
+       }
+      },
+      "ext": {
+       "additionalProperties": true,
+       "description": "extensions: anything, ignored by Crownline",
+       "type": "object",
+       "properties": {}
+      },
+      "show": {
+       "additionalProperties": false,
+       "description": "colour: the house colour of the marriage line (none: grey, outside the dynasty); childColour: the line to the children when neither parent gives one",
+       "type": "object",
+       "properties": {
+        "colour": {
+         "pattern": "^[a-z][a-z0-9_]*$",
+         "description": "a houses id: the colour of the marriage line, the incoming spouse's birth house",
+         "type": "string"
+        },
+        "childColour": {
+         "pattern": "^[a-z][a-z0-9_]*$",
+         "description": "a houses id",
+         "type": "string"
+        }
+       }
+      }
+     }
+    }
+   }
+  },
+  "descents": {
+   "additionalProperties": false,
+   "description": "the lines from parents to children, in drawing order",
+   "type": "object",
+   "patternProperties": {
+    "^[a-z][a-z0-9_]*$": {
+     "additionalProperties": false,
+     "description": "a parent-child link: from a person (parent), from a couple (union), or from a person drawn from the couple's line (both)",
+     "type": "object",
+     "required": [
+      "child"
+     ],
+     "properties": {
+      "parent": {
+       "pattern": "^[a-z][a-z0-9_]*$",
+       "description": "the parent: a person id",
+       "type": "string"
+      },
+      "union": {
+       "pattern": "^[a-z][a-z0-9_]*$",
+       "description": "the parents as a couple: a unions id; the child's line comes down from their marriage line",
+       "type": "string"
+      },
+      "child": {
+       "pattern": "^[a-z][a-z0-9_]*$",
+       "description": "the child: a person id",
+       "type": "string"
+      },
+      "kind": {
+       "description": "birth (the default), adoptive, foster, step, claimed; in-law and other are links drawn like a descent (a son-in-law, a court poet)",
+       "anyOf": [
+        {
+         "const": "birth",
+         "type": "string"
+        },
+        {
+         "const": "adoptive",
+         "type": "string"
+        },
+        {
+         "const": "foster",
+         "type": "string"
+        },
+        {
+         "const": "step",
+         "type": "string"
+        },
+        {
+         "const": "claimed",
+         "type": "string"
+        },
+        {
+         "const": "in-law",
+         "type": "string"
+        },
+        {
+         "const": "other",
+         "type": "string"
+        }
+       ]
+      },
+      "status": {
+       "description": "how well the link is established",
+       "anyOf": [
+        {
+         "const": "proven",
+         "type": "string"
+        },
+        {
+         "const": "accepted",
+         "type": "string"
+        },
+        {
+         "const": "challenged",
+         "type": "string"
+        },
+        {
+         "const": "disproven",
+         "type": "string"
+        }
+       ]
+      },
+      "generations": {
+       "description": "1 by default; 2 for a grandchild drawn directly; several when the number is not known",
+       "anyOf": [
+        {
+         "minimum": 1,
+         "type": "integer"
+        },
+        {
+         "const": "several",
+         "type": "string"
+        }
+       ]
+      },
+      "through": {
+       "description": "hidden people in between, when known",
+       "type": "array",
+       "items": {
+        "pattern": "^[a-z][a-z0-9_]*$",
+        "description": "a short readable id, unique in the document (hb9, ratuibu)",
+        "type": "string"
+       }
+      },
+      "note": {
+       "description": "a plain string (the document's default language) or text by language tag",
+       "anyOf": [
+        {
+         "type": "string"
+        },
+        {
+         "minProperties": 1,
+         "additionalProperties": false,
+         "type": "object",
+         "patternProperties": {
+          "^[a-z]{2,3}(-[A-Za-z0-9]{2,8})*$": {
+           "type": "string"
+          }
+         }
+        }
+       ]
+      },
+      "sources": {
+       "description": "the sources for this record",
+       "type": "array",
+       "items": {
+        "additionalProperties": false,
+        "description": "a source for a fact, and where in it",
+        "type": "object",
+        "required": [
+         "source"
+        ],
+        "properties": {
+         "source": {
+          "pattern": "^[a-z][a-z0-9_]*$",
+          "description": "the work cited: a sources id",
+          "type": "string"
+         },
+         "where": {
+          "description": "page, folio or section",
+          "type": "string"
+         },
+         "quay": {
+          "minimum": 0,
+          "maximum": 3,
+          "description": "GEDCOM 7 quality: 0 unreliable, 1 questionable, 2 secondary, 3 direct",
+          "type": "integer"
+         }
+        }
+       }
+      },
+      "ext": {
+       "additionalProperties": true,
+       "description": "extensions: anything, ignored by Crownline",
+       "type": "object",
+       "properties": {}
+      },
+      "show": {
+       "additionalProperties": false,
+       "description": "how the line is drawn",
+       "type": "object",
+       "properties": {
+        "line": {
+         "description": "solid: father to son; dot: through a daughter or by marriage; grey: outside the dynasty; legend: claimed by the chronicles; adopt: adopted (long dashes)",
+         "anyOf": [
+          {
+           "const": "solid",
+           "type": "string"
+          },
+          {
+           "const": "dot",
+           "type": "string"
+          },
+          {
+           "const": "grey",
+           "type": "string"
+          },
+          {
+           "const": "legend",
+           "type": "string"
+          },
+          {
+           "const": "adopt",
+           "type": "string"
+          }
+         ]
+        },
+        "break": {
+         "description": "label for omitted generations (grandson)",
+         "type": "string"
+        },
+        "caption": {
+         "description": "a plain string (the document's default language) or text by language tag",
+         "anyOf": [
+          {
+           "type": "string"
+          },
+          {
+           "minProperties": 1,
+           "additionalProperties": false,
+           "type": "object",
+           "patternProperties": {
+            "^[a-z]{2,3}(-[A-Za-z0-9]{2,8})*$": {
+             "type": "string"
+            }
+           }
+          }
+         ]
+        },
+        "hop": {
+         "description": "a cross-house line: hops over the lines it crosses, does not place the child",
+         "type": "boolean"
+        },
+        "branch": {
+         "description": "drawn as its own branch, does not place the child",
+         "type": "boolean"
+        },
+        "row": {
+         "description": "parent and child side by side on one row",
+         "type": "boolean"
+        },
+        "group": {
+         "description": "separates two consecutive lines from one parent",
+         "type": "string"
+        },
+        "drawn": {
+         "description": "false: kept in the data but not drawn on the chart (needs hop, so it places nobody)",
+         "type": "boolean"
+        }
+       }
+      }
+     }
+    }
+   }
+  },
+  "houses": {
+   "additionalProperties": false,
+   "description": "the houses: their names and colours",
+   "type": "object",
+   "patternProperties": {
+    "^[a-z][a-z0-9_]*$": {
+     "additionalProperties": false,
+     "description": "a dynasty, court or house: its name and colour",
+     "type": "object",
+     "required": [
+      "name",
+      "colour"
+     ],
+     "properties": {
+      "name": {
+       "description": "a plain string (the document's default language) or text by language tag",
+       "anyOf": [
+        {
+         "type": "string"
+        },
+        {
+         "minProperties": 1,
+         "additionalProperties": false,
+         "type": "object",
+         "patternProperties": {
+          "^[a-z]{2,3}(-[A-Za-z0-9]{2,8})*$": {
+           "type": "string"
+          }
+         }
+        }
+       ]
+      },
+      "colour": {
+       "pattern": "^#[0-9A-Fa-f]{6}$",
+       "description": "the house colour, #RRGGBB: its cards and lines",
+       "type": "string"
+      },
+      "reign": {
+       "description": "how the viewer's panel names a reign of this court: {n} the number, {nth} the English ordinal (Tokugawa: \"{nth} head of the Tokugawa house\"); default \"Ruler {n} of\" the court's header",
+       "anyOf": [
+        {
+         "type": "string"
+        },
+        {
+         "type": "object",
+         "patternProperties": {
+          "^[a-z]{2,3}(-[A-Za-z0-9]{2,8})*$": {
+           "type": "string"
+          }
+         }
+        }
+       ]
+      }
+     }
+    }
+   }
+  },
+  "sources": {
+   "additionalProperties": false,
+   "description": "the works cited",
+   "type": "object",
+   "patternProperties": {
+    "^[a-z][a-z0-9_]*$": {
+     "additionalProperties": false,
+     "description": "a work cited: a chronicle, a study, a news report",
+     "type": "object",
+     "required": [
+      "kind",
+      "title"
+     ],
+     "properties": {
+      "kind": {
+       "anyOf": [
+        {
+         "const": "chronicle",
+         "type": "string"
+        },
+        {
+         "const": "colonial",
+         "type": "string"
+        },
+        {
+         "const": "scholarship",
+         "type": "string"
+        },
+        {
+         "const": "news",
+         "type": "string"
+        },
+        {
+         "const": "decree",
+         "type": "string"
+        },
+        {
+         "const": "court",
+         "type": "string"
+        },
+        {
+         "const": "other",
+         "type": "string"
+        }
+       ]
+      },
+      "title": {
+       "description": "a plain string (the document's default language) or text by language tag",
+       "anyOf": [
+        {
+         "type": "string"
+        },
+        {
+         "minProperties": 1,
+         "additionalProperties": false,
+         "type": "object",
+         "patternProperties": {
+          "^[a-z]{2,3}(-[A-Za-z0-9]{2,8})*$": {
+           "type": "string"
+          }
+         }
+        }
+       ]
+      },
+      "author": {
+       "type": "string"
+      },
+      "year": {
+       "description": "the year it was published",
+       "type": "integer"
+      },
+      "url": {
+       "pattern": "^https?://",
+       "type": "string"
+      },
+      "accessed": {
+       "pattern": "^\\d{4}-\\d{2}-\\d{2}$",
+       "description": "when the url was read: YYYY-MM-DD",
+       "type": "string"
+      }
+     }
+    }
+   }
+  },
+  "glossary": {
+   "additionalProperties": false,
+   "description": "the titles explained, in printed order",
+   "type": "object",
+   "patternProperties": {
+    "^[a-z][a-z0-9_]*$": {
+     "additionalProperties": false,
+     "description": "a title or term explained in the glossary",
+     "type": "object",
+     "required": [
+      "group",
+      "term",
+      "gloss"
+     ],
+     "properties": {
+      "group": {
+       "description": "the glossary section it is listed under",
+       "type": "string"
+      },
+      "term": {
+       "description": "the title as printed (KGPAA, Ki Ageng)",
+       "type": "string"
+      },
+      "expansion": {
+       "description": "the title in full (Kanjeng Gusti Pangeran Adipati Arya)",
+       "type": "string"
+      },
+      "gloss": {
+       "description": "a plain string (the document's default language) or text by language tag",
+       "anyOf": [
+        {
+         "type": "string"
+        },
+        {
+         "minProperties": 1,
+         "additionalProperties": false,
+         "type": "object",
+         "patternProperties": {
+          "^[a-z]{2,3}(-[A-Za-z0-9]{2,8})*$": {
+           "type": "string"
+          }
+         }
+        }
+       ]
+      }
+     }
+    }
+   }
+  },
+  "timeline": {
+   "additionalProperties": false,
+   "description": "the time axis: eras and episodes",
+   "type": "object",
+   "required": [
+    "eras",
+    "episodes"
+   ],
+   "properties": {
+    "eras": {
+     "description": "the eras: each a band of the chart, from its year to the next era's",
+     "type": "array",
+     "items": {
+      "additionalProperties": false,
+      "type": "object",
+      "required": [
+       "year",
+       "name"
+      ],
+      "properties": {
+       "year": {
+        "description": "the year it begins",
+        "type": "integer"
+       },
+       "name": {
+        "description": "a plain string (the document's default language) or text by language tag",
+        "anyOf": [
+         {
+          "type": "string"
+         },
+         {
+          "minProperties": 1,
+          "additionalProperties": false,
+          "type": "object",
+          "patternProperties": {
+           "^[a-z]{2,3}(-[A-Za-z0-9]{2,8})*$": {
+            "type": "string"
+           }
+          }
+         }
+        ]
+       }
+      }
+     }
+    },
+    "episodes": {
+     "description": "shorter events (a war) marked on the time axis, from one year to another",
+     "type": "array",
+     "items": {
+      "additionalProperties": false,
+      "type": "object",
+      "required": [
+       "from",
+       "to",
+       "name"
+      ],
+      "properties": {
+       "from": {
+        "type": "integer"
+       },
+       "to": {
+        "type": "integer"
+       },
+       "name": {
+        "description": "a plain string (the document's default language) or text by language tag",
+        "anyOf": [
+         {
+          "type": "string"
+         },
+         {
+          "minProperties": 1,
+          "additionalProperties": false,
+          "type": "object",
+          "patternProperties": {
+           "^[a-z]{2,3}(-[A-Za-z0-9]{2,8})*$": {
+            "type": "string"
+           }
+          }
+         }
+        ]
+       }
+      }
+     }
+    }
+   }
+  },
+  "notes": {
+   "additionalProperties": false,
+   "description": "notes about people",
+   "type": "object",
+   "patternProperties": {
+    "^[a-z][a-z0-9_]*$": {
+     "additionalProperties": false,
+     "description": "a note about a person: in full beside the card, or a letter on it and the text in the Notes list",
+     "type": "object",
+     "required": [
+      "anchor",
+      "text",
+      "show"
+     ],
+     "properties": {
+      "anchor": {
+       "pattern": "^[a-z][a-z0-9_]*$",
+       "description": "the person it is about: a person id",
+       "type": "string"
+      },
+      "text": {
+       "description": "a plain string (the document's default language) or text by language tag",
+       "anyOf": [
+        {
+         "type": "string"
+        },
+        {
+         "minProperties": 1,
+         "additionalProperties": false,
+         "type": "object",
+         "patternProperties": {
+          "^[a-z]{2,3}(-[A-Za-z0-9]{2,8})*$": {
+           "type": "string"
+          }
+         }
+        }
+       ]
+      },
+      "sources": {
+       "description": "the sources for this record",
+       "type": "array",
+       "items": {
+        "additionalProperties": false,
+        "description": "a source for a fact, and where in it",
+        "type": "object",
+        "required": [
+         "source"
+        ],
+        "properties": {
+         "source": {
+          "pattern": "^[a-z][a-z0-9_]*$",
+          "description": "the work cited: a sources id",
+          "type": "string"
+         },
+         "where": {
+          "description": "page, folio or section",
+          "type": "string"
+         },
+         "quay": {
+          "minimum": 0,
+          "maximum": 3,
+          "description": "GEDCOM 7 quality: 0 unreliable, 1 questionable, 2 secondary, 3 direct",
+          "type": "integer"
+         }
+        }
+       }
+      },
+      "show": {
+       "additionalProperties": false,
+       "description": "where and how the note is drawn",
+       "type": "object",
+       "required": [
+        "side",
+        "width"
+       ],
+       "properties": {
+        "side": {
+         "description": "r, l, b or t: which side of the card it is drawn on",
+         "anyOf": [
+          {
+           "const": "r",
+           "type": "string"
+          },
+          {
+           "const": "l",
+           "type": "string"
+          },
+          {
+           "const": "b",
+           "type": "string"
+          },
+          {
+           "const": "t",
+           "type": "string"
+          }
+         ]
+        },
+        "width": {
+         "exclusiveMinimum": 0,
+         "description": "its width in px: 240, 300, 360, 440 or 560 (240 is usual)",
+         "type": "number"
+        },
+        "inline": {
+         "description": "shown in full beside the person; otherwise a lettered marker and the Notes list",
+         "type": "boolean"
+        }
+       }
+      }
+     }
+    }
+   }
+  },
+  "tours": {
+   "additionalProperties": false,
+   "description": "guided tours for the viewer",
+   "type": "object",
+   "patternProperties": {
+    "^[a-z][a-z0-9_]*$": {
+     "additionalProperties": false,
+     "description": "a guided tour in the viewer: a few steps through the chart",
+     "type": "object",
+     "required": [
+      "title",
+      "steps"
+     ],
+     "properties": {
+      "title": {
+       "description": "a plain string (the document's default language) or text by language tag",
+       "anyOf": [
+        {
+         "type": "string"
+        },
+        {
+         "minProperties": 1,
+         "additionalProperties": false,
+         "type": "object",
+         "patternProperties": {
+          "^[a-z]{2,3}(-[A-Za-z0-9]{2,8})*$": {
+           "type": "string"
+          }
+         }
+        }
+       ]
+      },
+      "summary": {
+       "description": "a plain string (the document's default language) or text by language tag",
+       "anyOf": [
+        {
+         "type": "string"
+        },
+        {
+         "minProperties": 1,
+         "additionalProperties": false,
+         "type": "object",
+         "patternProperties": {
+          "^[a-z]{2,3}(-[A-Za-z0-9]{2,8})*$": {
+           "type": "string"
+          }
+         }
+        }
+       ]
+      },
+      "steps": {
+       "minItems": 1,
+       "type": "array",
+       "items": {
+        "additionalProperties": false,
+        "description": "one step of a tour: what it shows and its caption",
+        "type": "object",
+        "required": [
+         "caption"
+        ],
+        "properties": {
+         "title": {
+          "description": "a plain string (the document's default language) or text by language tag",
+          "anyOf": [
+           {
+            "type": "string"
+           },
+           {
+            "minProperties": 1,
+            "additionalProperties": false,
+            "type": "object",
+            "patternProperties": {
+             "^[a-z]{2,3}(-[A-Za-z0-9]{2,8})*$": {
+              "type": "string"
+             }
+            }
+           }
+          ]
+         },
+         "caption": {
+          "description": "a plain string (the document's default language) or text by language tag",
+          "anyOf": [
+           {
+            "type": "string"
+           },
+           {
+            "minProperties": 1,
+            "additionalProperties": false,
+            "type": "object",
+            "patternProperties": {
+             "^[a-z]{2,3}(-[A-Za-z0-9]{2,8})*$": {
+              "type": "string"
+             }
+            }
+           }
+          ]
+         },
+         "focus": {
+          "description": "what the view fits: all, or a list of person ids and map:<stage>",
+          "anyOf": [
+           {
+            "const": "all",
+            "type": "string"
+           },
+           {
+            "type": "array",
+            "items": {
+             "pattern": "^([a-z][a-z0-9_]*|map:[A-Za-z0-9_]+)$",
+             "type": "string"
+            }
+           }
+          ]
+         },
+         "light": {
+          "description": "the people lit up (the rest dim)",
+          "type": "array",
+          "items": {
+           "pattern": "^[a-z][a-z0-9_]*$",
+           "description": "a short readable id, unique in the document (hb9, ratuibu)",
+           "type": "string"
+          }
+         },
+         "lineage": {
+          "pattern": "^[a-z][a-z0-9_]*$",
+          "description": "a person whose lineage is lit",
+          "type": "string"
+         },
+         "stage": {
+          "description": "the map stage shown beside the step (panels.map.maps[].id)",
+          "type": "string"
+         }
+        }
+       }
+      }
+     }
+    }
+   }
+  },
+  "panels": {
+   "additionalProperties": false,
+   "description": "the panels around the tree: the header card (title, key, glossary), introduction, caveats, sources, footer, scale and maps",
+   "type": "object",
+   "required": [
+    "header"
+   ],
+   "properties": {
+    "header": {
+     "additionalProperties": false,
+     "description": "where the title, key and glossary panel sits",
+     "type": "object",
+     "required": [
+      "x",
+      "y",
+      "width",
+      "height"
+     ],
+     "properties": {
+      "x": {
+       "description": "its left edge (px)",
+       "type": "number"
+      },
+      "y": {
+       "description": "its top (px)",
+       "type": "number"
+      },
+      "width": {
+       "type": "number"
+      },
+      "height": {
+       "type": "number"
+      },
+      "arrange": {
+       "description": "row (default): top left, the tree beside it; column: down the left side, as tall as the tree (at least its height: give a small tree's card the height its key and glossary need), holding the notes, caveats and sources too; top: across the top, as wide as the chart (width ignored), the tree below it",
+       "anyOf": [
+        {
+         "const": "row",
+         "type": "string"
+        },
+        {
+         "const": "column",
+         "type": "string"
+        },
+        {
+         "const": "top",
+         "type": "string"
+        }
+       ]
+      }
+     }
+    },
+    "intro": {
+     "description": "a plain string (the document's default language) or text by language tag",
+     "anyOf": [
+      {
+       "type": "string"
+      },
+      {
+       "minProperties": 1,
+       "additionalProperties": false,
+       "type": "object",
+       "patternProperties": {
+        "^[a-z]{2,3}(-[A-Za-z0-9]{2,8})*$": {
+         "type": "string"
+        }
+       }
+      }
+     ]
+    },
+    "caveats": {
+     "description": "what the reader should know about the chart's limits, as printed",
+     "type": "array",
+     "items": {
+      "description": "a plain string (the document's default language) or text by language tag",
+      "anyOf": [
+       {
+        "type": "string"
+       },
+       {
+        "minProperties": 1,
+        "additionalProperties": false,
+        "type": "object",
+        "patternProperties": {
+         "^[a-z]{2,3}(-[A-Za-z0-9]{2,8})*$": {
+          "type": "string"
+         }
+        }
+       }
+      ]
+     }
+    },
+    "sources": {
+     "description": "the printed list of sources",
+     "type": "array",
+     "items": {
+      "description": "text, or text that only a public or only a private build shows",
+      "anyOf": [
+       {
+        "type": "string"
+       },
+       {
+        "additionalProperties": false,
+        "type": "object",
+        "properties": {
+         "public": {
+          "type": "string"
+         },
+         "private": {
+          "type": "string"
+         }
+        }
+       }
+      ]
+     }
+    },
+    "badges": {
+     "description": "media shown in the footer: the licence badge first",
+     "type": "array",
+     "items": {
+      "pattern": "^[a-z][a-z0-9_]*$",
+      "description": "a short readable id, unique in the document (hb9, ratuibu)",
+      "type": "string"
+     }
+    },
+    "scale": {
+     "additionalProperties": false,
+     "description": "a scale beside a trunk: legend, court tradition, documented",
+     "type": "object",
+     "required": [
+      "row",
+      "trunk",
+      "documented",
+      "stages"
+     ],
+     "properties": {
+      "row": {
+       "minItems": 2,
+       "maxItems": 2,
+       "description": "the first and last people of the legendary row",
+       "type": "array",
+       "items": {
+        "pattern": "^[a-z][a-z0-9_]*$",
+        "description": "a short readable id, unique in the document (hb9, ratuibu)",
+        "type": "string"
+       }
+      },
+      "trunk": {
+       "minItems": 1,
+       "description": "the people of the trunk the scale runs beside",
+       "type": "array",
+       "items": {
+        "pattern": "^[a-z][a-z0-9_]*$",
+        "description": "a short readable id, unique in the document (hb9, ratuibu)",
+        "type": "string"
+       }
+      },
+      "documented": {
+       "pattern": "^[a-z][a-z0-9_]*$",
+       "description": "the first documented person",
+       "type": "string"
+      },
+      "stages": {
+       "minItems": 3,
+       "maxItems": 3,
+       "type": "array",
+       "items": {
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+         "head",
+         "lines"
+        ],
+        "properties": {
+         "head": {
+          "type": "string"
+         },
+         "lines": {
+          "type": "array",
+          "items": {
+           "type": "string"
+          }
+         }
+        }
+       }
+      }
+     }
+    },
+    "map": {
+     "additionalProperties": false,
+     "description": "a grid of small maps, one per stage, drawn from ready-merged shapes (tools/map_shapes.py)",
+     "type": "object",
+     "required": [
+      "title",
+      "width",
+      "height",
+      "boundaries",
+      "assignments",
+      "shapes",
+      "views",
+      "colours",
+      "maps"
+     ],
+     "properties": {
+      "title": {
+       "type": "string"
+      },
+      "width": {
+       "description": "each map's width (px); its height follows from its view",
+       "type": "number"
+      },
+      "columns": {
+       "minimum": 1,
+       "type": "integer"
+      },
+      "height": {
+       "description": "the panel's height (px), as rendered",
+       "type": "number"
+      },
+      "boundaries": {
+       "additionalProperties": false,
+       "description": "media (data): the regencies every map is coloured by, and the districts and villages areas are made of",
+       "type": "object",
+       "required": [
+        "adm2"
+       ],
+       "properties": {
+        "adm2": {
+         "pattern": "^[a-z][a-z0-9_]*$",
+         "description": "a short readable id, unique in the document (hb9, ratuibu)",
+         "type": "string"
+        },
+        "adm3": {
+         "pattern": "^[a-z][a-z0-9_]*$",
+         "description": "a short readable id, unique in the document (hb9, ratuibu)",
+         "type": "string"
+        },
+        "adm4": {
+         "pattern": "^[a-z][a-z0-9_]*$",
+         "description": "a short readable id, unique in the document (hb9, ratuibu)",
+         "type": "string"
+        }
+       }
+      },
+      "leaveOut": {
+       "description": "regencies left off the maps, by a property's value",
+       "type": "object",
+       "patternProperties": {
+        "^(.*)$": {
+         "type": "array",
+         "items": {
+          "type": "string"
+         }
+        }
+       }
+      },
+      "assignments": {
+       "pattern": "^[a-z][a-z0-9_]*$",
+       "description": "a short readable id, unique in the document (hb9, ratuibu)",
+       "type": "string"
+      },
+      "shapes": {
+       "pattern": "^[a-z][a-z0-9_]*$",
+       "description": "a short readable id, unique in the document (hb9, ratuibu)",
+       "type": "string"
+      },
+      "views": {
+       "additionalProperties": false,
+       "description": "longitude west, east, latitude south, north",
+       "type": "object",
+       "patternProperties": {
+        "^[a-z][A-Za-z0-9]*$": {
+         "minItems": 4,
+         "maxItems": 4,
+         "type": "array",
+         "items": {
+          "type": "number"
+         }
+        }
+       }
+      },
+      "colours": {
+       "additionalProperties": false,
+       "description": "names for colours the maps use (each a colour as in a fill)",
+       "type": "object",
+       "patternProperties": {
+        "^[a-z][A-Za-z0-9]*$": {
+         "type": "string"
+        }
+       }
+      },
+      "areas": {
+       "additionalProperties": false,
+       "description": "parts of regencies drawn over a map: districts by name, or a group of villages",
+       "type": "object",
+       "patternProperties": {
+        "^[a-z][A-Za-z0-9]*$": {
+         "anyOf": [
+          {
+           "additionalProperties": false,
+           "type": "object",
+           "required": [
+            "adm3"
+           ],
+           "properties": {
+            "adm3": {
+             "minItems": 1,
+             "type": "array",
+             "items": {
+              "type": "string"
+             }
+            }
+           }
+          },
+          {
+           "additionalProperties": false,
+           "type": "object",
+           "required": [
+            "adm4"
+           ],
+           "properties": {
+            "adm4": {
+             "type": "string"
+            }
+           }
+          }
+         ]
+        }
+       }
+      },
+      "maps": {
+       "minItems": 1,
+       "type": "array",
+       "items": {
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+         "id",
+         "from",
+         "view",
+         "title",
+         "caption",
+         "fills",
+         "default"
+        ],
+        "properties": {
+         "id": {
+          "pattern": "^[A-Za-z0-9_]+$",
+          "description": "the stage id (assignments, tours: map:<id>)",
+          "type": "string"
+         },
+         "from": {
+          "description": "the first year the map describes (the viewer's time slider)",
+          "type": "integer"
+         },
+         "view": {
+          "pattern": "^[a-z][A-Za-z0-9]*$",
+          "type": "string"
+         },
+         "title": {
+          "type": "string"
+         },
+         "caption": {
+          "type": "string"
+         },
+         "note": {
+          "type": "string"
+         },
+         "fills": {
+          "description": "polity (from the assignments) -> its fill",
+          "type": "object",
+          "patternProperties": {
+           "^(.*)$": {
+            "minLength": 1,
+            "description": "a colour, or \"a/b\": diagonal stripes of colour a over b. A colour is #RRGGBB, house:<id>, house:<id>+0.6 (that house's colour tinted), palette:<key>, or a name from panels.map.colours",
+            "type": "string"
+           }
+          }
+         },
+         "default": {
+          "minLength": 1,
+          "description": "a colour, or \"a/b\": diagonal stripes of colour a over b. A colour is #RRGGBB, house:<id>, house:<id>+0.6 (that house's colour tinted), palette:<key>, or a name from panels.map.colours",
+          "type": "string"
+         },
+         "regions": {
+          "description": "a regency's own fill, by name, over its polity's",
+          "type": "object",
+          "patternProperties": {
+           "^(.*)$": {
+            "minLength": 1,
+            "description": "a colour, or \"a/b\": diagonal stripes of colour a over b. A colour is #RRGGBB, house:<id>, house:<id>+0.6 (that house's colour tinted), palette:<key>, or a name from panels.map.colours",
+            "type": "string"
+           }
+          }
+         },
+         "overlays": {
+          "type": "array",
+          "items": {
+           "additionalProperties": false,
+           "type": "object",
+           "required": [
+            "area",
+            "fill"
+           ],
+           "properties": {
+            "area": {
+             "pattern": "^[a-z][A-Za-z0-9]*$",
+             "type": "string"
+            },
+            "fill": {
+             "minLength": 1,
+             "description": "a colour, or \"a/b\": diagonal stripes of colour a over b. A colour is #RRGGBB, house:<id>, house:<id>+0.6 (that house's colour tinted), palette:<key>, or a name from panels.map.colours",
+             "type": "string"
+            },
+            "outline": {
+             "description": "white outline, not cut to the coast (enclaves)",
+             "type": "boolean"
+            }
+           }
+          }
+         },
+         "marks": {
+          "type": "array",
+          "items": {
+           "anyOf": [
+            {
+             "additionalProperties": false,
+             "description": "a place: a dot and its name",
+             "type": "object",
+             "required": [
+              "kind",
+              "at",
+              "label"
+             ],
+             "properties": {
+              "kind": {
+               "const": "place",
+               "type": "string"
+              },
+              "at": {
+               "minItems": 2,
+               "maxItems": 2,
+               "description": "longitude, latitude",
+               "type": "array",
+               "items": {
+                "type": "number"
+               }
+              },
+              "label": {
+               "type": "string"
+              },
+              "position": {
+               "anyOf": [
+                {
+                 "const": "above",
+                 "type": "string"
+                },
+                {
+                 "const": "below",
+                 "type": "string"
+                },
+                {
+                 "const": "left",
+                 "type": "string"
+                },
+                {
+                 "const": "right-below",
+                 "type": "string"
+                }
+               ]
+              }
+             }
+            },
+            {
+             "additionalProperties": false,
+             "description": "a coloured dot, white-ringed",
+             "type": "object",
+             "required": [
+              "kind",
+              "at",
+              "r",
+              "fill"
+             ],
+             "properties": {
+              "kind": {
+               "const": "dot",
+               "type": "string"
+              },
+              "at": {
+               "minItems": 2,
+               "maxItems": 2,
+               "description": "longitude, latitude",
+               "type": "array",
+               "items": {
+                "type": "number"
+               }
+              },
+              "r": {
+               "type": "number"
+              },
+              "fill": {
+               "minLength": 1,
+               "description": "a colour, or \"a/b\": diagonal stripes of colour a over b. A colour is #RRGGBB, house:<id>, house:<id>+0.6 (that house's colour tinted), palette:<key>, or a name from panels.map.colours",
+               "type": "string"
+              },
+              "stroke": {
+               "type": "number"
+              }
+             }
+            },
+            {
+             "additionalProperties": false,
+             "description": "a ring round something too small to see, with a label",
+             "type": "object",
+             "required": [
+              "kind",
+              "at",
+              "label"
+             ],
+             "properties": {
+              "kind": {
+               "const": "ring",
+               "type": "string"
+              },
+              "at": {
+               "minItems": 2,
+               "maxItems": 2,
+               "description": "longitude, latitude",
+               "type": "array",
+               "items": {
+                "type": "number"
+               }
+              },
+              "label": {
+               "type": "string"
+              }
+             }
+            },
+            {
+             "additionalProperties": false,
+             "description": "the box of another view (a detail map)",
+             "type": "object",
+             "required": [
+              "kind",
+              "view"
+             ],
+             "properties": {
+              "kind": {
+               "const": "frame",
+               "type": "string"
+              },
+              "view": {
+               "pattern": "^[a-z][A-Za-z0-9]*$",
+               "type": "string"
+              }
+             }
+            }
+           ]
+          }
+         }
+        }
+       }
+      },
+      "legend": {
+       "type": "array",
+       "items": {
+        "anyOf": [
+         {
+          "additionalProperties": false,
+          "type": "object",
+          "required": [
+           "fill",
+           "label"
+          ],
+          "properties": {
+           "fill": {
+            "minLength": 1,
+            "description": "a colour, or \"a/b\": diagonal stripes of colour a over b. A colour is #RRGGBB, house:<id>, house:<id>+0.6 (that house's colour tinted), palette:<key>, or a name from panels.map.colours",
+            "type": "string"
+           },
+           "label": {
+            "type": "string"
+           }
+          }
+         },
+         {
+          "additionalProperties": false,
+          "type": "object",
+          "required": [
+           "dot",
+           "label"
+          ],
+          "properties": {
+           "dot": {
+            "minLength": 1,
+            "description": "a colour, or \"a/b\": diagonal stripes of colour a over b. A colour is #RRGGBB, house:<id>, house:<id>+0.6 (that house's colour tinted), palette:<key>, or a name from panels.map.colours",
+            "type": "string"
+           },
+           "label": {
+            "type": "string"
+           }
+          }
+         }
+        ]
+       }
+      }
+     }
+    },
+    "key": {
+     "additionalProperties": false,
+     "description": "the Key: house (the colour of its examples; default the first house), contrast (a second house: the line passing under, the princess married in; default the second), labels (other wording for an entry, by its id: solid, dot, grey, omitted, chronicle, caption, crossing, house, houseDisputed, bracket, event, ruler, heir, rival, traditional, legendary, minor, marriedIn, neutral, text, noPortrait, tag, crown, letter, band, era, episode, axis). Rows appear only for what the chart uses.",
+     "type": "object",
+     "properties": {
+      "house": {
+       "pattern": "^[a-z][a-z0-9_]*$",
+       "description": "a houses id",
+       "type": "string"
+      },
+      "contrast": {
+       "pattern": "^[a-z][a-z0-9_]*$",
+       "description": "a houses id",
+       "type": "string"
+      },
+      "labels": {
+       "additionalProperties": false,
+       "type": "object",
+       "patternProperties": {
+        "^[a-z][A-Za-z]*$": {
+         "description": "a plain string (the document's default language) or text by language tag",
+         "anyOf": [
+          {
+           "type": "string"
+          },
+          {
+           "minProperties": 1,
+           "additionalProperties": false,
+           "type": "object",
+           "patternProperties": {
+            "^[a-z]{2,3}(-[A-Za-z0-9]{2,8})*$": {
+             "type": "string"
+            }
+           }
+          }
+         ]
+        }
+       }
+      }
+     }
+    },
+    "glossaryTitle": {
+     "description": "a plain string (the document's default language) or text by language tag",
+     "anyOf": [
+      {
+       "type": "string"
+      },
+      {
+       "minProperties": 1,
+       "additionalProperties": false,
+       "type": "object",
+       "patternProperties": {
+        "^[a-z]{2,3}(-[A-Za-z0-9]{2,8})*$": {
+         "type": "string"
+        }
+       }
+      }
+     ]
+    },
+    "succession": {
+     "additionalProperties": false,
+     "description": "a table of the court's reigns in order, with how each came to rule (worked out from the descents); shown in a column or top card when there is room",
+     "type": "object",
+     "required": [
+      "court"
+     ],
+     "properties": {
+      "court": {
+       "pattern": "^[a-z][a-z0-9_]*$",
+       "description": "a houses id",
+       "type": "string"
+      },
+      "title": {
+       "description": "a plain string (the document's default language) or text by language tag",
+       "anyOf": [
+        {
+         "type": "string"
+        },
+        {
+         "minProperties": 1,
+         "additionalProperties": false,
+         "type": "object",
+         "patternProperties": {
+          "^[a-z]{2,3}(-[A-Za-z0-9]{2,8})*$": {
+           "type": "string"
+          }
+         }
+        }
+       ]
+      }
+     }
+    },
+    "viewer": {
+     "additionalProperties": false,
+     "description": "the interactive viewer",
+     "type": "object",
+     "properties": {
+      "languages": {
+       "minItems": 1,
+       "description": "interface languages the viewer offers, in order; default all it has (en, id)",
+       "type": "array",
+       "items": {
+        "pattern": "^[a-z]{2,3}(-[A-Za-z0-9]{2,8})*$",
+        "description": "a BCP 47 language tag (en, id, jv-Java)",
+        "type": "string"
+       }
+      },
+      "year": {
+       "description": "the year the time slider opens at when no one is selected; default the middle of the chart's years",
+       "type": "integer"
+      }
+     }
+    }
+   }
+  },
+  "media": {
+   "additionalProperties": false,
+   "description": "pictures and data files, with their credits",
+   "type": "object",
+   "patternProperties": {
+    "^[a-z][a-z0-9_]*$": {
+     "additionalProperties": false,
+     "description": "a picture or data file the chart uses, with its credit",
+     "type": "object",
+     "required": [
+      "kind",
+      "file"
+     ],
+     "properties": {
+      "kind": {
+       "anyOf": [
+        {
+         "const": "portrait",
+         "type": "string"
+        },
+        {
+         "const": "emblem",
+         "type": "string"
+        },
+        {
+         "const": "badge",
+         "type": "string"
+        },
+        {
+         "const": "image",
+         "type": "string"
+        },
+        {
+         "const": "source",
+         "type": "string"
+        },
+        {
+         "const": "data",
+         "type": "string"
+        }
+       ]
+      },
+      "file": {
+       "description": "path relative to meta.assetRoot",
+       "type": "string"
+      },
+      "of": {
+       "pattern": "^[a-z][a-z0-9_]*$",
+       "description": "whom or what it shows: a person or house id",
+       "type": "string"
+      },
+      "credit": {
+       "additionalProperties": false,
+       "description": "the credit, printed on the credits page",
+       "type": "object",
+       "required": [
+        "title"
+       ],
+       "properties": {
+        "title": {
+         "description": "what the picture is, as the credits page names it",
+         "type": "string"
+        },
+        "source": {
+         "description": "the page it came from",
+         "type": "string"
+        },
+        "fileUrl": {
+         "description": "the file itself",
+         "type": "string"
+        },
+        "author": {
+         "type": "string"
+        },
+        "licence": {
+         "description": "public domain, CC BY-SA 4.0, …",
+         "type": "string"
+        },
+        "changes": {
+         "description": "what was changed (cropped, tone adjusted)",
+         "type": "string"
+        },
+        "note": {
+         "type": "string"
+        }
+       }
+      },
+      "private": {
+       "minLength": 1,
+       "description": "why it may not be published; a public build leaves it out without moving anything",
+       "type": "string"
+      }
+     }
+    }
+   }
+  },
+  "display": {
+   "additionalProperties": false,
+   "description": "how content is drawn beyond each record's own show: side-by-side rows, house pills and headers, brackets and events",
+   "type": "object",
+   "properties": {
+    "rows": {
+     "type": "array",
+     "items": {
+      "additionalProperties": false,
+      "description": "a side-by-side row: members stand left of the anchor on its row, joined left to right (the legendary ancestors)",
+      "type": "object",
+      "required": [
+       "anchor",
+       "members",
+       "gap"
+      ],
+      "properties": {
+       "anchor": {
+        "pattern": "^[a-z][a-z0-9_]*$",
+        "description": "a short readable id, unique in the document (hb9, ratuibu)",
+        "type": "string"
+       },
+       "members": {
+        "minItems": 1,
+        "type": "array",
+        "items": {
+         "pattern": "^[a-z][a-z0-9_]*$",
+         "description": "a short readable id, unique in the document (hb9, ratuibu)",
+         "type": "string"
+        }
+       },
+       "gap": {
+        "type": "number"
+       }
+      }
+     }
+    },
+    "pills": {
+     "additionalProperties": false,
+     "description": "a house pill on the line into a person (the first member of a house)",
+     "type": "object",
+     "patternProperties": {
+      "^[a-z][a-z0-9_]*$": {
+       "additionalProperties": false,
+       "type": "object",
+       "required": [
+        "label",
+        "house"
+       ],
+       "properties": {
+        "label": {
+         "type": "string"
+        },
+        "house": {
+         "pattern": "^[a-z][a-z0-9_]*$",
+         "description": "a houses id",
+         "type": "string"
+        },
+        "disputed": {
+         "description": "drawn hatched: a disputed succession",
+         "type": "boolean"
+        }
+       }
+      }
+     }
+    },
+    "headers": {
+     "additionalProperties": false,
+     "description": "a house header beside the pill",
+     "type": "object",
+     "patternProperties": {
+      "^[a-z][a-z0-9_]*$": {
+       "additionalProperties": false,
+       "type": "object",
+       "required": [
+        "kind",
+        "name",
+        "years",
+        "seat",
+        "founded"
+       ],
+       "properties": {
+        "emblem": {
+         "pattern": "^[a-z][a-z0-9_]*$",
+         "description": "a media id",
+         "type": "string"
+        },
+        "kind": {
+         "description": "Sultanate, Duchy, …",
+         "type": "string"
+        },
+        "name": {
+         "type": "string"
+        },
+        "years": {
+         "type": "string"
+        },
+        "seat": {
+         "description": "where the court sat",
+         "type": "string"
+        },
+        "founded": {
+         "description": "how it was founded (Treaty of Giyanti)",
+         "type": "string"
+        }
+       }
+      }
+     }
+    },
+    "brackets": {
+     "description": "a bracket under several people with a label (rival claimants)",
+     "type": "array",
+     "items": {
+      "additionalProperties": false,
+      "type": "object",
+      "required": [
+       "members",
+       "label"
+      ],
+      "properties": {
+       "members": {
+        "minItems": 2,
+        "type": "array",
+        "items": {
+         "pattern": "^[a-z][a-z0-9_]*$",
+         "description": "a short readable id, unique in the document (hb9, ratuibu)",
+         "type": "string"
+        }
+       },
+       "label": {
+        "type": "string"
+       }
+      }
+     }
+    },
+    "events": {
+     "additionalProperties": false,
+     "description": "a short event label on the line into a person",
+     "type": "object",
+     "patternProperties": {
+      "^[a-z][a-z0-9_]*$": {
+       "type": "string"
+      }
+     }
+    },
+    "keepTogether": {
+     "description": "names printed before a regnal number (\"Pakubuwana II\"): a note never breaks a line between the two",
+     "type": "array",
+     "items": {
+      "minLength": 1,
+      "type": "string"
+     }
+    },
+    "timeOrder": {
+     "description": "rows keep time order across branches: nobody is drawn above a person with an earlier year (for charts whose branches have very different generation lengths)",
+     "type": "boolean"
+    }
+   }
+  },
+  "adjustments": {
+   "additionalProperties": false,
+   "description": "hand fixes to the automatic layout, each with its reason",
+   "type": "object",
+   "patternProperties": {
+    "^[a-z][a-z0-9_]*$": {
+     "anyOf": [
+      {
+       "additionalProperties": false,
+       "description": "move a person (dx: with everyone below them; dy: their row)",
+       "type": "object",
+       "required": [
+        "kind",
+        "target",
+        "reason"
+       ],
+       "properties": {
+        "kind": {
+         "const": "nudge",
+         "type": "string"
+        },
+        "target": {
+         "pattern": "^[a-z][a-z0-9_]*$",
+         "description": "a short readable id, unique in the document (hb9, ratuibu)",
+         "type": "string"
+        },
+        "dx": {
+         "type": "number"
+        },
+        "dy": {
+         "type": "number"
+        },
+        "reason": {
+         "description": "why: shown in the editor's list of adjustments (may be empty)",
+         "type": "string"
+        }
+       }
+      },
+      {
+       "additionalProperties": false,
+       "description": "place a person relative to another, moving with them",
+       "type": "object",
+       "required": [
+        "kind",
+        "target",
+        "of",
+        "dx",
+        "reason"
+       ],
+       "properties": {
+        "kind": {
+         "const": "follow",
+         "type": "string"
+        },
+        "target": {
+         "pattern": "^[a-z][a-z0-9_]*$",
+         "description": "a short readable id, unique in the document (hb9, ratuibu)",
+         "type": "string"
+        },
+        "of": {
+         "pattern": "^[a-z][a-z0-9_]*$",
+         "description": "a short readable id, unique in the document (hb9, ratuibu)",
+         "type": "string"
+        },
+        "dx": {
+         "type": "number"
+        },
+        "reason": {
+         "description": "why: shown in the editor's list of adjustments (may be empty)",
+         "type": "string"
+        }
+       }
+      },
+      {
+       "additionalProperties": false,
+       "description": "which side of the parent's other children a couple's children go (target: a union; 0 the centre)",
+       "type": "object",
+       "required": [
+        "kind",
+        "target",
+        "side",
+        "reason"
+       ],
+       "properties": {
+        "kind": {
+         "const": "coupleSide",
+         "type": "string"
+        },
+        "target": {
+         "pattern": "^[a-z][a-z0-9_]*$",
+         "description": "a short readable id, unique in the document (hb9, ratuibu)",
+         "type": "string"
+        },
+        "side": {
+         "anyOf": [
+          {
+           "const": -1,
+           "type": "number"
+          },
+          {
+           "const": 0,
+           "type": "number"
+          },
+          {
+           "const": 1,
+           "type": "number"
+          }
+         ]
+        },
+        "reason": {
+         "description": "why: shown in the editor's list of adjustments (may be empty)",
+         "type": "string"
+        }
+       }
+      },
+      {
+       "additionalProperties": false,
+       "description": "the line hangs off the parent's existing line (target: a descent)",
+       "type": "object",
+       "required": [
+        "kind",
+        "target",
+        "reason"
+       ],
+       "properties": {
+        "kind": {
+         "const": "shareBus",
+         "type": "string"
+        },
+        "target": {
+         "pattern": "^[a-z][a-z0-9_]*$",
+         "description": "a short readable id, unique in the document (hb9, ratuibu)",
+         "type": "string"
+        },
+        "reason": {
+         "description": "why: shown in the editor's list of adjustments (may be empty)",
+         "type": "string"
+        }
+       }
+      },
+      {
+       "additionalProperties": false,
+       "description": "where the break mark sits on the line (target: a descent)",
+       "type": "object",
+       "required": [
+        "kind",
+        "target",
+        "at",
+        "reason"
+       ],
+       "properties": {
+        "kind": {
+         "const": "breakAt",
+         "type": "string"
+        },
+        "target": {
+         "pattern": "^[a-z][a-z0-9_]*$",
+         "description": "a short readable id, unique in the document (hb9, ratuibu)",
+         "type": "string"
+        },
+        "at": {
+         "minimum": 0,
+         "maximum": 1,
+         "type": "number"
+        },
+        "reason": {
+         "description": "why: shown in the editor's list of adjustments (may be empty)",
+         "type": "string"
+        }
+       }
+      },
+      {
+       "additionalProperties": false,
+       "description": "the note letter at the top right of the box",
+       "type": "object",
+       "required": [
+        "kind",
+        "target",
+        "reason"
+       ],
+       "properties": {
+        "kind": {
+         "const": "markerTop",
+         "type": "string"
+        },
+        "target": {
+         "pattern": "^[a-z][a-z0-9_]*$",
+         "description": "a short readable id, unique in the document (hb9, ratuibu)",
+         "type": "string"
+        },
+        "reason": {
+         "description": "why: shown in the editor's list of adjustments (may be empty)",
+         "type": "string"
+        }
+       }
+      },
+      {
+       "additionalProperties": false,
+       "description": "lift a text label (px)",
+       "type": "object",
+       "required": [
+        "kind",
+        "target",
+        "dy",
+        "reason"
+       ],
+       "properties": {
+        "kind": {
+         "const": "textLift",
+         "type": "string"
+        },
+        "target": {
+         "pattern": "^[a-z][a-z0-9_]*$",
+         "description": "a short readable id, unique in the document (hb9, ratuibu)",
+         "type": "string"
+        },
+        "dy": {
+         "type": "number"
+        },
+        "reason": {
+         "description": "why: shown in the editor's list of adjustments (may be empty)",
+         "type": "string"
+        }
+       }
+      },
+      {
+       "additionalProperties": false,
+       "description": "the house header goes left of the pill",
+       "type": "object",
+       "required": [
+        "kind",
+        "target",
+        "reason"
+       ],
+       "properties": {
+        "kind": {
+         "const": "headerLeft",
+         "type": "string"
+        },
+        "target": {
+         "pattern": "^[a-z][a-z0-9_]*$",
+         "description": "a short readable id, unique in the document (hb9, ratuibu)",
+         "type": "string"
+        },
+        "reason": {
+         "description": "why: shown in the editor's list of adjustments (may be empty)",
+         "type": "string"
+        }
+       }
+      },
+      {
+       "additionalProperties": false,
+       "description": "move a note (target: a note)",
+       "type": "object",
+       "required": [
+        "kind",
+        "target",
+        "reason"
+       ],
+       "properties": {
+        "kind": {
+         "const": "noteOffset",
+         "type": "string"
+        },
+        "target": {
+         "pattern": "^[a-z][a-z0-9_]*$",
+         "description": "a short readable id, unique in the document (hb9, ratuibu)",
+         "type": "string"
+        },
+        "dx": {
+         "type": "number"
+        },
+        "dy": {
+         "type": "number"
+        },
+        "reason": {
+         "description": "why: shown in the editor's list of adjustments (may be empty)",
+         "type": "string"
+        }
+       }
+      },
+      {
+       "additionalProperties": false,
+       "description": "distance from the parent's bottom to the line (target: the first descent of a line)",
+       "type": "object",
+       "required": [
+        "kind",
+        "target",
+        "drop",
+        "reason"
+       ],
+       "properties": {
+        "kind": {
+         "const": "drop",
+         "type": "string"
+        },
+        "target": {
+         "pattern": "^[a-z][a-z0-9_]*$",
+         "description": "a short readable id, unique in the document (hb9, ratuibu)",
+         "type": "string"
+        },
+        "drop": {
+         "type": "number"
+        },
+        "reason": {
+         "description": "why: shown in the editor's list of adjustments (may be empty)",
+         "type": "string"
+        }
+       }
+      }
+     ]
+    }
+   }
+  },
+  "acceptedWarnings": {
+   "additionalProperties": false,
+   "description": "build warnings looked at and accepted; a warning that matches is reported as accepted, not as new",
+   "type": "object",
+   "patternProperties": {
+    "^[a-z][a-z0-9_]*$": {
+     "additionalProperties": false,
+     "type": "object",
+     "required": [
+      "match",
+      "reason"
+     ],
+     "properties": {
+      "match": {
+       "type": "string"
+      },
+      "reason": {
+       "description": "why: shown in the editor's list of adjustments (may be empty)",
+       "type": "string"
+      }
+     }
+    }
+   }
+  },
+  "theme": {
+   "additionalProperties": false,
+   "description": "how the chart looks: colours, type sizes and fonts",
+   "type": "object",
+   "required": [
+    "palette",
+    "type",
+    "fonts"
+   ],
+   "properties": {
+    "palette": {
+     "additionalProperties": false,
+     "description": "the chart's colours, #RRGGBB: background, the era bands, text, note text, muted and faint text, neutral cards, grey lines",
+     "type": "object",
+     "required": [
+      "background",
+      "band",
+      "ink",
+      "noteInk",
+      "muted",
+      "faint",
+      "neutral",
+      "greyLine"
+     ],
+     "properties": {
+      "background": {
+       "pattern": "^#[0-9A-Fa-f]{6}$",
+       "type": "string"
+      },
+      "band": {
+       "pattern": "^#[0-9A-Fa-f]{6}$",
+       "type": "string"
+      },
+      "ink": {
+       "pattern": "^#[0-9A-Fa-f]{6}$",
+       "type": "string"
+      },
+      "noteInk": {
+       "pattern": "^#[0-9A-Fa-f]{6}$",
+       "type": "string"
+      },
+      "muted": {
+       "pattern": "^#[0-9A-Fa-f]{6}$",
+       "type": "string"
+      },
+      "faint": {
+       "pattern": "^#[0-9A-Fa-f]{6}$",
+       "type": "string"
+      },
+      "neutral": {
+       "pattern": "^#[0-9A-Fa-f]{6}$",
+       "type": "string"
+      },
+      "greyLine": {
+       "pattern": "^#[0-9A-Fa-f]{6}$",
+       "type": "string"
+      }
+     }
+    },
+    "type": {
+     "additionalProperties": false,
+     "description": "type scale in px at 1x: title, name and reign (ruler cards), name2 and sub2 (small cards), note, cap (captions on lines), small",
+     "type": "object",
+     "required": [
+      "title",
+      "name",
+      "reign",
+      "name2",
+      "sub2",
+      "note",
+      "cap",
+      "small"
+     ],
+     "properties": {
+      "title": {
+       "exclusiveMinimum": 0,
+       "type": "number"
+      },
+      "name": {
+       "exclusiveMinimum": 0,
+       "type": "number"
+      },
+      "reign": {
+       "exclusiveMinimum": 0,
+       "type": "number"
+      },
+      "name2": {
+       "exclusiveMinimum": 0,
+       "type": "number"
+      },
+      "sub2": {
+       "exclusiveMinimum": 0,
+       "type": "number"
+      },
+      "note": {
+       "exclusiveMinimum": 0,
+       "type": "number"
+      },
+      "cap": {
+       "exclusiveMinimum": 0,
+       "type": "number"
+      },
+      "small": {
+       "exclusiveMinimum": 0,
+       "type": "number"
+      }
+     }
+    },
+    "fonts": {
+     "additionalProperties": false,
+     "description": "the fonts, by name",
+     "type": "object",
+     "required": [
+      "sans",
+      "script"
+     ],
+     "properties": {
+      "sans": {
+       "description": "the font for all text: gantari (open) or altehaas (proprietary: never in a public build)",
+       "type": "string"
+      },
+      "script": {
+       "description": "the font for house names: felipa (open) or chancery (proprietary)",
+       "type": "string"
+      },
+      "secondScript": {
+       "description": "the font of the title's second script: noto (aksara Jawa), noto-jp (Japanese); without it the browser picks one",
+       "type": "string"
+      },
+      "javanese": {
+       "description": "older name of secondScript",
+       "type": "string"
+      }
+     }
+    }
+   }
+  },
+  "ext": {
+   "additionalProperties": true,
+   "description": "extensions: anything, ignored by Crownline",
+   "type": "object",
+   "properties": {}
+  }
+ }
+}

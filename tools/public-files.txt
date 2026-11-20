@@ -1,0 +1,59 @@
+# The files the public repository may contain (PLAN 9d), read by tools/public_repo.py.
+#
+# One pattern per line, relative to the repository: a file, a directory (everything under it) or a glob (* within a
+# name, ** across directories). A line starting with ! leaves out what an earlier line let in. Only tracked files are
+# considered, so nothing ignored or untracked can get in.
+#
+# Pictures (assets/portraits, portraits_src, emblems, brand) are NOT listed here: they follow the charts' media
+# records, so a picture marked private can never be published by mistake. A portrait's source in
+# assets/portraits_src goes with it when the portrait is public. Fonts: only assets/fonts/open/.
+
+# the project
+README.md
+LICENSE
+LICENSE-CONTENT.md
+package.json
+package-lock.json
+.gitignore
+.gitattributes
+.mcp.json
+.github/workflows/tests.yml
+.github/workflows/pages.yml
+.github/ISSUE_TEMPLATE/
+.github/PULL_REQUEST_TEMPLATE.md
+CHANGELOG.md
+CONTRIBUTING.md
+CODE_OF_CONDUCT.md
+.claude/skills/crownline/SKILL.md
+
+# the packages: source, tests and their fixtures
+packages/
+
+# the charts
+charts/*/chart.json
+charts/*/layout.lock.json
+charts/*/NOTES.md
+charts/*/research.md
+
+# the documents people read
+docs/GETTING_STARTED.md
+docs/EDITOR.md
+docs/STYLE.md
+docs/FORMAT.md
+docs/AI.md
+docs/AI_GUIDE.md
+docs/HOW_IT_WORKS.md
+docs/ASSET_AUDIT.md
+# not docs/PLAN.md, docs/PROGRESS.md, docs/research/, docs/review/ or prototypes/: the working records stay here
+
+# the Python reference engine, its tests and the tools
+*.py
+pyproject.toml
+requirements.txt
+requirements-dev.txt
+tests/
+tools/
+
+# assets that are not pictures
+assets/fonts/open/
+assets/maps/

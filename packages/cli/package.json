@@ -1,0 +1,29 @@
+{
+  "name": "@crownline/cli",
+  "version": "0.1.0",
+  "private": true,
+  "license": "MIT",
+  "description": "The crownline command line and its MCP server (crownline mcp): the chart operations for people, scripts and AI models",
+  "type": "module",
+  "bin": { "crownline": "./bin/crownline.mjs" },
+  "exports": {
+    ".": "./src/api.ts",
+    "./registry": "./src/registry.ts"
+  },
+  "scripts": {
+    "test": "node --import tsx --test tests/*.test.ts",
+    "typecheck": "tsc --noEmit -p ."
+  },
+  "dependencies": {
+    "@crownline/engine": "*",
+    "@crownline/ops": "*",
+    "@crownline/schema": "*",
+    "@modelcontextprotocol/server": "2.4.0",
+    "@sinclair/typebox": "^0.34.52"
+  },
+  "devDependencies": {
+    "@types/node": "^22.20.5",
+    "tsx": "^4.23.15",
+    "typescript": "^5.9.3"
+  }
+}

@@ -1,0 +1,6698 @@
+{
+  "$schema": "../../packages/schema/chart.schema.json",
+  "format": 1,
+  "meta": {
+    "id": "wangsa-mataram",
+    "title": {
+      "en": "Wangsa Mataram",
+      "jv-Java": "ꦮꦁꦱ​ꦩꦠꦫꦩ꧀"
+    },
+    "subtitle": "The royal family tree of the Mataram dynasty<br>and the four courts of Central Java",
+    "asOf": {
+      "edtf": "2026-11",
+      "text": "November 2026"
+    },
+    "languages": [
+      "en"
+    ],
+    "defaultLang": "en",
+    "assetRoot": "../.."
+  },
+  "people": {
+    "lg_brawijaya": {
+      "name": "Brawijaya V",
+      "title": "Prabu",
+      "house": "mataram",
+      "basis": "legendary",
+      "show": {
+        "box": "legend",
+        "year": 1470,
+        "sub": "last king of Majapahit"
+      }
+    },
+    "lg_bondan": {
+      "name": "Bondan Kejawan",
+      "title": "Raden",
+      "house": "mataram",
+      "basis": "legendary",
+      "show": {
+        "box": "legend",
+        "year": 1490,
+        "sub": "“Lembu Peteng”"
+      }
+    },
+    "lg_getas": {
+      "name": "Getas Pandawa",
+      "title": "Ki Ageng",
+      "house": "mataram",
+      "basis": "legendary",
+      "show": {
+        "box": "legend",
+        "year": 1505
+      }
+    },
+    "lg_sela": {
+      "name": "Sela",
+      "title": "Ki Ageng",
+      "house": "mataram",
+      "basis": "legendary",
+      "show": {
+        "box": "legend",
+        "year": 1520
+      }
+    },
+    "lg_enis": {
+      "name": "Enis",
+      "title": "Ki Ageng",
+      "house": "mataram",
+      "basis": "legendary",
+      "show": {
+        "box": "legend",
+        "year": 1535
+      }
+    },
+    "pamanahan": {
+      "name": "Pamanahan",
+      "title": "Ki Ageng",
+      "house": "mataram",
+      "basis": "traditional",
+      "show": {
+        "box": "minor",
+        "year": 1556,
+        "sub": "d. c. 1584",
+        "portraitFrame": true
+      }
+    },
+    "juru": {
+      "name": "Juru Martani",
+      "title": "Ki",
+      "house": "mataram",
+      "basis": "traditional",
+      "show": {
+        "box": "minor",
+        "year": 1556,
+        "sub": "first chief minister"
+      }
+    },
+    "benawa": {
+      "name": "Pangeran Benawa",
+      "show": {
+        "box": "neutral",
+        "year": 1586,
+        "sub": "of Pajang · son of<br>Sultan Hadiwijaya",
+        "width": 190
+      }
+    },
+    "senapati": {
+      "name": "Senapati",
+      "title": "Panembahan",
+      "house": "mataram",
+      "basis": "traditional",
+      "reigns": [
+        {
+          "court": "mataram",
+          "n": 1,
+          "when": {
+            "edtf": "1587~/1601",
+            "text": "c. 1587 – 1601"
+          }
+        }
+      ],
+      "portrait": "p_senapati",
+      "show": {
+        "box": "ruler",
+        "year": 1587,
+        "sub": "r. c. 1587 – 1601"
+      }
+    },
+    "hanyakrawati": {
+      "name": "Hanyakrawati",
+      "title": "Panembahan",
+      "house": "mataram",
+      "reigns": [
+        {
+          "court": "mataram",
+          "n": 2,
+          "when": {
+            "edtf": "1601/1613",
+            "text": "1601 – 1613"
+          }
+        }
+      ],
+      "show": {
+        "box": "ruler",
+        "year": 1601,
+        "sub": "r. 1601 – 1613"
+      }
+    },
+    "banawati": {
+      "name": "Ratu Mas Banawati",
+      "show": {
+        "box": "text",
+        "beside": {
+          "of": "hanyakrawati",
+          "side": "r"
+        },
+        "sub": "daughter of Pangeran Benawa · per chronicles"
+      }
+    },
+    "martapura": {
+      "name": "Martapura",
+      "title": "Adipati",
+      "house": "mataram",
+      "basis": "traditional",
+      "reigns": [
+        {
+          "court": "mataram",
+          "n": 3,
+          "when": {
+            "edtf": "1613",
+            "text": "1613, one day"
+          }
+        }
+      ],
+      "show": {
+        "box": "ruler",
+        "year": 1613,
+        "sub": "1613, one day"
+      }
+    },
+    "agung": {
+      "name": "Agung",
+      "title": "Sultan",
+      "house": "mataram",
+      "reigns": [
+        {
+          "court": "mataram",
+          "n": 4,
+          "when": {
+            "edtf": "1613/1645",
+            "text": "1613 – 1645"
+          }
+        }
+      ],
+      "portrait": "p_agung",
+      "show": {
+        "box": "ruler",
+        "year": 1613,
+        "sub": "r. 1613 – 1645"
+      }
+    },
+    "ratuwetan": {
+      "name": "Ratu Wetan of Batang",
+      "show": {
+        "box": "text",
+        "beside": {
+          "of": "agung",
+          "side": "r"
+        },
+        "sub": "queen · identity uncertain"
+      }
+    },
+    "pandansari": {
+      "name": "Pandansari",
+      "title": "Ratu",
+      "house": "mataram",
+      "show": {
+        "box": "minor",
+        "year": 1630,
+        "sub": "Agung's sister"
+      }
+    },
+    "pekik": {
+      "name": "Pangeran Pekik",
+      "show": {
+        "box": "neutral",
+        "beside": {
+          "of": "pandansari",
+          "side": "r"
+        },
+        "sub": "of Surabaya · killed 1659",
+        "width": 200
+      }
+    },
+    "alit_am1": {
+      "name": "Alit",
+      "title": "Pangeran",
+      "house": "mataram",
+      "show": {
+        "box": "minor",
+        "year": 1646,
+        "sub": "killed 1647/48"
+      }
+    },
+    "am1": {
+      "name": "Amangkurat I",
+      "title": "Susuhunan",
+      "house": "mataram",
+      "reigns": [
+        {
+          "court": "mataram",
+          "n": 5,
+          "when": {
+            "edtf": "1646/1677",
+            "text": "1646 – 1677"
+          }
+        }
+      ],
+      "show": {
+        "box": "ruler",
+        "year": 1646,
+        "sub": "r. 1646 – 1677"
+      }
+    },
+    "ratukulon": {
+      "name": "Kulon",
+      "title": "Ratu",
+      "house": "mataram",
+      "show": {
+        "box": "minor",
+        "beside": {
+          "of": "am1",
+          "side": "l"
+        },
+        "sub": "daughter of Pangeran Pekik of Surabaya"
+      }
+    },
+    "ratumalang": {
+      "name": "Ratu Malang",
+      "show": {
+        "box": "text",
+        "beside": {
+          "of": "am1",
+          "side": "r"
+        },
+        "sub": "his beloved · d. 1665"
+      }
+    },
+    "trunajaya": {
+      "name": "Trunajaya",
+      "show": {
+        "box": "neutral",
+        "year": 1677,
+        "sub": "Madurese rebel, 1674 – 1680<br>not of the dynasty",
+        "width": 190
+      }
+    },
+    "surapati": {
+      "name": "Untung Surapati",
+      "portrait": "p_surapati",
+      "show": {
+        "box": "neutral",
+        "year": 1706,
+        "sub": "Balinese rebel, lord of<br>Pasuruan · not of the dynasty",
+        "width": 210
+      }
+    },
+    "am2": {
+      "name": "Amangkurat II",
+      "title": "Susuhunan",
+      "house": "mataram",
+      "reigns": [
+        {
+          "court": "mataram",
+          "n": 6,
+          "when": {
+            "edtf": "1677/1703",
+            "text": "1677 – 1703"
+          }
+        }
+      ],
+      "portrait": "p_am2",
+      "show": {
+        "box": "ruler",
+        "year": 1677,
+        "sub": "r. 1677 – 1703"
+      }
+    },
+    "pb1": {
+      "name": "Pakubuwana I",
+      "title": "Susuhunan",
+      "house": "mataram",
+      "reigns": [
+        {
+          "court": "mataram",
+          "n": 8,
+          "when": {
+            "edtf": "1704/1719",
+            "text": "1704 – 1719"
+          }
+        }
+      ],
+      "portrait": "p_pb1",
+      "show": {
+        "box": "ruler",
+        "year": 1704,
+        "sub": "r. 1704 – 1719"
+      }
+    },
+    "ratupb": {
+      "name": "Ratu Pakubuwana",
+      "show": {
+        "box": "text",
+        "beside": {
+          "of": "pb1",
+          "side": "l"
+        },
+        "sub": "queen · patron of letters"
+      }
+    },
+    "purbaya_p": {
+      "name": "Purbaya",
+      "title": "Pangeran",
+      "house": "mataram",
+      "show": {
+        "box": "minor",
+        "year": 1719,
+        "sub": "rebelled 1719 – 1723"
+      }
+    },
+    "am3": {
+      "name": "Amangkurat III",
+      "title": "Susuhunan",
+      "house": "mataram",
+      "reigns": [
+        {
+          "court": "mataram",
+          "n": 7,
+          "when": {
+            "edtf": "1703/1705",
+            "text": "1703 – 1705"
+          }
+        }
+      ],
+      "portrait": "p_am3",
+      "show": {
+        "box": "ruler",
+        "year": 1703,
+        "sub": "r. 1703 – 1705"
+      }
+    },
+    "tepasana": {
+      "name": "Tepasana",
+      "title": "Pangeran",
+      "house": "mataram",
+      "show": {
+        "box": "minor",
+        "year": 1723,
+        "sub": "son of Amangkurat III"
+      }
+    },
+    "am4": {
+      "name": "Amangkurat IV",
+      "title": "Susuhunan",
+      "house": "mataram",
+      "reigns": [
+        {
+          "court": "mataram",
+          "n": 9,
+          "when": {
+            "edtf": "1719/1726",
+            "text": "1719 – 1726"
+          }
+        }
+      ],
+      "show": {
+        "box": "ruler",
+        "year": 1719,
+        "sub": "r. 1719 – 1726"
+      }
+    },
+    "am5": {
+      "name": "Amangkurat V",
+      "title": "Susuhunan",
+      "house": "mataram",
+      "show": {
+        "box": "ruler",
+        "year": 1742,
+        "sub": "“Sunan Kuning” · claimed 1742 – 1743",
+        "hatch": true
+      }
+    },
+    "pb2": {
+      "name": "Pakubuwana II",
+      "title": "Susuhunan",
+      "house": "mataram",
+      "reigns": [
+        {
+          "court": "mataram",
+          "n": 10,
+          "when": {
+            "edtf": "1726/1749",
+            "text": "1726 – 1749"
+          }
+        }
+      ],
+      "portrait": "p_pb2",
+      "show": {
+        "box": "ruler",
+        "year": 1726,
+        "sub": "r. 1726 – 1749 (interrupted 1742)"
+      }
+    },
+    "hemas_pb2": {
+      "name": "Hemas",
+      "title": "GKR",
+      "house": "mataram",
+      "show": {
+        "box": "minor",
+        "beside": {
+          "of": "pb2",
+          "side": "l"
+        },
+        "sub": "daughter of Pangeran Purbaya"
+      }
+    },
+    "kpa_mn": {
+      "name": "Mangkunegara",
+      "title": "KGPAA",
+      "house": "mataram",
+      "show": {
+        "box": "minor",
+        "year": 1726,
+        "sub": "exiled 1728"
+      }
+    },
+    "blitar_p": {
+      "name": "Blitar",
+      "title": "Pangeran",
+      "house": "mataram",
+      "show": {
+        "box": "minor",
+        "year": 1719,
+        "sub": "rebelled 1719 – 1721"
+      }
+    },
+    "wulan": {
+      "name": "Wulan",
+      "title": "RAy.",
+      "house": "mataram",
+      "show": {
+        "box": "minor",
+        "beside": {
+          "of": "kpa_mn",
+          "side": "r"
+        },
+        "sub": "daughter of Pangeran Blitar · per chronicles"
+      }
+    },
+    "pb3": {
+      "name": "Pakubuwana III",
+      "title": "Susuhunan",
+      "house": "surakarta",
+      "reigns": [
+        {
+          "court": "surakarta",
+          "n": 1,
+          "when": {
+            "edtf": "1749/1788",
+            "text": "1749 – 1788"
+          }
+        }
+      ],
+      "portrait": "p_pb3",
+      "show": {
+        "box": "ruler",
+        "year": 1749,
+        "sub": "r. 1749 – 1788"
+      }
+    },
+    "beruk": {
+      "name": "GKR Kencana Beruk",
+      "show": {
+        "box": "text",
+        "beside": {
+          "of": "pb3",
+          "side": "l"
+        },
+        "sub": "queen · by one account a dancer"
+      }
+    },
+    "yasadipura1": {
+      "name": "Yasadipura I",
+      "show": {
+        "box": "neutral",
+        "year": 1770,
+        "sub": "court poet<br>1729 – 1802/03",
+        "width": 170
+      }
+    },
+    "yasadipura2": {
+      "name": "Yasadipura II",
+      "show": {
+        "box": "neutral",
+        "year": 1814,
+        "sub": "credited co-author of<br>the Serat Centhini",
+        "width": 180
+      }
+    },
+    "ranggawarsita": {
+      "name": "Ranggawarsita",
+      "show": {
+        "box": "neutral",
+        "year": 1845,
+        "sub": "court poet<br>1802 – 1873",
+        "width": 170
+      }
+    },
+    "pb4": {
+      "name": "Pakubuwana IV",
+      "title": "Susuhunan",
+      "house": "surakarta",
+      "reigns": [
+        {
+          "court": "surakarta",
+          "n": 2,
+          "when": {
+            "edtf": "1788/1820",
+            "text": "1788 – 1820"
+          }
+        }
+      ],
+      "portrait": "p_pb4",
+      "show": {
+        "box": "ruler",
+        "year": 1788,
+        "sub": "r. 1788 – 1820"
+      }
+    },
+    "pb5": {
+      "name": "Pakubuwana V",
+      "title": "Susuhunan",
+      "house": "surakarta",
+      "reigns": [
+        {
+          "court": "surakarta",
+          "n": 3,
+          "when": {
+            "edtf": "1820/1823",
+            "text": "1820 – 1823"
+          }
+        }
+      ],
+      "portrait": "p_pb5",
+      "show": {
+        "box": "ruler",
+        "year": 1820,
+        "sub": "r. 1820 – 1823"
+      }
+    },
+    "pb7": {
+      "name": "Pakubuwana VII",
+      "title": "Susuhunan",
+      "house": "surakarta",
+      "reigns": [
+        {
+          "court": "surakarta",
+          "n": 5,
+          "when": {
+            "edtf": "1830/1858",
+            "text": "1830 – 1858"
+          }
+        }
+      ],
+      "portrait": "p_pb7",
+      "show": {
+        "box": "ruler",
+        "year": 1830,
+        "sub": "r. 1830 – 1858"
+      }
+    },
+    "pb8": {
+      "name": "Pakubuwana VIII",
+      "title": "Susuhunan",
+      "house": "surakarta",
+      "reigns": [
+        {
+          "court": "surakarta",
+          "n": 6,
+          "when": {
+            "edtf": "1858/1861",
+            "text": "1858 – 1861"
+          }
+        }
+      ],
+      "portrait": "p_pb8",
+      "show": {
+        "box": "ruler",
+        "year": 1858,
+        "sub": "r. 1858 – 1861"
+      }
+    },
+    "pb6": {
+      "name": "Pakubuwana VI",
+      "title": "Susuhunan",
+      "house": "surakarta",
+      "reigns": [
+        {
+          "court": "surakarta",
+          "n": 4,
+          "when": {
+            "edtf": "1823/1830",
+            "text": "1823 – 1830"
+          }
+        }
+      ],
+      "portrait": "p_pb6",
+      "show": {
+        "box": "ruler",
+        "year": 1823,
+        "sub": "r. 1823 – 1830"
+      }
+    },
+    "pb9": {
+      "name": "Pakubuwana IX",
+      "title": "Susuhunan",
+      "house": "surakarta",
+      "reigns": [
+        {
+          "court": "surakarta",
+          "n": 7,
+          "when": {
+            "edtf": "1861/1893",
+            "text": "1861 – 1893"
+          }
+        }
+      ],
+      "portrait": "p_pb9",
+      "show": {
+        "box": "ruler",
+        "year": 1861,
+        "sub": "r. 1861 – 1893"
+      }
+    },
+    "pb10": {
+      "name": "Pakubuwana X",
+      "title": "Susuhunan",
+      "house": "surakarta",
+      "reigns": [
+        {
+          "court": "surakarta",
+          "n": 8,
+          "when": {
+            "edtf": "1893/1939",
+            "text": "1893 – 1939"
+          }
+        }
+      ],
+      "portrait": "p_pb10",
+      "show": {
+        "box": "ruler",
+        "year": 1893,
+        "sub": "r. 1893 – 1939"
+      }
+    },
+    "hemas_pb10": {
+      "name": "Hemas",
+      "title": "GKR",
+      "house": "yogyakarta",
+      "portrait": "p_hemas_pb10",
+      "show": {
+        "box": "minor",
+        "beside": {
+          "of": "pb10",
+          "side": "l"
+        },
+        "sub": "daughter of Hamengkubuwana VII"
+      }
+    },
+    "gkrpb": {
+      "name": "Pakubuwana",
+      "title": "GKR",
+      "house": "mangkunegaran",
+      "portrait": "p_gkrpb",
+      "show": {
+        "box": "minor",
+        "beside": {
+          "of": "pb10",
+          "side": "r"
+        },
+        "sub": "daughter of Mangkunegara IV"
+      }
+    },
+    "mooryati": {
+      "name": "Mooryati Soedibyo",
+      "portrait": "p_mooryati",
+      "show": {
+        "box": "neutral",
+        "year": 1928,
+        "sub": "founder of Mustika Ratu<br>1928 – 2024",
+        "width": 230
+      }
+    },
+    "pb11": {
+      "name": "Pakubuwana XI",
+      "title": "Susuhunan",
+      "house": "surakarta",
+      "reigns": [
+        {
+          "court": "surakarta",
+          "n": 9,
+          "when": {
+            "edtf": "1939/1945",
+            "text": "1939 – 1945"
+          }
+        }
+      ],
+      "portrait": "p_pb11",
+      "show": {
+        "box": "ruler",
+        "year": 1939,
+        "sub": "r. 1939 – 1945"
+      }
+    },
+    "djatikusumo": {
+      "name": "Djatikusumo",
+      "title": "GPH",
+      "house": "surakarta",
+      "portrait": "p_djatikusumo",
+      "show": {
+        "box": "minor",
+        "year": 1945,
+        "sub": "first Army Chief of Staff"
+      }
+    },
+    "haryomataram": {
+      "name": "Haryo Mataram",
+      "title": "KGPH",
+      "house": "surakarta",
+      "portrait": "p_haryomataram",
+      "show": {
+        "box": "minor",
+        "year": 1945,
+        "sub": "first rector of UNS"
+      }
+    },
+    "pb12": {
+      "name": "Pakubuwana XII",
+      "title": "Susuhunan",
+      "house": "surakarta",
+      "reigns": [
+        {
+          "court": "surakarta",
+          "n": 10,
+          "when": {
+            "edtf": "1945/2004",
+            "text": "1945 – 2004"
+          }
+        }
+      ],
+      "portrait": "p_pb12",
+      "show": {
+        "box": "ruler",
+        "year": 1945,
+        "sub": "r. 1945 – 2004"
+      }
+    },
+    "pb13": {
+      "name": "Pakubuwana XIII",
+      "title": "Susuhunan",
+      "house": "surakarta",
+      "reigns": [
+        {
+          "court": "surakarta",
+          "n": 11,
+          "when": {
+            "edtf": "2004/2025",
+            "text": "2004 – 2025"
+          }
+        }
+      ],
+      "portrait": "p_pb13",
+      "show": {
+        "box": "ruler",
+        "year": 2004,
+        "sub": "r. 2004 – 2025"
+      }
+    },
+    "winari": {
+      "name": "KRAy. Winari Sri Haryani",
+      "show": {
+        "box": "text",
+        "beside": {
+          "of": "pb13",
+          "side": "l"
+        },
+        "sub": "second wife · divorced"
+      }
+    },
+    "asihwinarni": {
+      "name": "GKR Pakubuwana",
+      "show": {
+        "box": "text",
+        "beside": {
+          "of": "pb13",
+          "side": "r"
+        },
+        "sub": "born Asih Winarni · queen"
+      }
+    },
+    "tedjowulan": {
+      "name": "Tedjowulan",
+      "title": "KGPA",
+      "house": "surakarta",
+      "portrait": "p_tedjowulan",
+      "show": {
+        "box": "ruler",
+        "year": 2004,
+        "sub": "claimed 2004 – 2012",
+        "hatch": true
+      }
+    },
+    "moeng": {
+      "name": "Wandansari",
+      "title": "GKR",
+      "house": "surakarta",
+      "portrait": "p_moeng",
+      "show": {
+        "box": "minor",
+        "year": 2004,
+        "sub": "“Gusti Moeng” · former MP"
+      }
+    },
+    "pb14h": {
+      "name": "Pakubuwana XIV",
+      "title": "Susuhunan",
+      "house": "surakarta",
+      "portrait": "p_pb14h",
+      "show": {
+        "box": "ruler",
+        "year": 2025,
+        "sub": "Hangabehi · claimed 2025 – present",
+        "hatch": true
+      }
+    },
+    "pb14p": {
+      "name": "Pakubuwana XIV",
+      "title": "Susuhunan",
+      "house": "surakarta",
+      "portrait": "p_pb14p",
+      "show": {
+        "box": "ruler",
+        "year": 2025,
+        "sub": "Purbaya · claimed 2025 – present",
+        "hatch": true
+      }
+    },
+    "hb1": {
+      "name": "Hamengkubuwana I",
+      "title": "Sri Sultan",
+      "house": "yogyakarta",
+      "reigns": [
+        {
+          "court": "yogyakarta",
+          "n": 1,
+          "when": {
+            "edtf": "1755/1792",
+            "text": "1755 – 1792"
+          }
+        }
+      ],
+      "portrait": "p_hb1",
+      "show": {
+        "box": "ruler",
+        "year": 1755,
+        "sub": "r. 1755 – 1792"
+      }
+    },
+    "ratuageng": {
+      "name": "Ratu Ageng Tegalrejo",
+      "show": {
+        "box": "text",
+        "beside": {
+          "of": "hb1",
+          "side": "l"
+        },
+        "sub": "queen · raised Diponegoro"
+      }
+    },
+    "hb2": {
+      "name": "Hamengkubuwana II",
+      "title": "Sri Sultan",
+      "house": "yogyakarta",
+      "reigns": [
+        {
+          "court": "yogyakarta",
+          "n": 2,
+          "when": {
+            "edtf": "1792/1810",
+            "text": "1792–1810"
+          }
+        },
+        {
+          "court": "yogyakarta",
+          "n": 4,
+          "when": {
+            "edtf": "1811/1812",
+            "text": "1811–12"
+          }
+        },
+        {
+          "court": "yogyakarta",
+          "n": 8,
+          "when": {
+            "edtf": "1826/1828",
+            "text": "1826–28"
+          }
+        }
+      ],
+      "portrait": "p_hb2",
+      "show": {
+        "box": "ruler",
+        "year": 1792,
+        "sub": "r. 1792–1810, 1811–12, 1826–28"
+      }
+    },
+    "hb3": {
+      "name": "Hamengkubuwana III",
+      "title": "Sri Sultan",
+      "house": "yogyakarta",
+      "reigns": [
+        {
+          "court": "yogyakarta",
+          "n": 3,
+          "when": {
+            "edtf": "1810/1811",
+            "text": "1810–11"
+          }
+        },
+        {
+          "court": "yogyakarta",
+          "n": 5,
+          "when": {
+            "edtf": "1812/1814",
+            "text": "1812–14"
+          }
+        }
+      ],
+      "portrait": "p_hb3",
+      "show": {
+        "box": "ruler",
+        "year": 1810,
+        "sub": "regent 1810–11 · r. 1812–14"
+      }
+    },
+    "diponegoro": {
+      "name": "Diponegoro",
+      "title": "Pangeran",
+      "house": "yogyakarta",
+      "portrait": "p_diponegoro",
+      "show": {
+        "box": "minor",
+        "year": 1825,
+        "sub": "led the Java War, 1825 – 1830"
+      }
+    },
+    "pmangkubumi": {
+      "name": "Mangkubumi",
+      "title": "Pangeran",
+      "house": "yogyakarta",
+      "show": {
+        "box": "minor",
+        "year": 1825,
+        "sub": "Java War commander"
+      }
+    },
+    "gkrmaduretno": {
+      "name": "Maduretno",
+      "title": "GKR",
+      "house": "yogyakarta",
+      "show": {
+        "box": "minor",
+        "year": 1800,
+        "sub": "daughter of Hamengkubuwana II"
+      }
+    },
+    "ronggo": {
+      "name": "Ronggo Prawirodirjo III",
+      "show": {
+        "box": "text",
+        "beside": {
+          "of": "gkrmaduretno",
+          "side": "l"
+        },
+        "sub": "regent of Madiun · rebelled 1810"
+      }
+    },
+    "sentot": {
+      "name": "Sentot Prawirodirjo",
+      "portrait": "p_sentot",
+      "show": {
+        "box": "neutral",
+        "year": 1825,
+        "sub": "Java War commander<br>c. 1808 – 1855",
+        "width": 200
+      }
+    },
+    "kyaimaja": {
+      "name": "Kyai Maja",
+      "portrait": "p_kyaimaja",
+      "show": {
+        "box": "neutral",
+        "year": 1825,
+        "sub": "Diponegoro's religious<br>adviser · d. 1849",
+        "width": 190
+      }
+    },
+    "ramaduretno": {
+      "name": "Maduretno",
+      "title": "RAy.",
+      "house": "yogyakarta",
+      "show": {
+        "box": "minor",
+        "beside": {
+          "of": "diponegoro",
+          "side": "r"
+        },
+        "sub": "Diponegoro's queen · m. 1814"
+      }
+    },
+    "hb4": {
+      "name": "Hamengkubuwana IV",
+      "title": "Sri Sultan",
+      "house": "yogyakarta",
+      "reigns": [
+        {
+          "court": "yogyakarta",
+          "n": 6,
+          "when": {
+            "edtf": "1814/1822",
+            "text": "1814 – 1822"
+          }
+        }
+      ],
+      "portrait": "p_hb4",
+      "show": {
+        "box": "ruler",
+        "year": 1814,
+        "sub": "r. 1814 – 1822"
+      }
+    },
+    "hb5": {
+      "name": "Hamengkubuwana V",
+      "title": "Sri Sultan",
+      "house": "yogyakarta",
+      "reigns": [
+        {
+          "court": "yogyakarta",
+          "n": 7,
+          "when": {
+            "edtf": "1822/1826",
+            "text": "1822–26"
+          }
+        },
+        {
+          "court": "yogyakarta",
+          "n": 9,
+          "when": {
+            "edtf": "1828/1855",
+            "text": "1828–55"
+          }
+        }
+      ],
+      "portrait": "p_hb5",
+      "show": {
+        "box": "ruler",
+        "year": 1822,
+        "sub": "r. 1822–26, 1828–55"
+      }
+    },
+    "ratuibu": {
+      "name": "Kencana",
+      "title": "GKR",
+      "house": "yogyakarta",
+      "show": {
+        "box": "minor",
+        "beside": {
+          "of": "hb4",
+          "side": "r"
+        },
+        "sub": "“Ratu Ibu” · a guardian of her son"
+      }
+    },
+    "gustiahmad": {
+      "name": "Timur Muhammad",
+      "title": "GRM",
+      "house": "yogyakarta",
+      "show": {
+        "box": "minor",
+        "year": 1855,
+        "sub": "“Gusti Ahmad” · bypassed heir"
+      }
+    },
+    "hb6": {
+      "name": "Hamengkubuwana VI",
+      "title": "Sri Sultan",
+      "house": "yogyakarta",
+      "reigns": [
+        {
+          "court": "yogyakarta",
+          "n": 10,
+          "when": {
+            "edtf": "1855/1877",
+            "text": "1855 – 1877"
+          }
+        }
+      ],
+      "portrait": "p_hb6",
+      "show": {
+        "box": "ruler",
+        "year": 1855,
+        "sub": "r. 1855 – 1877"
+      }
+    },
+    "hb7": {
+      "name": "Hamengkubuwana VII",
+      "title": "Sri Sultan",
+      "house": "yogyakarta",
+      "reigns": [
+        {
+          "court": "yogyakarta",
+          "n": 11,
+          "when": {
+            "edtf": "1877/1921",
+            "text": "1877 – 1921"
+          }
+        }
+      ],
+      "portrait": "p_hb7",
+      "show": {
+        "box": "ruler",
+        "year": 1877,
+        "sub": "r. 1877 – 1921"
+      }
+    },
+    "hb8": {
+      "name": "Hamengkubuwana VIII",
+      "title": "Sri Sultan",
+      "house": "yogyakarta",
+      "reigns": [
+        {
+          "court": "yogyakarta",
+          "n": 12,
+          "when": {
+            "edtf": "1921/1939",
+            "text": "1921 – 1939"
+          }
+        }
+      ],
+      "portrait": "p_hb8",
+      "show": {
+        "box": "ruler",
+        "year": 1921,
+        "sub": "r. 1921 – 1939"
+      }
+    },
+    "juminah": {
+      "name": "Hamengkunegara II",
+      "title": "KGPAA",
+      "house": "yogyakarta",
+      "show": {
+        "box": "minor",
+        "year": 1893,
+        "sub": "“Juminah” · crown prince · set aside"
+      }
+    },
+    "bagong": {
+      "name": "Bagong Kussudiardja",
+      "show": {
+        "box": "neutral",
+        "year": 1958,
+        "sub": "pioneer of modern dance<br>1928 – 2004",
+        "width": 220
+      }
+    },
+    "butet": {
+      "name": "Butet Kertaredjasa",
+      "portrait": "p_butet",
+      "show": {
+        "box": "neutral",
+        "year": 1990,
+        "sub": "actor and monologist",
+        "width": 190
+      }
+    },
+    "djaduk": {
+      "name": "Djaduk Ferianto",
+      "show": {
+        "box": "neutral",
+        "year": 1990,
+        "sub": "musician · 1964 – 2019",
+        "width": 190
+      }
+    },
+    "hb9": {
+      "name": "Hamengkubuwana IX",
+      "title": "Sri Sultan",
+      "house": "yogyakarta",
+      "reigns": [
+        {
+          "court": "yogyakarta",
+          "n": 13,
+          "when": {
+            "edtf": "1940/1988",
+            "text": "1940 – 1988"
+          }
+        }
+      ],
+      "portrait": "p_hb9",
+      "show": {
+        "box": "ruler",
+        "year": 1940,
+        "sub": "r. 1940 – 1988"
+      }
+    },
+    "norma": {
+      "name": "KRAy. Nindyokirono",
+      "show": {
+        "box": "text",
+        "beside": {
+          "of": "hb9",
+          "side": "r"
+        },
+        "sub": "born Norma Musa · of Bangka"
+      }
+    },
+    "hb10": {
+      "name": "Hamengkubuwana X",
+      "title": "Sri Sultan",
+      "house": "yogyakarta",
+      "reigns": [
+        {
+          "court": "yogyakarta",
+          "n": 14,
+          "when": {
+            "edtf": "1989/..",
+            "text": "1989 – present"
+          }
+        }
+      ],
+      "portrait": "p_hb10",
+      "show": {
+        "box": "ruler",
+        "year": 1989,
+        "sub": "r. 1989 – present"
+      }
+    },
+    "hemas_hb10": {
+      "name": "Hemas",
+      "title": "GKR",
+      "portrait": "p_hemas_hb10",
+      "show": {
+        "box": "neutral",
+        "beside": {
+          "of": "hb10",
+          "side": "l"
+        },
+        "sub": "queen consort · deputy chair<br>of the Senate (DPD) since 2024",
+        "width": 200
+      }
+    },
+    "yudhaningrat": {
+      "name": "Yudhaningrat",
+      "title": "GBPH",
+      "house": "yogyakarta",
+      "show": {
+        "box": "minor",
+        "year": 2001,
+        "sub": "Sultan's half-brother"
+      }
+    },
+    "prabukusumo": {
+      "name": "Prabukusumo",
+      "title": "GBPH",
+      "house": "yogyakarta",
+      "show": {
+        "box": "minor",
+        "year": 2001,
+        "sub": "Sultan's half-brother"
+      }
+    },
+    "hadiwinoto": {
+      "name": "Hadiwinoto",
+      "title": "KGPH",
+      "house": "yogyakarta",
+      "show": {
+        "box": "minor",
+        "year": 2001,
+        "sub": "Sultan's brother · d. 2021"
+      }
+    },
+    "mangkubumi": {
+      "name": "Mangkubumi",
+      "title": "GKR",
+      "house": "yogyakarta",
+      "portrait": "p_mangkubumi",
+      "show": {
+        "box": "heir",
+        "year": 2015,
+        "sub": "b. 1972 · presumed heir · renamed 2015",
+        "tag": "disputed"
+      }
+    },
+    "condrokirono": {
+      "name": "Condrokirono",
+      "title": "GKR",
+      "house": "yogyakarta",
+      "portrait": "p_condrokirono",
+      "show": {
+        "box": "minor",
+        "year": 2015,
+        "sub": "b. 1975"
+      }
+    },
+    "maduretno": {
+      "name": "Maduretno",
+      "title": "GKR",
+      "house": "yogyakarta",
+      "portrait": "p_maduretno",
+      "show": {
+        "box": "minor",
+        "year": 2015,
+        "sub": "b. 1978"
+      }
+    },
+    "hayu": {
+      "name": "Hayu",
+      "title": "GKR",
+      "house": "yogyakarta",
+      "portrait": "p_hayu",
+      "show": {
+        "box": "minor",
+        "year": 2015,
+        "sub": "b. 1983"
+      }
+    },
+    "bendara2": {
+      "name": "Bendara",
+      "title": "GKR",
+      "house": "yogyakarta",
+      "portrait": "p_bendara2",
+      "show": {
+        "box": "minor",
+        "year": 2015,
+        "sub": "b. 1986"
+      }
+    },
+    "pa1": {
+      "name": "Paku Alam I",
+      "title": "KGPAA",
+      "house": "pakualaman",
+      "reigns": [
+        {
+          "court": "pakualaman",
+          "n": 1,
+          "when": {
+            "edtf": "1813/1829",
+            "text": "1813 – 1829"
+          }
+        }
+      ],
+      "show": {
+        "box": "ruler",
+        "year": 1813,
+        "sub": "r. 1813 – 1829"
+      }
+    },
+    "pa2": {
+      "name": "Paku Alam II",
+      "title": "KGPAA",
+      "house": "pakualaman",
+      "reigns": [
+        {
+          "court": "pakualaman",
+          "n": 2,
+          "when": {
+            "edtf": "1829/1858",
+            "text": "1829 – 1858"
+          }
+        }
+      ],
+      "portrait": "p_pa2",
+      "show": {
+        "box": "ruler",
+        "year": 1829,
+        "sub": "r. 1829 – 1858"
+      }
+    },
+    "hayu_pa2": {
+      "name": "Hayu",
+      "title": "GKR",
+      "house": "yogyakarta",
+      "show": {
+        "box": "minor",
+        "beside": {
+          "of": "pa2",
+          "side": "r"
+        },
+        "sub": "daughter of Hamengkubuwana II · m. 1805"
+      }
+    },
+    "suryaningrat": {
+      "name": "Suryaningrat",
+      "title": "KPH",
+      "house": "pakualaman",
+      "show": {
+        "box": "minor",
+        "year": 1866,
+        "sub": "eldest son · passed over"
+      }
+    },
+    "suryopranoto": {
+      "name": "Suryopranoto",
+      "portrait": "p_suryopranoto",
+      "show": {
+        "box": "neutral",
+        "year": 1915,
+        "sub": "“the Strike King”<br>National Hero",
+        "width": 190
+      }
+    },
+    "pa3": {
+      "name": "Paku Alam III",
+      "title": "KGPAA",
+      "house": "pakualaman",
+      "reigns": [
+        {
+          "court": "pakualaman",
+          "n": 3,
+          "when": {
+            "edtf": "1858/1864",
+            "text": "1858 – 1864"
+          }
+        }
+      ],
+      "portrait": "p_pa3",
+      "show": {
+        "box": "ruler",
+        "year": 1858,
+        "sub": "r. 1858 – 1864"
+      }
+    },
+    "nataningprang": {
+      "name": "Nataningprang",
+      "title": "KPH",
+      "house": "pakualaman",
+      "show": {
+        "box": "minor",
+        "year": 1846
+      }
+    },
+    "pa4": {
+      "name": "Paku Alam IV",
+      "title": "KGPAA",
+      "house": "pakualaman",
+      "reigns": [
+        {
+          "court": "pakualaman",
+          "n": 4,
+          "when": {
+            "edtf": "1864/1878",
+            "text": "1864 – 1878"
+          }
+        }
+      ],
+      "portrait": "p_pa4",
+      "show": {
+        "box": "ruler",
+        "year": 1864,
+        "sub": "r. 1864 – 1878"
+      }
+    },
+    "pa5": {
+      "name": "Paku Alam V",
+      "title": "KGPAA",
+      "house": "pakualaman",
+      "reigns": [
+        {
+          "court": "pakualaman",
+          "n": 5,
+          "when": {
+            "edtf": "1878/1900",
+            "text": "1878 – 1900"
+          }
+        }
+      ],
+      "portrait": "p_pa5",
+      "show": {
+        "box": "ruler",
+        "year": 1878,
+        "sub": "r. 1878 – 1900"
+      }
+    },
+    "pa6": {
+      "name": "Paku Alam VI",
+      "title": "KGPAA",
+      "house": "pakualaman",
+      "reigns": [
+        {
+          "court": "pakualaman",
+          "n": 6,
+          "when": {
+            "edtf": "1901/1902",
+            "text": "1901 – 1902"
+          }
+        }
+      ],
+      "portrait": "p_pa6",
+      "show": {
+        "box": "ruler",
+        "year": 1901,
+        "sub": "r. 1901 – 1902"
+      }
+    },
+    "notodirojo": {
+      "name": "Notodirojo",
+      "title": "KPH",
+      "house": "pakualaman",
+      "show": {
+        "box": "minor",
+        "year": 1901,
+        "sub": "chaired Budi Utomo, 1911 – 1914"
+      }
+    },
+    "notosoeroto": {
+      "name": "Noto Soeroto",
+      "portrait": "p_notosoeroto",
+      "show": {
+        "box": "neutral",
+        "year": 1918,
+        "sub": "poet · 1888 – 1951",
+        "width": 170
+      }
+    },
+    "pa7": {
+      "name": "Paku Alam VII",
+      "title": "KGPAA",
+      "house": "pakualaman",
+      "reigns": [
+        {
+          "court": "pakualaman",
+          "n": 7,
+          "when": {
+            "edtf": "1906/1937",
+            "text": "1906 – 1937"
+          }
+        }
+      ],
+      "portrait": "p_pa7",
+      "show": {
+        "box": "ruler",
+        "year": 1906,
+        "sub": "r. 1906 – 1937"
+      }
+    },
+    "retnopuwoso": {
+      "name": "Retno Puwoso",
+      "title": "GBRAy.",
+      "house": "surakarta",
+      "portrait": "p_retnopuwoso",
+      "show": {
+        "box": "minor",
+        "beside": {
+          "of": "pa7",
+          "side": "r"
+        },
+        "sub": "daughter of Pakubuwana X"
+      }
+    },
+    "pa8": {
+      "name": "Paku Alam VIII",
+      "title": "KGPAA",
+      "house": "pakualaman",
+      "reigns": [
+        {
+          "court": "pakualaman",
+          "n": 8,
+          "when": {
+            "edtf": "1937/1998",
+            "text": "1937 – 1998"
+          }
+        }
+      ],
+      "portrait": "p_pa8",
+      "show": {
+        "box": "ruler",
+        "year": 1937,
+        "sub": "r. 1937 – 1998"
+      }
+    },
+    "ratnaningrum": {
+      "name": "KRAy. Ratnaningrum",
+      "show": {
+        "box": "text",
+        "beside": {
+          "of": "pa8",
+          "side": "l"
+        },
+        "sub": "senior wife"
+      }
+    },
+    "purnamaningrum": {
+      "name": "KRAy. Purnamaningrum",
+      "show": {
+        "box": "text",
+        "beside": {
+          "of": "pa8",
+          "side": "r"
+        },
+        "sub": "junior wife"
+      }
+    },
+    "pa9": {
+      "name": "Paku Alam IX",
+      "title": "KGPAA",
+      "house": "pakualaman",
+      "reigns": [
+        {
+          "court": "pakualaman",
+          "n": 9,
+          "when": {
+            "edtf": "1999/2015",
+            "text": "1999 – 2015"
+          }
+        }
+      ],
+      "portrait": "p_pa9",
+      "show": {
+        "box": "ruler",
+        "year": 1999,
+        "sub": "r. 1999 – 2015"
+      }
+    },
+    "pa10": {
+      "name": "Paku Alam X",
+      "title": "KGPAA",
+      "house": "pakualaman",
+      "reigns": [
+        {
+          "court": "pakualaman",
+          "n": 10,
+          "when": {
+            "edtf": "2016/..",
+            "text": "2016 – present"
+          }
+        }
+      ],
+      "portrait": "p_pa10",
+      "show": {
+        "box": "ruler",
+        "year": 2016,
+        "sub": "r. 2016 – present"
+      }
+    },
+    "bimantoro": {
+      "name": "Kusumo Bimantoro",
+      "title": "BPH",
+      "house": "pakualaman",
+      "portrait": "p_bimantoro",
+      "show": {
+        "box": "heir",
+        "year": 2019,
+        "sub": "eldest son · presumed heir"
+      }
+    },
+    "kihajar": {
+      "name": "Ki Hajar Dewantara",
+      "portrait": "p_kihajar",
+      "show": {
+        "box": "neutral",
+        "year": 1922,
+        "sub": "“Father of Indonesian<br>Education”",
+        "width": 210
+      }
+    },
+    "nyihajar": {
+      "name": "Nyi Hajar Dewantara",
+      "house": "pakualaman",
+      "portrait": "p_nyihajar",
+      "show": {
+        "box": "minor",
+        "beside": {
+          "of": "kihajar",
+          "side": "r"
+        },
+        "sub": "led Taman Siswa, 1959 – c. 1970"
+      }
+    },
+    "anglingkusumo": {
+      "name": "Mangku Alam I",
+      "title": "KGPAA",
+      "house": "pakualaman",
+      "portrait": "p_anglingkusumo",
+      "show": {
+        "box": "ruler",
+        "year": 2012,
+        "sub": "Anglingkusumo · claimed 2021 – 2022",
+        "hatch": true
+      }
+    },
+    "wiroyudho": {
+      "name": "Mangku Alam II",
+      "title": "KGPAA",
+      "house": "pakualaman",
+      "portrait": "p_wiroyudho",
+      "show": {
+        "box": "ruler",
+        "year": 2022,
+        "sub": "Wiroyudho · claimed 2022 – present",
+        "hatch": true
+      }
+    },
+    "mn1": {
+      "name": "Mangkunegara I",
+      "title": "KGPAA",
+      "house": "mangkunegaran",
+      "reigns": [
+        {
+          "court": "mangkunegaran",
+          "n": 1,
+          "when": {
+            "edtf": "1757/1795",
+            "text": "1757 – 1795"
+          }
+        }
+      ],
+      "portrait": "p_mn1",
+      "show": {
+        "box": "ruler",
+        "year": 1757,
+        "sub": "r. 1757 – 1795"
+      }
+    },
+    "rubiyah": {
+      "name": "Rubiyah “Matah Ati”",
+      "show": {
+        "box": "text",
+        "beside": {
+          "of": "mn1",
+          "side": "r"
+        },
+        "sub": "wife · led his women soldiers (tradition)"
+      }
+    },
+    "bendara": {
+      "name": "Bendara",
+      "title": "GKR",
+      "house": "yogyakarta",
+      "show": {
+        "box": "minor",
+        "beside": {
+          "of": "mn1",
+          "side": "l"
+        },
+        "sub": "daughter of Hamengkubuwana I · m. c. 1746, div. 1763"
+      }
+    },
+    "hamijaya": {
+      "name": "Prabu Hamijaya",
+      "title": "KPH",
+      "house": "mangkunegaran",
+      "show": {
+        "box": "minor",
+        "year": 1776
+      }
+    },
+    "alit": {
+      "name": "Alit",
+      "title": "GKR",
+      "house": "surakarta",
+      "show": {
+        "box": "minor",
+        "beside": {
+          "of": "hamijaya",
+          "side": "r"
+        },
+        "sub": "daughter of Pakubuwana III"
+      }
+    },
+    "mn2": {
+      "name": "Mangkunegara II",
+      "title": "KGPAA",
+      "house": "mangkunegaran",
+      "reigns": [
+        {
+          "court": "mangkunegaran",
+          "n": 2,
+          "when": {
+            "edtf": "1796/1835",
+            "text": "1796 – 1835"
+          }
+        }
+      ],
+      "portrait": "p_mn2",
+      "show": {
+        "box": "ruler",
+        "year": 1796,
+        "sub": "r. 1796 – 1835"
+      }
+    },
+    "sekeli": {
+      "name": "Sekeli",
+      "title": "BRAy.",
+      "house": "mangkunegaran",
+      "show": {
+        "box": "minor",
+        "year": 1815,
+        "sub": "m. KPH Hadiwijaya I"
+      }
+    },
+    "sayati": {
+      "name": "Sayati",
+      "title": "BRAy.",
+      "house": "mangkunegaran",
+      "show": {
+        "box": "minor",
+        "year": 1815,
+        "sub": "m. KPH Natakusuma"
+      }
+    },
+    "mn3": {
+      "name": "Mangkunegara III",
+      "title": "KGPAA",
+      "house": "mangkunegaran",
+      "reigns": [
+        {
+          "court": "mangkunegaran",
+          "n": 3,
+          "when": {
+            "edtf": "1835/1853",
+            "text": "1835 – 1853"
+          }
+        }
+      ],
+      "portrait": "p_mn3",
+      "show": {
+        "box": "ruler",
+        "year": 1835,
+        "sub": "r. 1835 – 1853"
+      }
+    },
+    "mn4": {
+      "name": "Mangkunegara IV",
+      "title": "KGPAA",
+      "house": "mangkunegaran",
+      "reigns": [
+        {
+          "court": "mangkunegaran",
+          "n": 4,
+          "when": {
+            "edtf": "1853/1881",
+            "text": "1853 – 1881"
+          }
+        }
+      ],
+      "portrait": "p_mn4",
+      "show": {
+        "box": "ruler",
+        "year": 1853,
+        "sub": "r. 1853 – 1881"
+      }
+    },
+    "dunuk": {
+      "name": "Dunuk",
+      "title": "GRAy.",
+      "house": "mangkunegaran",
+      "show": {
+        "box": "minor",
+        "beside": {
+          "of": "mn4",
+          "side": "r"
+        },
+        "sub": "daughter of Mangkunegara III"
+      }
+    },
+    "mn5": {
+      "name": "Mangkunegara V",
+      "title": "KGPAA",
+      "house": "mangkunegaran",
+      "reigns": [
+        {
+          "court": "mangkunegaran",
+          "n": 5,
+          "when": {
+            "edtf": "1881/1896",
+            "text": "1881 – 1896"
+          }
+        }
+      ],
+      "portrait": "p_mn5",
+      "show": {
+        "box": "ruler",
+        "year": 1881,
+        "sub": "r. 1881 – 1896"
+      }
+    },
+    "mn6": {
+      "name": "Mangkunegara VI",
+      "title": "KGPAA",
+      "house": "mangkunegaran",
+      "reigns": [
+        {
+          "court": "mangkunegaran",
+          "n": 6,
+          "when": {
+            "edtf": "1896/1916",
+            "text": "1896 – 1916"
+          }
+        }
+      ],
+      "portrait": "p_mn6",
+      "show": {
+        "box": "ruler",
+        "year": 1896,
+        "sub": "r. 1896 – 1916"
+      }
+    },
+    "suyono": {
+      "name": "Suyono Handayaningrat",
+      "title": "KPA",
+      "house": "mangkunegaran",
+      "show": {
+        "box": "minor",
+        "year": 1916,
+        "sub": "the heir he wanted"
+      }
+    },
+    "suryokusumo": {
+      "name": "Suryokusumo",
+      "title": "KPH",
+      "house": "mangkunegaran",
+      "show": {
+        "box": "minor",
+        "year": 1910
+      }
+    },
+    "mn7": {
+      "name": "Mangkunegara VII",
+      "title": "KGPAA",
+      "house": "mangkunegaran",
+      "reigns": [
+        {
+          "court": "mangkunegaran",
+          "n": 7,
+          "when": {
+            "edtf": "1916/1944",
+            "text": "1916 – 1944"
+          }
+        }
+      ],
+      "portrait": "p_mn7",
+      "show": {
+        "box": "ruler",
+        "year": 1916,
+        "sub": "r. 1916 – 1944"
+      }
+    },
+    "partini": {
+      "name": "Partini",
+      "title": "BRAy.",
+      "house": "mangkunegaran",
+      "show": {
+        "box": "minor",
+        "year": 1925,
+        "sub": "b. 1902"
+      }
+    },
+    "hoesein": {
+      "name": "Hoesein Djajadiningrat",
+      "portrait": "p_hoesein",
+      "show": {
+        "box": "neutral",
+        "beside": {
+          "of": "partini",
+          "side": "r"
+        },
+        "sub": "scholar · first Indonesian doctorate<br>by dissertation (Leiden, 1913)",
+        "width": 230
+      }
+    },
+    "timur": {
+      "name": "Timur",
+      "title": "GKR",
+      "house": "yogyakarta",
+      "portrait": "p_timur",
+      "show": {
+        "box": "minor",
+        "beside": {
+          "of": "mn7",
+          "side": "l"
+        },
+        "sub": "daughter of Hamengkubuwana VII"
+      }
+    },
+    "mn8": {
+      "name": "Mangkunegara VIII",
+      "title": "KGPAA",
+      "house": "mangkunegaran",
+      "reigns": [
+        {
+          "court": "mangkunegaran",
+          "n": 8,
+          "when": {
+            "edtf": "1944/1987",
+            "text": "1944 – 1987"
+          }
+        }
+      ],
+      "portrait": "p_mn8",
+      "show": {
+        "box": "ruler",
+        "year": 1944,
+        "sub": "r. 1944 – 1987"
+      }
+    },
+    "sunituti": {
+      "name": "Sunituti",
+      "title": "GKP",
+      "house": "mangkunegaran",
+      "show": {
+        "box": "minor",
+        "beside": {
+          "of": "mn8",
+          "side": "r"
+        },
+        "sub": "m. 1941"
+      }
+    },
+    "retnosatuti": {
+      "name": "Retno Satuti",
+      "title": "GRAy.",
+      "house": "mangkunegaran",
+      "show": {
+        "box": "minor",
+        "year": 1969,
+        "sub": "m. 1969"
+      }
+    },
+    "rahadian": {
+      "name": "Rahadian Yamin",
+      "show": {
+        "box": "neutral",
+        "beside": {
+          "of": "retnosatuti",
+          "side": "r"
+        },
+        "sub": "only son of<br>Mohammad Yamin",
+        "width": 190
+      }
+    },
+    "royyamin": {
+      "name": "Roy Rahajasa Yamin",
+      "title": "KPH",
+      "house": "mangkunegaran",
+      "show": {
+        "box": "minor",
+        "year": 2000,
+        "sub": "throne candidate, 2021 – 2022"
+      }
+    },
+    "astrini": {
+      "name": "Retno Astrini",
+      "title": "GRAy.",
+      "house": "mangkunegaran",
+      "show": {
+        "box": "minor",
+        "year": 1975
+      }
+    },
+    "abubakar": {
+      "name": "Tunku Abu Bakar",
+      "show": {
+        "box": "neutral",
+        "beside": {
+          "of": "astrini",
+          "side": "r"
+        },
+        "sub": "of the Johor<br>royal family",
+        "width": 190
+      }
+    },
+    "nurul": {
+      "name": "Siti Nurul",
+      "title": "GRAy.",
+      "house": "mangkunegaran",
+      "portrait": "p_nurul",
+      "show": {
+        "box": "minor",
+        "year": 1933,
+        "sub": "“Gusti Nurul” · 1921 – 2015"
+      }
+    },
+    "mn9": {
+      "name": "Mangkunegara IX",
+      "title": "KGPAA",
+      "house": "mangkunegaran",
+      "reigns": [
+        {
+          "court": "mangkunegaran",
+          "n": 9,
+          "when": {
+            "edtf": "1987/2021",
+            "text": "1987 – 2021"
+          }
+        }
+      ],
+      "portrait": "p_mn9",
+      "show": {
+        "box": "ruler",
+        "year": 1987,
+        "sub": "r. 1987 – 2021"
+      }
+    },
+    "sukmawati": {
+      "name": "Sukmawati Sukarnoputri",
+      "portrait": "p_sukmawati",
+      "show": {
+        "box": "neutral",
+        "beside": {
+          "of": "mn9",
+          "side": "l"
+        },
+        "sub": "m. 1974, div. 1984",
+        "width": 230
+      }
+    },
+    "prisca": {
+      "name": "GKP Prisca Marina Haryogi Supardi",
+      "show": {
+        "box": "text",
+        "beside": {
+          "of": "mn9",
+          "side": "r"
+        },
+        "sub": "m. 1990"
+      }
+    },
+    "sukarno": {
+      "name": "Sukarno",
+      "portrait": "p_sukarno",
+      "show": {
+        "box": "neutral",
+        "year": 1958,
+        "sub": "first President<br>of Indonesia",
+        "width": 160
+      }
+    },
+    "paundrakarna": {
+      "name": "Paundrakarna",
+      "title": "GPH",
+      "house": "mangkunegaran",
+      "portrait": "p_paundrakarna",
+      "show": {
+        "box": "minor",
+        "year": 2003,
+        "sub": "actor and singer"
+      }
+    },
+    "putri": {
+      "name": "Putri Agung",
+      "title": "GRAy.",
+      "house": "mangkunegaran",
+      "show": {
+        "box": "minor",
+        "year": 2003
+      }
+    },
+    "ancilla": {
+      "name": "Ancillasura Marina",
+      "title": "GRAj.",
+      "house": "mangkunegaran",
+      "portrait": "p_ancilla",
+      "show": {
+        "box": "minor",
+        "year": 2010,
+        "sub": "m. KPH F.X. Adimas Rosdian, 6 Nov 2026"
+      }
+    },
+    "mn10": {
+      "name": "Mangkunegara X",
+      "title": "KGPAA",
+      "house": "mangkunegaran",
+      "reigns": [
+        {
+          "court": "mangkunegaran",
+          "n": 10,
+          "when": {
+            "edtf": "2022/..",
+            "text": "2022 – present"
+          }
+        }
+      ],
+      "portrait": "p_mn10",
+      "show": {
+        "box": "ruler",
+        "year": 2022,
+        "sub": "r. 2022 – present"
+      }
+    },
+    "tien": {
+      "name": "Tien Suharto",
+      "portrait": "p_tien",
+      "show": {
+        "box": "neutral",
+        "year": 1947,
+        "sub": "First Lady, 1967 – 1996",
+        "width": 200
+      }
+    },
+    "suharto": {
+      "name": "Suharto",
+      "portrait": "p_suharto",
+      "show": {
+        "box": "neutral",
+        "beside": {
+          "of": "tien",
+          "side": "r"
+        },
+        "sub": "second President<br>of Indonesia",
+        "width": 170
+      }
+    },
+    "titiek": {
+      "name": "Titiek Suharto",
+      "portrait": "p_titiek",
+      "show": {
+        "box": "neutral",
+        "year": 1983,
+        "sub": "m. 1983, div. 1998",
+        "width": 200
+      }
+    },
+    "prabowo": {
+      "name": "Prabowo Subianto",
+      "portrait": "p_prabowo",
+      "show": {
+        "box": "neutral",
+        "beside": {
+          "of": "titiek",
+          "side": "r"
+        },
+        "sub": "eighth President<br>of Indonesia",
+        "width": 190
+      }
+    }
+  },
+  "unions": {
+    "u_hanyakrawati_banawati": {
+      "partners": [
+        "hanyakrawati",
+        "banawati"
+      ],
+      "kind": "marriage"
+    },
+    "u_agung_ratuwetan": {
+      "partners": [
+        "agung",
+        "ratuwetan"
+      ],
+      "kind": "marriage",
+      "show": {
+        "colour": "mataram"
+      }
+    },
+    "u_pandansari_pekik": {
+      "partners": [
+        "pandansari",
+        "pekik"
+      ],
+      "kind": "marriage"
+    },
+    "u_am1_ratumalang": {
+      "partners": [
+        "am1",
+        "ratumalang"
+      ],
+      "kind": "marriage"
+    },
+    "u_ratukulon_am1": {
+      "partners": [
+        "ratukulon",
+        "am1"
+      ],
+      "kind": "marriage",
+      "show": {
+        "colour": "mataram"
+      }
+    },
+    "u_ratupb_pb1": {
+      "partners": [
+        "ratupb",
+        "pb1"
+      ],
+      "kind": "marriage"
+    },
+    "u_hemas_pb2_pb2": {
+      "partners": [
+        "hemas_pb2",
+        "pb2"
+      ],
+      "kind": "marriage",
+      "show": {
+        "colour": "mataram"
+      }
+    },
+    "u_beruk_pb3": {
+      "partners": [
+        "beruk",
+        "pb3"
+      ],
+      "kind": "marriage"
+    },
+    "u_hemas_pb10_pb10": {
+      "partners": [
+        "hemas_pb10",
+        "pb10"
+      ],
+      "kind": "marriage",
+      "show": {
+        "colour": "yogyakarta"
+      }
+    },
+    "u_pb10_gkrpb": {
+      "partners": [
+        "pb10",
+        "gkrpb"
+      ],
+      "kind": "marriage",
+      "show": {
+        "colour": "mangkunegaran"
+      }
+    },
+    "u_winari_pb13": {
+      "partners": [
+        "winari",
+        "pb13"
+      ],
+      "kind": "marriage"
+    },
+    "u_pb13_asihwinarni": {
+      "partners": [
+        "pb13",
+        "asihwinarni"
+      ],
+      "kind": "marriage"
+    },
+    "u_ronggo_gkrmaduretno": {
+      "partners": [
+        "ronggo",
+        "gkrmaduretno"
+      ],
+      "kind": "marriage"
+    },
+    "u_diponegoro_ramaduretno": {
+      "partners": [
+        "diponegoro",
+        "ramaduretno"
+      ],
+      "kind": "marriage",
+      "show": {
+        "colour": "yogyakarta"
+      }
+    },
+    "u_ratuageng_hb1": {
+      "partners": [
+        "ratuageng",
+        "hb1"
+      ],
+      "kind": "marriage"
+    },
+    "u_hb4_ratuibu": {
+      "partners": [
+        "hb4",
+        "ratuibu"
+      ],
+      "kind": "marriage",
+      "show": {
+        "colour": "yogyakarta"
+      }
+    },
+    "u_hb9_norma": {
+      "partners": [
+        "hb9",
+        "norma"
+      ],
+      "kind": "marriage"
+    },
+    "u_hemas_hb10_hb10": {
+      "partners": [
+        "hemas_hb10",
+        "hb10"
+      ],
+      "kind": "marriage"
+    },
+    "u_pa2_hayu_pa2": {
+      "partners": [
+        "pa2",
+        "hayu_pa2"
+      ],
+      "kind": "marriage",
+      "show": {
+        "colour": "yogyakarta"
+      }
+    },
+    "u_kihajar_nyihajar": {
+      "partners": [
+        "kihajar",
+        "nyihajar"
+      ],
+      "kind": "marriage",
+      "show": {
+        "colour": "pakualaman"
+      }
+    },
+    "u_pa7_retnopuwoso": {
+      "partners": [
+        "pa7",
+        "retnopuwoso"
+      ],
+      "kind": "marriage",
+      "show": {
+        "colour": "surakarta"
+      }
+    },
+    "u_ratnaningrum_pa8": {
+      "partners": [
+        "ratnaningrum",
+        "pa8"
+      ],
+      "kind": "marriage"
+    },
+    "u_pa8_purnamaningrum": {
+      "partners": [
+        "pa8",
+        "purnamaningrum"
+      ],
+      "kind": "marriage"
+    },
+    "u_kpa_mn_wulan": {
+      "partners": [
+        "kpa_mn",
+        "wulan"
+      ],
+      "kind": "marriage",
+      "show": {
+        "colour": "mataram"
+      }
+    },
+    "u_mn1_rubiyah": {
+      "partners": [
+        "mn1",
+        "rubiyah"
+      ],
+      "kind": "marriage"
+    },
+    "u_bendara_mn1": {
+      "partners": [
+        "bendara",
+        "mn1"
+      ],
+      "kind": "marriage",
+      "show": {
+        "colour": "yogyakarta"
+      }
+    },
+    "u_hamijaya_alit": {
+      "partners": [
+        "hamijaya",
+        "alit"
+      ],
+      "kind": "marriage",
+      "show": {
+        "colour": "surakarta"
+      }
+    },
+    "u_mn4_dunuk": {
+      "partners": [
+        "mn4",
+        "dunuk"
+      ],
+      "kind": "marriage",
+      "show": {
+        "colour": "mangkunegaran"
+      }
+    },
+    "u_timur_mn7": {
+      "partners": [
+        "timur",
+        "mn7"
+      ],
+      "kind": "marriage",
+      "show": {
+        "colour": "yogyakarta"
+      }
+    },
+    "u_partini_hoesein": {
+      "partners": [
+        "partini",
+        "hoesein"
+      ],
+      "kind": "marriage"
+    },
+    "u_retnosatuti_rahadian": {
+      "partners": [
+        "retnosatuti",
+        "rahadian"
+      ],
+      "kind": "marriage"
+    },
+    "u_astrini_abubakar": {
+      "partners": [
+        "astrini",
+        "abubakar"
+      ],
+      "kind": "marriage"
+    },
+    "u_mn8_sunituti": {
+      "partners": [
+        "mn8",
+        "sunituti"
+      ],
+      "kind": "marriage",
+      "show": {
+        "colour": "mangkunegaran"
+      }
+    },
+    "u_sukmawati_mn9": {
+      "partners": [
+        "sukmawati",
+        "mn9"
+      ],
+      "kind": "marriage"
+    },
+    "u_mn9_prisca": {
+      "partners": [
+        "mn9",
+        "prisca"
+      ],
+      "kind": "marriage"
+    },
+    "u_tien_suharto": {
+      "partners": [
+        "tien",
+        "suharto"
+      ],
+      "kind": "marriage",
+      "show": {
+        "childColour": "mangkunegaran"
+      }
+    },
+    "u_titiek_prabowo": {
+      "partners": [
+        "titiek",
+        "prabowo"
+      ],
+      "kind": "marriage"
+    }
+  },
+  "descents": {
+    "d_lg_brawijaya_lg_bondan": {
+      "parent": "lg_brawijaya",
+      "child": "lg_bondan",
+      "show": {
+        "line": "legend",
+        "row": true
+      }
+    },
+    "d_lg_bondan_lg_getas": {
+      "parent": "lg_bondan",
+      "child": "lg_getas",
+      "show": {
+        "line": "legend",
+        "row": true
+      }
+    },
+    "d_lg_getas_lg_sela": {
+      "parent": "lg_getas",
+      "child": "lg_sela",
+      "show": {
+        "line": "legend",
+        "row": true
+      }
+    },
+    "d_lg_sela_lg_enis": {
+      "parent": "lg_sela",
+      "child": "lg_enis",
+      "show": {
+        "line": "legend",
+        "row": true
+      }
+    },
+    "d_lg_enis_pamanahan": {
+      "parent": "lg_enis",
+      "child": "pamanahan",
+      "show": {
+        "line": "legend"
+      }
+    },
+    "d_pamanahan_senapati": {
+      "parent": "pamanahan",
+      "child": "senapati"
+    },
+    "d_senapati_hanyakrawati": {
+      "parent": "senapati",
+      "child": "hanyakrawati"
+    },
+    "d_hanyakrawati_martapura": {
+      "parent": "hanyakrawati",
+      "child": "martapura"
+    },
+    "d_agung_alit_am1": {
+      "parent": "agung",
+      "child": "alit_am1"
+    },
+    "d_hanyakrawati_pandansari": {
+      "parent": "hanyakrawati",
+      "child": "pandansari",
+      "show": {
+        "line": "dot"
+      }
+    },
+    "d_pandansari_ratukulon": {
+      "parent": "pandansari",
+      "union": "u_pandansari_pekik",
+      "child": "ratukulon",
+      "show": {
+        "line": "dot",
+        "hop": true
+      }
+    },
+    "d_lg_sela_juru": {
+      "parent": "lg_sela",
+      "child": "juru",
+      "generations": 2,
+      "show": {
+        "line": "legend",
+        "break": "grandson"
+      }
+    },
+    "d_juru_ratuwetan": {
+      "parent": "juru",
+      "child": "ratuwetan",
+      "generations": "several",
+      "show": {
+        "line": "dot",
+        "break": "descendant",
+        "hop": true
+      }
+    },
+    "d_benawa_banawati": {
+      "parent": "benawa",
+      "child": "banawati",
+      "show": {
+        "line": "dot",
+        "hop": true
+      }
+    },
+    "d_am1_pb1": {
+      "parent": "am1",
+      "child": "pb1"
+    },
+    "d_am2_am3": {
+      "parent": "am2",
+      "child": "am3"
+    },
+    "d_am3_tepasana": {
+      "parent": "am3",
+      "child": "tepasana"
+    },
+    "d_tepasana_am5": {
+      "parent": "tepasana",
+      "child": "am5"
+    },
+    "d_purbaya_p_hemas_pb2": {
+      "parent": "purbaya_p",
+      "child": "hemas_pb2",
+      "show": {
+        "line": "dot",
+        "hop": true
+      }
+    },
+    "d_pb3_yasadipura1": {
+      "parent": "pb3",
+      "child": "yasadipura1",
+      "kind": "other",
+      "show": {
+        "line": "grey",
+        "caption": "court poet"
+      }
+    },
+    "d_yasadipura1_yasadipura2": {
+      "parent": "yasadipura1",
+      "child": "yasadipura2",
+      "show": {
+        "line": "grey"
+      }
+    },
+    "d_yasadipura2_ranggawarsita": {
+      "parent": "yasadipura2",
+      "child": "ranggawarsita",
+      "generations": 2,
+      "show": {
+        "line": "grey",
+        "break": "grandson"
+      }
+    },
+    "d_am4_hb1": {
+      "parent": "am4",
+      "child": "hb1"
+    },
+    "d_am4_pb2": {
+      "parent": "am4",
+      "child": "pb2"
+    },
+    "d_am4_kpa_mn": {
+      "parent": "am4",
+      "child": "kpa_mn"
+    },
+    "d_pb4_pb5": {
+      "parent": "pb4",
+      "child": "pb5"
+    },
+    "d_pb4_pb7": {
+      "parent": "pb4",
+      "child": "pb7"
+    },
+    "d_pb4_pb8": {
+      "parent": "pb4",
+      "child": "pb8"
+    },
+    "d_pb5_pb6": {
+      "parent": "pb5",
+      "child": "pb6"
+    },
+    "d_pb6_pb9": {
+      "parent": "pb6",
+      "child": "pb9"
+    },
+    "d_pb9_pb10": {
+      "parent": "pb9",
+      "child": "pb10"
+    },
+    "d_pb10_pb11": {
+      "parent": "pb10",
+      "child": "pb11"
+    },
+    "d_pb10_djatikusumo": {
+      "parent": "pb10",
+      "child": "djatikusumo"
+    },
+    "d_pb10_haryomataram": {
+      "parent": "pb10",
+      "child": "haryomataram"
+    },
+    "d_pb10_mooryati": {
+      "parent": "pb10",
+      "child": "mooryati",
+      "generations": 2,
+      "show": {
+        "line": "dot",
+        "break": "granddaughter",
+        "group": "mooryati"
+      }
+    },
+    "d_pb11_pb12": {
+      "parent": "pb11",
+      "child": "pb12"
+    },
+    "d_pb12_moeng": {
+      "parent": "pb12",
+      "child": "moeng",
+      "show": {
+        "line": "dot"
+      }
+    },
+    "d_pb12_pb13": {
+      "parent": "pb12",
+      "child": "pb13"
+    },
+    "d_pb12_tedjowulan": {
+      "parent": "pb12",
+      "child": "tedjowulan"
+    },
+    "d_hb1_pa1": {
+      "parent": "hb1",
+      "child": "pa1"
+    },
+    "d_hb2_gkrmaduretno": {
+      "parent": "hb2",
+      "child": "gkrmaduretno",
+      "show": {
+        "line": "dot"
+      }
+    },
+    "d_hb2_hb3": {
+      "parent": "hb2",
+      "child": "hb3"
+    },
+    "d_hb2_pmangkubumi": {
+      "parent": "hb2",
+      "child": "pmangkubumi"
+    },
+    "d_hb2_kyaimaja": {
+      "parent": "hb2",
+      "child": "kyaimaja",
+      "generations": 2,
+      "show": {
+        "line": "dot",
+        "break": "grandson",
+        "group": "kyaimaja"
+      }
+    },
+    "d_pa3_nyihajar": {
+      "parent": "pa3",
+      "child": "nyihajar",
+      "generations": 2,
+      "show": {
+        "line": "dot",
+        "break": "granddaughter",
+        "hop": true
+      }
+    },
+    "d_hb2_ratuibu": {
+      "parent": "hb2",
+      "child": "ratuibu",
+      "generations": 2,
+      "show": {
+        "line": "dot",
+        "break": "granddaughter",
+        "hop": true
+      }
+    },
+    "d_ronggo_sentot": {
+      "parent": "ronggo",
+      "child": "sentot",
+      "show": {
+        "line": "grey"
+      }
+    },
+    "d_hb3_diponegoro": {
+      "parent": "hb3",
+      "child": "diponegoro"
+    },
+    "d_hb3_hb4": {
+      "parent": "hb3",
+      "child": "hb4"
+    },
+    "d_gkrmaduretno_ramaduretno": {
+      "parent": "gkrmaduretno",
+      "union": "u_ronggo_gkrmaduretno",
+      "child": "ramaduretno",
+      "show": {
+        "line": "dot",
+        "hop": true
+      }
+    },
+    "d_hb5_gustiahmad": {
+      "parent": "hb5",
+      "child": "gustiahmad"
+    },
+    "d_juminah_bagong": {
+      "parent": "juminah",
+      "child": "bagong",
+      "generations": 2,
+      "show": {
+        "break": "grandson"
+      }
+    },
+    "d_bagong_butet": {
+      "parent": "bagong",
+      "child": "butet",
+      "show": {
+        "line": "grey"
+      }
+    },
+    "d_bagong_djaduk": {
+      "parent": "bagong",
+      "child": "djaduk",
+      "show": {
+        "line": "grey"
+      }
+    },
+    "d_hb9_yudhaningrat": {
+      "parent": "hb9",
+      "child": "yudhaningrat"
+    },
+    "d_hb9_prabukusumo": {
+      "parent": "hb9",
+      "child": "prabukusumo"
+    },
+    "d_hb9_hadiwinoto": {
+      "parent": "hb9",
+      "child": "hadiwinoto"
+    },
+    "d_hb9_hb10": {
+      "parent": "hb9",
+      "child": "hb10"
+    },
+    "d_hb7_juminah": {
+      "parent": "hb7",
+      "child": "juminah"
+    },
+    "d_hb7_hb8": {
+      "parent": "hb7",
+      "child": "hb8"
+    },
+    "d_hb6_hb7": {
+      "parent": "hb6",
+      "child": "hb7"
+    },
+    "d_hb8_hb9": {
+      "parent": "hb8",
+      "child": "hb9"
+    },
+    "d_pa1_pa2": {
+      "parent": "pa1",
+      "child": "pa2"
+    },
+    "d_pa2_pa5": {
+      "parent": "pa2",
+      "child": "pa5"
+    },
+    "d_pa3_suryaningrat": {
+      "parent": "pa3",
+      "child": "suryaningrat"
+    },
+    "d_suryaningrat_suryopranoto": {
+      "parent": "suryaningrat",
+      "child": "suryopranoto"
+    },
+    "d_suryaningrat_kihajar": {
+      "parent": "suryaningrat",
+      "child": "kihajar"
+    },
+    "d_nataningprang_pa4": {
+      "parent": "nataningprang",
+      "child": "pa4"
+    },
+    "d_pa5_notodirojo": {
+      "parent": "pa5",
+      "child": "notodirojo"
+    },
+    "d_pa5_pa6": {
+      "parent": "pa5",
+      "child": "pa6"
+    },
+    "d_notodirojo_notosoeroto": {
+      "parent": "notodirojo",
+      "child": "notosoeroto",
+      "show": {
+        "line": "grey"
+      }
+    },
+    "d_hb2_hayu_pa2": {
+      "parent": "hb2",
+      "child": "hayu_pa2",
+      "show": {
+        "line": "dot",
+        "hop": true
+      }
+    },
+    "d_pa6_pa7": {
+      "parent": "pa6",
+      "child": "pa7"
+    },
+    "d_pa9_pa10": {
+      "parent": "pa9",
+      "child": "pa10"
+    },
+    "d_pa10_bimantoro": {
+      "parent": "pa10",
+      "child": "bimantoro"
+    },
+    "d_anglingkusumo_wiroyudho": {
+      "parent": "anglingkusumo",
+      "child": "wiroyudho",
+      "kind": "in-law",
+      "show": {
+        "line": "dot",
+        "caption": "son-in-law"
+      }
+    },
+    "d_blitar_p_wulan": {
+      "parent": "blitar_p",
+      "child": "wulan",
+      "show": {
+        "line": "dot",
+        "hop": true
+      }
+    },
+    "d_mn6_suyono": {
+      "parent": "mn6",
+      "child": "suyono"
+    },
+    "d_mn2_sekeli": {
+      "parent": "mn2",
+      "child": "sekeli",
+      "show": {
+        "line": "dot"
+      }
+    },
+    "d_mn2_sayati": {
+      "parent": "mn2",
+      "child": "sayati",
+      "show": {
+        "line": "dot"
+      }
+    },
+    "d_sekeli_mn4": {
+      "parent": "sekeli",
+      "child": "mn4",
+      "show": {
+        "line": "dot"
+      }
+    },
+    "d_sayati_mn3": {
+      "parent": "sayati",
+      "child": "mn3",
+      "show": {
+        "line": "dot"
+      }
+    },
+    "d_mn4_gkrpb": {
+      "parent": "mn4",
+      "union": "u_mn4_dunuk",
+      "child": "gkrpb",
+      "show": {
+        "line": "dot",
+        "hop": true
+      }
+    },
+    "d_mn5_mn7": {
+      "parent": "mn5",
+      "child": "mn7"
+    },
+    "d_mn5_suryokusumo": {
+      "parent": "mn5",
+      "child": "suryokusumo"
+    },
+    "d_mn7_mn8": {
+      "parent": "mn7",
+      "child": "mn8"
+    },
+    "d_mn7_partini": {
+      "parent": "mn7",
+      "child": "partini",
+      "show": {
+        "line": "dot"
+      }
+    },
+    "d_suryokusumo_sunituti": {
+      "parent": "suryokusumo",
+      "child": "sunituti",
+      "show": {
+        "line": "dot"
+      }
+    },
+    "d_sukarno_sukmawati": {
+      "parent": "sukarno",
+      "child": "sukmawati",
+      "show": {
+        "line": "grey"
+      }
+    },
+    "d_mn3_tien": {
+      "parent": "mn3",
+      "child": "tien",
+      "generations": "several",
+      "show": {
+        "line": "dot",
+        "break": "descendant"
+      }
+    },
+    "d_pb3_alit": {
+      "parent": "pb3",
+      "child": "alit",
+      "show": {
+        "line": "dot",
+        "hop": true
+      }
+    },
+    "d_hb1_bendara": {
+      "parent": "hb1",
+      "child": "bendara",
+      "show": {
+        "line": "dot",
+        "hop": true
+      }
+    },
+    "d_hb7_hemas_pb10": {
+      "parent": "hb7",
+      "child": "hemas_pb10",
+      "show": {
+        "line": "dot",
+        "hop": true,
+        "branch": true
+      }
+    },
+    "d_hb7_timur": {
+      "parent": "hb7",
+      "child": "timur",
+      "show": {
+        "line": "dot",
+        "hop": true,
+        "branch": true
+      }
+    },
+    "d_pb10_retnopuwoso": {
+      "parent": "pb10",
+      "child": "retnopuwoso",
+      "show": {
+        "line": "dot",
+        "hop": true
+      }
+    },
+    "d_mn3_dunuk": {
+      "parent": "mn3",
+      "child": "dunuk",
+      "show": {
+        "line": "dot",
+        "hop": true
+      }
+    },
+    "d_u_hanyakrawati_banawati_agung": {
+      "union": "u_hanyakrawati_banawati",
+      "child": "agung"
+    },
+    "d_u_agung_ratuwetan_am1": {
+      "union": "u_agung_ratuwetan",
+      "child": "am1"
+    },
+    "d_u_ratukulon_am1_am2": {
+      "union": "u_ratukulon_am1",
+      "child": "am2"
+    },
+    "d_u_ratupb_pb1_am4": {
+      "union": "u_ratupb_pb1",
+      "child": "am4"
+    },
+    "d_u_ratupb_pb1_purbaya_p": {
+      "union": "u_ratupb_pb1",
+      "child": "purbaya_p"
+    },
+    "d_u_ratupb_pb1_blitar_p": {
+      "union": "u_ratupb_pb1",
+      "child": "blitar_p"
+    },
+    "d_u_hemas_pb2_pb2_pb3": {
+      "union": "u_hemas_pb2_pb2",
+      "child": "pb3"
+    },
+    "d_u_beruk_pb3_pb4": {
+      "union": "u_beruk_pb3",
+      "child": "pb4"
+    },
+    "d_u_winari_pb13_pb14h": {
+      "union": "u_winari_pb13",
+      "child": "pb14h"
+    },
+    "d_u_pb13_asihwinarni_pb14p": {
+      "union": "u_pb13_asihwinarni",
+      "child": "pb14p"
+    },
+    "d_u_ratuageng_hb1_hb2": {
+      "union": "u_ratuageng_hb1",
+      "child": "hb2"
+    },
+    "d_u_hb4_ratuibu_hb5": {
+      "union": "u_hb4_ratuibu",
+      "child": "hb5"
+    },
+    "d_u_hb4_ratuibu_hb6": {
+      "union": "u_hb4_ratuibu",
+      "child": "hb6"
+    },
+    "d_u_hemas_hb10_hb10_mangkubumi": {
+      "union": "u_hemas_hb10_hb10",
+      "child": "mangkubumi",
+      "show": {
+        "line": "dot"
+      }
+    },
+    "d_u_hemas_hb10_hb10_condrokirono": {
+      "union": "u_hemas_hb10_hb10",
+      "child": "condrokirono",
+      "show": {
+        "line": "dot"
+      }
+    },
+    "d_u_hemas_hb10_hb10_maduretno": {
+      "union": "u_hemas_hb10_hb10",
+      "child": "maduretno",
+      "show": {
+        "line": "dot"
+      }
+    },
+    "d_u_hemas_hb10_hb10_hayu": {
+      "union": "u_hemas_hb10_hb10",
+      "child": "hayu",
+      "show": {
+        "line": "dot"
+      }
+    },
+    "d_u_hemas_hb10_hb10_bendara2": {
+      "union": "u_hemas_hb10_hb10",
+      "child": "bendara2",
+      "show": {
+        "line": "dot"
+      }
+    },
+    "d_u_pa2_hayu_pa2_pa3": {
+      "union": "u_pa2_hayu_pa2",
+      "child": "pa3"
+    },
+    "d_u_pa2_hayu_pa2_nataningprang": {
+      "union": "u_pa2_hayu_pa2",
+      "child": "nataningprang"
+    },
+    "d_u_pa7_retnopuwoso_pa8": {
+      "union": "u_pa7_retnopuwoso",
+      "child": "pa8"
+    },
+    "d_u_ratnaningrum_pa8_anglingkusumo": {
+      "union": "u_ratnaningrum_pa8",
+      "child": "anglingkusumo"
+    },
+    "d_u_pa8_purnamaningrum_pa9": {
+      "union": "u_pa8_purnamaningrum",
+      "child": "pa9"
+    },
+    "d_u_kpa_mn_wulan_mn1": {
+      "union": "u_kpa_mn_wulan",
+      "child": "mn1"
+    },
+    "d_u_mn1_rubiyah_hamijaya": {
+      "union": "u_mn1_rubiyah",
+      "child": "hamijaya"
+    },
+    "d_u_hamijaya_alit_mn2": {
+      "union": "u_hamijaya_alit",
+      "child": "mn2"
+    },
+    "d_u_mn4_dunuk_mn5": {
+      "union": "u_mn4_dunuk",
+      "child": "mn5"
+    },
+    "d_u_mn4_dunuk_mn6": {
+      "union": "u_mn4_dunuk",
+      "child": "mn6"
+    },
+    "d_u_timur_mn7_nurul": {
+      "union": "u_timur_mn7",
+      "child": "nurul",
+      "show": {
+        "line": "dot"
+      }
+    },
+    "d_u_retnosatuti_rahadian_royyamin": {
+      "union": "u_retnosatuti_rahadian",
+      "child": "royyamin",
+      "show": {
+        "line": "dot"
+      }
+    },
+    "d_u_mn8_sunituti_mn9": {
+      "union": "u_mn8_sunituti",
+      "child": "mn9"
+    },
+    "d_u_mn8_sunituti_retnosatuti": {
+      "union": "u_mn8_sunituti",
+      "child": "retnosatuti",
+      "show": {
+        "line": "dot"
+      }
+    },
+    "d_u_mn8_sunituti_astrini": {
+      "union": "u_mn8_sunituti",
+      "child": "astrini",
+      "show": {
+        "line": "dot"
+      }
+    },
+    "d_u_sukmawati_mn9_paundrakarna": {
+      "union": "u_sukmawati_mn9",
+      "child": "paundrakarna"
+    },
+    "d_u_sukmawati_mn9_putri": {
+      "union": "u_sukmawati_mn9",
+      "child": "putri",
+      "show": {
+        "line": "dot"
+      }
+    },
+    "d_u_mn9_prisca_ancilla": {
+      "union": "u_mn9_prisca",
+      "child": "ancilla",
+      "show": {
+        "line": "dot"
+      }
+    },
+    "d_u_mn9_prisca_mn10": {
+      "union": "u_mn9_prisca",
+      "child": "mn10"
+    },
+    "d_u_tien_suharto_titiek": {
+      "union": "u_tien_suharto",
+      "child": "titiek",
+      "show": {
+        "line": "dot"
+      }
+    }
+  },
+  "houses": {
+    "mataram": {
+      "name": "Mataram",
+      "colour": "#EFC239"
+    },
+    "surakarta": {
+      "name": "Surakarta",
+      "colour": "#80C3E1"
+    },
+    "yogyakarta": {
+      "name": "Yogyakarta",
+      "colour": "#F26654"
+    },
+    "pakualaman": {
+      "name": "Pakualaman",
+      "colour": "#96BC96"
+    },
+    "mangkunegaran": {
+      "name": "Mangkunegaran",
+      "colour": "#EF953A"
+    }
+  },
+  "glossary": {
+    "susuhunan": {
+      "group": "Rulers",
+      "term": "Susuhunan",
+      "gloss": "Sovereign (Sunan); “Emperor” to the Dutch"
+    },
+    "sultan": {
+      "group": "Rulers",
+      "term": "Sultan",
+      "gloss": "Muslim sovereign"
+    },
+    "panembahan": {
+      "group": "Rulers",
+      "term": "Panembahan",
+      "gloss": "Lord"
+    },
+    "adipati": {
+      "group": "Rulers",
+      "term": "Adipati",
+      "gloss": "Duke"
+    },
+    "kgpaa": {
+      "group": "Rulers",
+      "term": "KGPAA",
+      "expansion": "Kanjeng Gusti Pangeran Adipati Arya (…Anom for a crown prince)",
+      "gloss": "Prince Regnant"
+    },
+    "patih": {
+      "group": "Rulers",
+      "term": "Patih",
+      "gloss": "Grand vizier, chief minister"
+    },
+    "sri": {
+      "group": "Honorifics",
+      "term": "Sri",
+      "gloss": "“Radiant”, honorific of a monarch"
+    },
+    "gusti": {
+      "group": "Honorifics",
+      "term": "Gusti",
+      "gloss": "Lord / Lady of royal birth"
+    },
+    "raden": {
+      "group": "Honorifics",
+      "term": "Raden",
+      "gloss": "Noble (Javanese aristocracy)"
+    },
+    "raden_mas": {
+      "group": "Honorifics",
+      "term": "Raden Mas",
+      "gloss": "Young nobleman (birth name)"
+    },
+    "grm": {
+      "group": "Honorifics",
+      "term": "GRM",
+      "expansion": "Gusti Raden Mas",
+      "gloss": "Prince (birth name)"
+    },
+    "ki": {
+      "group": "Honorifics",
+      "term": "Ki",
+      "gloss": "Elder, master"
+    },
+    "ki_ageng": {
+      "group": "Honorifics",
+      "term": "Ki Ageng",
+      "gloss": "Venerable elder"
+    },
+    "prabu": {
+      "group": "Honorifics",
+      "term": "Prabu",
+      "gloss": "King"
+    },
+    "kyai": {
+      "group": "Honorifics",
+      "term": "Kyai",
+      "gloss": "Religious teacher"
+    },
+    "nyi": {
+      "group": "Honorifics",
+      "term": "Nyi",
+      "gloss": "Married woman (cf. Ki)"
+    },
+    "tunku": {
+      "group": "Honorifics",
+      "term": "Tunku",
+      "gloss": "Malay royal title (Johor)"
+    },
+    "pangeran": {
+      "group": "Princes",
+      "term": "Pangeran",
+      "gloss": "Prince"
+    },
+    "kgpa": {
+      "group": "Princes",
+      "term": "KGPA",
+      "expansion": "Kanjeng Gusti Pangeran Adipati",
+      "gloss": "Senior prince"
+    },
+    "kpa": {
+      "group": "Princes",
+      "term": "KPA",
+      "expansion": "Kanjeng Pangeran Arya",
+      "gloss": "Prince"
+    },
+    "kph": {
+      "group": "Princes",
+      "term": "KPH",
+      "expansion": "Kanjeng Pangeran Harya",
+      "gloss": "Prince"
+    },
+    "kgph": {
+      "group": "Princes",
+      "term": "KGPH",
+      "expansion": "Kanjeng Gusti Pangeran Harya",
+      "gloss": "Prince"
+    },
+    "gbph": {
+      "group": "Princes",
+      "term": "GBPH",
+      "expansion": "Gusti Bendara Pangeran Harya",
+      "gloss": "Prince"
+    },
+    "bph": {
+      "group": "Princes",
+      "term": "BPH",
+      "expansion": "Bendara Pangeran Harya",
+      "gloss": "Prince"
+    },
+    "gph": {
+      "group": "Princes",
+      "term": "GPH",
+      "expansion": "Gusti Pangeran Harya",
+      "gloss": "Prince"
+    },
+    "ratu": {
+      "group": "Women",
+      "term": "Ratu",
+      "gloss": "Queen / senior princess"
+    },
+    "ratu_ageng": {
+      "group": "Women",
+      "term": "Ratu Ageng",
+      "gloss": "Senior or dowager queen"
+    },
+    "ratu_mas": {
+      "group": "Women",
+      "term": "Ratu Mas",
+      "gloss": "Queen (honorific)"
+    },
+    "gkr": {
+      "group": "Women",
+      "term": "GKR",
+      "expansion": "Gusti Kanjeng Ratu",
+      "gloss": "Queen Consort / Princess"
+    },
+    "gkp": {
+      "group": "Women",
+      "term": "GKP",
+      "expansion": "Gusti Kanjeng Putri",
+      "gloss": "Princess Consort"
+    },
+    "gbray": {
+      "group": "Women",
+      "term": "GBRAy.",
+      "expansion": "Gusti Bendara Raden Ayu",
+      "gloss": "Princess"
+    },
+    "bray": {
+      "group": "Women",
+      "term": "BRAy.",
+      "expansion": "Bendara Raden Ayu",
+      "gloss": "Princess"
+    },
+    "kray": {
+      "group": "Women",
+      "term": "KRAy.",
+      "expansion": "Kanjeng Raden Ayu",
+      "gloss": "Royal consort"
+    },
+    "ray": {
+      "group": "Women",
+      "term": "RAy.",
+      "expansion": "Raden Ayu",
+      "gloss": "Noblewoman (married)"
+    },
+    "gray": {
+      "group": "Women",
+      "term": "GRAy.",
+      "expansion": "Gusti Raden Ayu",
+      "gloss": "Princess"
+    },
+    "graj": {
+      "group": "Women",
+      "term": "GRAj.",
+      "expansion": "Gusti Raden Ajeng",
+      "gloss": "Princess (unmarried)"
+    }
+  },
+  "timeline": {
+    "eras": [
+      {
+        "year": 1556,
+        "name": "Rise of Mataram"
+      },
+      {
+        "year": 1677,
+        "name": "Mataram under the VOC"
+      },
+      {
+        "year": 1755,
+        "name": "The divided kingdoms"
+      },
+      {
+        "year": 1830,
+        "name": "The Dutch Vorstenlanden"
+      },
+      {
+        "year": 1942,
+        "name": "Occupation and revolution"
+      },
+      {
+        "year": 1950,
+        "name": "Courts in the Republic"
+      }
+    ],
+    "episodes": [
+      {
+        "from": 1674,
+        "to": 1680,
+        "name": "Trunajaya Rebellion"
+      },
+      {
+        "from": 1704,
+        "to": 1708,
+        "name": "First War of Succession"
+      },
+      {
+        "from": 1719,
+        "to": 1723,
+        "name": "Second War of Succession"
+      },
+      {
+        "from": 1740,
+        "to": 1743,
+        "name": "Chinese War"
+      },
+      {
+        "from": 1746,
+        "to": 1757,
+        "name": "Third War of Succession"
+      },
+      {
+        "from": 1811,
+        "to": 1816,
+        "name": "British rule"
+      },
+      {
+        "from": 1825,
+        "to": 1830,
+        "name": "Java War"
+      }
+    ]
+  },
+  "notes": {
+    "n_pamanahan": {
+      "anchor": "pamanahan",
+      "text": "Granted the land of Mataram by the Sultan of Pajang (traditionally 1556; settled in the 1570s).",
+      "show": {
+        "side": "r",
+        "width": 300,
+        "inline": true
+      }
+    },
+    "n_senapati": {
+      "anchor": "senapati",
+      "text": "Court tradition tells of his union with <b>Ratu Kidul</b>, queen of the Southern Ocean (legend).",
+      "show": {
+        "side": "r",
+        "width": 300,
+        "inline": true
+      }
+    },
+    "n_martapura": {
+      "anchor": "martapura",
+      "text": "The chronicles say he was enthroned for a single day before giving way to his half-brother; no other source records the reign.",
+      "show": {
+        "side": "l",
+        "width": 300,
+        "inline": true
+      }
+    },
+    "n_agung": {
+      "anchor": "agung",
+      "text": "Besieged Dutch Batavia in <b>1628</b> and <b>1629</b>. Took the title of Sultan in 1641. National Hero (1975).",
+      "show": {
+        "side": "r",
+        "width": 300,
+        "inline": true
+      }
+    },
+    "n_juru": {
+      "anchor": "juru",
+      "text": "Senapati's uncle and strategist; Mataram's first patih. By tradition a descendant (great-granddaughter in most genealogies), Ratu Wetan of Batang, was Sultan Agung's queen.",
+      "show": {
+        "side": "b",
+        "width": 300
+      }
+    },
+    "n_benawa": {
+      "anchor": "benawa",
+      "text": "His father Hadiwijaya (“Jaka Tingkir”) of Pajang adopted the young Senapati, who helped him oust Arya Pangiri (c. 1586–87); Benawa then ruled Pajang as Mataram's vassal. By tradition his daughter's son was Sultan Agung.",
+      "show": {
+        "side": "r",
+        "width": 300
+      }
+    },
+    "n_pekik": {
+      "anchor": "pekik",
+      "text": "Of the old Surabaya royal line; Amangkurat I had him and his family killed in 1659.",
+      "show": {
+        "side": "r",
+        "width": 300,
+        "inline": true
+      }
+    },
+    "n_alit_am1": {
+      "anchor": "alit_am1",
+      "text": "Killed attacking the palace; the king then had 5,000–6,000 ulama and their families massacred (per the VOC envoy Van Goens).",
+      "show": {
+        "side": "r",
+        "width": 300,
+        "inline": true
+      }
+    },
+    "n_ratumalang": {
+      "anchor": "ratumalang",
+      "text": "On her death the king had dozens of palace women executed (VOC report); her tomb is at Gunung Kelir.",
+      "show": {
+        "side": "r",
+        "width": 240,
+        "inline": true
+      }
+    },
+    "n_trunajaya": {
+      "anchor": "trunajaya",
+      "text": "Grandson of Cakraningrat I of Madura and son-in-law of Raden Kajoran; took Plered in 1677. Amangkurat II killed him himself in 1680.",
+      "show": {
+        "side": "r",
+        "width": 300,
+        "inline": true
+      }
+    },
+    "n_surapati": {
+      "anchor": "surapati",
+      "text": "His men killed the VOC's Captain Tack at Kartasura (1686); he sheltered Amangkurat III.",
+      "show": {
+        "side": "b",
+        "width": 300,
+        "inline": true
+      }
+    },
+    "n_am1": {
+      "anchor": "am1",
+      "text": "In <b>1677</b> Trunajaya's rebels sacked his capital at Plered; he died while fleeing.",
+      "show": {
+        "side": "r",
+        "width": 300
+      }
+    },
+    "n_ratupb": {
+      "anchor": "ratupb",
+      "text": "Sponsored the Islamic–Javanese <i>Carita Sultan Iskandar</i> and <i>Kitab Usulbiyah</i> (c. 1729–30) and guided the young Pakubuwana II.",
+      "show": {
+        "side": "l",
+        "width": 300,
+        "inline": true
+      }
+    },
+    "n_purbaya_p": {
+      "anchor": "purbaya_p",
+      "text": "With his brother Pangeran Blitar he led the <b>Second War of Succession</b> against Amangkurat IV; exiled 1723.",
+      "show": {
+        "side": "l",
+        "width": 300,
+        "inline": true
+      }
+    },
+    "n_yasadipura1": {
+      "anchor": "yasadipura1",
+      "text": "Traditionally credited with reworking the <i>Serat Rama</i> and <i>Dewaruci</i>; Pakubuwana IV offered him the post of patih, which he declined.",
+      "show": {
+        "side": "b",
+        "width": 300
+      }
+    },
+    "n_ranggawarsita": {
+      "anchor": "ranggawarsita",
+      "text": "The last great court poet; his <i>Serat Kalatidha</i> named the “age of madness” (zaman edan).",
+      "show": {
+        "side": "b",
+        "width": 300,
+        "inline": true
+      }
+    },
+    "n_djatikusumo": {
+      "anchor": "djatikusumo",
+      "text": "Son of Pakubuwana X; studied at Delft. National Hero (2002).",
+      "show": {
+        "side": "b",
+        "width": 240,
+        "inline": true
+      }
+    },
+    "n_pb1": {
+      "anchor": "pb1",
+      "text": "Prince Puger. Took the throne from his nephew with VOC help in the <b>First War of Succession</b> (1704–08).",
+      "show": {
+        "side": "r",
+        "width": 360
+      }
+    },
+    "n_am3": {
+      "anchor": "am3",
+      "text": "Exiled to <b>Ceylon</b> by the VOC in 1708. His first wife, Puger's daughter Raden Ayu Lembah, was executed for an affair (chronicles), which embittered him against her father.",
+      "show": {
+        "side": "l",
+        "width": 240,
+        "inline": true
+      }
+    },
+    "n_am5": {
+      "anchor": "am5",
+      "text": "Grandson of Amangkurat III, crowned by Chinese and Javanese rebels who took Kartasura in <b>1742</b>.",
+      "show": {
+        "side": "l",
+        "width": 300
+      }
+    },
+    "n_am4": {
+      "anchor": "am4",
+      "text": "Survived the <b>Second War of Succession</b> (1719–23) against his brothers and an uncle.",
+      "show": {
+        "side": "r",
+        "width": 300
+      }
+    },
+    "n_pb2": {
+      "anchor": "pb2",
+      "text": "Moved the court to <b>Surakarta</b> in 1745. On his deathbed in <b>1749</b> he ceded the kingdom to the VOC.",
+      "show": {
+        "side": "r",
+        "width": 360,
+        "inline": true
+      }
+    },
+    "n_kpa_mn": {
+      "anchor": "kpa_mn",
+      "text": "Exiled by the VOC in 1728 (Batavia, then Ceylon and the Cape of Good Hope); d. c. 1738, reportedly reburied at Imogiri.",
+      "show": {
+        "side": "r",
+        "width": 300
+      }
+    },
+    "n_hb1": {
+      "anchor": "hb1",
+      "text": "Prince Mangkubumi. Proclaimed rival Susuhunan in 1749; the <b>Treaty of Giyanti</b> (1755) made him Sultan of half the kingdom. National Hero (2006).",
+      "show": {
+        "side": "l",
+        "width": 300
+      }
+    },
+    "n_mn1": {
+      "anchor": "mn1",
+      "text": "Raden Mas Said, “Pangeran Sambernyawa”. The <b>Treaty of Salatiga</b> (1757) gave him part of Surakarta's lands. National Hero (1988).",
+      "show": {
+        "side": "r",
+        "width": 300
+      }
+    },
+    "n_mn2": {
+      "anchor": "mn2",
+      "text": "Raised the <b>Legiun Mangkunegaran</b> (1808), a Napoleonic-style legion.",
+      "show": {
+        "side": "r",
+        "width": 300
+      }
+    },
+    "n_pa1": {
+      "anchor": "pa1",
+      "text": "Sided with the British, who stormed Yogyakarta's palace in 1812, and was rewarded with the <b>Pakualaman</b> (1813), which had its own small army, the Pakualaman Legion.",
+      "show": {
+        "side": "r",
+        "width": 300
+      }
+    },
+    "n_diponegoro": {
+      "anchor": "diponegoro",
+      "text": "Eldest son of Hamengkubuwana III by a secondary wife, RAy. Mangkarawati, and so not in line for the throne. National Hero (1973).",
+      "show": {
+        "side": "b",
+        "width": 300
+      }
+    },
+    "n_pb6": {
+      "anchor": "pb6",
+      "text": "Exiled to <b>Ambon</b> in 1830, suspected of backing Diponegoro. National Hero (1964).",
+      "show": {
+        "side": "r",
+        "width": 240
+      }
+    },
+    "n_ratuageng": {
+      "anchor": "ratuageng",
+      "text": "Raised her great-grandson Diponegoro at Tegalrejo; credited with training the palace's female guard. Mother of Hamengkubuwana II.",
+      "show": {
+        "side": "l",
+        "width": 300,
+        "inline": true
+      }
+    },
+    "n_ronggo": {
+      "anchor": "ronggo",
+      "text": "Rose against Governor-General Daendels and was killed in 1810, a prelude to the Java War.",
+      "show": {
+        "side": "l",
+        "width": 300,
+        "inline": true
+      }
+    },
+    "n_sentot": {
+      "anchor": "sentot",
+      "text": "Son of Ronggo by a secondary wife; surrendered in 1829.",
+      "show": {
+        "side": "r",
+        "width": 240,
+        "inline": true
+      }
+    },
+    "n_kyaimaja": {
+      "anchor": "kyaimaja",
+      "text": "Son of Hamengkubuwana III's sister; died in exile in Minahasa, 1849.",
+      "show": {
+        "side": "r",
+        "width": 240,
+        "inline": true
+      }
+    },
+    "n_ratuibu": {
+      "anchor": "ratuibu",
+      "text": "Daughter of the patih Danureja II and GKR Hangger, a daughter of Hamengkubuwana II; mother of Hamengkubuwana V and VI.",
+      "show": {
+        "side": "r",
+        "width": 300,
+        "inline": true
+      }
+    },
+    "n_gustiahmad": {
+      "anchor": "gustiahmad",
+      "text": "Born 13 days after his father's death in 1855; his uncle took the throne, and he died in exile in Manado.",
+      "show": {
+        "side": "b",
+        "width": 300
+      }
+    },
+    "n_juminah": {
+      "anchor": "juminah",
+      "text": "Hamengkubuwana VII named three crown princes before Hamengkubuwana VIII; Juminah, invested in 1893, was removed, officially on grounds of health.",
+      "show": {
+        "side": "l",
+        "width": 300,
+        "inline": true
+      }
+    },
+    "n_hb7": {
+      "anchor": "hb7",
+      "text": "Known as “Sultan Sugih”, the rich Sultan: 17 sugar mills were founded in his reign. His sons, among them Tejokusumo, founded Krida Beksa Wirama (1918), the first dance school outside the palace.",
+      "show": {
+        "side": "r",
+        "width": 300
+      }
+    },
+    "n_norma": {
+      "anchor": "norma",
+      "text": "Married 1976; she lived 1930–2015. His companion during his vice-presidency.",
+      "show": {
+        "side": "r",
+        "width": 300,
+        "inline": true
+      }
+    },
+    "n_hb5": {
+      "anchor": "hb5",
+      "text": "Put on the throne as a child; set aside 1826–28 while the Dutch restored Hamengkubuwana II.",
+      "show": {
+        "side": "b",
+        "width": 300
+      }
+    },
+    "n_mn4": {
+      "anchor": "mn4",
+      "text": "Mangkunegara IV wrote the <i>Serat Wedhatama</i>; his <i>Puspawarna</i> flew on the <b>Voyager</b> Golden Record (1977). He founded the Colomadu (1861) and Tasikmadu (1871) sugar mills.",
+      "show": {
+        "side": "l",
+        "width": 300,
+        "inline": true
+      }
+    },
+    "n_nurul": {
+      "anchor": "nurul",
+      "text": "Danced at Princess Juliana's wedding (1937); turned down Sukarno, Sjahrir and Hamengkubuwana IX; married her cousin, Lt. Col. Sujarso Surjosurarso, in 1954.",
+      "show": {
+        "side": "l",
+        "width": 300,
+        "inline": true
+      }
+    },
+    "n_pb11": {
+      "anchor": "pb11",
+      "text": "The Dutch chose him over Kusumayuda, the son Pakubuwana X preferred.",
+      "show": {
+        "side": "r",
+        "width": 300
+      }
+    },
+    "n_mn7": {
+      "anchor": "mn7",
+      "text": "Studied at Leiden; co-founded <b>SRV</b> (1933), the first Indonesian-owned radio station.",
+      "show": {
+        "side": "r",
+        "width": 300
+      }
+    },
+    "n_mn8": {
+      "anchor": "mn8",
+      "text": "Recognised by Sukarno in 1945 as head of a special region beside the Sunan's; its suspension in June 1946 ended Mangkunegaran self-rule.",
+      "show": {
+        "side": "b",
+        "width": 300
+      }
+    },
+    "n_pa8": {
+      "anchor": "pa8",
+      "text": "Deputy Governor of Yogyakarta 1950–88, then acting Governor until his death in 1998. National Hero (2022).",
+      "show": {
+        "side": "r",
+        "width": 300
+      }
+    },
+    "n_hb9": {
+      "anchor": "hb9",
+      "text": "Hosted the Republic's capital in Yogyakarta (1946–49). Yogyakarta became a <b>Special Region</b> in 1950 with the Sultan as Governor. <b>Vice President</b> of Indonesia 1973–78. National Hero (1990).",
+      "show": {
+        "side": "l",
+        "width": 360
+      }
+    },
+    "n_pb12": {
+      "anchor": "pb12",
+      "text": "Surakarta's special-region status was suspended in <b>1946</b>; it was folded into Central Java in 1950. It has since been a ceremonial court.",
+      "show": {
+        "side": "r",
+        "width": 300,
+        "inline": true
+      }
+    },
+    "n_mooryati": {
+      "anchor": "mooryati",
+      "text": "Deputy Speaker of the People's Consultative Assembly (MPR), 2004–09.",
+      "show": {
+        "side": "b",
+        "width": 360
+      }
+    },
+    "n_rubiyah": {
+      "anchor": "rubiyah",
+      "text": "By tradition a cleric's daughter from Matah, near Nglaroh, who led Raden Mas Said's corps of women soldiers; a woman soldier of his court kept a diary of court life, 1781–91.",
+      "show": {
+        "side": "r",
+        "width": 300,
+        "inline": true
+      }
+    },
+    "n_wulan": {
+      "anchor": "wulan",
+      "text": "Mother of Mangkunegara I; sources differ on her father's line.",
+      "show": {
+        "side": "r",
+        "width": 240,
+        "inline": true
+      }
+    },
+    "n_blitar_p": {
+      "anchor": "blitar_p",
+      "text": "Son of Pakubuwana I; led the 1719 revolt with his brother Purbaya.",
+      "show": {
+        "side": "r",
+        "width": 240,
+        "inline": true
+      }
+    },
+    "n_suyono": {
+      "anchor": "suyono",
+      "text": "The Dutch refused him as heir, and Mangkunegara VI abdicated in 1916, the only Mangkunegara to abdicate.",
+      "show": {
+        "side": "b",
+        "width": 300,
+        "inline": true
+      }
+    },
+    "n_abubakar": {
+      "anchor": "abubakar",
+      "text": "A grandson of Sultan Ismail of Johor: a royal marriage across the Strait.",
+      "show": {
+        "side": "b",
+        "width": 240,
+        "inline": true
+      }
+    },
+    "n_hayu_pa2": {
+      "anchor": "hayu_pa2",
+      "text": "Aunt of Diponegoro; mother of Paku Alam III and grandmother of Paku Alam IV.",
+      "show": {
+        "side": "r",
+        "width": 300,
+        "inline": true
+      }
+    },
+    "n_suryopranoto": {
+      "anchor": "suryopranoto",
+      "text": "Led Sarekat Islam strikes and founded the sugar workers' union; Ki Hajar's elder brother.",
+      "show": {
+        "side": "b",
+        "width": 240,
+        "inline": true
+      }
+    },
+    "n_nyihajar": {
+      "anchor": "nyihajar",
+      "text": "Born Sutartinah, daughter of KPH Sasraningrat, a son of Paku Alam III, and so Ki Hajar's cousin; shared his Dutch exile, 1913–19.",
+      "show": {
+        "side": "r",
+        "width": 240
+      }
+    },
+    "n_notosoeroto": {
+      "anchor": "notosoeroto",
+      "text": "Dutch-language poet; co-founded the Indische Vereeniging (later Perhimpunan Indonesia); secretary to his friend Mangkunegara VII.",
+      "show": {
+        "side": "b",
+        "width": 300
+      }
+    },
+    "n_kihajar": {
+      "anchor": "kihajar",
+      "text": "Founded Taman Siswa (1922); first Minister of Education. National Hero (1959).",
+      "show": {
+        "side": "b",
+        "width": 240,
+        "inline": true
+      }
+    },
+    "n_pb10": {
+      "anchor": "pb10",
+      "text": "National Hero (2011).",
+      "show": {
+        "side": "b",
+        "width": 300
+      }
+    },
+    "n_mangkubumi": {
+      "anchor": "mangkubumi",
+      "text": "In 2015 the Sultan issued decrees changing his own title, dropping the Islamic, male “Khalifatullah”, and renaming her <b>Mangkubumi</b>, the traditional name of the crown prince. This was widely read as naming her heir, though she has not been formally installed.",
+      "show": {
+        "side": "b",
+        "width": 360,
+        "inline": true
+      }
+    },
+    "n_anglingkusumo": {
+      "anchor": "anglingkusumo",
+      "text": "Son of Paku Alam VIII by Ratnaningrum, the wife ranked senior; proclaimed rival Paku Alam IX in 2012, after his elder brother Probokusumo's 1998 candidacy failed. Founded the <b>Mangkualaman</b> in 2021.",
+      "show": {
+        "side": "r",
+        "width": 360,
+        "inline": true
+      }
+    },
+    "n_wiroyudho": {
+      "anchor": "wiroyudho",
+      "text": "The Mangkualaman is a self-proclaimed court with no recognition from the Indonesian state.",
+      "show": {
+        "side": "r",
+        "width": 300,
+        "inline": true
+      }
+    },
+    "n_pb14p": {
+      "anchor": "pb14p",
+      "text": "Purbaya, crown prince since 2022, proclaimed himself on 5 Nov 2025 and was crowned on 15 Nov. His elder half-brother Hangabehi, named by a family council backed by the court's customary council on 13 Nov 2025, was crowned on 5 Sep 2026. Unresolved. The two are half-brothers: Purbaya by the queen, Hangabehi by a divorced wife.",
+      "show": {
+        "side": "r",
+        "width": 440,
+        "inline": true
+      }
+    },
+    "n_prabukusumo": {
+      "anchor": "prabukusumo",
+      "text": "The Sultan's brothers rejected the <b>2015 decrees</b> as contrary to palace custom (paugeran), which passes the throne to a son. In 2020 he removed Prabukusumo and Yudhaningrat from their palace posts.",
+      "show": {
+        "side": "t",
+        "width": 560,
+        "inline": true
+      }
+    },
+    "n_tedjowulan": {
+      "anchor": "tedjowulan",
+      "text": "Since January 2026 the government-appointed custodian of the palace heritage site (Culture Ministry decree 8/2026); has not endorsed either claimant to Pakubuwana XIV.",
+      "show": {
+        "side": "b",
+        "width": 300,
+        "inline": true
+      }
+    },
+    "n_mn10": {
+      "anchor": "mn10",
+      "text": "Chosen in 2022 over his elder half-brother Paundrakarna, a grandson of Sukarno.",
+      "show": {
+        "side": "b",
+        "width": 300,
+        "inline": true
+      }
+    }
+  },
+  "panels": {
+    "header": {
+      "x": 140,
+      "y": 130,
+      "width": 2190,
+      "height": 950
+    },
+    "intro": "Founded in the 16th century, the Sultanate of Mataram came to rule most of Java. Civil wars and European intervention between 1755 and 1813 split it into four royal houses that survive today: the <b>Surakarta</b> Sunanate and the <b>Mangkunegaran</b> in Solo, and the <b>Yogyakarta</b> Sultanate and the <b>Pakualaman</b> in Yogyakarta.",
+    "caveats": [
+      "<b>Notes on uncertain points.</b> The ancestry before Pamanahan, back to Brawijaya V of Majapahit, follows the Babad Tanah Jawi and is legendary. Dates before 1613 are traditional, from court chronicles compiled mostly in the 18th century (alternatives include 1582 or 1586/87 for the kingdom's founding and 1575 or 1584 for Pamanahan's death); Mataram rulers appear in Dutch VOC records from 1613–14 (de Graaf; Ricklefs). Only Sultan Agung used the title Sultan, from 1641; his successors were styled Susuhunan. Mataram used no fixed heraldic emblem; the red flag often shown for it appears to derive from 18th-century Dutch flag charts, where it is labelled Japara. The courts' emblems date from the 19th and 20th centuries.",
+      "Paku Alam reigns are dated from formal installation; Paku Alam I was appointed de facto on 29 June 1812, and a regency council ran the Pakualaman 1902–06. Nataningprang is also styled GPH or GRMH (Gusti Raden Mas Harya); he died before his father (d. 1858) and so never succeeded.",
+      "Getas Pandawa is also spelled Getas Pendawa, Bondan Kejawan Bondan Kajawan, Enis Anis, Pandansari Wandansari and Blitar Balitar. Crowns count reigns within each court: Surakarta's from Pakubuwana III (the court itself counts Pakubuwana II, who moved to Surakarta in 1745, as its first Sunan), and Hamengkubuwana III's regency of 1810–11 is counted as a reign. Hamengkubuwana IV's death is dated 1822 (some sources 1823). Prabu Hamijaya is also spelled Prabu Amijaya. Bendara's marriage is dated 1746 or 1747. KPA Mangkunegara's exile route and death date vary between sources.",
+      "Tien Suharto's descent from Mangkunegara III runs through her mother (she is often called his canggah, great-great-grandchild); the line is not fully documented.",
+      "Pakubuwana XII never named a queen, so no son had a clear claim, and the succession split in 2004. The Surakarta succession has been disputed since November 2025; a January 2026 court order concerns only Purbaya's civil-registry name and does not decide the succession (a challenge to it was ruled inadmissible on procedural grounds in July 2026; no appeal outcome has been reported). The Mangkualaman has no state recognition, and its dates (2021–22) vary between sources."
+    ],
+    "sources": [
+      "<b>Sources.</b> Reign dates follow the courts' chronologies; early dates vary by source. Portraits: Wikimedia Commons (Tropenmuseum, KITLV, Rijksmuseum, Kraton Yogyakarta and Surakarta collections; CC BY, CC BY-SA and public domain), Pemda DIY",
+      {
+        "private": ", Kraton Yogyakarta and press photos"
+      },
+      "; early Mataram rulers are later artistic depictions. Emblems: Wikimedia Commons (Gunawan Kartapranata, RaFaDa20631; CC BY-SA)",
+      {
+        "private": " and the Mangkualaman"
+      },
+      ". Maps: geoBoundaries (CC BY 3.0 IGO); historical extents after Ricklefs, Cribb and Hakim. Full picture credits: ",
+      {
+        "public": "the credits page. ",
+        "private": "the media list of charts/wangsa-mataram/chart.json. "
+      }
+    ],
+    "badges": [
+      "b_cc_by_sa",
+      "b_fanmade"
+    ],
+    "scale": {
+      "row": [
+        "lg_brawijaya",
+        "lg_enis"
+      ],
+      "trunk": [
+        "senapati",
+        "hanyakrawati"
+      ],
+      "documented": "hanyakrawati",
+      "stages": [
+        {
+          "head": "LEGENDARY",
+          "lines": [
+            "Ancestry from the court chronicle Babad Tanah Jawi"
+          ]
+        },
+        {
+          "head": "COURT TRADITION",
+          "lines": [
+            "Known from chronicles",
+            "written mostly in the 1700s;",
+            "dates traditional"
+          ]
+        },
+        {
+          "head": "DOCUMENTED",
+          "lines": [
+            "In Dutch VOC records",
+            "from 1613–14"
+          ]
+        }
+      ]
+    },
+    "map": {
+      "title": "How Mataram split",
+      "width": 820,
+      "columns": 3,
+      "height": 980,
+      "boundaries": {
+        "adm2": "map_adm2",
+        "adm3": "map_adm3",
+        "adm4": "map_adm4"
+      },
+      "leaveOut": {
+        "province": [
+          "Bali"
+        ]
+      },
+      "assignments": "map_stages",
+      "shapes": "map_shapes",
+      "views": {
+        "java": [
+          105.15,
+          114.55,
+          -8.8,
+          -5.95
+        ],
+        "detail": [
+          109.7,
+          111.7,
+          -8.22,
+          -7.22
+        ]
+      },
+      "colours": {
+        "mataram": "house:mataram",
+        "surakarta": "house:surakarta",
+        "yogyakarta": "house:yogyakarta",
+        "pakualaman": "house:pakualaman",
+        "mangkunegaran": "house:mangkunegaran",
+        "foreign": "#BAB29C",
+        "other": "palette:neutral",
+        "republic": "#E6E1D3",
+        "exSurakarta": "house:surakarta+0.6",
+        "exMangkunegaran": "house:mangkunegaran+0.6",
+        "sea": "#F6F3EA",
+        "coast": "#A9A08A"
+      },
+      "areas": {
+        "adikarto": {
+          "adm3": [
+            "Temon",
+            "Wates",
+            "Panjatan",
+            "Galur"
+          ]
+        },
+        "soloMangkunegaran": {
+          "adm4": "solo_mn"
+        },
+        "surakartaEnclaves": {
+          "adm4": "sk_enclaves"
+        },
+        "mangkunegaranEnclaves": {
+          "adm4": "ngawen_mn"
+        }
+      },
+      "maps": [
+        {
+          "id": "S1",
+          "from": 1625,
+          "view": "java",
+          "title": "c. 1640 · Mataram at its height",
+          "caption": "Sultan Agung held Central and East Java and Madura; Cirebon and the Priangan were vassals. Blambangan, conquered 1639–40, was never firmly held. Banten, Batavia and the empty land between them stayed outside.",
+          "fills": {
+            "mataram": "mataram",
+            "blambangan": "mataram/other",
+            "priangan": "mataram/other",
+            "cirebon": "mataram/other",
+            "banten": "other",
+            "borderland": "other/republic",
+            "voc": "foreign"
+          },
+          "default": "other",
+          "marks": [
+            {
+              "kind": "place",
+              "at": [
+                106.8133,
+                -6.1347
+              ],
+              "label": "Batavia",
+              "position": "below"
+            },
+            {
+              "kind": "place",
+              "at": [
+                110.4007,
+                -7.8711
+              ],
+              "label": "Kerta",
+              "position": "left"
+            }
+          ]
+        },
+        {
+          "id": "S2",
+          "from": 1743,
+          "view": "java",
+          "title": "1743–49 · The coast lost",
+          "caption": "To regain his throne after the Chinese War, Pakubuwana II ceded the north coast and Madura to the VOC (1743, 1746). His 1749 cession of the whole realm stayed on paper while the interior was in revolt.",
+          "fills": {
+            "mataram": "mataram",
+            "voc": "foreign",
+            "voc_uncertain": "foreign/mataram",
+            "malang": "other",
+            "banten": "foreign/other",
+            "blambangan": "foreign/other"
+          },
+          "default": "other",
+          "marks": [
+            {
+              "kind": "place",
+              "at": [
+                106.8133,
+                -6.1347
+              ],
+              "label": "Batavia",
+              "position": "below"
+            },
+            {
+              "kind": "place",
+              "at": [
+                110.7417,
+                -7.5564
+              ],
+              "label": "Kartasura",
+              "position": "left"
+            }
+          ]
+        },
+        {
+          "id": "S3",
+          "from": 1755,
+          "view": "java",
+          "title": "1755–57 · Giyanti and Salatiga",
+          "caption": "Surakarta and Yogyakarta split the kingdom, their lands interlocking field by field; the Mangkunegaran was carved out of Surakarta's share.",
+          "fills": {
+            "vorstenlanden_shared": "surakarta/yogyakarta",
+            "yogyakarta_mancanagara": "yogyakarta",
+            "surakarta_mancanagara": "surakarta",
+            "mancanagara_split": "surakarta/yogyakarta",
+            "mangkunegaran": "mangkunegaran/surakarta",
+            "voc": "foreign",
+            "outside": "other"
+          },
+          "default": "other",
+          "marks": [
+            {
+              "kind": "place",
+              "at": [
+                110.9731,
+                -7.6191
+              ],
+              "label": "Giyanti",
+              "position": "right-below"
+            },
+            {
+              "kind": "place",
+              "at": [
+                110.5022,
+                -7.3389
+              ],
+              "label": "Salatiga",
+              "position": "left"
+            }
+          ]
+        },
+        {
+          "id": "S4",
+          "from": 1812,
+          "view": "java",
+          "title": "1812–13 · British rule",
+          "caption": "The British annexed Kedu and other districts and created the Pakualaman, whose scattered lands were later gathered in Yogyakarta's south-west. The box marks the detail maps.",
+          "fills": {
+            "vorstenlanden_shared": "surakarta/yogyakarta",
+            "mangkunegaran": "mangkunegaran",
+            "government": "foreign",
+            "colonial_rest": "foreign",
+            "pacitan_half": "foreign/surakarta"
+          },
+          "default": "other",
+          "overlays": [
+            {
+              "area": "adikarto",
+              "fill": "pakualaman"
+            }
+          ],
+          "marks": [
+            {
+              "kind": "frame",
+              "view": "detail"
+            },
+            {
+              "kind": "ring",
+              "at": [
+                110.2,
+                -7.92
+              ],
+              "label": "Pakualaman"
+            }
+          ],
+          "note": "Drawn on modern regency boundaries; before 1830 the courts' lands were intermixed field by field, so earlier extents are approximate."
+        },
+        {
+          "id": "S5",
+          "from": 1830,
+          "view": "detail",
+          "title": "1830–1942 · After the Java War (detail)",
+          "caption": "The Dutch annexed the outer provinces, leaving the four courts only the Vorstenlanden around Surakarta and Yogyakarta, with a few enclaves (outlined).",
+          "fills": {
+            "surakarta": "surakarta",
+            "mangkunegaran": "mangkunegaran",
+            "yogyakarta": "yogyakarta",
+            "government": "foreign"
+          },
+          "default": "other",
+          "overlays": [
+            {
+              "area": "adikarto",
+              "fill": "pakualaman"
+            },
+            {
+              "area": "soloMangkunegaran",
+              "fill": "mangkunegaran"
+            },
+            {
+              "area": "surakartaEnclaves",
+              "fill": "surakarta",
+              "outline": true
+            },
+            {
+              "area": "mangkunegaranEnclaves",
+              "fill": "mangkunegaran",
+              "outline": true
+            }
+          ],
+          "marks": [
+            {
+              "kind": "dot",
+              "at": [
+                110.398,
+                -7.834
+              ],
+              "r": 4,
+              "fill": "surakarta",
+              "stroke": 1.2
+            },
+            {
+              "kind": "dot",
+              "at": [
+                110.3762,
+                -7.801
+              ],
+              "r": 3.5,
+              "fill": "pakualaman",
+              "stroke": 1
+            },
+            {
+              "kind": "place",
+              "at": [
+                110.8277,
+                -7.5778
+              ],
+              "label": "Surakarta",
+              "position": "right-below"
+            },
+            {
+              "kind": "place",
+              "at": [
+                110.3641,
+                -7.8057
+              ],
+              "label": "Yogyakarta",
+              "position": "left"
+            }
+          ]
+        },
+        {
+          "id": "S6",
+          "from": 1950,
+          "view": "detail",
+          "title": "Since 1950 · In the Republic (detail)",
+          "caption": "Yogyakarta and the Pakualaman form the Special Region of Yogyakarta; the former Surakarta and Mangkunegaran lands are part of Central Java. The enclaves joined their surroundings (formally 1958).",
+          "fills": {
+            "diy": "yogyakarta",
+            "ex_surakarta": "exSurakarta",
+            "rest": "republic"
+          },
+          "default": "other",
+          "regions": {
+            "Karanganyar": "exMangkunegaran",
+            "Wonogiri": "exMangkunegaran"
+          },
+          "overlays": [
+            {
+              "area": "adikarto",
+              "fill": "pakualaman"
+            },
+            {
+              "area": "soloMangkunegaran",
+              "fill": "exMangkunegaran"
+            }
+          ],
+          "marks": [
+            {
+              "kind": "place",
+              "at": [
+                110.8277,
+                -7.5778
+              ],
+              "label": "Surakarta",
+              "position": "right-below"
+            },
+            {
+              "kind": "place",
+              "at": [
+                110.3641,
+                -7.8057
+              ],
+              "label": "Yogyakarta",
+              "position": "left"
+            }
+          ]
+        }
+      ],
+      "legend": [
+        {
+          "fill": "mataram",
+          "label": "Mataram"
+        },
+        {
+          "fill": "mataram/other",
+          "label": "Mataram vassal or contested"
+        },
+        {
+          "fill": "foreign",
+          "label": "VOC, British or Dutch rule"
+        },
+        {
+          "fill": "foreign/mataram",
+          "label": "VOC or Mataram, uncertain"
+        },
+        {
+          "fill": "foreign/other",
+          "label": "Local rulers under VOC claim or overlordship"
+        },
+        {
+          "fill": "surakarta",
+          "label": "Surakarta"
+        },
+        {
+          "fill": "yogyakarta",
+          "label": "Yogyakarta"
+        },
+        {
+          "fill": "surakarta/yogyakarta",
+          "label": "Surakarta and Yogyakarta, intermixed"
+        },
+        {
+          "fill": "mangkunegaran",
+          "label": "Mangkunegaran"
+        },
+        {
+          "fill": "mangkunegaran/surakarta",
+          "label": "Mangkunegaran within Surakarta's lands"
+        },
+        {
+          "fill": "pakualaman",
+          "label": "Pakualaman"
+        },
+        {
+          "fill": "exSurakarta/exMangkunegaran",
+          "label": "Former court lands, now Central Java"
+        },
+        {
+          "fill": "other",
+          "label": "Other states"
+        },
+        {
+          "fill": "other/republic",
+          "label": "Unsettled borderland"
+        },
+        {
+          "fill": "foreign/surakarta",
+          "label": "Half ceded to the British (Pacitan)"
+        },
+        {
+          "fill": "republic",
+          "label": "Rest of the Republic"
+        },
+        {
+          "dot": "surakarta",
+          "label": "Enclave of another court (white outline)"
+        }
+      ]
+    },
+    "key": {
+      "house": "surakarta",
+      "contrast": "yogyakarta"
+    },
+    "viewer": {
+      "year": 1755
+    }
+  },
+  "media": {
+    "p_agung": {
+      "kind": "portrait",
+      "file": "assets/portraits/agung.jpg",
+      "of": "agung",
+      "credit": {
+        "title": "Sultan Agung",
+        "source": "https://commons.wikimedia.org/wiki/File:Anyakrakusuma_of_Mataram.jpg",
+        "fileUrl": "https://upload.wikimedia.org/wikipedia/commons/d/d0/Anyakrakusuma_of_Mataram.jpg",
+        "author": "Basuki Bawono (painting, 2008); photographed by Commons user Kridasana",
+        "licence": "CC BY-SA 3.0",
+        "changes": "cropped to a square",
+        "note": "later artistic depiction (2008 painting); licence given by the photographer, not the painter: doubtful"
+      },
+      "private": "a 2008 painting by Basuki Bawono, licensed by its photographer, not the painter"
+    },
+    "p_am2": {
+      "kind": "portrait",
+      "file": "assets/portraits/am2.jpg",
+      "of": "am2",
+      "credit": {
+        "title": "Susuhunan Amangkurat II",
+        "source": "https://commons.wikimedia.org/wiki/File:Detail_painting_of_Amangkurat_II_executed_Trunajaya.jpeg",
+        "fileUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Detail_painting_of_Amangkurat_II_executed_Trunajaya.jpeg/960px-Detail_painting_of_Amangkurat_II_executed_Trunajaya.jpeg",
+        "author": "unknown Javanese painter, c. 1890 (KITLV 48M5)",
+        "licence": "Public domain",
+        "changes": "cropped to a square",
+        "note": "later artistic depiction; detail of a narrative scene"
+      }
+    },
+    "p_am3": {
+      "kind": "portrait",
+      "file": "assets/portraits/am3.jpg",
+      "of": "am3",
+      "credit": {
+        "title": "Susuhunan Amangkurat III",
+        "source": "https://commons.wikimedia.org/wiki/File:Detail_painting_of_Amangkurat_III_(Sunan_Mas).jpeg",
+        "fileUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Detail_painting_of_Amangkurat_III_%28Sunan_Mas%29.jpeg/960px-Detail_painting_of_Amangkurat_III_%28Sunan_Mas%29.jpeg",
+        "author": "unknown Javanese painter, c. 1890 (KITLV 48M6)",
+        "licence": "Public domain",
+        "changes": "cropped to a square",
+        "note": "later artistic depiction; detail of a narrative scene"
+      }
+    },
+    "p_ancilla": {
+      "kind": "portrait",
+      "file": "assets/portraits/ancilla.jpg",
+      "of": "ancilla",
+      "credit": {
+        "title": "GRAj. Ancillasura Marina",
+        "source": "https://www.rctiplus.com/news/detail/inews/5462633/profil-gusti-sura--kakak-gusti-bhre-yang-akan-menikah-november-2026",
+        "fileUrl": "https://static.rctiplus.id/media/600/files/fta_rcti/news/images/c495d4b4.jpg",
+        "author": "iNews / RCTI+ (lead image, probably from her Instagram)",
+        "licence": "not free (all rights reserved)",
+        "changes": "cropped to a square",
+        "note": "news photo"
+      },
+      "private": "RCTI+ / iNews news photo"
+    },
+    "p_anglingkusumo": {
+      "kind": "portrait",
+      "file": "assets/portraits/anglingkusumo.jpg",
+      "of": "anglingkusumo",
+      "credit": {
+        "title": "KGPAA Mangku Alam I (Anglingkusumo)",
+        "source": "https://mangkualaman.org/kings/",
+        "fileUrl": "https://mangkualaman.org/wp-content/uploads/2023/10/pakualam9.webp",
+        "author": "House of Mangkualaman (official studio portrait)",
+        "licence": "not free (all rights reserved)",
+        "changes": "cropped to a square"
+      },
+      "private": "mangkualaman.org"
+    },
+    "p_bendara2": {
+      "kind": "portrait",
+      "file": "assets/portraits/bendara2.jpg",
+      "of": "bendara2",
+      "credit": {
+        "title": "GKR Bendara",
+        "source": "https://commons.wikimedia.org/wiki/File:GKR_Bendara_for_Hamongnagari_Temporary_Exhibition_(cropped).jpg",
+        "fileUrl": "https://upload.wikimedia.org/wikipedia/commons/8/81/GKR_Bendara_for_Hamongnagari_Temporary_Exhibition_%28cropped%29.jpg",
+        "author": "Regional Government of the Special Region of Yogyakarta (Pemda DIY)",
+        "licence": "Public domain",
+        "changes": "cropped to a square"
+      }
+    },
+    "p_bimantoro": {
+      "kind": "portrait",
+      "file": "assets/portraits/bimantoro.jpg",
+      "of": "bimantoro",
+      "credit": {
+        "title": "BPH Kusumo Bimantoro",
+        "source": "https://tirto.id/dhaup-ageng-puro-pakualaman-dihadiri-para-raja-nusantara-ddrg",
+        "fileUrl": "https://mmc.tirto.id/image/otf/1240x0,q70/2019/01/05/dhaup-ageng-puro-pakualaman----copy_ratio-16x9.jpg",
+        "author": "Panitia Dhaup Ageng (Pura Pakualaman), via tirto.id",
+        "licence": "not free (all rights reserved)",
+        "changes": "cropped to the groom from the 1024x577 wedding photo, then cropped to a square",
+        "note": "press photo (5 Jan 2019)"
+      },
+      "private": "tirto.id press photo"
+    },
+    "p_butet": {
+      "kind": "portrait",
+      "file": "assets/portraits/butet.jpg",
+      "of": "butet",
+      "credit": {
+        "title": "Butet Kertaredjasa",
+        "source": "https://commons.wikimedia.org/wiki/File:Butet_Kartaredjasa_on_Mata_Najwa_(2023).jpg",
+        "fileUrl": "https://upload.wikimedia.org/wikipedia/commons/6/6c/Butet_Kartaredjasa_on_Mata_Najwa_%282023%29.jpg",
+        "author": "Najwa Shihab / Narasi (Mata Najwa, YouTube)",
+        "licence": "CC BY 3.0",
+        "changes": "cropped to a square",
+        "note": "frame from a 2023 Mata Najwa video"
+      }
+    },
+    "p_condrokirono": {
+      "kind": "portrait",
+      "file": "assets/portraits/condrokirono.jpg",
+      "of": "condrokirono",
+      "credit": {
+        "title": "GKR Condrokirono",
+        "source": "https://commons.wikimedia.org/wiki/File:Condrokirono.jpg",
+        "fileUrl": "https://upload.wikimedia.org/wikipedia/commons/6/69/Condrokirono.jpg",
+        "author": "Wiryono",
+        "licence": "CC BY-SA 4.0",
+        "changes": "cropped to a square"
+      }
+    },
+    "p_diponegoro": {
+      "kind": "portrait",
+      "file": "assets/portraits/diponegoro.jpg",
+      "of": "diponegoro",
+      "credit": {
+        "title": "Pangeran Diponegoro",
+        "source": "https://commons.wikimedia.org/wiki/File:Diponegoro.jpg",
+        "fileUrl": "https://upload.wikimedia.org/wikipedia/commons/2/2c/Diponegoro.jpg",
+        "author": "lithograph by C. C. A. Last (1835) after a pencil drawing by A. J. Bik (1830)",
+        "licence": "Public domain",
+        "changes": "cropped to a square"
+      }
+    },
+    "p_djatikusumo": {
+      "kind": "portrait",
+      "file": "assets/portraits/djatikusumo.jpg",
+      "of": "djatikusumo",
+      "credit": {
+        "title": "GPH Djatikusumo",
+        "source": "https://commons.wikimedia.org/wiki/File:Brigjen_TNI_GPH._Djatikoesoemo_(cropped).jpg",
+        "fileUrl": "https://upload.wikimedia.org/wikipedia/commons/0/07/Brigjen_TNI_GPH._Djatikoesoemo_%28cropped%29.jpg",
+        "author": "Pusat Zeni Angkatan Darat",
+        "licence": "Public domain",
+        "changes": "cropped to a square"
+      }
+    },
+    "p_gkrpb": {
+      "kind": "portrait",
+      "file": "assets/portraits/gkrpb.jpg",
+      "of": "gkrpb",
+      "credit": {
+        "title": "GKR Pakubuwana (wife of Pakubuwana X)",
+        "source": "https://commons.wikimedia.org/wiki/File:Kangdjeng_Ratoe_Pakoe_Boewono,_echtgenote_van_Pakoe_Boewono_X,_soesoehoenan_van_Soerakarta,_KITLV_6213.tiff",
+        "fileUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Kangdjeng_Ratoe_Pakoe_Boewono%2C_echtgenote_van_Pakoe_Boewono_X%2C_soesoehoenan_van_Soerakarta%2C_KITLV_6213.tiff/lossy-page1-1280px-Kangdjeng_Ratoe_Pakoe_Boewono%2C_echtgenote_van_Pakoe_Boewono_X%2C_soesoehoenan_van_Soerakarta%2C_KITLV_6213.tiff.jpg",
+        "author": "unknown photographer, c. 1900 (KITLV 6213, Leiden University Library)",
+        "licence": "CC BY 4.0",
+        "changes": "cropped to a square",
+        "note": "identity medium-high (caption 'Kangdjeng Ratoe Pakoe Boewono')"
+      }
+    },
+    "p_haryomataram": {
+      "kind": "portrait",
+      "file": "assets/portraits/haryomataram.jpg",
+      "of": "haryomataram",
+      "credit": {
+        "title": "KGPH Haryo Mataram",
+        "source": "https://commons.wikimedia.org/wiki/File:KGPH_Haryo_Mataram.png",
+        "fileUrl": "https://upload.wikimedia.org/wikipedia/commons/6/6a/KGPH_Haryo_Mataram.png",
+        "author": "Universitas Trisakti",
+        "licence": "CC BY-SA 4.0",
+        "changes": "cropped to a square",
+        "note": "licence claimed by a third-party uploader: doubtful"
+      }
+    },
+    "p_hayu": {
+      "kind": "portrait",
+      "file": "assets/portraits/hayu.jpg",
+      "of": "hayu",
+      "credit": {
+        "title": "GKR Hayu",
+        "source": "https://commons.wikimedia.org/wiki/File:GKR_Hayu.jpg",
+        "fileUrl": "https://upload.wikimedia.org/wikipedia/commons/1/1f/GKR_Hayu.jpg",
+        "author": "Wiryono",
+        "licence": "CC BY-SA 4.0",
+        "changes": "cropped to a square"
+      }
+    },
+    "p_hb1": {
+      "kind": "portrait",
+      "file": "assets/portraits/hb1.jpg",
+      "of": "hb1",
+      "credit": {
+        "title": "Sri Sultan Hamengkubuwana I",
+        "source": "https://www.kratonjogja.id/raja-raja/2-sri-sultan-hamengku-buwono-i/",
+        "fileUrl": "https://www.kratonjogja.id/assets/content/963c520e-0137-4ad1-b99f-073f004e51a5.jpg",
+        "author": "Kraton Ngayogyakarta Hadiningrat (artist's signature illegible)",
+        "licence": "not free (all rights reserved)",
+        "changes": "cropped to a square",
+        "note": "later artistic depiction (modern drawing on horseback); Commons Raden_Mas_Sujono.jpg is a photo of the same drawing, not used"
+      },
+      "private": "Kraton Yogyakarta website; Commons Raden_Mas_Sujono.jpg is a photo of the same sketch, so not a free alternative"
+    },
+    "p_hb10": {
+      "kind": "portrait",
+      "file": "assets/portraits/hb10.jpg",
+      "of": "hb10",
+      "credit": {
+        "title": "Sri Sultan Hamengkubuwana X",
+        "source": "https://commons.wikimedia.org/wiki/File:Sultan_Hamengkubuwono_X,_Governor_of_Special_Region_of_Yogyakarta.jpg",
+        "fileUrl": "https://upload.wikimedia.org/wikipedia/commons/c/c3/Sultan_Hamengkubuwono_X%2C_Governor_of_Special_Region_of_Yogyakarta.jpg",
+        "author": "Pemerintah Daerah Istimewa Yogyakarta",
+        "licence": "Public domain",
+        "changes": "cropped to a square"
+      }
+    },
+    "p_hb2": {
+      "kind": "portrait",
+      "file": "assets/portraits/hb2.jpg",
+      "of": "hb2",
+      "credit": {
+        "title": "Sri Sultan Hamengkubuwana II",
+        "source": "https://www.kratonjogja.id/raja-raja/3-sri-sultan-hamengku-buwono-ii/",
+        "fileUrl": "https://www.kratonjogja.id/assets/content/426ebaba-502f-42f2-b383-72c067893666.jpg",
+        "author": "Kraton Ngayogyakarta Hadiningrat (official portrait series; painter unknown)",
+        "licence": "not free (all rights reserved)",
+        "changes": "cropped to a square",
+        "note": "file is the Kraton original (684x1000), not the PD-tagged Commons crop Hamengkubuwono_II_(cropped).jpg; not in private.json"
+      },
+      "private": "Kraton Yogyakarta website (the file used is the Kraton original, not the Commons crop)"
+    },
+    "p_hb3": {
+      "kind": "portrait",
+      "file": "assets/portraits/hb3.jpg",
+      "of": "hb3",
+      "credit": {
+        "title": "Sri Sultan Hamengkubuwana III",
+        "source": "https://commons.wikimedia.org/wiki/File:Official_Portrait_of_Sultan_Hamengkubowono_III_(cropped).jpg",
+        "fileUrl": "https://upload.wikimedia.org/wikipedia/commons/c/cb/Official_Portrait_of_Sultan_Hamengkubowono_III_%28cropped%29.jpg",
+        "author": "Yogyakarta Sultanate (Kraton official portrait series)",
+        "licence": "Public domain",
+        "changes": "cropped to a square",
+        "note": "PD tag by uploader on a kratonjogja.id image (same series as hb2)"
+      }
+    },
+    "p_hb4": {
+      "kind": "portrait",
+      "file": "assets/portraits/hb4.jpg",
+      "of": "hb4",
+      "credit": {
+        "title": "Sri Sultan Hamengkubuwana IV",
+        "source": "https://commons.wikimedia.org/wiki/File:Official_Portrait_of_Sultan_Hamengkubowono_IV.jpg",
+        "fileUrl": "https://upload.wikimedia.org/wikipedia/commons/1/18/Official_Portrait_of_Sultan_Hamengkubowono_IV.jpg",
+        "author": "Yogyakarta Sultanate (Kraton official portrait series)",
+        "licence": "Public domain",
+        "changes": "cropped to a square",
+        "note": "PD tag by uploader on a kratonjogja.id image (same series as hb2)"
+      }
+    },
+    "p_hb5": {
+      "kind": "portrait",
+      "file": "assets/portraits/hb5.jpg",
+      "of": "hb5",
+      "credit": {
+        "title": "Sri Sultan Hamengkubuwana V",
+        "source": "https://commons.wikimedia.org/wiki/File:Official_Portrait_of_Sultan_Hamengkubowono_V.jpg",
+        "fileUrl": "https://upload.wikimedia.org/wikipedia/commons/9/9f/Official_Portrait_of_Sultan_Hamengkubowono_V.jpg",
+        "author": "Yogyakarta Sultanate (Kraton official portrait series)",
+        "licence": "Public domain",
+        "changes": "cropped to a square",
+        "note": "PD tag by uploader on a kratonjogja.id image (same series as hb2)"
+      }
+    },
+    "p_hb6": {
+      "kind": "portrait",
+      "file": "assets/portraits/hb6.jpg",
+      "of": "hb6",
+      "credit": {
+        "title": "Sri Sultan Hamengkubuwana VI",
+        "source": "https://commons.wikimedia.org/wiki/File:COLLECTIE_TROPENMUSEUM_Portret_van_de_Sultan_van_Djogjakarta_Hamengkoe_Boewono_VI_(1855-1877)_TMnr_60009394.jpg",
+        "fileUrl": "https://upload.wikimedia.org/wikipedia/commons/a/a1/COLLECTIE_TROPENMUSEUM_Portret_van_de_Sultan_van_Djogjakarta_Hamengkoe_Boewono_VI_%281855-1877%29_TMnr_60009394.jpg",
+        "author": "Isidore van Kinsbergen (Tropenmuseum)",
+        "licence": "Public domain",
+        "changes": "cropped to a square"
+      }
+    },
+    "p_hb7": {
+      "kind": "portrait",
+      "file": "assets/portraits/hb7.jpg",
+      "of": "hb7",
+      "credit": {
+        "title": "Sri Sultan Hamengkubuwana VII",
+        "source": "https://commons.wikimedia.org/wiki/File:COLLECTIE_TROPENMUSEUM_Studioportret_van_Hamengku_Buwana_VII_Sultan_van_Jogjakarta_TMnr_60001455b.jpg",
+        "fileUrl": "https://upload.wikimedia.org/wikipedia/commons/8/88/COLLECTIE_TROPENMUSEUM_Studioportret_van_Hamengku_Buwana_VII_Sultan_van_Jogjakarta_TMnr_60001455b.jpg",
+        "author": "Kassian Cephas (Tropenmuseum)",
+        "licence": "CC BY-SA 3.0",
+        "changes": "cropped to a square"
+      }
+    },
+    "p_hb8": {
+      "kind": "portrait",
+      "file": "assets/portraits/hb8.jpg",
+      "of": "hb8",
+      "credit": {
+        "title": "Sri Sultan Hamengkubuwana VIII",
+        "source": "https://commons.wikimedia.org/wiki/File:Hamengkoe_Boewono_VIII_(1861-1939),_sultan_van_Jokjakarta_(1921-1939),_NG-2008-13-1.jpg",
+        "fileUrl": "https://upload.wikimedia.org/wikipedia/commons/3/32/Hamengkoe_Boewono_VIII_%281861-1939%29%2C_sultan_van_Jokjakarta_%281921-1939%29%2C_NG-2008-13-1.jpg",
+        "author": "Rijksmuseum (NG-2008-13-1)",
+        "licence": "CC0",
+        "changes": "cropped to a square"
+      }
+    },
+    "p_hb9": {
+      "kind": "portrait",
+      "file": "assets/portraits/hb9.jpg",
+      "of": "hb9",
+      "credit": {
+        "title": "Sri Sultan Hamengkubuwana IX",
+        "source": "https://commons.wikimedia.org/wiki/File:Hamengku_Buwono_IX_(1973).jpg",
+        "fileUrl": "https://upload.wikimedia.org/wikipedia/commons/8/8b/Hamengku_Buwono_IX_%281973%29.jpg",
+        "author": "Departemen Penerangan Republik Indonesia (1973)",
+        "licence": "Public domain",
+        "changes": "cropped to a square"
+      }
+    },
+    "p_hemas_hb10": {
+      "kind": "portrait",
+      "file": "assets/portraits/hemas_hb10.jpg",
+      "of": "hemas_hb10",
+      "credit": {
+        "title": "GKR Hemas (queen of Hamengkubuwana X)",
+        "source": "https://commons.wikimedia.org/wiki/File:KPU_Gusti_Kanjeng_Ratu_Hemas.jpg",
+        "fileUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/ca/KPU_Gusti_Kanjeng_Ratu_Hemas.jpg/1280px-KPU_Gusti_Kanjeng_Ratu_Hemas.jpg",
+        "author": "KPU (General Election Commission), DPD 2024 candidate photo",
+        "licence": "Public domain",
+        "changes": "cropped to a square",
+        "note": "replaces the earlier DPD photo GKR_Hemas,_Anggota_DPD_RI_(2024).jpg"
+      }
+    },
+    "p_hemas_pb10": {
+      "kind": "portrait",
+      "file": "assets/portraits/hemas_pb10.jpg",
+      "of": "hemas_pb10",
+      "credit": {
+        "title": "GKR Hemas (wife of Pakubuwana X)",
+        "source": "https://commons.wikimedia.org/wiki/File:Goesti_Kangdjeng_Ratoe_Mas_te_Soerakarta,_echtgenote_van_de_soesoehoenan_van_Soerakarta_Pakoe_Boewono_X,_KITLV_105662.tiff",
+        "fileUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/95/Goesti_Kangdjeng_Ratoe_Mas_te_Soerakarta%2C_echtgenote_van_de_soesoehoenan_van_Soerakarta_Pakoe_Boewono_X%2C_KITLV_105662.tiff/lossy-page1-1920px-Goesti_Kangdjeng_Ratoe_Mas_te_Soerakarta%2C_echtgenote_van_de_soesoehoenan_van_Soerakarta_Pakoe_Boewono_X%2C_KITLV_105662.tiff.jpg",
+        "author": "unknown photographer (KITLV 105662, Leiden University Library)",
+        "licence": "CC BY 4.0",
+        "changes": "cropped to a square",
+        "note": "replaces the earlier crop of the couple photo KITLV 18120"
+      }
+    },
+    "p_hoesein": {
+      "kind": "portrait",
+      "file": "assets/portraits/hoesein.jpg",
+      "of": "hoesein",
+      "credit": {
+        "title": "Hoesein Djajadiningrat",
+        "source": "https://commons.wikimedia.org/wiki/File:Husein_Djajadiningrat_P.A.jpg",
+        "fileUrl": "https://upload.wikimedia.org/wikipedia/commons/8/86/Husein_Djajadiningrat_P.A.jpg",
+        "author": "Rijksvoorlichtingsdienst (RVD), Nationaal Archief",
+        "licence": "CC BY-SA 3.0 NL",
+        "changes": "cropped to a square"
+      }
+    },
+    "p_kihajar": {
+      "kind": "portrait",
+      "file": "assets/portraits/kihajar.jpg",
+      "of": "kihajar",
+      "credit": {
+        "title": "Ki Hajar Dewantara",
+        "source": "https://commons.wikimedia.org/wiki/File:Ki_Hadjar_Dewantara,_Djawa_Baroe_(1943),_p5.jpg",
+        "fileUrl": "https://upload.wikimedia.org/wikipedia/commons/b/bf/Ki_Hadjar_Dewantara%2C_Djawa_Baroe_%281943%29%2C_p5.jpg",
+        "author": "Djawa Sjinboen Sja (Djawa Baroe, 1943)",
+        "licence": "Public domain",
+        "changes": "cropped to a square"
+      }
+    },
+    "p_kyaimaja": {
+      "kind": "portrait",
+      "file": "assets/portraits/kyaimaja.jpg",
+      "of": "kyaimaja",
+      "credit": {
+        "title": "Kyai Maja",
+        "source": "https://commons.wikimedia.org/wiki/File:Kyai_Modjo_Pejuang_Perang_Jawa_Yang_di_Asingkan_di_Tondano_(cropped).jpg",
+        "fileUrl": "https://upload.wikimedia.org/wikipedia/commons/c/c6/Kyai_Modjo_Pejuang_Perang_Jawa_Yang_di_Asingkan_di_Tondano_%28cropped%29.jpg",
+        "author": "Jhr. F. V. A. Ridder de Stuers",
+        "licence": "Public domain",
+        "changes": "cropped to a square"
+      }
+    },
+    "p_maduretno": {
+      "kind": "portrait",
+      "file": "assets/portraits/maduretno.jpg",
+      "of": "maduretno",
+      "credit": {
+        "title": "GKR Maduretno",
+        "source": "https://commons.wikimedia.org/wiki/File:Princess_Maduretno_of_Yogyakarta,_June_2013.jpg",
+        "fileUrl": "https://upload.wikimedia.org/wikipedia/commons/e/ed/Princess_Maduretno_of_Yogyakarta%2C_June_2013.jpg",
+        "author": "Soemirat",
+        "licence": "CC BY-SA 3.0",
+        "changes": "cropped to a square"
+      }
+    },
+    "p_mangkubumi": {
+      "kind": "portrait",
+      "file": "assets/portraits/mangkubumi.jpg",
+      "of": "mangkubumi",
+      "credit": {
+        "title": "GKR Mangkubumi",
+        "source": "https://commons.wikimedia.org/wiki/File:GKR_Mangkubumi_for_2025_International_Symposium_on_Javanese_Culture_(cropped).jpg",
+        "fileUrl": "https://upload.wikimedia.org/wikipedia/commons/9/94/GKR_Mangkubumi_for_2025_International_Symposium_on_Javanese_Culture_%28cropped%29.jpg",
+        "author": "Regional Government of the Special Region of Yogyakarta (Pemda DIY)",
+        "licence": "Public domain",
+        "changes": "cropped to a square"
+      }
+    },
+    "p_mn1": {
+      "kind": "portrait",
+      "file": "assets/portraits/mn1.jpg",
+      "of": "mn1",
+      "credit": {
+        "title": "KGPAA Mangkunegara I",
+        "source": "https://commons.wikimedia.org/wiki/File:Mangkunagara_I.jpg",
+        "fileUrl": "https://upload.wikimedia.org/wikipedia/commons/f/f3/Mangkunagara_I.jpg",
+        "author": "uncredited, published by Direktorat K2KRS (Ministry of Social Affairs)",
+        "licence": "Public domain",
+        "changes": "cropped to a square",
+        "note": "later artistic depiction; local copy (534x600, via the pptx draft) has the same framing as the Commons file"
+      }
+    },
+    "p_mn10": {
+      "kind": "portrait",
+      "file": "assets/portraits/mn10.jpg",
+      "of": "mn10",
+      "credit": {
+        "title": "KGPAA Mangkunegara X",
+        "source": "https://commons.wikimedia.org/wiki/File:Mangkunegara_X.jpg",
+        "fileUrl": "https://upload.wikimedia.org/wikipedia/commons/c/c2/Mangkunegara_X.jpg",
+        "author": "Asad Khalid (via puromangkunegaran.com)",
+        "licence": "Public domain",
+        "changes": "cropped to a square",
+        "note": "PD tag doubtful: 2022 photo taken from the Pura Mangkunegaran website"
+      },
+      "private": "a 2022 photo from the Pura Mangkunegaran website, tagged public domain by an uploader"
+    },
+    "p_mn2": {
+      "kind": "portrait",
+      "file": "assets/portraits/mn2.jpg",
+      "of": "mn2",
+      "credit": {
+        "title": "KGPAA Mangkunegara II",
+        "source": "https://commons.wikimedia.org/wiki/File:COLLECTIE_TROPENMUSEUM_Mankoe_Negoro_II_bestuurde_tussen_1796_en_1835_het_gebied_Mangkoe_Negaram_onafhankelijk_van_de_soesoehoenan_TMnr_10001296.jpg",
+        "fileUrl": "https://upload.wikimedia.org/wikipedia/commons/6/63/COLLECTIE_TROPENMUSEUM_Mankoe_Negoro_II_bestuurde_tussen_1796_en_1835_het_gebied_Mangkoe_Negaram_onafhankelijk_van_de_soesoehoenan_TMnr_10001296.jpg",
+        "author": "Collectie Stichting Nationaal Museum van Wereldculturen (Tropenmuseum); photographer unknown",
+        "licence": "CC BY-SA 3.0",
+        "changes": "cropped to a square",
+        "note": "Tropenmuseum TM 10001296; traced 17 Nov 2026 (was in the pptx draft)"
+      }
+    },
+    "p_mn3": {
+      "kind": "portrait",
+      "file": "assets/portraits/mn3.jpg",
+      "of": "mn3",
+      "credit": {
+        "title": "KGPAA Mangkunegara III",
+        "source": "https://commons.wikimedia.org/wiki/File:Portrait_of_Mangkunegara_III.jpg",
+        "fileUrl": "https://upload.wikimedia.org/wikipedia/commons/7/7e/Portrait_of_Mangkunegara_III.jpg",
+        "author": "Collectie Stichting Nationaal Museum van Wereldculturen (Tropenmuseum); photographer unknown; cropped and retouched by AnsyahF",
+        "licence": "CC BY-SA 3.0",
+        "changes": "cropped to a square",
+        "note": "from Tropenmuseum TM 10001297; traced 17 Nov 2026 (was in the pptx draft)"
+      }
+    },
+    "p_mn4": {
+      "kind": "portrait",
+      "file": "assets/portraits/mn4.jpg",
+      "of": "mn4",
+      "credit": {
+        "title": "KGPAA Mangkunegara IV",
+        "source": "https://commons.wikimedia.org/wiki/File:Portrait_of_Mangkunegara_IV.jpg",
+        "fileUrl": "https://upload.wikimedia.org/wikipedia/commons/0/06/Portrait_of_Mangkunegara_IV.jpg",
+        "author": "unknown painter (Tropenmuseum / Nationaal Museum van Wereldculturen)",
+        "licence": "CC BY-SA 3.0",
+        "changes": "cropped from the 900x1280 original to 800x1071, then cropped to a square; tones stretched (autocontrast)",
+        "note": "painting; recorded in batch 3 under am4 (wrong person)"
+      }
+    },
+    "p_mn5": {
+      "kind": "portrait",
+      "file": "assets/portraits/mn5.jpg",
+      "of": "mn5",
+      "credit": {
+        "title": "KGPAA Mangkunegara V",
+        "source": "https://commons.wikimedia.org/wiki/File:Portrait_of_Mangkunegara_V.jpg",
+        "fileUrl": "https://upload.wikimedia.org/wikipedia/commons/f/f9/Portrait_of_Mangkunegara_V.jpg",
+        "author": "Collectie Stichting Nationaal Museum van Wereldculturen (Tropenmuseum); photographer unknown; cropped and retouched by AnsyahF",
+        "licence": "CC BY-SA 3.0",
+        "changes": "cropped to a square",
+        "note": "from Tropenmuseum TM 10001299 (1896); traced 17 Nov 2026 (was in the pptx draft)"
+      }
+    },
+    "p_mn6": {
+      "kind": "portrait",
+      "file": "assets/portraits/mn6.jpg",
+      "of": "mn6",
+      "credit": {
+        "title": "KGPAA Mangkunegara VI",
+        "source": "https://commons.wikimedia.org/wiki/File:COLLECTIE_TROPENMUSEUM_De_vorst_Mangkoe_Negoro_VI_bestuurder_van_het_gebied_Mangkoe_Negaram_op_vijfenveertigjarige_leeftijd_TMnr_10001300.jpg",
+        "fileUrl": "https://upload.wikimedia.org/wikipedia/commons/d/d8/COLLECTIE_TROPENMUSEUM_De_vorst_Mangkoe_Negoro_VI_bestuurder_van_het_gebied_Mangkoe_Negaram_op_vijfenveertigjarige_leeftijd_TMnr_10001300.jpg",
+        "author": "Collectie Stichting Nationaal Museum van Wereldculturen (Tropenmuseum); photographer unknown",
+        "licence": "CC BY-SA 3.0",
+        "changes": "cropped to a square",
+        "note": "Tropenmuseum TM 10001300; traced 17 Nov 2026 (was in the pptx draft)"
+      }
+    },
+    "p_mn7": {
+      "kind": "portrait",
+      "file": "assets/portraits/mn7.jpg",
+      "of": "mn7",
+      "credit": {
+        "title": "KGPAA Mangkunegara VII",
+        "source": "https://commons.wikimedia.org/wiki/File:COLLECTIE_TROPENMUSEUM_De_vorst_Pangeran_Adipati_Ario_Mangkoe_Negoro_VII_TMnr_10001303.jpg",
+        "fileUrl": "https://upload.wikimedia.org/wikipedia/commons/c/c8/COLLECTIE_TROPENMUSEUM_De_vorst_Pangeran_Adipati_Ario_Mangkoe_Negoro_VII_TMnr_10001303.jpg",
+        "author": "Collectie Stichting Nationaal Museum van Wereldculturen (Tropenmuseum); photographer unknown",
+        "licence": "CC BY-SA 3.0",
+        "changes": "cropped to a square",
+        "note": "Tropenmuseum TM 10001303; traced 17 Nov 2026 (was in the pptx draft)"
+      }
+    },
+    "p_mn8": {
+      "kind": "portrait",
+      "file": "assets/portraits/mn8.jpg",
+      "of": "mn8",
+      "credit": {
+        "title": "KGPAA Mangkunegara VIII",
+        "source": "https://commons.wikimedia.org/wiki/File:Raden_Mas_Saroso_Notosoeparto,_de_latere_Mangkoe_Nagoro_VIII.jpg",
+        "fileUrl": "https://upload.wikimedia.org/wikipedia/commons/d/d4/Raden_Mas_Saroso_Notosoeparto%2C_de_latere_Mangkoe_Nagoro_VIII.jpg",
+        "author": "Leiden University Libraries, KITLV 53328; photographer unknown",
+        "licence": "CC BY 4.0",
+        "changes": "cropped to a square",
+        "note": "tinted photo, c. 1940, before his accession; https://hdl.handle.net/1887.1/item:766388; traced 17 Nov 2026 (was in the pptx draft)"
+      }
+    },
+    "p_mn9": {
+      "kind": "portrait",
+      "file": "assets/portraits/mn9.jpg",
+      "of": "mn9",
+      "credit": {
+        "title": "KGPAA Mangkunegara IX",
+        "source": "https://commons.wikimedia.org/wiki/File:Mangkunegara_IX.jpg",
+        "fileUrl": "https://upload.wikimedia.org/wikipedia/commons/e/e2/Mangkunegara_IX.jpg",
+        "author": "Komisi Pemilihan Umum (2004 candidate photo)",
+        "licence": "Public domain",
+        "changes": "cropped to a square",
+        "note": "PD-IDGov; doubtful (medium): probably the candidate's own studio portrait. Only free image found; traced 17 Nov 2026 (was in the pptx draft)"
+      }
+    },
+    "p_moeng": {
+      "kind": "portrait",
+      "file": "assets/portraits/moeng.jpg",
+      "of": "moeng",
+      "credit": {
+        "title": "GKR Wandansari (Gusti Moeng)",
+        "source": "https://commons.wikimedia.org/wiki/File:Revitalisasi_Keraton_Surakarta_2026.jpg",
+        "fileUrl": "https://upload.wikimedia.org/wikipedia/commons/0/0e/Revitalisasi_Keraton_Surakarta_2026.jpg",
+        "author": "Kementerian Kebudayaan Republik Indonesia",
+        "licence": "Public domain",
+        "changes": "cropped to her from the 4160x2774 group photo (box 2280,1290-2900,2060), then cropped to a square",
+        "note": "replaces the earlier 2024 photo by Asteroterraphile"
+      }
+    },
+    "p_mooryati": {
+      "kind": "portrait",
+      "file": "assets/portraits/mooryati.jpg",
+      "of": "mooryati",
+      "credit": {
+        "title": "Mooryati Soedibyo",
+        "source": "https://commons.wikimedia.org/wiki/File:Mooryati_Soedibyo.jpg",
+        "fileUrl": "https://upload.wikimedia.org/wikipedia/commons/8/80/Mooryati_Soedibyo.jpg",
+        "author": "Ministry of Religious Affairs; Ministry of Industry (Indonesia)",
+        "licence": "Public domain",
+        "changes": "cropped to a square"
+      }
+    },
+    "p_notosoeroto": {
+      "kind": "portrait",
+      "file": "assets/portraits/notosoeroto.jpg",
+      "of": "notosoeroto",
+      "credit": {
+        "title": "Noto Soeroto",
+        "source": "https://commons.wikimedia.org/wiki/File:COLLECTIE_TROPENMUSEUM_Tekening_met_een_portret_van_Raden_Mas_Noto_Soeroto_door_C._van_Huut_Kardos_(Batavia_1932)_TMnr_10018764.jpg",
+        "fileUrl": "https://upload.wikimedia.org/wikipedia/commons/c/c4/COLLECTIE_TROPENMUSEUM_Tekening_met_een_portret_van_Raden_Mas_Noto_Soeroto_door_C._van_Huut_Kardos_%28Batavia_1932%29_TMnr_10018764.jpg",
+        "author": "C. van Huut-Kardos (drawing, Batavia 1932), Tropenmuseum",
+        "licence": "CC BY-SA 3.0",
+        "changes": "cropped to a square",
+        "note": "drawing"
+      }
+    },
+    "p_nurul": {
+      "kind": "portrait",
+      "file": "assets/portraits/nurul.jpg",
+      "of": "nurul",
+      "credit": {
+        "title": "GRAy. Siti Nurul",
+        "source": "https://commons.wikimedia.org/wiki/File:KITLV_A621_-_Goesti_Raden_Adjeng_Siti_Noeroel_Koesoemowardani,_dochter_van_Mangkoe_Nagoro_VII,_verkleed_voor_een_schoolfeest_op_de_Christelijke_Mulo_te_Soerakarta1.tif",
+        "fileUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/16/KITLV_A621_-_Goesti_Raden_Adjeng_Siti_Noeroel_Koesoemowardani%2C_dochter_van_Mangkoe_Nagoro_VII%2C_verkleed_voor_een_schoolfeest_op_de_Christelijke_Mulo_te_Soerakarta1.tif/lossy-page1-960px-thumbnail.tif.jpg",
+        "author": "unknown photographer (KITLV A621, Leiden University Library)",
+        "licence": "CC BY 4.0",
+        "changes": "cropped to a square"
+      }
+    },
+    "p_nyihajar": {
+      "kind": "portrait",
+      "file": "assets/portraits/nyihajar.jpg",
+      "of": "nyihajar",
+      "credit": {
+        "title": "Nyi Hajar Dewantara",
+        "source": "https://commons.wikimedia.org/wiki/File:Nyi_Hadjar_Dewantara.jpg",
+        "fileUrl": "https://upload.wikimedia.org/wikipedia/commons/2/2d/Nyi_Hadjar_Dewantara.jpg",
+        "author": "Depdikbud, Direktorat Sejarah dan Nilai Tradisional (1991 publication)",
+        "licence": "CC BY-SA 4.0",
+        "changes": "cropped to a square",
+        "note": "licence assigned by uploader to a government publication photo: doubtful"
+      }
+    },
+    "p_pa10": {
+      "kind": "portrait",
+      "file": "assets/portraits/pa10.jpg",
+      "of": "pa10",
+      "credit": {
+        "title": "KGPAA Paku Alam X",
+        "source": "https://commons.wikimedia.org/wiki/File:Paku_Alam_X,_Vice_Governor_of_Special_Region_of_Yogyakarta.jpg",
+        "fileUrl": "https://upload.wikimedia.org/wikipedia/commons/d/d1/Paku_Alam_X%2C_Vice_Governor_of_Special_Region_of_Yogyakarta.jpg",
+        "author": "Pemerintah Daerah Istimewa Yogyakarta",
+        "licence": "Public domain",
+        "changes": "cropped to a square"
+      }
+    },
+    "p_pa2": {
+      "kind": "portrait",
+      "file": "assets/portraits/pa2.jpg",
+      "of": "pa2",
+      "credit": {
+        "title": "KGPAA Paku Alam II",
+        "source": "https://commons.wikimedia.org/wiki/File:Pangeran_Adipati_Pakoe_Alam_II,_KITLV_4347_(retouched).jpg",
+        "fileUrl": "https://upload.wikimedia.org/wikipedia/commons/3/3e/Pangeran_Adipati_Pakoe_Alam_II%2C_KITLV_4347_%28retouched%29.jpg",
+        "author": "Simon Willem Camerik (KITLV 4347)",
+        "licence": "CC BY 4.0",
+        "changes": "cropped to a square; tones stretched (autocontrast)",
+        "note": "retouched version on Commons"
+      }
+    },
+    "p_pa3": {
+      "kind": "portrait",
+      "file": "assets/portraits/pa3.jpg",
+      "of": "pa3",
+      "credit": {
+        "title": "KGPAA Paku Alam III",
+        "source": "https://commons.wikimedia.org/wiki/File:COLLECTIE_TROPENMUSEUM_Pangeran_Adipati_Soerio_Sasra_Ningrat,_de_latere_Pakoe_Alam_III_van_Jogjakarta_TMnr_60009413.jpg",
+        "fileUrl": "https://upload.wikimedia.org/wikipedia/commons/f/f4/COLLECTIE_TROPENMUSEUM_Pangeran_Adipati_Soerio_Sasra_Ningrat%2C_de_latere_Pakoe_Alam_III_van_Jogjakarta_TMnr_60009413.jpg",
+        "author": "Isidore van Kinsbergen (Tropenmuseum)",
+        "licence": "CC BY-SA 3.0",
+        "changes": "cropped to a square"
+      }
+    },
+    "p_pa4": {
+      "kind": "portrait",
+      "file": "assets/portraits/pa4.jpg",
+      "of": "pa4",
+      "credit": {
+        "title": "KGPAA Paku Alam IV",
+        "source": "https://mangkualaman.org/kings/",
+        "fileUrl": "https://mangkualaman.org/wp-content/uploads/2023/10/pakualam4.webp",
+        "author": "unknown photographer (19th c.), via mangkualaman.org",
+        "licence": "not free (all rights reserved)",
+        "changes": "cropped to a square",
+        "note": "identity medium (family-site caption only)"
+      },
+      "private": "mangkualaman.org"
+    },
+    "p_pa5": {
+      "kind": "portrait",
+      "file": "assets/portraits/pa5.jpg",
+      "of": "pa5",
+      "credit": {
+        "title": "KGPAA Paku Alam V",
+        "source": "https://commons.wikimedia.org/wiki/File:KITLV_A443_-_Pakoe_Alam_V_in_legeruniform,_KITLV_84836.tiff",
+        "fileUrl": "https://upload.wikimedia.org/wikipedia/commons/8/85/KITLV_A443_-_Pakoe_Alam_V_in_legeruniform%2C_KITLV_84836.tiff",
+        "author": "unknown photographer (KITLV 84836)",
+        "licence": "CC BY 4.0",
+        "changes": "cropped to a square"
+      }
+    },
+    "p_pa6": {
+      "kind": "portrait",
+      "file": "assets/portraits/pa6.jpg",
+      "of": "pa6",
+      "credit": {
+        "title": "KGPAA Paku Alam VI",
+        "source": "https://mangkualaman.org/kings/",
+        "fileUrl": "https://mangkualaman.org/wp-content/uploads/2023/10/pakualam6.webp",
+        "author": "unknown painter, via mangkualaman.org",
+        "licence": "not free (all rights reserved)",
+        "changes": "cropped to a square",
+        "note": "painting; identity medium"
+      },
+      "private": "mangkualaman.org"
+    },
+    "p_pa7": {
+      "kind": "portrait",
+      "file": "assets/portraits/pa7.jpg",
+      "of": "pa7",
+      "credit": {
+        "title": "KGPAA Paku Alam VII",
+        "source": "https://commons.wikimedia.org/wiki/File:Pakoe_Alam_VII,_hoofd_van_het_Pakoe_Alamse_huis_te_Jogjakarta,_KITLV_7832.tiff",
+        "fileUrl": "https://upload.wikimedia.org/wikipedia/commons/7/77/Pakoe_Alam_VII%2C_hoofd_van_het_Pakoe_Alamse_huis_te_Jogjakarta%2C_KITLV_7832.tiff",
+        "author": "Chelan (KITLV 7832)",
+        "licence": "CC BY 4.0",
+        "changes": "cropped to a square"
+      }
+    },
+    "p_pa8": {
+      "kind": "portrait",
+      "file": "assets/portraits/pa8.jpg",
+      "of": "pa8",
+      "credit": {
+        "title": "KGPAA Paku Alam VIII",
+        "source": "https://commons.wikimedia.org/wiki/File:Potret_KGPAA_Paku_Alam_VIII_saat_menjabat_sebagai_Gubernur_Daerah_Istimewa_Yogyakarta..jpg",
+        "fileUrl": "https://upload.wikimedia.org/wikipedia/commons/9/9a/Potret_KGPAA_Paku_Alam_VIII_saat_menjabat_sebagai_Gubernur_Daerah_Istimewa_Yogyakarta..jpg",
+        "author": "unknown",
+        "licence": "Public domain",
+        "changes": "cropped to a square",
+        "note": "author and source unknown on Commons"
+      }
+    },
+    "p_pa9": {
+      "kind": "portrait",
+      "file": "assets/portraits/pa9.jpg",
+      "of": "pa9",
+      "credit": {
+        "title": "KGPAA Paku Alam IX",
+        "source": "https://commons.wikimedia.org/wiki/File:Paku_Alam_IX_Official.png",
+        "fileUrl": "https://upload.wikimedia.org/wikipedia/commons/1/16/Paku_Alam_IX_Official.png",
+        "author": "Ryuji takeda (Commons uploader)",
+        "licence": "Public domain",
+        "changes": "cropped to a square",
+        "note": "2012 official portrait uploaded as 'own work': PD claim doubtful"
+      },
+      "private": "a 2012 official portrait, uploaded as own work; its public-domain claim is doubtful"
+    },
+    "p_paundrakarna": {
+      "kind": "portrait",
+      "file": "assets/portraits/paundrakarna.jpg",
+      "of": "paundrakarna",
+      "credit": {
+        "title": "GPH Paundrakarna",
+        "source": "https://www.suara.com/entertainment/2021/10/17/154059/profil-paundrakarna-aktor-sinetron-calon-penerus-tahta-pura-mangkunegaran-solo",
+        "fileUrl": "https://media.suara.com/pictures/970x544/2021/10/17/88824-paundrakarna.jpg",
+        "author": "credited Instagram/aryawedakarna via Suara.com",
+        "licence": "not free (all rights reserved)",
+        "changes": "cropped to a square",
+        "note": "news photo"
+      },
+      "private": "suara.com news photo"
+    },
+    "p_pb1": {
+      "kind": "portrait",
+      "file": "assets/portraits/pb1.jpg",
+      "of": "pb1",
+      "credit": {
+        "title": "Susuhunan Pakubuwana I",
+        "source": "https://commons.wikimedia.org/wiki/File:Pakubuwana_I.png",
+        "fileUrl": "https://upload.wikimedia.org/wikipedia/commons/d/d3/Pakubuwana_I.png",
+        "author": "unknown (Commons credit: Kompas)",
+        "licence": "CC BY-SA 4.0",
+        "changes": "cropped to a square",
+        "note": "origin undocumented, taken from Kompas: licence doubtful"
+      }
+    },
+    "p_pb10": {
+      "kind": "portrait",
+      "file": "assets/portraits/pb10.jpg",
+      "of": "pb10",
+      "credit": {
+        "title": "Susuhunan Pakubuwana X",
+        "source": "https://commons.wikimedia.org/wiki/File:COLLECTIE_TROPENMUSEUM_Portret_van_de_Soesoehoenan_van_Soerakarta_TMnr_10001903.jpg",
+        "fileUrl": "https://upload.wikimedia.org/wikipedia/commons/a/a2/COLLECTIE_TROPENMUSEUM_Portret_van_de_Soesoehoenan_van_Soerakarta_TMnr_10001903.jpg",
+        "author": "unknown photographer (Tropenmuseum)",
+        "licence": "CC BY-SA 3.0",
+        "changes": "cropped to a square"
+      }
+    },
+    "p_pb11": {
+      "kind": "portrait",
+      "file": "assets/portraits/pb11.jpg",
+      "of": "pb11",
+      "credit": {
+        "title": "Susuhunan Pakubuwana XI",
+        "source": "https://commons.wikimedia.org/wiki/File:COLLECTIE_TROPENMUSEUM_Adel,_Pangeran_Ngaloehi_oudste_zoon_van_Soenan_Pakoe_Boewono_X_tegenwoordige_Boewono_XI_TMnr_60040957.jpg",
+        "fileUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/COLLECTIE_TROPENMUSEUM_Adel%2C_Pangeran_Ngaloehi_oudste_zoon_van_Soenan_Pakoe_Boewono_X_tegenwoordige_Boewono_XI_TMnr_60040957.jpg/960px-COLLECTIE_TROPENMUSEUM_Adel%2C_Pangeran_Ngaloehi_oudste_zoon_van_Soenan_Pakoe_Boewono_X_tegenwoordige_Boewono_XI_TMnr_60040957.jpg",
+        "author": "unknown photographer (Tropenmuseum)",
+        "licence": "CC BY-SA 3.0",
+        "changes": "cropped to a square",
+        "note": "taken while still a prince"
+      }
+    },
+    "p_pb12": {
+      "kind": "portrait",
+      "file": "assets/portraits/pb12.jpg",
+      "of": "pb12",
+      "credit": {
+        "title": "Susuhunan Pakubuwana XII",
+        "source": "https://commons.wikimedia.org/wiki/File:SSISKS_Pakubuwono_XII.jpg",
+        "fileUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/SSISKS_Pakubuwono_XII.jpg/960px-SSISKS_Pakubuwono_XII.jpg",
+        "author": "Bimo K.A. (photo of the official painted portrait)",
+        "licence": "CC BY-SA 4.0",
+        "changes": "cropped to a square",
+        "note": "photo of a modern painting, uploaded by another user as 'own work': doubtful"
+      },
+      "private": "a photo of a modern painted portrait, uploaded by someone else as their own work"
+    },
+    "p_pb13": {
+      "kind": "portrait",
+      "file": "assets/portraits/pb13.jpg",
+      "of": "pb13",
+      "credit": {
+        "title": "Susuhunan Pakubuwana XIII",
+        "source": "https://commons.wikimedia.org/wiki/File:Susuhunan_Pakubuwono_XIII.jpg",
+        "fileUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Susuhunan_Pakubuwono_XIII.jpg/960px-Susuhunan_Pakubuwono_XIII.jpg",
+        "author": "Karaton Kasunanan Surakarta Hadiningrat",
+        "licence": "CC BY-SA 4.0",
+        "changes": "cropped to a square",
+        "note": "official portrait; licence claimed by uploader"
+      }
+    },
+    "p_pb14h": {
+      "kind": "portrait",
+      "file": "assets/portraits/pb14h.jpg",
+      "of": "pb14h",
+      "credit": {
+        "title": "Susuhunan Pakubuwana XIV (Hangabehi)",
+        "source": "https://commons.wikimedia.org/wiki/File:KGPH_Hangabehi_(cropped).png",
+        "fileUrl": "https://upload.wikimedia.org/wikipedia/commons/0/09/KGPH_Hangabehi_%28cropped%29.png",
+        "author": "KGPH Hangabehi (Commons credit: Karaton Surakarta Hadiningrat)",
+        "licence": "CC0",
+        "changes": "cropped to a square",
+        "note": "CC0 claimed by a third-party uploader: doubtful"
+      }
+    },
+    "p_pb14p": {
+      "kind": "portrait",
+      "file": "assets/portraits/pb14p.jpg",
+      "of": "pb14p",
+      "credit": {
+        "title": "Susuhunan Pakubuwana XIV (Purbaya)",
+        "source": "https://commons.wikimedia.org/wiki/File:Sri_Susuhunan_Pakubuwana_XIV.jpg",
+        "fileUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Sri_Susuhunan_Pakubuwana_XIV.jpg/960px-Sri_Susuhunan_Pakubuwana_XIV.jpg",
+        "author": "Karaton Surakarta Hadiningrat, 2025",
+        "licence": "CC BY-SA 4.0",
+        "changes": "cropped to a square",
+        "note": "official portrait; licence claimed by uploader"
+      }
+    },
+    "p_pb2": {
+      "kind": "portrait",
+      "file": "assets/portraits/pb2.jpg",
+      "of": "pb2",
+      "credit": {
+        "title": "Susuhunan Pakubuwana II",
+        "source": "https://commons.wikimedia.org/wiki/File:Pakubuwana_II.png",
+        "fileUrl": "https://upload.wikimedia.org/wikipedia/commons/f/fd/Pakubuwana_II.png",
+        "author": "unknown (Commons credit: Kompas)",
+        "licence": "Public domain",
+        "changes": "cropped to a square",
+        "note": "origin undocumented, taken from Kompas: PD claim doubtful"
+      }
+    },
+    "p_pb3": {
+      "kind": "portrait",
+      "file": "assets/portraits/pb3.jpg",
+      "of": "pb3",
+      "credit": {
+        "title": "Susuhunan Pakubuwana III",
+        "source": "https://commons.wikimedia.org/wiki/File:Pakubuwana_III.jpg",
+        "fileUrl": "https://upload.wikimedia.org/wikipedia/commons/6/6b/Pakubuwana_III.jpg",
+        "author": "unknown (Commons credit: Good Indonesianews)",
+        "licence": "Public domain",
+        "changes": "cropped to a square",
+        "note": "painting of unknown date, origin undocumented: PD claim doubtful"
+      }
+    },
+    "p_pb4": {
+      "kind": "portrait",
+      "file": "assets/portraits/pb4.jpg",
+      "of": "pb4",
+      "credit": {
+        "title": "Susuhunan Pakubuwana IV",
+        "source": "https://commons.wikimedia.org/wiki/File:Portret_van_Pakoeboewono_IV_van_Soerakarta.png",
+        "fileUrl": "https://upload.wikimedia.org/wikipedia/commons/c/c2/Portret_van_Pakoeboewono_IV_van_Soerakarta.png",
+        "author": "Syzyszune (photo and restoration of a Karaton Surakarta oil portrait)",
+        "licence": "CC BY-SA 4.0",
+        "changes": "cropped to a square",
+        "note": "photo of an old painting"
+      }
+    },
+    "p_pb5": {
+      "kind": "portrait",
+      "file": "assets/portraits/pb5.jpg",
+      "of": "pb5",
+      "credit": {
+        "title": "Susuhunan Pakubuwana V",
+        "source": "https://commons.wikimedia.org/wiki/File:Pakubuwana_V.jpg",
+        "fileUrl": "https://upload.wikimedia.org/wikipedia/commons/8/83/Pakubuwana_V.jpg",
+        "author": "Kraton Solo (official painting; Commons credit: Pralagi)",
+        "licence": "CC BY-SA 4.0",
+        "changes": "cropped to a square",
+        "note": "licence claimed by a third-party uploader: doubtful"
+      }
+    },
+    "p_pb6": {
+      "kind": "portrait",
+      "file": "assets/portraits/pb6.jpg",
+      "of": "pb6",
+      "credit": {
+        "title": "Susuhunan Pakubuwana VI",
+        "source": "https://commons.wikimedia.org/wiki/File:Portret_van_Pakoeboewono_VI_van_Soerakarta.png",
+        "fileUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Portret_van_Pakoeboewono_VI_van_Soerakarta.png/500px-Portret_van_Pakoeboewono_VI_van_Soerakarta.png",
+        "author": "Syzyszune (photo and restoration of a Karaton Surakarta oil portrait)",
+        "licence": "CC BY-SA 4.0",
+        "changes": "cropped to a square",
+        "note": "photo of an old painting"
+      }
+    },
+    "p_pb7": {
+      "kind": "portrait",
+      "file": "assets/portraits/pb7.jpg",
+      "of": "pb7",
+      "credit": {
+        "title": "Susuhunan Pakubuwana VII",
+        "source": "https://commons.wikimedia.org/wiki/File:Portret_van_Pakoeboewono_VII_van_Soerakarta.png",
+        "fileUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Portret_van_Pakoeboewono_VII_van_Soerakarta.png/500px-Portret_van_Pakoeboewono_VII_van_Soerakarta.png",
+        "author": "Syzyszune (photo and restoration of a Karaton Surakarta oil portrait)",
+        "licence": "CC BY-SA 4.0",
+        "changes": "cropped to a square",
+        "note": "photo of an old painting"
+      }
+    },
+    "p_pb8": {
+      "kind": "portrait",
+      "file": "assets/portraits/pb8.jpg",
+      "of": "pb8",
+      "credit": {
+        "title": "Susuhunan Pakubuwana VIII",
+        "source": "https://commons.wikimedia.org/wiki/File:Pakoe_Boewono_VIII,_soesoehoenan_van_Soerakarta.jpg",
+        "fileUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Pakoe_Boewono_VIII%2C_soesoehoenan_van_Soerakarta.jpg/500px-Pakoe_Boewono_VIII%2C_soesoehoenan_van_Soerakarta.jpg",
+        "author": "Woodbury & Page, c. 1860 (KITLV 6221)",
+        "licence": "CC BY 4.0",
+        "changes": "cropped to a square"
+      }
+    },
+    "p_pb9": {
+      "kind": "portrait",
+      "file": "assets/portraits/pb9.jpg",
+      "of": "pb9",
+      "credit": {
+        "title": "Susuhunan Pakubuwana IX",
+        "source": "https://commons.wikimedia.org/wiki/File:COLLECTIE_TROPENMUSEUM_Paku_Bewono_IX_de_susuhunan_van_Surakarta_Java._TMnr_60009117.jpg",
+        "fileUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/COLLECTIE_TROPENMUSEUM_Paku_Bewono_IX_de_susuhunan_van_Surakarta_Java._TMnr_60009117.jpg/500px-COLLECTIE_TROPENMUSEUM_Paku_Bewono_IX_de_susuhunan_van_Surakarta_Java._TMnr_60009117.jpg",
+        "author": "Woodbury & Page, c. 1870 (Tropenmuseum)",
+        "licence": "CC BY-SA 3.0",
+        "changes": "cropped to a square"
+      }
+    },
+    "p_prabowo": {
+      "kind": "portrait",
+      "file": "assets/portraits/prabowo.jpg",
+      "of": "prabowo",
+      "credit": {
+        "title": "Prabowo Subianto",
+        "source": "https://commons.wikimedia.org/wiki/File:Prabowo_Subianto_2024_official_portrait.jpg",
+        "fileUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/55/Prabowo_Subianto_2024_official_portrait.jpg/1920px-Prabowo_Subianto_2024_official_portrait.jpg",
+        "author": "Darwis Triadi & Ministry of State Secretariat",
+        "licence": "Public domain",
+        "changes": "cropped to a square"
+      }
+    },
+    "p_retnopuwoso": {
+      "kind": "portrait",
+      "file": "assets/portraits/retnopuwoso.jpg",
+      "of": "retnopuwoso",
+      "credit": {
+        "title": "GBRAy. Retno Puwoso",
+        "source": "https://commons.wikimedia.org/wiki/File:COLLECTIE_TROPENMUSEUM_Studioportret_van_de_vrouw_van_Pangeran_Adipati_Pakoe_Alam_VII_Jogjakarta_TMnr_60003202.jpg",
+        "fileUrl": "https://upload.wikimedia.org/wikipedia/commons/a/a1/COLLECTIE_TROPENMUSEUM_Studioportret_van_de_vrouw_van_Pangeran_Adipati_Pakoe_Alam_VII_Jogjakarta_TMnr_60003202.jpg",
+        "author": "Chelan & Co. studio, photographer unknown (Tropenmuseum)",
+        "licence": "CC BY-SA 3.0",
+        "changes": "cropped to a square"
+      }
+    },
+    "p_senapati": {
+      "kind": "portrait",
+      "file": "assets/portraits/senapati.jpg",
+      "of": "senapati",
+      "credit": {
+        "title": "Panembahan Senapati",
+        "source": "https://commons.wikimedia.org/wiki/File:Lukisan_Panembahan_Senopati.png",
+        "fileUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Lukisan_Panembahan_Senopati.png/960px-Lukisan_Panembahan_Senopati.png",
+        "author": "unknown (via Paguyuban Pakoe Boewono website)",
+        "licence": "Public domain",
+        "changes": "cropped to a square",
+        "note": "later artistic depiction (modern painting); PD tag doubtful"
+      },
+      "private": "a modern painting; its public-domain tag is doubtful"
+    },
+    "p_sentot": {
+      "kind": "portrait",
+      "file": "assets/portraits/sentot.jpg",
+      "of": "sentot",
+      "credit": {
+        "title": "Sentot Prawirodirjo",
+        "source": "https://commons.wikimedia.org/wiki/File:Sentot,_opperbevelhebber_der_rebellen.jpg",
+        "fileUrl": "https://upload.wikimedia.org/wikipedia/commons/d/df/Sentot%2C_opperbevelhebber_der_rebellen.jpg",
+        "author": "J. P. de Veer (in G. L. Kepper, Wapenfeiten van het Nederlandsch-Indisch leger)",
+        "licence": "Public domain",
+        "changes": "cropped to a square"
+      }
+    },
+    "p_suharto": {
+      "kind": "portrait",
+      "file": "assets/portraits/suharto.jpg",
+      "of": "suharto",
+      "credit": {
+        "title": "Suharto",
+        "source": "https://commons.wikimedia.org/wiki/File:President_Suharto,_1993.jpg",
+        "fileUrl": "https://upload.wikimedia.org/wikipedia/commons/5/59/President_Suharto%2C_1993.jpg",
+        "author": "State Secretariat of the Republic of Indonesia",
+        "licence": "Public domain",
+        "changes": "cropped to a square"
+      }
+    },
+    "p_sukarno": {
+      "kind": "portrait",
+      "file": "assets/portraits/sukarno.jpg",
+      "of": "sukarno",
+      "credit": {
+        "title": "Sukarno",
+        "source": "https://commons.wikimedia.org/wiki/File:Presiden_Sukarno.jpg",
+        "fileUrl": "https://upload.wikimedia.org/wikipedia/commons/0/01/Presiden_Sukarno.jpg",
+        "author": "anonymous (KITLV 2691)",
+        "licence": "Public domain",
+        "changes": "cropped to a square"
+      }
+    },
+    "p_sukmawati": {
+      "kind": "portrait",
+      "file": "assets/portraits/sukmawati.jpg",
+      "of": "sukmawati",
+      "credit": {
+        "title": "Sukmawati Sukarnoputri",
+        "source": "https://commons.wikimedia.org/wiki/File:Sukmawati_Sukarnoputri_(2024).jpg",
+        "fileUrl": "https://upload.wikimedia.org/wikipedia/commons/1/11/Sukmawati_Sukarnoputri_%282024%29.jpg",
+        "author": "National Archives of the Republic of Indonesia (ANRI)",
+        "licence": "Public domain",
+        "changes": "cropped to a square"
+      }
+    },
+    "p_surapati": {
+      "kind": "portrait",
+      "file": "assets/portraits/surapati.jpg",
+      "of": "surapati",
+      "credit": {
+        "title": "Untung Surapati",
+        "source": "https://commons.wikimedia.org/wiki/File:Untung_Surapati.jpg",
+        "fileUrl": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Untung_Surapati.jpg",
+        "author": "Ministry of Social Affairs, Republic of Indonesia",
+        "licence": "Public domain",
+        "changes": "cropped to a square",
+        "note": "later artistic depiction (sketch)"
+      }
+    },
+    "p_suryopranoto": {
+      "kind": "portrait",
+      "file": "assets/portraits/suryopranoto.jpg",
+      "of": "suryopranoto",
+      "credit": {
+        "title": "Suryopranoto",
+        "source": "https://commons.wikimedia.org/wiki/File:Soerjopranoto.jpg",
+        "fileUrl": "https://upload.wikimedia.org/wikipedia/commons/5/5e/Soerjopranoto.jpg",
+        "author": "National Library of Indonesia",
+        "licence": "Public domain",
+        "changes": "cropped to a square"
+      }
+    },
+    "p_tedjowulan": {
+      "kind": "portrait",
+      "file": "assets/portraits/tedjowulan.jpg",
+      "of": "tedjowulan",
+      "credit": {
+        "title": "KGPA Tedjowulan",
+        "source": "https://www.detik.com/jateng/berita/d-8209696/tedjowulan-buka-bukaan-soal-penobatan-mangkubumi-jadi-pb-xiv",
+        "fileUrl": "https://akcdn.detik.net.id/community/media/visual/2025/11/05/kgpa-tedjowulan-1762321700407.jpeg?w=1600",
+        "author": "Achmad Hussein Syauqi / detikJateng",
+        "licence": "not free (all rights reserved)",
+        "changes": "cropped to a square",
+        "note": "news photo; free alternative: Commons Gusti_Tedjowulan_2026.jpg (PD, 244 px)"
+      },
+      "private": "detik.com news photo"
+    },
+    "p_tien": {
+      "kind": "portrait",
+      "file": "assets/portraits/tien.jpg",
+      "of": "tien",
+      "credit": {
+        "title": "Tien Suharto",
+        "source": "https://commons.wikimedia.org/wiki/File:Siti_Hartinah,_First_Lady_of_Indonesia_(spouse_of_President_Suharto).jpg",
+        "fileUrl": "https://upload.wikimedia.org/wikipedia/commons/1/11/Siti_Hartinah%2C_First_Lady_of_Indonesia_%28spouse_of_President_Suharto%29.jpg",
+        "author": "Kementerian Pendidikan dan Kebudayaan",
+        "licence": "Public domain",
+        "changes": "cropped to a square"
+      }
+    },
+    "p_timur": {
+      "kind": "portrait",
+      "file": "assets/portraits/timur.jpg",
+      "of": "timur",
+      "credit": {
+        "title": "GKR Timur",
+        "source": "https://commons.wikimedia.org/wiki/File:Goesti_Kangdjeng_Ratoe_Timoer,_gemalin_van_Mangkoe_Nagoro_VII_te_Soerakarta,_KITLV_15261.tiff",
+        "fileUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5d/Goesti_Kangdjeng_Ratoe_Timoer%2C_gemalin_van_Mangkoe_Nagoro_VII_te_Soerakarta%2C_KITLV_15261.tiff/lossy-page1-1920px-Goesti_Kangdjeng_Ratoe_Timoer%2C_gemalin_van_Mangkoe_Nagoro_VII_te_Soerakarta%2C_KITLV_15261.tiff.jpg",
+        "author": "unknown photographer (KITLV 15261)",
+        "licence": "CC BY 4.0",
+        "changes": "cropped to a square"
+      }
+    },
+    "p_titiek": {
+      "kind": "portrait",
+      "file": "assets/portraits/titiek.jpg",
+      "of": "titiek",
+      "credit": {
+        "title": "Titiek Suharto",
+        "source": "https://commons.wikimedia.org/wiki/File:KPU_Siti_Hediati_Hariyadi.jpg",
+        "fileUrl": "https://upload.wikimedia.org/wikipedia/commons/e/e8/KPU_Siti_Hediati_Hariyadi.jpg",
+        "author": "KPU (General Election Commission)",
+        "licence": "Public domain",
+        "changes": "cropped to a square"
+      }
+    },
+    "p_wiroyudho": {
+      "kind": "portrait",
+      "file": "assets/portraits/wiroyudho.jpg",
+      "of": "wiroyudho",
+      "credit": {
+        "title": "KGPAA Mangku Alam II (Wiroyudho)",
+        "source": "https://commons.wikimedia.org/wiki/File:KGPAA_Mangku_Alam_II%26Pernaisuri.jpg",
+        "fileUrl": "https://upload.wikimedia.org/wikipedia/commons/f/ff/KGPAA_Mangku_Alam_II%26Pernaisuri.jpg",
+        "author": "Dinasti Nusantara (Commons uploader Andiaprasing)",
+        "licence": "CC BY-SA 4.0",
+        "changes": "cropped to a square",
+        "note": "source file was named mangkualaman.jpg until 18 Nov 2026 (older records list it under that id); couple photo, man in the centre"
+      }
+    },
+    "e_surakarta": {
+      "kind": "emblem",
+      "file": "assets/emblems/surakarta.png",
+      "credit": {
+        "title": "Radya Laksana, emblem of Surakarta",
+        "source": "https://commons.wikimedia.org/wiki/File:Radyalaksana_The_Emblem_of_Surakarta_Kingdom.svg",
+        "author": "Gunawan Kartapranata (User:Gunkarta)",
+        "licence": "CC BY-SA 3.0",
+        "changes": "rendered to PNG"
+      }
+    },
+    "e_yogyakarta": {
+      "kind": "emblem",
+      "file": "assets/emblems/yogyakarta.png",
+      "credit": {
+        "title": "Praja Cihna, emblem of Yogyakarta",
+        "source": "https://commons.wikimedia.org/wiki/File:Yogyakarta_Sultanate_Hamengkubhuwono_X_Emblem.svg",
+        "author": "Gunawan Kartapranata (User:Gunkarta)",
+        "licence": "CC BY-SA 3.0",
+        "changes": "rendered to PNG"
+      }
+    },
+    "e_pakualaman": {
+      "kind": "emblem",
+      "file": "assets/emblems/pakualaman.png",
+      "credit": {
+        "title": "Emblem of Pakualaman",
+        "source": "https://commons.wikimedia.org/wiki/File:Emblem_of_Pakualaman.svg",
+        "author": "User:RaFaDa20631",
+        "licence": "CC BY-SA 4.0",
+        "changes": "rendered to PNG"
+      }
+    },
+    "e_mangkunegaran": {
+      "kind": "emblem",
+      "file": "assets/emblems/mangkunegaran.png",
+      "credit": {
+        "title": "Surya Sumirat, emblem of Mangkunegaran",
+        "source": "https://commons.wikimedia.org/wiki/File:Emblem_of_Mangkunagaran.svg",
+        "author": "User:RaFaDa20631",
+        "licence": "CC BY-SA 4.0",
+        "changes": "rendered to PNG"
+      }
+    },
+    "e_mangkualaman": {
+      "kind": "emblem",
+      "file": "assets/emblems/mangkualaman.png",
+      "credit": {
+        "title": "Emblem of the Mangkualaman",
+        "source": "royalhouseofmangkualaman.com",
+        "author": "unknown",
+        "licence": "none known (private, not published)",
+        "changes": "background removed by clean_emblem.py"
+      },
+      "private": "royalhouseofmangkualaman.com, no licence"
+    },
+    "e_mangkualaman_source": {
+      "kind": "source",
+      "file": "assets/emblems/mangkualaman.jpg",
+      "private": "source of mangkualaman.png (clean_emblem.py), same terms"
+    },
+    "b_cc_by_sa": {
+      "kind": "badge",
+      "file": "assets/brand/cc-by-sa-icon.png",
+      "credit": {
+        "title": "CC BY-SA licence badge",
+        "source": "https://creativecommons.org/about/downloads/"
+      }
+    },
+    "b_fanmade": {
+      "kind": "badge",
+      "file": "assets/brand/fanmade-logo-brown.png",
+      "private": "r/UsefulCharts community mark, terms unknown"
+    },
+    "map_adm2": {
+      "kind": "data",
+      "file": "assets/maps/java_adm2.geojson",
+      "credit": {
+        "title": "Java regencies (ADM2)",
+        "source": "https://www.geoboundaries.org/",
+        "author": "geoBoundaries",
+        "licence": "CC BY 3.0 IGO",
+        "changes": "simplified as one coverage (assets/maps/rebuild_adm2.py)"
+      }
+    },
+    "map_adm3": {
+      "kind": "data",
+      "file": "assets/maps/detail_adm3.geojson",
+      "credit": {
+        "title": "Kulon Progo districts (ADM3)",
+        "source": "https://www.geoboundaries.org/",
+        "author": "geoBoundaries",
+        "licence": "CC BY 3.0 IGO",
+        "changes": "extracted (assets/maps/extract_adm3.py)"
+      }
+    },
+    "map_adm4": {
+      "kind": "data",
+      "file": "assets/maps/detail_adm4.geojson",
+      "credit": {
+        "title": "Villages for the enclaves (ADM4)",
+        "source": "https://www.geoboundaries.org/",
+        "author": "geoBoundaries",
+        "licence": "CC BY 3.0 IGO",
+        "changes": "extracted and grouped (assets/maps/extract_adm4.py)"
+      }
+    },
+    "map_stages": {
+      "kind": "data",
+      "file": "assets/maps/stages.json",
+      "credit": {
+        "title": "Which court held each regency, by stage, with sources and confidence"
+      }
+    },
+    "map_shapes": {
+      "kind": "data",
+      "file": "assets/maps/wangsa-mataram-shapes.json",
+      "credit": {
+        "title": "The map shapes, merged by colour (tools/map_shapes.py)",
+        "licence": "CC BY 3.0 IGO"
+      }
+    }
+  },
+  "display": {
+    "rows": [
+      {
+        "anchor": "lg_enis",
+        "members": [
+          "lg_brawijaya",
+          "lg_bondan",
+          "lg_getas",
+          "lg_sela"
+        ],
+        "gap": 64
+      }
+    ],
+    "pills": {
+      "pb3": {
+        "label": "SURAKARTA",
+        "house": "surakarta"
+      },
+      "hb1": {
+        "label": "YOGYAKARTA",
+        "house": "yogyakarta"
+      },
+      "pa1": {
+        "label": "PAKUALAMAN",
+        "house": "pakualaman"
+      },
+      "mn1": {
+        "label": "MANGKUNEGARAN",
+        "house": "mangkunegaran"
+      },
+      "anglingkusumo": {
+        "label": "MANGKUALAMAN",
+        "house": "pakualaman",
+        "disputed": true
+      },
+      "pamanahan": {
+        "label": "MATARAM",
+        "house": "mataram"
+      }
+    },
+    "headers": {
+      "pamanahan": {
+        "kind": "Sultanate of",
+        "name": "Mataram",
+        "years": "c. 1587 – 1755",
+        "seat": "Kotagede · Kerta · Plered · Kartasura · Surakarta",
+        "founded": "Granted by the Sultan of Pajang, c. 1556"
+      },
+      "pb3": {
+        "emblem": "e_surakarta",
+        "kind": "Sunanate of",
+        "name": "Surakarta",
+        "years": "1755 – present",
+        "seat": "Keraton Surakarta Hadiningrat",
+        "founded": "Capital since 1745; kingdom split at Giyanti, 1755"
+      },
+      "hb1": {
+        "emblem": "e_yogyakarta",
+        "kind": "Sultanate of",
+        "name": "Yogyakarta",
+        "years": "1755 – present",
+        "seat": "Keraton Ngayogyakarta Hadiningrat",
+        "founded": "Treaty of Giyanti, 1755"
+      },
+      "pa1": {
+        "emblem": "e_pakualaman",
+        "kind": "Principality of",
+        "name": "Pakualaman",
+        "years": "1813 – present",
+        "seat": "Pura Pakualaman, Yogyakarta",
+        "founded": "Created under British rule, 1813"
+      },
+      "mn1": {
+        "emblem": "e_mangkunegaran",
+        "kind": "Principality of",
+        "name": "Mangkunegaran",
+        "years": "1757 – present",
+        "seat": "Pura Mangkunegaran, Surakarta",
+        "founded": "Treaty of Salatiga, 1757"
+      },
+      "anglingkusumo": {
+        "emblem": "e_mangkualaman",
+        "kind": "Self-proclaimed",
+        "name": "Mangkualaman",
+        "years": "2021 – present",
+        "seat": "not recognised by the state",
+        "founded": "Declared by Anglingkusumo"
+      }
+    },
+    "brackets": [
+      {
+        "members": [
+          "yudhaningrat",
+          "prabukusumo",
+          "hadiwinoto"
+        ],
+        "label": "REJECTED THE 2015 DECREES"
+      },
+      {
+        "members": [
+          "pb14h",
+          "pb14p"
+        ],
+        "label": "DISPUTED SINCE 2025"
+      },
+      {
+        "members": [
+          "pb13",
+          "tedjowulan"
+        ],
+        "label": "DISPUTED 2004 – 2012"
+      }
+    ],
+    "events": {
+      "am2": "TRUNAJAYA TAKES PLERED · 1677",
+      "pb1": "PROCLAIMED AT SEMARANG · 1704"
+    },
+    "keepTogether": [
+      "Ka",
+      "Paku Alam",
+      "Hamengkubuwana",
+      "Pakubuwana",
+      "Mangkunegara",
+      "Amangkurat"
+    ]
+  },
+  "adjustments": {
+    "nudge_ratuibu": {
+      "kind": "nudge",
+      "target": "ratuibu",
+      "dx": 80,
+      "reason": "room for the line from Hamengkubuwana II down to Kencana"
+    },
+    "nudge_kyaimaja": {
+      "kind": "nudge",
+      "target": "kyaimaja",
+      "dx": 40,
+      "reason": "room for the line from Hamengkubuwana II down to Kencana"
+    },
+    "nudge_asihwinarni": {
+      "kind": "nudge",
+      "target": "asihwinarni",
+      "dx": 36,
+      "reason": "her child stands under the marriage line: a straight drop"
+    },
+    "nudge_prisca": {
+      "kind": "nudge",
+      "target": "prisca",
+      "dx": 50,
+      "reason": "her child stands under the marriage line: a straight drop"
+    },
+    "nudge_gkrmaduretno": {
+      "kind": "nudge",
+      "target": "gkrmaduretno",
+      "dx": 266,
+      "reason": "Sentot under his father Ronggo, clear of the line to his half-sister"
+    },
+    "nudge_sentot": {
+      "kind": "nudge",
+      "target": "sentot",
+      "dx": -274,
+      "reason": "under his father Ronggo, clear of the line to his half-sister"
+    },
+    "nudge_hb9": {
+      "kind": "nudge",
+      "target": "hb9",
+      "dy": 10,
+      "reason": "his crown clear of the line from Pakubuwana X to Retno Puwoso"
+    },
+    "nudge_alit_am1": {
+      "kind": "nudge",
+      "target": "alit_am1",
+      "dx": 2380,
+      "reason": "beside his brother's queen rather than far out on the left"
+    },
+    "follow_sukarno": {
+      "kind": "follow",
+      "target": "sukarno",
+      "of": "sukmawati",
+      "dx": -150,
+      "reason": "drawn beside his daughter Sukmawati and moves with her"
+    },
+    "follow_benawa": {
+      "kind": "follow",
+      "target": "benawa",
+      "of": "banawati",
+      "dx": 0,
+      "reason": "drawn over his daughter Banawati and moves with her"
+    },
+    "follow_trunajaya": {
+      "kind": "follow",
+      "target": "trunajaya",
+      "of": "am2",
+      "dx": -420,
+      "reason": "an outside figure beside the king he fought"
+    },
+    "follow_surapati": {
+      "kind": "follow",
+      "target": "surapati",
+      "of": "am3",
+      "dx": -420,
+      "reason": "an outside figure beside the king he sheltered"
+    },
+    "couple_side_u_ratuageng_hb1": {
+      "kind": "coupleSide",
+      "target": "u_ratuageng_hb1",
+      "side": 0,
+      "reason": "the centre group: Hamengkubuwana II under the couple, Paku Alam I to his left"
+    },
+    "couple_side_u_pa2_hayu_pa2": {
+      "kind": "coupleSide",
+      "target": "u_pa2_hayu_pa2",
+      "side": -1,
+      "reason": "Paku Alam III and Nataningprang left of Paku Alam V"
+    },
+    "share_bus_d_hb2_kyaimaja": {
+      "kind": "shareBus",
+      "target": "d_hb2_kyaimaja",
+      "reason": "hangs off the parent's existing line; the break mark tells the generation"
+    },
+    "share_bus_d_hb2_ratuibu": {
+      "kind": "shareBus",
+      "target": "d_hb2_ratuibu",
+      "reason": "hangs off the parent's existing line; the break mark tells the generation"
+    },
+    "share_bus_d_pa3_nyihajar": {
+      "kind": "shareBus",
+      "target": "d_pa3_nyihajar",
+      "reason": "hangs off the parent's existing line; the break mark tells the generation"
+    },
+    "break_at_d_hb2_ratuibu": {
+      "kind": "breakAt",
+      "target": "d_hb2_ratuibu",
+      "at": 0.8,
+      "reason": "the break mark below Kyai Maja's card"
+    },
+    "break_at_d_juminah_bagong": {
+      "kind": "breakAt",
+      "target": "d_juminah_bagong",
+      "at": 0.3,
+      "reason": "the break mark above the dotted line it crosses"
+    },
+    "marker_top_am4": {
+      "kind": "markerTop",
+      "target": "am4",
+      "reason": "the letter marker at the top right, clear of a line under the box"
+    },
+    "text_lift_ratnaningrum": {
+      "kind": "textLift",
+      "target": "ratnaningrum",
+      "dy": 8,
+      "reason": "the label lifted off an era line"
+    },
+    "text_lift_purnamaningrum": {
+      "kind": "textLift",
+      "target": "purnamaningrum",
+      "dy": 8,
+      "reason": "the label lifted off an era line"
+    },
+    "header_left_pa1": {
+      "kind": "headerLeft",
+      "target": "pa1",
+      "reason": "a cross-house line passes where the header would sit on the right"
+    },
+    "note_offset_n_pamanahan": {
+      "kind": "noteOffset",
+      "target": "n_pamanahan",
+      "dy": -8,
+      "reason": ""
+    },
+    "note_offset_n_senapati": {
+      "kind": "noteOffset",
+      "target": "n_senapati",
+      "dy": -40,
+      "reason": ""
+    },
+    "note_offset_n_agung": {
+      "kind": "noteOffset",
+      "target": "n_agung",
+      "dx": 260,
+      "reason": ""
+    },
+    "note_offset_n_juru": {
+      "kind": "noteOffset",
+      "target": "n_juru",
+      "dy": 6,
+      "reason": ""
+    },
+    "note_offset_n_trunajaya": {
+      "kind": "noteOffset",
+      "target": "n_trunajaya",
+      "dy": -70,
+      "reason": ""
+    },
+    "note_offset_n_surapati": {
+      "kind": "noteOffset",
+      "target": "n_surapati",
+      "dy": 6,
+      "reason": ""
+    },
+    "note_offset_n_purbaya_p": {
+      "kind": "noteOffset",
+      "target": "n_purbaya_p",
+      "dy": -50,
+      "reason": ""
+    },
+    "note_offset_n_yasadipura1": {
+      "kind": "noteOffset",
+      "target": "n_yasadipura1",
+      "dy": 6,
+      "reason": ""
+    },
+    "note_offset_n_ranggawarsita": {
+      "kind": "noteOffset",
+      "target": "n_ranggawarsita",
+      "dy": 6,
+      "reason": ""
+    },
+    "note_offset_n_djatikusumo": {
+      "kind": "noteOffset",
+      "target": "n_djatikusumo",
+      "dy": 6,
+      "reason": ""
+    },
+    "note_offset_n_pb1": {
+      "kind": "noteOffset",
+      "target": "n_pb1",
+      "dy": -10,
+      "reason": ""
+    },
+    "note_offset_n_am3": {
+      "kind": "noteOffset",
+      "target": "n_am3",
+      "dy": 30,
+      "reason": ""
+    },
+    "note_offset_n_am5": {
+      "kind": "noteOffset",
+      "target": "n_am5",
+      "dy": -6,
+      "reason": ""
+    },
+    "note_offset_n_am4": {
+      "kind": "noteOffset",
+      "target": "n_am4",
+      "dy": -4,
+      "reason": ""
+    },
+    "note_offset_n_pb2": {
+      "kind": "noteOffset",
+      "target": "n_pb2",
+      "dy": -14,
+      "reason": ""
+    },
+    "note_offset_n_kpa_mn": {
+      "kind": "noteOffset",
+      "target": "n_kpa_mn",
+      "dy": -10,
+      "reason": ""
+    },
+    "note_offset_n_hb1": {
+      "kind": "noteOffset",
+      "target": "n_hb1",
+      "dy": -70,
+      "reason": ""
+    },
+    "note_offset_n_mn1": {
+      "kind": "noteOffset",
+      "target": "n_mn1",
+      "dx": 170,
+      "dy": -12,
+      "reason": ""
+    },
+    "note_offset_n_pa1": {
+      "kind": "noteOffset",
+      "target": "n_pa1",
+      "dy": -16,
+      "reason": ""
+    },
+    "note_offset_n_diponegoro": {
+      "kind": "noteOffset",
+      "target": "n_diponegoro",
+      "dy": 6,
+      "reason": ""
+    },
+    "note_offset_n_ratuageng": {
+      "kind": "noteOffset",
+      "target": "n_ratuageng",
+      "dy": -60,
+      "reason": ""
+    },
+    "note_offset_n_gustiahmad": {
+      "kind": "noteOffset",
+      "target": "n_gustiahmad",
+      "dy": 6,
+      "reason": ""
+    },
+    "note_offset_n_hb5": {
+      "kind": "noteOffset",
+      "target": "n_hb5",
+      "dy": 6,
+      "reason": ""
+    },
+    "note_offset_n_mn4": {
+      "kind": "noteOffset",
+      "target": "n_mn4",
+      "dy": -6,
+      "reason": ""
+    },
+    "note_offset_n_nurul": {
+      "kind": "noteOffset",
+      "target": "n_nurul",
+      "dy": -4,
+      "reason": ""
+    },
+    "note_offset_n_mn8": {
+      "kind": "noteOffset",
+      "target": "n_mn8",
+      "dy": 6,
+      "reason": ""
+    },
+    "note_offset_n_pa8": {
+      "kind": "noteOffset",
+      "target": "n_pa8",
+      "dy": -4,
+      "reason": ""
+    },
+    "note_offset_n_hb9": {
+      "kind": "noteOffset",
+      "target": "n_hb9",
+      "dy": -40,
+      "reason": ""
+    },
+    "note_offset_n_pb12": {
+      "kind": "noteOffset",
+      "target": "n_pb12",
+      "dy": -6,
+      "reason": ""
+    },
+    "note_offset_n_mooryati": {
+      "kind": "noteOffset",
+      "target": "n_mooryati",
+      "dy": 6,
+      "reason": ""
+    },
+    "note_offset_n_suyono": {
+      "kind": "noteOffset",
+      "target": "n_suyono",
+      "dy": 6,
+      "reason": ""
+    },
+    "note_offset_n_abubakar": {
+      "kind": "noteOffset",
+      "target": "n_abubakar",
+      "dy": 6,
+      "reason": ""
+    },
+    "note_offset_n_suryopranoto": {
+      "kind": "noteOffset",
+      "target": "n_suryopranoto",
+      "dy": 6,
+      "reason": ""
+    },
+    "note_offset_n_notosoeroto": {
+      "kind": "noteOffset",
+      "target": "n_notosoeroto",
+      "dy": 6,
+      "reason": ""
+    },
+    "note_offset_n_kihajar": {
+      "kind": "noteOffset",
+      "target": "n_kihajar",
+      "dy": 6,
+      "reason": ""
+    },
+    "note_offset_n_pb10": {
+      "kind": "noteOffset",
+      "target": "n_pb10",
+      "dx": 230,
+      "dy": 8,
+      "reason": ""
+    },
+    "note_offset_n_mangkubumi": {
+      "kind": "noteOffset",
+      "target": "n_mangkubumi",
+      "dy": 8,
+      "reason": ""
+    },
+    "note_offset_n_anglingkusumo": {
+      "kind": "noteOffset",
+      "target": "n_anglingkusumo",
+      "dy": -6,
+      "reason": ""
+    },
+    "note_offset_n_pb14p": {
+      "kind": "noteOffset",
+      "target": "n_pb14p",
+      "dy": -14,
+      "reason": ""
+    },
+    "note_offset_n_prabukusumo": {
+      "kind": "noteOffset",
+      "target": "n_prabukusumo",
+      "dy": -72,
+      "reason": ""
+    },
+    "note_offset_n_tedjowulan": {
+      "kind": "noteOffset",
+      "target": "n_tedjowulan",
+      "dy": 8,
+      "reason": ""
+    },
+    "note_offset_n_mn10": {
+      "kind": "noteOffset",
+      "target": "n_mn10",
+      "dx": -80,
+      "dy": 8,
+      "reason": ""
+    },
+    "drop_d_pb10_mooryati": {
+      "kind": "drop",
+      "target": "d_pb10_mooryati",
+      "drop": 90,
+      "reason": "the line runs lower, leaving room for the lines above it"
+    },
+    "drop_d_pb3_alit": {
+      "kind": "drop",
+      "target": "d_pb3_alit",
+      "drop": 110,
+      "reason": "the line runs lower, leaving room for the lines above it"
+    }
+  },
+  "tours": {
+    "split": {
+      "title": "How Mataram split",
+      "summary": "From one kingdom to four courts",
+      "steps": [
+        {
+          "title": "One kingdom, four courts",
+          "caption": "Founded in the 16th century, the Sultanate of Mataram came to rule most of Java. Between 1755 and 1813, civil wars and European intervention split it into four royal houses that survive today.",
+          "focus": "all"
+        },
+        {
+          "title": "Mataram at its height",
+          "caption": "Panembahan Senapati founded the kingdom. Under his grandson Sultan Agung (r. 1613–1645) it held Central and East Java and Madura. Agung besieged Dutch Batavia in 1628 and 1629.",
+          "focus": [
+            "senapati",
+            "agung"
+          ],
+          "light": [
+            "pamanahan",
+            "senapati",
+            "hanyakrawati",
+            "agung"
+          ]
+        },
+        {
+          "title": "The map around 1640",
+          "caption": "Agung's realm at its widest. Cirebon and the Priangan were vassals; Banten and Batavia stayed outside.",
+          "focus": [
+            "map:S1"
+          ],
+          "stage": "S1",
+          "light": []
+        },
+        {
+          "title": "Rebellion",
+          "caption": "In 1677 the Madurese rebel Trunajaya sacked Amangkurat I's capital at Plered; the king died while fleeing. His son Amangkurat II killed Trunajaya himself in 1680.",
+          "focus": [
+            "am1",
+            "trunajaya",
+            "am2"
+          ],
+          "light": [
+            "am1",
+            "trunajaya",
+            "am2"
+          ]
+        },
+        {
+          "title": "Wars of succession",
+          "caption": "Prince Puger took the throne from his nephew Amangkurat III with the help of the Dutch East India Company (VOC) in the First War of Succession, 1704–08, and reigned as Pakubuwana I. Amangkurat III was exiled to Ceylon. A second war followed in 1719–23, when Pakubuwana I's sons rose against their brother Amangkurat IV.",
+          "focus": [
+            "am2",
+            "am3",
+            "pb1"
+          ],
+          "light": [
+            "am2",
+            "am3",
+            "pb1",
+            "am4",
+            "purbaya_p",
+            "blitar_p"
+          ]
+        },
+        {
+          "title": "The coast lost",
+          "caption": "In 1742 rebels took Kartasura and crowned Amangkurat V. To regain his throne, Pakubuwana II ceded the north coast and Madura to the VOC; he moved the court to Surakarta in 1745, and on his deathbed in 1749 ceded the whole kingdom to the VOC, a cession that stayed on paper while the interior was in revolt.",
+          "focus": [
+            "pb2",
+            "am5"
+          ],
+          "light": [
+            "pb2",
+            "am5"
+          ],
+          "stage": "S2"
+        },
+        {
+          "title": "Giyanti, 1755",
+          "caption": "Prince Mangkubumi had proclaimed himself a rival Susuhunan in 1749. The Treaty of Giyanti made him Sultan of half the kingdom, as Hamengkubuwana I of Yogyakarta; Surakarta kept the other half under Pakubuwana III.",
+          "focus": [
+            "pb3",
+            "hb1"
+          ],
+          "light": [
+            "pb2",
+            "pb3",
+            "hb1"
+          ]
+        },
+        {
+          "title": "Salatiga, 1757",
+          "caption": "Raden Mas Said, “Pangeran Sambernyawa”, received part of Surakarta's lands by the Treaty of Salatiga and became Mangkunegara I. That made three courts.",
+          "focus": [
+            "pb3",
+            "mn1"
+          ],
+          "light": [
+            "pb3",
+            "hb1",
+            "mn1"
+          ]
+        },
+        {
+          "title": "Interlocking lands",
+          "caption": "Surakarta and Yogyakarta split the kingdom with their lands interlocking field by field; the Mangkunegaran was carved out of Surakarta's share.",
+          "focus": [
+            "map:S3"
+          ],
+          "stage": "S3",
+          "light": []
+        },
+        {
+          "title": "British rule and the fourth court",
+          "caption": "The British stormed Yogyakarta's palace in 1812. Paku Alam I had sided with them and was rewarded in 1813 with the Pakualaman, which had its own small army.",
+          "focus": [
+            "hb2",
+            "pa1"
+          ],
+          "light": [
+            "hb2",
+            "hb3",
+            "pa1"
+          ],
+          "stage": "S4"
+        },
+        {
+          "title": "The four courts today",
+          "caption": "Yogyakarta and the Pakualaman form the Special Region of Yogyakarta; the former Surakarta and Mangkunegaran lands are part of Central Java. All four courts survive, and Surakarta's succession has been disputed since 2025.",
+          "focus": [
+            "hb10",
+            "pb14p",
+            "pb14h",
+            "mn10",
+            "pa10"
+          ],
+          "light": [
+            "hb10",
+            "pb14p",
+            "pb14h",
+            "mn10",
+            "pa10"
+          ],
+          "stage": "S6"
+        }
+      ]
+    }
+  },
+  "theme": {
+    "palette": {
+      "background": "#EDE8D8",
+      "band": "#E6E0CD",
+      "ink": "#1F1F1F",
+      "noteInk": "#3A372F",
+      "muted": "#5E5848",
+      "faint": "#857D68",
+      "neutral": "#D5D1C3",
+      "greyLine": "#C2BBA8"
+    },
+    "type": {
+      "title": 14,
+      "name": 21,
+      "reign": 15,
+      "name2": 17,
+      "sub2": 14,
+      "note": 17,
+      "cap": 15,
+      "small": 14
+    },
+    "fonts": {
+      "sans": "gantari",
+      "script": "felipa",
+      "secondScript": "noto"
+    }
+  }
+}

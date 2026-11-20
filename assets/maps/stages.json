@@ -1,0 +1,1505 @@
+{
+ "meta": {
+  "geodata": "java_adm2.geojson (geoBoundaries gbOpen IDN ADM2, CC BY 3.0 IGO)",
+  "note": "adm2 = units to fill with the polity colour; adm2_part = units only partly belonging (draw as hatch/marker, see text); confidence high/medium/low.",
+  "sources": {
+   "ricklefs_hmi": "M.C. Ricklefs, A History of Modern Indonesia since c.1200 (4th ed., 2008), chs. 4-5, 8-11 (no URL; print)",
+   "ricklefs_jog": "M.C. Ricklefs, Jogjakarta under Sultan Mangkubumi 1749-1792 (1974), ch. on the Giyanti settlement and the 1774 boundary settlement (print)",
+   "carey": "P. Carey, The Power of Prophecy (2007), ch. 1 and appendices on the 1812/1813 and 1830 territorial settlements (print)",
+   "houben": "V.J.H. Houben, Kraton and Kumpeni: Surakarta and Yogyakarta 1830-1870 (1994), ch. 1-2 (print)",
+   "cribb": "R. Cribb, Historical Atlas of Indonesia (2000), p. 114 (source of Commons map Mataram_1830-en.png)",
+   "w_mataram_en": "https://en.wikipedia.org/wiki/Mataram_Sultanate",
+   "w_agung_en": "https://en.wikipedia.org/wiki/Sultan_Agung_of_Mataram",
+   "w_javawar1741_en": "https://en.wikipedia.org/wiki/Java_War_(1741%E2%80%931743)",
+   "w_giyanti_en": "https://en.wikipedia.org/wiki/Treaty_of_Giyanti",
+   "w_giyanti_id": "https://id.wikipedia.org/wiki/Perjanjian_Giyanti",
+   "w_salatiga_id": "https://id.wikipedia.org/wiki/Perjanjian_Salatiga",
+   "w_yogya_id": "https://id.wikipedia.org/wiki/Kesultanan_Yogyakarta",
+   "w_solo_id": "https://id.wikipedia.org/wiki/Kasunanan_Surakarta",
+   "w_mn_id": "https://id.wikipedia.org/wiki/Kadipaten_Mangkunegaran",
+   "w_mn_en": "https://en.wikipedia.org/wiki/Mangkunegaran",
+   "w_pa_id": "https://id.wikipedia.org/wiki/Kadipaten_Pakualaman",
+   "w_pa_en": "https://en.wikipedia.org/wiki/Pakualaman",
+   "w_vorst_en": "https://en.wikipedia.org/wiki/Vorstenlanden",
+   "w_kressolo_id": "https://id.wikipedia.org/wiki/Karesidenan_Surakarta",
+   "hakim2019": "A.L. Hakim, \"Penyatuan wilayah enclave (Imogiri, Kotagede, dan Ngawen) ke dalam DIY 1948-1960\", Jurnal Prodi Ilmu Sejarah UNY 4(1), 2019, pp. 90-97: https://journal.student.uny.ac.id/ilmu-sejarah/article/download/14710/14273",
+   "britannica_giyanti": "https://www.britannica.com/event/Gianti-Agreement",
+   "commons_1636": "https://commons.wikimedia.org/wiki/File:Sultanate_of_Mataram_1636.png (own work, no cited source - do not rely on)",
+   "commons_1757": "https://commons.wikimedia.org/wiki/File:Jawa_Setelah_Perjanjian_Giyanti.png (own work, no cited source - do not rely on)",
+   "commons_1830": "https://commons.wikimedia.org/wiki/File:Mataram_1830-en.png (after Cribb 2000 p.114)",
+   "uu_3_1950": "UU No. 3/1950 (formation of DIY); UU No. 18/1951 (Adikarto merged into Kulon Progo); UU No. 14/1958 (enclaves); UU No. 13/2012 (Keistimewaan DIY) - via hakim2019 and w_pa_id"
+  },
+  "detail_geodata": "detail_adm3.geojson (geoBoundaries gbHumanitarian IDN ADM3, OCHA ROAP/BPS 2019, CC BY 3.0 IGO; extract_adm3.py) for Adikarto; detail_adm4.geojson (IDN ADM4 villages; extract_adm4.py) for the Mangkunegaran half of Solo and the enclaves, drawn at village level"
+ },
+ "stages": [
+  {
+   "id": "S1",
+   "label": "Mataram at its height",
+   "date": "c. 1625-1645 (Sultan Agung)",
+   "mapping_quality": "approximate - draw as soft/hatched extent; regency borders did not exist and control was graded (core, tributary, contested)",
+   "polities": [
+    {
+     "id": "mataram",
+     "name": "Mataram (directly held, incl. Madura from 1624, Surabaya from 1625)",
+     "confidence": "medium",
+     "adm2": [
+      "Bangkalan",
+      "Banjarnegara",
+      "Bantul",
+      "Banyumas",
+      "Batang",
+      "Blitar",
+      "Blora",
+      "Bojonegoro",
+      "Boyolali",
+      "Brebes",
+      "Cilacap",
+      "Demak",
+      "Gresik",
+      "Grobogan",
+      "Gunung Kidul",
+      "Hutan",
+      "Jepara",
+      "Jombang",
+      "Karanganyar",
+      "Kebumen",
+      "Kediri",
+      "Kendal",
+      "Klaten",
+      "Kota Batu",
+      "Kota Blitar",
+      "Kota Kediri",
+      "Kota Madiun",
+      "Kota Magelang",
+      "Kota Malang",
+      "Kota Mojokerto",
+      "Kota Pasuruan",
+      "Kota Pekalongan",
+      "Kota Probolinggo",
+      "Kota Salatiga",
+      "Kota Semarang",
+      "Kota Surabaya",
+      "Kota Surakarta",
+      "Kota Tegal",
+      "Kota Yogyakarta",
+      "Kudus",
+      "Kulon Progo",
+      "Lamongan",
+      "Lumajang",
+      "Madiun",
+      "Magelang",
+      "Magetan",
+      "Malang",
+      "Mojokerto",
+      "Nganjuk",
+      "Ngawi",
+      "Pacitan",
+      "Pamekasan",
+      "Pasuruan",
+      "Pati",
+      "Pekalongan",
+      "Pemalang",
+      "Ponorogo",
+      "Probolinggo",
+      "Purbalingga",
+      "Purworejo",
+      "Rembang",
+      "Sampang",
+      "Semarang",
+      "Sidoarjo",
+      "Sleman",
+      "Sragen",
+      "Sukoharjo",
+      "Sumenep",
+      "Tegal",
+      "Temanggung",
+      "Trenggalek",
+      "Tuban",
+      "Tulungagung",
+      "Wadung Kedungombo",
+      "Wonogiri",
+      "Wonosobo"
+     ],
+     "notes": "Agung took Wirasaba 1615, Lasem 1616, Pasuruan 1617, Tuban 1619, Madura 1624, Surabaya 1625; Giri subdued c.1636. \"Central and eastern Java plus Madura\" is the standard summary. Malang/Lumajang/Probolinggo hinterland was thinly controlled. Mountainous south (Gunung Kidul, Pacitan) included by convention.",
+     "sources": [
+      "M.C. Ricklefs, A History of Modern Indonesia since c.1200 (4th ed., 2008), chs. 4-5, 8-11 (no URL; print)",
+      "https://en.wikipedia.org/wiki/Sultan_Agung_of_Mataram",
+      "https://en.wikipedia.org/wiki/Mataram_Sultanate"
+     ]
+    },
+    {
+     "id": "blambangan",
+     "name": "Blambangan (contested; campaigns 1635-39, submitted 1639, lost again 1659)",
+     "confidence": "low",
+     "adm2": [
+      "Banyuwangi",
+      "Bondowoso",
+      "Jember",
+      "Situbondo"
+     ],
+     "style": "hatch: Mataram colour over neutral",
+     "notes": "Conquered by Agung 1639-40 but never effectively held; Balinese (Gelgel) influence persisted; independent again by 1659.",
+     "sources": [
+      "https://en.wikipedia.org/wiki/Mataram_Sultanate",
+      "M.C. Ricklefs, A History of Modern Indonesia since c.1200 (4th ed., 2008), chs. 4-5, 8-11 (no URL; print)",
+      "https://en.wikipedia.org/wiki/Eastern_salient_of_Java (Ricklefs 2008 p.87, 104, 123, 132; Margana 2007 pp.240, 248)"
+     ]
+    },
+    {
+     "id": "priangan",
+     "name": "Priangan (Sumedang, Ukur, Galuh, Sukapura) - Mataram vassal regencies",
+     "confidence": "low",
+     "adm2": [
+      "Bandung",
+      "Bandung Barat",
+      "Ciamis",
+      "Cianjur",
+      "Garut",
+      "Karawang",
+      "Kota Bandung",
+      "Kota Banjar",
+      "Kota Cimahi",
+      "Kota Tasikmalaya",
+      "Pangandaran",
+      "Purwakarta",
+      "Subang",
+      "Sumedang",
+      "Tasikmalaya",
+      "Waduk Cirata"
+     ],
+     "style": "hatch: Mataram colour (tributary)",
+     "notes": "Sumedang submitted c.1620; Ukur/Sumedang revolts 1631-36 suppressed. Karawang was Mataram's forward base against Batavia (1630s). Cianjur/Subang/Purwakarta are approximations of a thinly populated frontier.",
+     "sources": [
+      "https://en.wikipedia.org/wiki/Sultan_Agung_of_Mataram",
+      "https://en.wikipedia.org/wiki/Mataram_Sultanate",
+      "M.C. Ricklefs, A History of Modern Indonesia since c.1200 (4th ed., 2008), chs. 4-5, 8-11 (no URL; print)"
+     ]
+    },
+    {
+     "id": "cirebon",
+     "name": "Cirebon (allied/vassal court)",
+     "confidence": "medium",
+     "adm2": [
+      "Cirebon",
+      "Indramayu",
+      "Kota Cirebon",
+      "Kuningan",
+      "Majalengka"
+     ],
+     "style": "hatch: Mataram colour (vassal)",
+     "notes": "Cirebon was subordinate to Mataram under Agung (marriage ties) but kept its own sultans. Majalengka/Indramayu boundary with Priangan is approximate.",
+     "sources": [
+      "M.C. Ricklefs, A History of Modern Indonesia since c.1200 (4th ed., 2008), chs. 4-5, 8-11 (no URL; print)",
+      "https://en.wikipedia.org/wiki/Mataram_Sultanate"
+     ]
+    },
+    {
+     "id": "banten",
+     "name": "Banten sultanate (west of the Cisadane)",
+     "confidence": "low",
+     "adm2": [
+      "Kota Cilegon",
+      "Kota Serang",
+      "Kota Tangerang",
+      "Kota Tangerang Selatan",
+      "Lebak",
+      "Pandeglang",
+      "Serang",
+      "Tangerang"
+     ],
+     "notes": "Banten proper = Banten province; Bogor/Depok/Bekasi/Sukabumi were largely unpopulated hinterland in the 1630s (no clear owner).",
+     "sources": [
+      "https://en.wikipedia.org/wiki/Sultan_Agung_of_Mataram",
+      "M.C. Ricklefs, A History of Modern Indonesia since c.1200 (4th ed., 2008), chs. 4-5, 8-11 (no URL; print)"
+     ]
+    },
+    {
+     "id": "voc",
+     "name": "VOC Batavia (founded 1619; besieged by Agung 1628-29)",
+     "confidence": "high (as a point) / low (as area)",
+     "adm2": [
+      "Kepulauan Seribu",
+      "Kota Jakarta Barat",
+      "Kota Jakarta Pusat",
+      "Kota Jakarta Selatan",
+      "Kota Jakarta Timur",
+      "Kota Jakarta Utara"
+     ],
+     "style": "better drawn as a marker than an area: Batavia was a walled town plus a small ommelanden",
+     "sources": [
+      "https://en.wikipedia.org/wiki/Sultan_Agung_of_Mataram"
+     ]
+    },
+    {
+     "id": "bali",
+     "name": "Bali (Gelgel) - outside Mataram",
+     "confidence": "high",
+     "adm2": [
+      "Badung",
+      "Bangli",
+      "Buleleng",
+      "Gianyar",
+      "Jembrana",
+      "Karang Asem",
+      "Klungkung",
+      "Kota Denpasar",
+      "Tabanan"
+     ],
+     "sources": [
+      "https://en.wikipedia.org/wiki/Sultan_Agung_of_Mataram"
+     ]
+    },
+    {
+     "id": "borderland",
+     "name": "Unsettled borderland between Banten, Batavia and Mataram (Cisadane to Citarum)",
+     "confidence": "medium",
+     "adm2": [
+      "Bekasi",
+      "Bogor",
+      "Kota Bekasi",
+      "Kota Bogor",
+      "Kota Depok",
+      "Kota Sukabumi",
+      "Sukabumi"
+     ],
+     "notes": "Emptied by the wars of 1619-29; became Company land only by treaties with Mataram (1652) and Banten (1659, 1684). Mataram's de facto western edge was the Citarum (Karawang).",
+     "sources": [
+      "https://id.wikipedia.org/wiki/Batavia",
+      "https://en.wikipedia.org/wiki/Banten%E2%80%93Dutch_war_(1656%E2%80%931659)"
+     ]
+    }
+   ],
+   "unassigned_adm2": []
+  },
+  {
+   "id": "S2",
+   "label": "The coast lost",
+   "date": "1743/1746-1749 (Pakubuwana II)",
+   "mapping_quality": "medium - pasisir vs interior is defensible at regency scale; exact inland limit of VOC coastal districts is approximate",
+   "polities": [
+    {
+     "id": "mataram",
+     "name": "Mataram (Kartasura, then Surakarta from 1745): Negaragung + Mancanagara",
+     "confidence": "medium",
+     "adm2": [
+      "Banjarnegara",
+      "Bantul",
+      "Banyumas",
+      "Blitar",
+      "Blora",
+      "Bojonegoro",
+      "Boyolali",
+      "Cilacap",
+      "Grobogan",
+      "Gunung Kidul",
+      "Jombang",
+      "Karanganyar",
+      "Kebumen",
+      "Kediri",
+      "Klaten",
+      "Kota Blitar",
+      "Kota Kediri",
+      "Kota Madiun",
+      "Kota Magelang",
+      "Kota Mojokerto",
+      "Kota Surakarta",
+      "Kota Yogyakarta",
+      "Kulon Progo",
+      "Madiun",
+      "Magelang",
+      "Magetan",
+      "Mojokerto",
+      "Nganjuk",
+      "Ngawi",
+      "Pacitan",
+      "Ponorogo",
+      "Purbalingga",
+      "Purworejo",
+      "Sleman",
+      "Sragen",
+      "Sukoharjo",
+      "Temanggung",
+      "Trenggalek",
+      "Tulungagung",
+      "Wadung Kedungombo",
+      "Wonogiri",
+      "Wonosobo"
+     ],
+     "notes": "Negaragung = Mataram, Pajang, Sukowati, Kedu, Bagelen (DIY, Solo area, Magelang/Temanggung/Wonosobo, Purworejo/Kebumen). Mancanagara kulon = Banyumas area; Mancanagara wetan = Madiun, Kediri, Ponorogo, Pacitan, Jipang, Grobogan, Japan (Mojokerto), Wirasaba (Jombang) etc. NB: en.wikipedia (Mataram Sultanate) claims Mataram was reduced in 1743 to \"areas around Surakarta, Yogyakarta, Kedu and Bagelen\"; this contradicts the Giyanti lists (1755), which still divide the Mancanagara, so the Mancanagara are kept here. The interior was in civil war (Mangkubumi from 1746, Mas Said) - the court did not control all of it.",
+     "sources": [
+      "https://en.wikipedia.org/wiki/Mataram_Sultanate",
+      "https://id.wikipedia.org/wiki/Kesultanan_Yogyakarta",
+      "https://id.wikipedia.org/wiki/Kasunanan_Surakarta",
+      "M.C. Ricklefs, A History of Modern Indonesia since c.1200 (4th ed., 2008), chs. 4-5, 8-11 (no URL; print)",
+      "M.C. Ricklefs, Jogjakarta under Sultan Mangkubumi 1749-1792 (1974), ch. on the Giyanti settlement and the 1774 boundary settlement (print)"
+     ]
+    },
+    {
+     "id": "voc",
+     "name": "VOC (north coast/Pasisir ceded 1743, confirmed 1746; Madura after 1745-46)",
+     "confidence": "medium",
+     "adm2": [
+      "Bandung",
+      "Bandung Barat",
+      "Bangkalan",
+      "Batang",
+      "Bekasi",
+      "Bogor",
+      "Brebes",
+      "Ciamis",
+      "Cianjur",
+      "Cirebon",
+      "Demak",
+      "Garut",
+      "Gresik",
+      "Indramayu",
+      "Jepara",
+      "Karawang",
+      "Kendal",
+      "Kepulauan Seribu",
+      "Kota Bandung",
+      "Kota Banjar",
+      "Kota Bekasi",
+      "Kota Bogor",
+      "Kota Cimahi",
+      "Kota Cirebon",
+      "Kota Depok",
+      "Kota Jakarta Barat",
+      "Kota Jakarta Pusat",
+      "Kota Jakarta Selatan",
+      "Kota Jakarta Timur",
+      "Kota Jakarta Utara",
+      "Kota Pasuruan",
+      "Kota Pekalongan",
+      "Kota Probolinggo",
+      "Kota Semarang",
+      "Kota Sukabumi",
+      "Kota Surabaya",
+      "Kota Tasikmalaya",
+      "Kota Tegal",
+      "Kudus",
+      "Kuningan",
+      "Lamongan",
+      "Majalengka",
+      "Pamekasan",
+      "Pangandaran",
+      "Pasuruan",
+      "Pati",
+      "Pekalongan",
+      "Pemalang",
+      "Probolinggo",
+      "Purwakarta",
+      "Rembang",
+      "Sampang",
+      "Sidoarjo",
+      "Subang",
+      "Sukabumi",
+      "Sumedang",
+      "Sumenep",
+      "Tasikmalaya",
+      "Tegal",
+      "Tuban",
+      "Waduk Cirata"
+     ],
+     "notes": "Treaty of (Nov.) 1743 after the Chinese War: VOC sovereignty over the north coast, Madura and the east (Oosthoek). Wikipedia (Java War 1741-43) gives \"northern coast of Java, Madura and eastern Java\". The contract of 18 May 1746 is cited in the Giyanti text as the cession instrument. West Java/Priangan and Cirebon were already VOC (1677-1705). Blambangan (east tip) was only actually conquered 1767-72: hatch it. Madura: eastern Madura (Sumenep, Pamekasan) ceded 1705; western Madura (Cakraningrat IV) taken 1745-46. 11 Nov 1743 cession (Surabaya, Rembang, Jepara, West Madura, the pasisir) and 18 May 1746 lease of the remaining coast; the 11 Dec 1749 cession of the whole realm was on paper while the interior was in revolt.",
+     "sources": [
+      "https://en.wikipedia.org/wiki/Java_War_(1741%E2%80%931743)",
+      "https://en.wikipedia.org/wiki/Mataram_Sultanate",
+      "https://id.wikipedia.org/wiki/Perjanjian_Giyanti",
+      "https://www.britannica.com/event/Gianti-Agreement",
+      "M.C. Ricklefs, A History of Modern Indonesia since c.1200 (4th ed., 2008), chs. 4-5, 8-11 (no URL; print)"
+     ]
+    },
+    {
+     "id": "voc_uncertain",
+     "name": "Semarang hinterland (VOC or Mataram - uncertain)",
+     "confidence": "low",
+     "adm2": [
+      "Hutan",
+      "Kota Salatiga",
+      "Semarang"
+     ],
+     "notes": "VOC fort at Salatiga (De Hersteller, 1746) and Ungaran; the 1757 treaty was signed in Salatiga. Draw neutral or with VOC hatch.",
+     "sources": [
+      "https://id.wikipedia.org/wiki/Perjanjian_Salatiga",
+      "M.C. Ricklefs, A History of Modern Indonesia since c.1200 (4th ed., 2008), chs. 4-5, 8-11 (no URL; print)"
+     ]
+    },
+    {
+     "id": "malang",
+     "name": "Surapati's descendants (Malang and Lumajang) until the VOC campaigns of 1767-71",
+     "confidence": "low",
+     "adm2": [
+      "Kota Batu",
+      "Kota Malang",
+      "Lumajang",
+      "Malang"
+     ],
+     "sources": [
+      "M.C. Ricklefs, A History of Modern Indonesia since c.1200 (4th ed., 2008), chs. 4-5, 8-11 (no URL; print)"
+     ]
+    },
+    {
+     "id": "banten",
+     "name": "Banten (VOC vassal)",
+     "confidence": "medium",
+     "adm2": [
+      "Kota Cilegon",
+      "Kota Serang",
+      "Kota Tangerang",
+      "Kota Tangerang Selatan",
+      "Lebak",
+      "Pandeglang",
+      "Serang",
+      "Tangerang"
+     ],
+     "sources": [
+      "M.C. Ricklefs, A History of Modern Indonesia since c.1200 (4th ed., 2008), chs. 4-5, 8-11 (no URL; print)"
+     ]
+    },
+    {
+     "id": "bali",
+     "name": "Bali",
+     "confidence": "high",
+     "adm2": [
+      "Badung",
+      "Bangli",
+      "Buleleng",
+      "Gianyar",
+      "Jembrana",
+      "Karang Asem",
+      "Klungkung",
+      "Kota Denpasar",
+      "Tabanan"
+     ],
+     "sources": []
+    },
+    {
+     "id": "blambangan",
+     "name": "Blambangan under Balinese (Mengwi) overlordship; VOC claim from 1743 on paper only",
+     "confidence": "medium",
+     "adm2": [
+      "Banyuwangi",
+      "Bondowoso",
+      "Jember",
+      "Situbondo"
+     ],
+     "notes": "VOC conquest only 1767-68, pacified 1771-72.",
+     "sources": [
+      "https://en.wikipedia.org/wiki/Eastern_salient_of_Java (Ricklefs 2008 p.87, 104, 123, 132; Margana 2007 pp.240, 248)"
+     ]
+    }
+   ],
+   "unassigned_adm2": []
+  },
+  {
+   "id": "S3",
+   "label": "Giyanti and Salatiga",
+   "date": "1755 (Giyanti, 13 Feb) / 1757 (Salatiga, 17 Mar)",
+   "mapping_quality": "NOT faithfully mappable at regency level. Recommended: draw the whole S2 Mataram area as one \"Vorstenlanden\" block hatched in both court colours (\"divided, interlocking\"), optionally tinting only the Mancanagara blocks below by dominant court. Mangkunegaran as a hatched overlay on Karanganyar/Wonogiri.",
+   "cacah": {
+    "negaragung_each": 53100,
+    "mancanagara_yogyakarta": 33950,
+    "mancanagara_surakarta": 32350,
+    "mangkunegaran_1757": 4000
+   },
+   "polities": [
+    {
+     "id": "vorstenlanden_shared",
+     "name": "Negaragung - split field by field between Surakarta and Yogyakarta (intermixed)",
+     "confidence": "high (that it is intermixed) / n.a. (for any line)",
+     "adm2": [
+      "Bantul",
+      "Boyolali",
+      "Gunung Kidul",
+      "Kebumen",
+      "Klaten",
+      "Kota Magelang",
+      "Kota Surakarta",
+      "Kota Yogyakarta",
+      "Kulon Progo",
+      "Magelang",
+      "Purworejo",
+      "Sleman",
+      "Sragen",
+      "Sukoharjo",
+      "Temanggung",
+      "Wonosobo"
+     ],
+     "style": "cross-hatch both court colours; optionally darken Yogyakarta colour toward DIY and Surakarta colour toward Kota Surakarta/Sukoharjo/Boyolali",
+     "notes": "Yogyakarta's Negaragung: Siti Gadhing Mataram (between Merapi and the sea), Siti Bumija (Kedu, Progo to Merbabu), Siti Numbakanyar (Bagelen, between Bagawanta and Progo), Siti Panekar (east Pajang down to Gunungkidul), Siti Ageng Mlayakusuma (east Pajang). Surakarta held the corresponding shares in Pajang, Sukowati, Kedu and Bagelen. Lands \"saling tercampur aduk dan berdempetan\" (Hakim 2019, citing Purwadi & Waryanti 2015) - only the 1830 Klaten agreement drew a line (Opak river / Prambanan road).",
+     "sources": [
+      "https://id.wikipedia.org/wiki/Kesultanan_Yogyakarta",
+      "https://id.wikipedia.org/wiki/Kasunanan_Surakarta",
+      "A.L. Hakim, \"Penyatuan wilayah enclave (Imogiri, Kotagede, dan Ngawen) ke dalam DIY 1948-1960\", Jurnal Prodi Ilmu Sejarah UNY 4(1), 2019, pp. 90-97: https://journal.student.uny.ac.id/ilmu-sejarah/article/download/14710/14273",
+      "M.C. Ricklefs, Jogjakarta under Sultan Mangkubumi 1749-1792 (1974), ch. on the Giyanti settlement and the 1774 boundary settlement (print)"
+     ]
+    },
+    {
+     "id": "yogyakarta_mancanagara",
+     "name": "Yogyakarta - Mancanagara (dominant)",
+     "confidence": "low-medium",
+     "adm2": [
+      "Bojonegoro",
+      "Grobogan",
+      "Kota Madiun",
+      "Kota Mojokerto",
+      "Madiun",
+      "Magetan",
+      "Mojokerto",
+      "Tulungagung",
+      "Wadung Kedungombo"
+     ],
+     "notes": "Lists (id.wikipedia Kesultanan Yogyakarta; Hakim 2019): Madiun, Magetan, Caruban (Madiun regency), half of Pacitan, Kertosono, Berbek, Kalangbret, Ngrowo (Tulungagung), Japan (Mojokerto), Jipang (Bojonegoro), Teras Karas (Ngawen, Blora), Sela, Warung (Kuwu-Wirosari) and part of Grobogan, plus ~1,600 karya in Banyumas (Danureja I). Total 33,950 cacah.",
+     "sources": [
+      "https://id.wikipedia.org/wiki/Kesultanan_Yogyakarta",
+      "A.L. Hakim, \"Penyatuan wilayah enclave (Imogiri, Kotagede, dan Ngawen) ke dalam DIY 1948-1960\", Jurnal Prodi Ilmu Sejarah UNY 4(1), 2019, pp. 90-97: https://journal.student.uny.ac.id/ilmu-sejarah/article/download/14710/14273",
+      "M.C. Ricklefs, Jogjakarta under Sultan Mangkubumi 1749-1792 (1974), ch. on the Giyanti settlement and the 1774 boundary settlement (print)"
+     ]
+    },
+    {
+     "id": "surakarta_mancanagara",
+     "name": "Surakarta - Mancanagara (dominant)",
+     "confidence": "low-medium",
+     "adm2": [
+      "Banjarnegara",
+      "Banyumas",
+      "Blitar",
+      "Blora",
+      "Cilacap",
+      "Jombang",
+      "Kediri",
+      "Kota Blitar",
+      "Kota Kediri",
+      "Ponorogo",
+      "Purbalingga"
+     ],
+     "notes": "id.wikipedia Kasunanan Surakarta lists Mancanagara kulon: Banyumas, Bantar (Brebes), Lebaksiu/Balapulang (Tegal), Jabarangkah (Batang), Kalibeber (Wonosobo), Karanganyar/Karangbolong (Kebumen), Merden/Karangkobar (Banjarnegara), Bobotsari/Kertanegara (Purbalingga); Mancanagara wetan: Jogorogo (Ngawi), Ponorogo, Kaduwang (Wonogiri), Pacitan, Tulungagung, Kediri, Pace and Berbek (Nganjuk), Wirasaba (Jombang), Japan, Madiun, Magetan, Caruban. That wetan list overlaps the Yogyakarta list (Madiun, Magetan, Caruban, Japan, Tulungagung) - either it describes pre-1755 Kasunanan or shared districts; treat overlaps as Yogyakarta-dominant with Surakarta enclaves. 32,350 cacah.",
+     "sources": [
+      "https://id.wikipedia.org/wiki/Kasunanan_Surakarta",
+      "A.L. Hakim, \"Penyatuan wilayah enclave (Imogiri, Kotagede, dan Ngawen) ke dalam DIY 1948-1960\", Jurnal Prodi Ilmu Sejarah UNY 4(1), 2019, pp. 90-97: https://journal.student.uny.ac.id/ilmu-sejarah/article/download/14710/14273",
+      "M.C. Ricklefs, Jogjakarta under Sultan Mangkubumi 1749-1792 (1974), ch. on the Giyanti settlement and the 1774 boundary settlement (print)"
+     ]
+    },
+    {
+     "id": "mancanagara_split",
+     "name": "Mancanagara districts split between both courts",
+     "confidence": "medium",
+     "adm2": [
+      "Nganjuk",
+      "Ngawi",
+      "Pacitan",
+      "Trenggalek"
+     ],
+     "notes": "Pacitan explicitly halved; Nganjuk: Kertosono/Berbek to Yogyakarta, Pace to Surakarta; Trenggalek not named in any list consulted (likely split between Ponorogo and Ngrowo appanages) - draw hatched. Ngawi: Jogorogo (south) to Surakarta, Ngawi proper to Yogyakarta.",
+     "sources": [
+      "https://id.wikipedia.org/wiki/Kesultanan_Yogyakarta",
+      "https://id.wikipedia.org/wiki/Kasunanan_Surakarta",
+      "https://repository.unair.ac.id/129733/5/5_%20BAB%20II%20.pdf",
+      "https://id.wikipedia.org/wiki/Kabupaten_Ngawi"
+     ]
+    },
+    {
+     "id": "mangkunegaran",
+     "name": "Mangkunegaran (1757, 4,000 karya/cacah, carved from Surakarta)",
+     "confidence": "medium (core) / low (scattered parts)",
+     "adm2": [
+      "Karanganyar",
+      "Wonogiri"
+     ],
+     "style": "overlay hatch on Surakarta colour",
+     "notes": "Salatiga treaty art. 7: 4,000 karya in Kaduwang, Nglaroh, Matesih, Wiroko, Haribaya, Honggobayan, Sembuyan, Gunung Kidul, Kedu and Pajang (north and south). Kaduwang/Nglaroh/Wiroko/Sembuyan lie in Wonogiri, Matesih/Haribaya/Honggobayan in Karanganyar; the Gunung Kidul, Kedu and Pajang parcels were scattered. In 1757 it did not yet cover the full modern regencies. Also small parcels in Gunungkidul (Ngawen), Pajang and Kedu (not drawn).",
+     "sources": [
+      "https://id.wikipedia.org/wiki/Perjanjian_Salatiga",
+      "https://en.wikipedia.org/wiki/Mangkunegaran",
+      "https://id.wikipedia.org/wiki/Kadipaten_Mangkunegaran"
+     ]
+    },
+    {
+     "id": "voc",
+     "name": "VOC",
+     "confidence": "medium",
+     "adm2": [
+      "Bandung",
+      "Bandung Barat",
+      "Bangkalan",
+      "Batang",
+      "Bekasi",
+      "Bogor",
+      "Brebes",
+      "Ciamis",
+      "Cianjur",
+      "Cirebon",
+      "Demak",
+      "Garut",
+      "Gresik",
+      "Hutan",
+      "Indramayu",
+      "Jepara",
+      "Karawang",
+      "Kendal",
+      "Kepulauan Seribu",
+      "Kota Bandung",
+      "Kota Banjar",
+      "Kota Bekasi",
+      "Kota Bogor",
+      "Kota Cilegon",
+      "Kota Cimahi",
+      "Kota Cirebon",
+      "Kota Depok",
+      "Kota Jakarta Barat",
+      "Kota Jakarta Pusat",
+      "Kota Jakarta Selatan",
+      "Kota Jakarta Timur",
+      "Kota Jakarta Utara",
+      "Kota Pasuruan",
+      "Kota Pekalongan",
+      "Kota Probolinggo",
+      "Kota Salatiga",
+      "Kota Semarang",
+      "Kota Serang",
+      "Kota Sukabumi",
+      "Kota Surabaya",
+      "Kota Tangerang",
+      "Kota Tangerang Selatan",
+      "Kota Tasikmalaya",
+      "Kota Tegal",
+      "Kudus",
+      "Kuningan",
+      "Lamongan",
+      "Lebak",
+      "Majalengka",
+      "Pamekasan",
+      "Pandeglang",
+      "Pangandaran",
+      "Pasuruan",
+      "Pati",
+      "Pekalongan",
+      "Pemalang",
+      "Probolinggo",
+      "Purwakarta",
+      "Rembang",
+      "Sampang",
+      "Semarang",
+      "Serang",
+      "Sidoarjo",
+      "Subang",
+      "Sukabumi",
+      "Sumedang",
+      "Sumenep",
+      "Tangerang",
+      "Tasikmalaya",
+      "Tegal",
+      "Tuban",
+      "Waduk Cirata"
+     ],
+     "notes": "Giyanti art. 6: Sultan renounces Madura and the coast ceded in 1746 (receives 10,000 real/yr). Blambangan still contested (Bali) until 1767-72; Malang until 1767-71.",
+     "sources": [
+      "https://en.wikipedia.org/wiki/Treaty_of_Giyanti",
+      "https://id.wikipedia.org/wiki/Perjanjian_Giyanti"
+     ]
+    },
+    {
+     "id": "outside",
+     "name": "Outside VOC/court control (Blambangan, Malang)",
+     "confidence": "low",
+     "adm2": [
+      "Banyuwangi",
+      "Bondowoso",
+      "Jember",
+      "Kota Batu",
+      "Kota Malang",
+      "Lumajang",
+      "Malang",
+      "Situbondo"
+     ],
+     "sources": [
+      "M.C. Ricklefs, A History of Modern Indonesia since c.1200 (4th ed., 2008), chs. 4-5, 8-11 (no URL; print)"
+     ]
+    },
+    {
+     "id": "bali",
+     "name": "Bali",
+     "confidence": "high",
+     "adm2": [
+      "Badung",
+      "Bangli",
+      "Buleleng",
+      "Gianyar",
+      "Jembrana",
+      "Karang Asem",
+      "Klungkung",
+      "Kota Denpasar",
+      "Tabanan"
+     ],
+     "sources": []
+    }
+   ],
+   "unassigned_adm2": []
+  },
+  {
+   "id": "S4",
+   "label": "Four courts",
+   "date": "1812-1813 (British interregnum; Pakualaman 17 Mar 1813)",
+   "mapping_quality": "approximate - Mancanagara still intermixed; Pakualaman best shown as a hatched patch in south Kulon Progo + city marker",
+   "polities": [
+    {
+     "id": "vorstenlanden_shared",
+     "name": "Vorstenlanden (Surakarta + Yogyakarta, intermixed) incl. remaining Mancanagara",
+     "confidence": "low-medium",
+     "adm2": [
+      "Banjarnegara",
+      "Bantul",
+      "Banyumas",
+      "Blitar",
+      "Boyolali",
+      "Cilacap",
+      "Gunung Kidul",
+      "Kebumen",
+      "Kediri",
+      "Klaten",
+      "Kota Blitar",
+      "Kota Kediri",
+      "Kota Madiun",
+      "Kota Surakarta",
+      "Kota Yogyakarta",
+      "Kulon Progo",
+      "Madiun",
+      "Magetan",
+      "Nganjuk",
+      "Ngawi",
+      "Ponorogo",
+      "Purbalingga",
+      "Purworejo",
+      "Sleman",
+      "Sragen",
+      "Sukoharjo",
+      "Trenggalek",
+      "Tulungagung",
+      "Wonosobo"
+     ],
+     "adm2_part": {
+      "Kulon Progo": "south coast = Pakualaman (see pakualaman)"
+     },
+     "notes": "Same interlocking pattern as S3 minus the 1811-12 annexations.",
+     "sources": [
+      "https://id.wikipedia.org/wiki/Kesultanan_Yogyakarta",
+      "P. Carey, The Power of Prophecy (2007), ch. 1 and appendices on the 1812/1813 and 1830 territorial settlements (print)"
+     ]
+    },
+    {
+     "id": "mangkunegaran",
+     "name": "Mangkunegaran",
+     "confidence": "medium",
+     "adm2": [
+      "Karanganyar",
+      "Wonogiri"
+     ],
+     "notes": "Received additional lands from the British in 1813 for its legion (Carey; figure not verified online).",
+     "sources": [
+      "P. Carey, The Power of Prophecy (2007), ch. 1 and appendices on the 1812/1813 and 1830 territorial settlements (print)",
+      "https://en.wikipedia.org/wiki/Mangkunegaran"
+     ]
+    },
+    {
+     "id": "pakualaman",
+     "name": "Pakualaman (Paku Alam I, 4,000 cacah carved from Yogyakarta)",
+     "confidence": "medium",
+     "adm2": [],
+     "adm2_part": {
+      "Kulon Progo": "southern coastal kapanewon only (Karang Kemuning/Adikarto, centred on Brosot; roughly Temon, Wates, Panjatan, Galur, Lendah)",
+      "Kota Yogyakarta": "Kemantren Pakualaman only"
+     },
+     "style": "small hatched patch / marker - NOT the whole of Kulon Progo",
+     "notes": "4,000 cacah, initially scattered, consolidated as Karang Kemuning (Adikarto from 1877) = modern kapanewon Temon, Wates, Panjatan, Galur (Avatara 2019); drawn in its consolidated form.",
+     "sources": [
+      "https://id.wikipedia.org/wiki/Kadipaten_Pakualaman",
+      "https://en.wikipedia.org/wiki/Pakualaman",
+      "P. Carey, The Power of Prophecy (2007), ch. 1 and appendices on the 1812/1813 and 1830 territorial settlements (print)"
+     ],
+     "adm3": [
+      "Temon",
+      "Wates",
+      "Panjatan",
+      "Galur"
+     ]
+    },
+    {
+     "id": "government",
+     "name": "Annexed by the British/Dutch government 1811-12 (Kedu; Japan, Jipang, Grobogan, half Pacitan from Yogyakarta; Surakarta's shares likewise)",
+     "confidence": "medium",
+     "adm2": [
+      "Blora",
+      "Bojonegoro",
+      "Grobogan",
+      "Jombang",
+      "Kota Magelang",
+      "Kota Mojokerto",
+      "Magelang",
+      "Mojokerto",
+      "Temanggung",
+      "Wadung Kedungombo"
+     ],
+     "adm2_part": {},
+     "notes": "id.wikipedia Kesultanan Yogyakarta: British took Kedu, half Pacitan, Japan, Jipang and Grobogan after the Geger Sepehi (June 1812). Blora and Jombang (Wirasaba) for Surakarta are inferred (low). Wonosobo (Ledok) was annexed only in 1830 and joined Kedu in 1901 (https://en.wikipedia.org/wiki/Kedu_Residency).",
+     "sources": [
+      "https://id.wikipedia.org/wiki/Kesultanan_Yogyakarta",
+      "P. Carey, The Power of Prophecy (2007), ch. 1 and appendices on the 1812/1813 and 1830 territorial settlements (print)",
+      "M.C. Ricklefs, A History of Modern Indonesia since c.1200 (4th ed., 2008), chs. 4-5, 8-11 (no URL; print)"
+     ]
+    },
+    {
+     "id": "colonial_rest",
+     "name": "Rest of Java/Madura under British (1811-16) / Dutch government",
+     "confidence": "high",
+     "adm2": [
+      "Bandung",
+      "Bandung Barat",
+      "Bangkalan",
+      "Banyuwangi",
+      "Batang",
+      "Bekasi",
+      "Bogor",
+      "Bondowoso",
+      "Brebes",
+      "Ciamis",
+      "Cianjur",
+      "Cirebon",
+      "Demak",
+      "Garut",
+      "Gresik",
+      "Hutan",
+      "Indramayu",
+      "Jember",
+      "Jepara",
+      "Karawang",
+      "Kendal",
+      "Kepulauan Seribu",
+      "Kota Bandung",
+      "Kota Banjar",
+      "Kota Batu",
+      "Kota Bekasi",
+      "Kota Bogor",
+      "Kota Cilegon",
+      "Kota Cimahi",
+      "Kota Cirebon",
+      "Kota Depok",
+      "Kota Jakarta Barat",
+      "Kota Jakarta Pusat",
+      "Kota Jakarta Selatan",
+      "Kota Jakarta Timur",
+      "Kota Jakarta Utara",
+      "Kota Malang",
+      "Kota Pasuruan",
+      "Kota Pekalongan",
+      "Kota Probolinggo",
+      "Kota Salatiga",
+      "Kota Semarang",
+      "Kota Serang",
+      "Kota Sukabumi",
+      "Kota Surabaya",
+      "Kota Tangerang",
+      "Kota Tangerang Selatan",
+      "Kota Tasikmalaya",
+      "Kota Tegal",
+      "Kudus",
+      "Kuningan",
+      "Lamongan",
+      "Lebak",
+      "Lumajang",
+      "Majalengka",
+      "Malang",
+      "Pamekasan",
+      "Pandeglang",
+      "Pangandaran",
+      "Pasuruan",
+      "Pati",
+      "Pekalongan",
+      "Pemalang",
+      "Probolinggo",
+      "Purwakarta",
+      "Rembang",
+      "Sampang",
+      "Semarang",
+      "Serang",
+      "Sidoarjo",
+      "Situbondo",
+      "Subang",
+      "Sukabumi",
+      "Sumedang",
+      "Sumenep",
+      "Tangerang",
+      "Tasikmalaya",
+      "Tegal",
+      "Tuban",
+      "Waduk Cirata"
+     ],
+     "sources": [
+      "M.C. Ricklefs, A History of Modern Indonesia since c.1200 (4th ed., 2008), chs. 4-5, 8-11 (no URL; print)"
+     ]
+    },
+    {
+     "id": "bali",
+     "name": "Bali",
+     "confidence": "high",
+     "adm2": [
+      "Badung",
+      "Bangli",
+      "Buleleng",
+      "Gianyar",
+      "Jembrana",
+      "Karang Asem",
+      "Klungkung",
+      "Kota Denpasar",
+      "Tabanan"
+     ],
+     "sources": []
+    },
+    {
+     "id": "pacitan_half",
+     "name": "Pacitan: Yogyakarta's half ceded to the British 1812, Surakarta's half kept (its status uncertain)",
+     "confidence": "medium",
+     "adm2": [
+      "Pacitan"
+     ],
+     "sources": [
+      "https://id.wikipedia.org/wiki/Kesultanan_Ngayogyakarta_Hadiningrat",
+      "https://anri.go.id/download/daftar-arsip-tekstual-residensi-pacitan-1824-18321867-1585912829"
+     ]
+    }
+   ],
+   "unassigned_adm2": []
+  },
+  {
+   "id": "S5",
+   "label": "After the Java War",
+   "date": "1830-1942 (Klaten agreement 27 Sep 1830; Gunungkidul-Mangkunegaran line 18 May 1831)",
+   "mapping_quality": "good at regency level (high) - modern regencies largely descend from the 1830-1945 kabupaten; split units noted",
+   "polities": [
+    {
+     "id": "surakarta",
+     "name": "Kasunanan Surakarta",
+     "confidence": "high",
+     "adm2": [
+      "Boyolali",
+      "Klaten",
+      "Kota Surakarta",
+      "Sragen",
+      "Sukoharjo"
+     ],
+     "adm2_part": {
+      "Kota Surakarta": "southern part (Pasar Kliwon, Serengan, Laweyan, most of Jebres) - north (Banjarsari) was Mangkunegaran",
+      "Bantul": "enclaves Kotagede SK (Jagalan, Singosaren, Segoroyoso, Bawuran, Wonolelo, Terong, Jatimulyo) and Imogiri SK (Imogiri, Girirejo, Karangtalun, Karangtengah, Kebonagung, Dlingo, Mangunan, Muntuk, Temuwuh)"
+     },
+     "notes": "Klaten agreement: Pajang and Sukowati to the Sunan, Mataram and Gunungkidul to the Sultan; line along the Opak river, later the road from Prambanan north to Merapi and south to the Gunungkidul foothills. Sunan kept 500 cacah around the Kotagede/Imogiri graves; Sultan kept 12 jung at the Selo graves (Grobogan, government land).",
+     "sources": [
+      "A.L. Hakim, \"Penyatuan wilayah enclave (Imogiri, Kotagede, dan Ngawen) ke dalam DIY 1948-1960\", Jurnal Prodi Ilmu Sejarah UNY 4(1), 2019, pp. 90-97: https://journal.student.uny.ac.id/ilmu-sejarah/article/download/14710/14273",
+      "https://id.wikipedia.org/wiki/Kasunanan_Surakarta",
+      "https://id.wikipedia.org/wiki/Karesidenan_Surakarta",
+      "V.J.H. Houben, Kraton and Kumpeni: Surakarta and Yogyakarta 1830-1870 (1994), ch. 1-2 (print)",
+      "R. Cribb, Historical Atlas of Indonesia (2000), p. 114 (source of Commons map Mataram_1830-en.png)",
+      "https://journal.student.uny.ac.id/ilmu-sejarah/article/download/14710/14273",
+      "https://ejournal.unesa.ac.id/index.php/avatara/article/view/26785",
+      "https://solopos.espos.id/poerwosariweg-kini-jl-slamet-riyadi-belah-wilayah-mangkunegaran-dan-kasunanan-1487526"
+     ],
+     "adm3": [],
+     "adm4_groups": [
+      "sk_enclaves"
+     ]
+    },
+    {
+     "id": "mangkunegaran",
+     "name": "Kadipaten Mangkunegaran",
+     "confidence": "high",
+     "adm2": [
+      "Karanganyar",
+      "Wonogiri"
+     ],
+     "adm2_part": {
+      "Kota Surakarta": "Banjarsari, Mojosongo (Jebres) and Karangasem, Jajar, Kerten (Laweyan); the in-town line was the Poerwosariweg (Jl. Slamet Riyadi)",
+      "Gunung Kidul": "enclave = kapanewon Ngawen (Beji, Jurangjero, Kampung, Sambirejo, Tancep, Watusigar)"
+     },
+     "notes": "About 49% of Surakarta's former Negaragung after 1830. Kabupaten Mangkunegaran (Karanganyar) and Wanagiri; from 1873 four kabupaten anom incl. Kota Mangkunegaran and Baturetno.",
+     "sources": [
+      "https://id.wikipedia.org/wiki/Kadipaten_Mangkunegaran",
+      "https://en.wikipedia.org/wiki/Mangkunegaran",
+      "A.L. Hakim, \"Penyatuan wilayah enclave (Imogiri, Kotagede, dan Ngawen) ke dalam DIY 1948-1960\", Jurnal Prodi Ilmu Sejarah UNY 4(1), 2019, pp. 90-97: https://journal.student.uny.ac.id/ilmu-sejarah/article/download/14710/14273",
+      "https://journal.student.uny.ac.id/ilmu-sejarah/article/download/14710/14273",
+      "https://ejournal.unesa.ac.id/index.php/avatara/article/view/26785",
+      "https://solopos.espos.id/poerwosariweg-kini-jl-slamet-riyadi-belah-wilayah-mangkunegaran-dan-kasunanan-1487526"
+     ],
+     "adm3": [],
+     "adm4_groups": [
+      "solo_mn",
+      "ngawen_mn"
+     ]
+    },
+    {
+     "id": "yogyakarta",
+     "name": "Kasultanan Yogyakarta",
+     "confidence": "high",
+     "adm2": [
+      "Bantul",
+      "Gunung Kidul",
+      "Kota Yogyakarta",
+      "Kulon Progo",
+      "Sleman"
+     ],
+     "adm2_part": {
+      "Kulon Progo": "northern part only (Kabupaten Kulon Progo, capital Sentolo); south = Pakualaman Adikarto",
+      "Kota Yogyakarta": "all except Kemantren Pakualaman; incl. Kotagede YK",
+      "Bantul": "all except Surakarta enclaves Kotagede SK and Imogiri SK",
+      "Gunung Kidul": "all except Mangkunegaran Ngawen enclave"
+     },
+     "notes": "\"Mataram and Gunungkidul\", c. 2,902 km2 (id.wikipedia).",
+     "sources": [
+      "https://id.wikipedia.org/wiki/Kesultanan_Yogyakarta",
+      "A.L. Hakim, \"Penyatuan wilayah enclave (Imogiri, Kotagede, dan Ngawen) ke dalam DIY 1948-1960\", Jurnal Prodi Ilmu Sejarah UNY 4(1), 2019, pp. 90-97: https://journal.student.uny.ac.id/ilmu-sejarah/article/download/14710/14273",
+      "R. Cribb, Historical Atlas of Indonesia (2000), p. 114 (source of Commons map Mataram_1830-en.png)"
+     ]
+    },
+    {
+     "id": "pakualaman",
+     "name": "Kadipaten Pakualaman",
+     "confidence": "high (location) / medium (exact line)",
+     "adm2": [],
+     "adm2_part": {
+      "Kulon Progo": "Kabupaten Adikarto = kapanewon Temon, Wates, Panjatan, Galur (Lendah, Kokap, Pengasih, Sentolo were the Sultan's Kabupaten Kulon Progo)",
+      "Kota Yogyakarta": "Kemantren Pakualaman"
+     },
+     "style": "Kulon Progo split diagonally or hatched Yogyakarta/Pakualaman; city kemantren as a marker",
+     "sources": [
+      "https://id.wikipedia.org/wiki/Kadipaten_Pakualaman",
+      "https://en.wikipedia.org/wiki/Pakualaman",
+      "A.L. Hakim, \"Penyatuan wilayah enclave (Imogiri, Kotagede, dan Ngawen) ke dalam DIY 1948-1960\", Jurnal Prodi Ilmu Sejarah UNY 4(1), 2019, pp. 90-97: https://journal.student.uny.ac.id/ilmu-sejarah/article/download/14710/14273",
+      "https://journal.student.uny.ac.id/ilmu-sejarah/article/download/14710/14273",
+      "https://ejournal.unesa.ac.id/index.php/avatara/article/view/26785",
+      "https://solopos.espos.id/poerwosariweg-kini-jl-slamet-riyadi-belah-wilayah-mangkunegaran-dan-kasunanan-1487526"
+     ],
+     "adm3": [
+      "Temon",
+      "Wates",
+      "Panjatan",
+      "Galur"
+     ]
+    },
+    {
+     "id": "government",
+     "name": "Dutch government lands (Gouvernementslanden), incl. Mancanagara annexed 1830 (Banyumas, Bagelen, Madiun, Kediri)",
+     "confidence": "high",
+     "adm2": [
+      "Bandung",
+      "Bandung Barat",
+      "Bangkalan",
+      "Banjarnegara",
+      "Banyumas",
+      "Banyuwangi",
+      "Batang",
+      "Bekasi",
+      "Blitar",
+      "Blora",
+      "Bogor",
+      "Bojonegoro",
+      "Bondowoso",
+      "Brebes",
+      "Ciamis",
+      "Cianjur",
+      "Cilacap",
+      "Cirebon",
+      "Demak",
+      "Garut",
+      "Gresik",
+      "Grobogan",
+      "Hutan",
+      "Indramayu",
+      "Jember",
+      "Jepara",
+      "Jombang",
+      "Karawang",
+      "Kebumen",
+      "Kediri",
+      "Kendal",
+      "Kepulauan Seribu",
+      "Kota Bandung",
+      "Kota Banjar",
+      "Kota Batu",
+      "Kota Bekasi",
+      "Kota Blitar",
+      "Kota Bogor",
+      "Kota Cilegon",
+      "Kota Cimahi",
+      "Kota Cirebon",
+      "Kota Depok",
+      "Kota Jakarta Barat",
+      "Kota Jakarta Pusat",
+      "Kota Jakarta Selatan",
+      "Kota Jakarta Timur",
+      "Kota Jakarta Utara",
+      "Kota Kediri",
+      "Kota Madiun",
+      "Kota Magelang",
+      "Kota Malang",
+      "Kota Mojokerto",
+      "Kota Pasuruan",
+      "Kota Pekalongan",
+      "Kota Probolinggo",
+      "Kota Salatiga",
+      "Kota Semarang",
+      "Kota Serang",
+      "Kota Sukabumi",
+      "Kota Surabaya",
+      "Kota Tangerang",
+      "Kota Tangerang Selatan",
+      "Kota Tasikmalaya",
+      "Kota Tegal",
+      "Kudus",
+      "Kuningan",
+      "Lamongan",
+      "Lebak",
+      "Lumajang",
+      "Madiun",
+      "Magelang",
+      "Magetan",
+      "Majalengka",
+      "Malang",
+      "Mojokerto",
+      "Nganjuk",
+      "Ngawi",
+      "Pacitan",
+      "Pamekasan",
+      "Pandeglang",
+      "Pangandaran",
+      "Pasuruan",
+      "Pati",
+      "Pekalongan",
+      "Pemalang",
+      "Ponorogo",
+      "Probolinggo",
+      "Purbalingga",
+      "Purwakarta",
+      "Purworejo",
+      "Rembang",
+      "Sampang",
+      "Semarang",
+      "Serang",
+      "Sidoarjo",
+      "Situbondo",
+      "Subang",
+      "Sukabumi",
+      "Sumedang",
+      "Sumenep",
+      "Tangerang",
+      "Tasikmalaya",
+      "Tegal",
+      "Temanggung",
+      "Trenggalek",
+      "Tuban",
+      "Tulungagung",
+      "Waduk Cirata",
+      "Wadung Kedungombo",
+      "Wonosobo"
+     ],
+     "sources": [
+      "https://id.wikipedia.org/wiki/Kesultanan_Yogyakarta",
+      "https://id.wikipedia.org/wiki/Kasunanan_Surakarta",
+      "R. Cribb, Historical Atlas of Indonesia (2000), p. 114 (source of Commons map Mataram_1830-en.png)",
+      "V.J.H. Houben, Kraton and Kumpeni: Surakarta and Yogyakarta 1830-1870 (1994), ch. 1-2 (print)"
+     ]
+    },
+    {
+     "id": "bali",
+     "name": "Bali (Balinese kingdoms; Dutch conquest 1846-1908)",
+     "confidence": "high",
+     "adm2": [
+      "Badung",
+      "Bangli",
+      "Buleleng",
+      "Gianyar",
+      "Jembrana",
+      "Karang Asem",
+      "Klungkung",
+      "Kota Denpasar",
+      "Tabanan"
+     ],
+     "sources": []
+    }
+   ],
+   "unassigned_adm2": []
+  },
+  {
+   "id": "S6",
+   "label": "In the Republic",
+   "date": "1950-today",
+   "mapping_quality": "exact at regency level",
+   "polities": [
+    {
+     "id": "diy",
+     "name": "Daerah Istimewa Yogyakarta (Sultanate + Pakualaman; Sultan = governor, Paku Alam = vice-governor)",
+     "confidence": "high",
+     "adm2": [
+      "Bantul",
+      "Gunung Kidul",
+      "Kota Yogyakarta",
+      "Kulon Progo",
+      "Sleman"
+     ],
+     "notes": "UU 3/1950; Adikarto merged into Kulon Progo 1951 (UU 18/1951); enclaves Kotagede SK, Imogiri SK and Ngawen joined DIY (de facto 1948, formally 1958 under UU 14/1958, regulations 1960); UU 13/2012 on Keistimewaan.",
+     "sources": [
+      "A.L. Hakim, \"Penyatuan wilayah enclave (Imogiri, Kotagede, dan Ngawen) ke dalam DIY 1948-1960\", Jurnal Prodi Ilmu Sejarah UNY 4(1), 2019, pp. 90-97: https://journal.student.uny.ac.id/ilmu-sejarah/article/download/14710/14273",
+      "https://id.wikipedia.org/wiki/Kadipaten_Pakualaman",
+      "https://en.wikipedia.org/wiki/Vorstenlanden",
+      "UU No. 3/1950 (formation of DIY); UU No. 18/1951 (Adikarto merged into Kulon Progo); UU No. 14/1958 (enclaves); UU No. 13/2012 (Keistimewaan DIY) - via hakim2019 and w_pa_id"
+     ]
+    },
+    {
+     "id": "ex_surakarta",
+     "name": "Former Surakarta and Mangkunegaran lands - Karesidenan Surakarta within Central Java (\"Subosukawonosraten\")",
+     "confidence": "high",
+     "adm2": [
+      "Boyolali",
+      "Karanganyar",
+      "Klaten",
+      "Kota Surakarta",
+      "Sragen",
+      "Sukoharjo",
+      "Wonogiri"
+     ],
+     "notes": "Daerah Istimewa Surakarta declared 1 Sep 1945, frozen 16 June 1946 (residency formed); residency dissolved into Central Java 4 July 1950. Courts survive as cultural institutions. Optional: two tints (ex-Kasunanan vs ex-Mangkunegaran).",
+     "sources": [
+      "https://id.wikipedia.org/wiki/Karesidenan_Surakarta",
+      "https://en.wikipedia.org/wiki/Vorstenlanden"
+     ]
+    },
+    {
+     "id": "rest",
+     "name": "Rest of Indonesia (provinces)",
+     "confidence": "high",
+     "adm2": [
+      "Badung",
+      "Bandung",
+      "Bandung Barat",
+      "Bangkalan",
+      "Bangli",
+      "Banjarnegara",
+      "Banyumas",
+      "Banyuwangi",
+      "Batang",
+      "Bekasi",
+      "Blitar",
+      "Blora",
+      "Bogor",
+      "Bojonegoro",
+      "Bondowoso",
+      "Brebes",
+      "Buleleng",
+      "Ciamis",
+      "Cianjur",
+      "Cilacap",
+      "Cirebon",
+      "Demak",
+      "Garut",
+      "Gianyar",
+      "Gresik",
+      "Grobogan",
+      "Hutan",
+      "Indramayu",
+      "Jember",
+      "Jembrana",
+      "Jepara",
+      "Jombang",
+      "Karang Asem",
+      "Karawang",
+      "Kebumen",
+      "Kediri",
+      "Kendal",
+      "Kepulauan Seribu",
+      "Klungkung",
+      "Kota Bandung",
+      "Kota Banjar",
+      "Kota Batu",
+      "Kota Bekasi",
+      "Kota Blitar",
+      "Kota Bogor",
+      "Kota Cilegon",
+      "Kota Cimahi",
+      "Kota Cirebon",
+      "Kota Denpasar",
+      "Kota Depok",
+      "Kota Jakarta Barat",
+      "Kota Jakarta Pusat",
+      "Kota Jakarta Selatan",
+      "Kota Jakarta Timur",
+      "Kota Jakarta Utara",
+      "Kota Kediri",
+      "Kota Madiun",
+      "Kota Magelang",
+      "Kota Malang",
+      "Kota Mojokerto",
+      "Kota Pasuruan",
+      "Kota Pekalongan",
+      "Kota Probolinggo",
+      "Kota Salatiga",
+      "Kota Semarang",
+      "Kota Serang",
+      "Kota Sukabumi",
+      "Kota Surabaya",
+      "Kota Tangerang",
+      "Kota Tangerang Selatan",
+      "Kota Tasikmalaya",
+      "Kota Tegal",
+      "Kudus",
+      "Kuningan",
+      "Lamongan",
+      "Lebak",
+      "Lumajang",
+      "Madiun",
+      "Magelang",
+      "Magetan",
+      "Majalengka",
+      "Malang",
+      "Mojokerto",
+      "Nganjuk",
+      "Ngawi",
+      "Pacitan",
+      "Pamekasan",
+      "Pandeglang",
+      "Pangandaran",
+      "Pasuruan",
+      "Pati",
+      "Pekalongan",
+      "Pemalang",
+      "Ponorogo",
+      "Probolinggo",
+      "Purbalingga",
+      "Purwakarta",
+      "Purworejo",
+      "Rembang",
+      "Sampang",
+      "Semarang",
+      "Serang",
+      "Sidoarjo",
+      "Situbondo",
+      "Subang",
+      "Sukabumi",
+      "Sumedang",
+      "Sumenep",
+      "Tabanan",
+      "Tangerang",
+      "Tasikmalaya",
+      "Tegal",
+      "Temanggung",
+      "Trenggalek",
+      "Tuban",
+      "Tulungagung",
+      "Waduk Cirata",
+      "Wadung Kedungombo",
+      "Wonosobo"
+     ],
+     "sources": []
+    }
+   ],
+   "unassigned_adm2": [],
+   "notes": "Kota Surakarta is about half former Mangkunegaran (drawn split). Enclaves administered by DIY from 1948/1950, formally transferred by UU 14/1958."
+  }
+ ],
+ "markers": [
+  {
+   "name": "Kotagede",
+   "lon": 110.3954,
+   "lat": -7.8179,
+   "note": "first Mataram capital (Senapati); id/en.wikipedia coord",
+   "precision": "high"
+  },
+  {
+   "name": "Karta (Kerta)",
+   "lon": 110.4007,
+   "lat": -7.8711,
+   "note": "Agung's court c.1620-1645/46, Dusun Kerto, Pleret (Wikidata Q12489692)",
+   "precision": "high"
+  },
+  {
+   "name": "Plered (Pleret)",
+   "lon": 110.4074,
+   "lat": -7.8666,
+   "note": "Amangkurat I's court 1647-1677; id.wikipedia (Pleret, Bantul) coord",
+   "precision": "medium (~1 km)"
+  },
+  {
+   "name": "Kartasura",
+   "lon": 110.4007,
+   "lat": -7.8711,
+   "note": "Agung's court c.1620-1645/46, Dusun Kerto, Pleret (Wikidata Q12489692)",
+   "precision": "high"
+  },
+  {
+   "name": "Keraton Surakarta",
+   "lon": 110.8277,
+   "lat": -7.5778,
+   "note": "from 1745",
+   "precision": "high (~200 m)"
+  },
+  {
+   "name": "Keraton Yogyakarta",
+   "lon": 110.3641,
+   "lat": -7.8057,
+   "note": "from 1755-56; en.wikipedia coord",
+   "precision": "high"
+  },
+  {
+   "name": "Pura Mangkunegaran",
+   "lon": 110.8231,
+   "lat": -7.5664,
+   "note": "en.wikipedia coord",
+   "precision": "high"
+  },
+  {
+   "name": "Pura Pakualaman",
+   "lon": 110.3762,
+   "lat": -7.801,
+   "note": "id.wikipedia coord",
+   "precision": "high"
+  },
+  {
+   "name": "Giyanti",
+   "lon": 110.9731,
+   "lat": -7.6191,
+   "note": "site of the treaty, Dusun Kerten, Jantiharjo, Karanganyar (OpenStreetMap)",
+   "precision": "medium (~1-2 km)"
+  },
+  {
+   "name": "Salatiga",
+   "lon": 110.5022,
+   "lat": -7.3389,
+   "note": "Kota Salatiga (id.wikipedia); treaty signed at Gedung Pakuwon",
+   "precision": "high"
+  },
+  {
+   "name": "Batavia",
+   "lon": 106.8133,
+   "lat": -6.1347,
+   "note": "Fatahillah Square / old Stadhuis (en.wikipedia); Batavia Castle -6.1275,106.8114",
+   "precision": "high"
+  },
+  {
+   "name": "Semarang",
+   "lon": 110.428,
+   "lat": -6.9667,
+   "note": "Kota Lama (id.wikipedia)",
+   "precision": "high"
+  },
+  {
+   "name": "Surabaya",
+   "lon": 112.7388,
+   "lat": -7.2456,
+   "note": "city centre (id.wikipedia)",
+   "precision": "high"
+  },
+  {
+   "name": "Imogiri (royal cemetery)",
+   "lon": 110.396,
+   "lat": -7.919,
+   "note": "Astana Pajimatan Himagiri on Bukit Merak; id.wikipedia gives coarse -7.9167,110.3833 - nudged to the hill; approximate",
+   "precision": "medium (~1 km)"
+  }
+ ]
+}

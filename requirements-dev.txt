@@ -1,0 +1,4 @@
+-r requirements.txt
+pytest==9.2.0
+ruff==0.17.5
+websocket-client==1.8.0   # tools/viewer_smoke.py drives Chrome over the DevTools protocol

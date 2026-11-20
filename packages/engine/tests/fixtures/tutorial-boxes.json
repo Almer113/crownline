@@ -1,0 +1,11 @@
+{
+"edric_the_founder": {"kind": "ruler", "house": "aldermere", "lw": 214, "pw": 88, "h": 88, "x": 0.0, "year": 1600, "pic": null},
+"queen_maud": {"kind": "text", "house": null, "lw": 116.504, "pw": 0, "h": 42, "x": 211.252, "year": 1600, "pic": null},
+"edmund_ii": {"kind": "ruler", "house": "aldermere", "lw": 214, "pw": 88, "h": 88, "x": 0.0, "year": 1632, "pic": null},
+"princess_alys": {"kind": "minor", "house": "aldermere", "lw": 131.615, "pw": 0, "h": 62, "x": 0.0, "year": 1630, "pic": null},
+"aldric_the_elder": {"kind": "legend", "house": "aldermere", "lw": 152.7, "pw": 0, "h": 62, "x": 0.0, "year": 1570, "pic": null},
+"lady_ceinwen": {"kind": "text", "house": null, "lw": 124.188, "pw": 0, "h": 42, "x": 215.094, "year": 1632, "pic": null},
+"prince_edwin": {"kind": "heir", "house": "aldermere", "lw": 214, "pw": 88, "h": 88, "x": 0.0, "year": 1655, "pic": null},
+"lord_osric": {"kind": "neutral", "house": null, "lw": 150, "pw": 0, "h": 76, "x": 186.8075, "year": 1630, "pic": null},
+"rowena": {"kind": "minor", "house": "brackwater", "lw": 130, "pw": 0, "h": 62, "x": 0.0, "year": 1640, "pic": null}
+}

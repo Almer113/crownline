@@ -1,0 +1,244 @@
+{
+  "format": 1,
+  "meta": {
+    "id": "tutorial",
+    "title": "The House of Aldermere",
+    "asOf": {
+      "edtf": "2026"
+    },
+    "languages": [
+      "en"
+    ],
+    "defaultLang": "en",
+    "assetRoot": "../.."
+  },
+  "people": {
+    "edric_the_founder": {
+      "name": "Edric the Founder",
+      "house": "aldermere",
+      "show": {
+        "box": "ruler",
+        "year": 1600,
+        "sub": "r. 1600 – 1632"
+      },
+      "title": "King",
+      "sex": "m"
+    },
+    "queen_maud": {
+      "name": "Queen Maud",
+      "show": {
+        "box": "text",
+        "beside": {
+          "of": "edric_the_founder",
+          "side": "r"
+        }
+      },
+      "sex": "f"
+    },
+    "edmund_ii": {
+      "name": "Edmund II",
+      "house": "aldermere",
+      "show": {
+        "box": "ruler",
+        "year": 1632,
+        "sub": "r. 1632 – 1660"
+      },
+      "title": "King",
+      "sex": "m"
+    },
+    "princess_alys": {
+      "name": "Princess Alys",
+      "house": "aldermere",
+      "show": {
+        "box": "minor",
+        "year": 1630,
+        "sub": "1606 – 1671"
+      },
+      "sex": "f"
+    },
+    "aldric_the_elder": {
+      "name": "Aldric the Elder",
+      "house": "aldermere",
+      "show": {
+        "box": "legend",
+        "year": 1570
+      },
+      "sex": "m"
+    },
+    "lady_ceinwen": {
+      "name": "Lady Ceinwen",
+      "show": {
+        "box": "text",
+        "beside": {
+          "of": "edmund_ii",
+          "side": "r"
+        }
+      },
+      "sex": "f"
+    },
+    "prince_edwin": {
+      "name": "Prince Edwin",
+      "house": "aldermere",
+      "show": {
+        "box": "heir",
+        "year": 1655,
+        "sub": "1640 – 1659"
+      },
+      "sex": "m"
+    },
+    "lord_osric": {
+      "name": "Lord Osric",
+      "show": {
+        "box": "neutral",
+        "beside": {
+          "of": "princess_alys",
+          "side": "r"
+        },
+        "sub": "Lord of Brackwater"
+      },
+      "house": "brackwater",
+      "sex": "m"
+    },
+    "rowena": {
+      "name": "Rowena",
+      "house": "brackwater",
+      "show": {
+        "box": "minor",
+        "year": 1640,
+        "sub": "1641 – 1702"
+      },
+      "sex": "f"
+    }
+  },
+  "houses": {
+    "aldermere": {
+      "name": "Aldermere",
+      "colour": "#C9A227"
+    },
+    "brackwater": {
+      "name": "Brackwater",
+      "colour": "#3E6E8E"
+    }
+  },
+  "descents": {
+    "d_edric_the_founder_edmund_ii": {
+      "parent": "edric_the_founder",
+      "union": "u_edric_the_founder_queen_maud",
+      "child": "edmund_ii"
+    },
+    "d_edric_the_founder_princess_alys": {
+      "parent": "edric_the_founder",
+      "union": "u_edric_the_founder_queen_maud",
+      "child": "princess_alys"
+    },
+    "d_aldric_the_elder_edric_the_founder": {
+      "parent": "aldric_the_elder",
+      "child": "edric_the_founder"
+    },
+    "d_edmund_ii_prince_edwin": {
+      "parent": "edmund_ii",
+      "union": "u_edmund_ii_lady_ceinwen",
+      "child": "prince_edwin"
+    },
+    "d_princess_alys_rowena": {
+      "parent": "princess_alys",
+      "union": "u_princess_alys_lord_osric",
+      "child": "rowena",
+      "show": {
+        "line": "dot"
+      }
+    }
+  },
+  "unions": {
+    "u_edric_the_founder_queen_maud": {
+      "partners": [
+        "edric_the_founder",
+        "queen_maud"
+      ],
+      "kind": "marriage"
+    },
+    "u_edmund_ii_lady_ceinwen": {
+      "partners": [
+        "edmund_ii",
+        "lady_ceinwen"
+      ],
+      "kind": "marriage"
+    },
+    "u_princess_alys_lord_osric": {
+      "partners": [
+        "princess_alys",
+        "lord_osric"
+      ],
+      "kind": "marriage",
+      "show": {
+        "colour": "brackwater"
+      }
+    }
+  },
+  "panels": {
+    "header": {
+      "x": 140,
+      "y": 130,
+      "width": 800,
+      "height": 1400,
+      "arrange": "column"
+    }
+  },
+  "theme": {
+    "palette": {
+      "background": "#EDE8D8",
+      "band": "#E6E0CD",
+      "ink": "#1F1F1F",
+      "noteInk": "#3A372F",
+      "muted": "#5E5848",
+      "faint": "#857D68",
+      "neutral": "#D5D1C3",
+      "greyLine": "#C2BBA8"
+    },
+    "type": {
+      "title": 14,
+      "name": 21,
+      "reign": 15,
+      "name2": 17,
+      "sub2": 14,
+      "note": 17,
+      "cap": 15,
+      "small": 14
+    },
+    "fonts": {
+      "sans": "gantari",
+      "script": "felipa"
+    }
+  },
+  "timeline": {
+    "eras": [
+      {
+        "year": 1600,
+        "name": "The founding"
+      },
+      {
+        "year": 1650,
+        "name": "The long peace"
+      }
+    ],
+    "episodes": []
+  },
+  "notes": {
+    "n_edmund_ii": {
+      "anchor": "edmund_ii",
+      "text": "Edmund kept the peace with Brackwater for twenty years, sealed by his sister's marriage.",
+      "show": {
+        "side": "l",
+        "width": 240,
+        "inline": true
+      }
+    }
+  },
+  "glossary": {
+    "king": {
+      "group": "Titles",
+      "term": "King",
+      "gloss": "the ruler of Aldermere"
+    }
+  }
+}

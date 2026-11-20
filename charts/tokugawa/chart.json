@@ -1,0 +1,4436 @@
+{
+  "$schema": "../../packages/schema/chart.schema.json",
+  "format": 1,
+  "meta": {
+    "id": "tokugawa",
+    "title": {
+      "en": "The Tokugawa Shoguns",
+      "ja-Jpan": "徳川将軍家"
+    },
+    "subtitle": "The family tree of the fifteen shoguns of Edo<br>and the heads of the house since 1868",
+    "asOf": {
+      "edtf": "2026-11",
+      "text": "November 2026"
+    },
+    "languages": [
+      "en"
+    ],
+    "defaultLang": "en",
+    "assetRoot": "../.."
+  },
+  "people": {
+    "hirotada": {
+      "name": "Matsudaira Hirotada",
+      "aka": [
+        {
+          "ja-Jpan": "松平広忠"
+        }
+      ],
+      "title": "Daimyō",
+      "house": "matsudaira",
+      "sex": "m",
+      "born": [
+        {
+          "date": {
+            "edtf": "1526"
+          },
+          "sources": [
+            {
+              "source": "k_hirotada"
+            }
+          ]
+        }
+      ],
+      "died": [
+        {
+          "date": {
+            "edtf": "1549"
+          },
+          "sources": [
+            {
+              "source": "k_hirotada"
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "source": "k_hirotada"
+        }
+      ],
+      "show": {
+        "box": "minor",
+        "year": 1540,
+        "sub": "1526 – 1549"
+      }
+    },
+    "odai": {
+      "name": "Odai no Kata",
+      "aka": [
+        {
+          "ja-Jpan": "於大の方"
+        },
+        {
+          "en": "Dentsū-in"
+        }
+      ],
+      "sex": "f",
+      "born": [
+        {
+          "date": {
+            "edtf": "1528"
+          },
+          "sources": [
+            {
+              "source": "k_odai"
+            }
+          ]
+        }
+      ],
+      "died": [
+        {
+          "date": {
+            "edtf": "1602"
+          },
+          "sources": [
+            {
+              "source": "k_odai"
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "source": "k_odai"
+        }
+      ],
+      "show": {
+        "box": "text",
+        "beside": {
+          "of": "hirotada",
+          "side": "r"
+        },
+        "sub": "1528 – 1602 · Dentsū-in"
+      }
+    },
+    "ieyasu": {
+      "name": "Tokugawa Ieyasu",
+      "aka": [
+        {
+          "ja-Jpan": "徳川家康"
+        },
+        {
+          "en": "Matsudaira Takechiyo"
+        },
+        {
+          "en": "Tōshō Daigongen"
+        }
+      ],
+      "title": "Shōgun",
+      "house": "tokugawa",
+      "sex": "m",
+      "reigns": [
+        {
+          "court": "tokugawa",
+          "n": 1,
+          "when": {
+            "edtf": "1603/1605",
+            "text": "1603 – 1605"
+          },
+          "sources": [
+            {
+              "source": "k_ieyasu"
+            }
+          ]
+        }
+      ],
+      "born": [
+        {
+          "date": {
+            "edtf": "1543"
+          },
+          "sources": [
+            {
+              "source": "k_ieyasu"
+            },
+            {
+              "source": "wp_pointer"
+            }
+          ]
+        }
+      ],
+      "died": [
+        {
+          "date": {
+            "edtf": "1616"
+          },
+          "sources": [
+            {
+              "source": "k_ieyasu"
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "source": "k_ieyasu"
+        }
+      ],
+      "bio": "Eldest son of Matsudaira Hirotada, lord of Okazaki, he was appointed shogun in 1603 and passed the office to Hidetada in 1605, ruling on as ōgosho. He destroyed the Toyotomi at Osaka in 1614–15, died at Sunpu in 1616 and was deified as Tōshō Daigongen.",
+      "show": {
+        "box": "ruler",
+        "year": 1603,
+        "sub": "r. 1603 – 1605"
+      },
+      "portrait": "p_ieyasu"
+    },
+    "tsukiyama": {
+      "name": "Tsukiyama-dono",
+      "aka": [
+        {
+          "ja-Jpan": "築山殿"
+        }
+      ],
+      "sex": "f",
+      "died": [
+        {
+          "date": {
+            "edtf": "1579"
+          },
+          "sources": [
+            {
+              "source": "k_tsukiyama"
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "source": "k_tsukiyama"
+        }
+      ],
+      "show": {
+        "box": "text",
+        "beside": {
+          "of": "ieyasu",
+          "side": "r"
+        },
+        "sub": "d. 1579 · first wife"
+      }
+    },
+    "saigo": {
+      "name": "Saigō no Tsubone",
+      "aka": [
+        {
+          "ja-Jpan": "西郷局"
+        },
+        {
+          "en": "Oai no Kata"
+        },
+        {
+          "en": "Hōdai-in"
+        }
+      ],
+      "sex": "f",
+      "born": [
+        {
+          "date": {
+            "edtf": "1562",
+            "text": "1562 (also given as 1552)"
+          },
+          "sources": [
+            {
+              "source": "k_saigo"
+            }
+          ]
+        }
+      ],
+      "died": [
+        {
+          "date": {
+            "edtf": "1589"
+          },
+          "sources": [
+            {
+              "source": "k_saigo"
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "source": "k_saigo"
+        }
+      ],
+      "show": {
+        "box": "text",
+        "beside": {
+          "of": "ieyasu",
+          "side": "l"
+        },
+        "sub": "1562 – 1589 · Hōdai-in"
+      },
+      "bio": "Ieyasu's consort and the mother of Hidetada and Tadayoshi. Born in 1562 by the Nihon Jinmei Daijiten; other sources give 1552."
+    },
+    "nobuyasu": {
+      "name": "Matsudaira Nobuyasu",
+      "aka": [
+        {
+          "ja-Jpan": "松平信康"
+        }
+      ],
+      "variants": [
+        "Tokugawa Nobuyasu",
+        "Okazaki Nobuyasu"
+      ],
+      "house": "tokugawa",
+      "sex": "m",
+      "born": [
+        {
+          "date": {
+            "edtf": "1559"
+          },
+          "sources": [
+            {
+              "source": "k_nobuyasu"
+            }
+          ]
+        }
+      ],
+      "died": [
+        {
+          "date": {
+            "edtf": "1579"
+          },
+          "sources": [
+            {
+              "source": "k_nobuyasu"
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "source": "k_nobuyasu"
+        }
+      ],
+      "show": {
+        "box": "minor",
+        "year": 1575,
+        "sub": "1559 – 1579 · eldest son"
+      }
+    },
+    "hideyasu": {
+      "name": "Yūki Hideyasu",
+      "aka": [
+        {
+          "ja-Jpan": "結城秀康"
+        }
+      ],
+      "variants": [
+        "Matsudaira Hideyasu"
+      ],
+      "house": "tokugawa",
+      "sex": "m",
+      "born": [
+        {
+          "date": {
+            "edtf": "1574"
+          },
+          "sources": [
+            {
+              "source": "k_hideyasu"
+            }
+          ]
+        }
+      ],
+      "died": [
+        {
+          "date": {
+            "edtf": "1607"
+          },
+          "sources": [
+            {
+              "source": "k_hideyasu"
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "source": "k_hideyasu"
+        }
+      ],
+      "show": {
+        "box": "minor",
+        "year": 1590,
+        "sub": "1574 – 1607 · 2nd son"
+      }
+    },
+    "hidetada": {
+      "name": "Tokugawa Hidetada",
+      "aka": [
+        {
+          "ja-Jpan": "徳川秀忠"
+        },
+        {
+          "en": "Taitoku-in"
+        }
+      ],
+      "title": "Shōgun",
+      "house": "tokugawa",
+      "sex": "m",
+      "reigns": [
+        {
+          "court": "tokugawa",
+          "n": 2,
+          "when": {
+            "edtf": "1605/1623",
+            "text": "1605 – 1623"
+          },
+          "sources": [
+            {
+              "source": "k_hidetada"
+            }
+          ]
+        }
+      ],
+      "born": [
+        {
+          "date": {
+            "edtf": "1579"
+          },
+          "sources": [
+            {
+              "source": "k_hidetada"
+            }
+          ]
+        }
+      ],
+      "died": [
+        {
+          "date": {
+            "edtf": "1632"
+          },
+          "sources": [
+            {
+              "source": "k_hidetada"
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "source": "k_hidetada"
+        }
+      ],
+      "bio": "Ieyasu's third son, he arrived late at Sekigahara and angered his father. After handing the office to Iemitsu in 1623 he kept real power as ōgosho until his death.",
+      "show": {
+        "box": "ruler",
+        "year": 1605,
+        "sub": "r. 1605 – 1623"
+      },
+      "portrait": "p_hidetada"
+    },
+    "tadayoshi": {
+      "name": "Matsudaira Tadayoshi",
+      "aka": [
+        {
+          "ja-Jpan": "松平忠吉"
+        }
+      ],
+      "house": "tokugawa",
+      "sex": "m",
+      "born": [
+        {
+          "date": {
+            "edtf": "1580"
+          },
+          "sources": [
+            {
+              "source": "k_tadayoshi"
+            }
+          ]
+        }
+      ],
+      "died": [
+        {
+          "date": {
+            "edtf": "1607"
+          },
+          "sources": [
+            {
+              "source": "k_tadayoshi"
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "source": "k_tadayoshi"
+        }
+      ],
+      "show": {
+        "box": "minor",
+        "year": 1600,
+        "sub": "1580 – 1607 · 4th son"
+      }
+    },
+    "tadateru": {
+      "name": "Matsudaira Tadateru",
+      "aka": [
+        {
+          "ja-Jpan": "松平忠輝"
+        }
+      ],
+      "house": "tokugawa",
+      "sex": "m",
+      "born": [
+        {
+          "date": {
+            "edtf": "1592"
+          },
+          "sources": [
+            {
+              "source": "k_tadateru"
+            }
+          ]
+        }
+      ],
+      "died": [
+        {
+          "date": {
+            "edtf": "1683"
+          },
+          "sources": [
+            {
+              "source": "k_tadateru"
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "source": "k_tadateru"
+        }
+      ],
+      "show": {
+        "box": "minor",
+        "year": 1610,
+        "sub": "1592 – 1683 · 6th son"
+      }
+    },
+    "yoshinao": {
+      "name": "Tokugawa Yoshinao",
+      "aka": [
+        {
+          "ja-Jpan": "徳川義直"
+        }
+      ],
+      "title": "Daimyō",
+      "house": "owari",
+      "sex": "m",
+      "born": [
+        {
+          "date": {
+            "edtf": "1600"
+          },
+          "sources": [
+            {
+              "source": "k_yoshinao"
+            },
+            {
+              "source": "k_gosanke"
+            }
+          ]
+        }
+      ],
+      "died": [
+        {
+          "date": {
+            "edtf": "1650"
+          },
+          "sources": [
+            {
+              "source": "k_yoshinao"
+            },
+            {
+              "source": "k_gosanke"
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "source": "k_yoshinao"
+        },
+        {
+          "source": "k_gosanke"
+        }
+      ],
+      "show": {
+        "box": "minor",
+        "year": 1610,
+        "sub": "1600 – 1650 · 9th son"
+      }
+    },
+    "yorinobu": {
+      "name": "Tokugawa Yorinobu",
+      "aka": [
+        {
+          "ja-Jpan": "徳川頼宣"
+        }
+      ],
+      "title": "Daimyō",
+      "house": "kii",
+      "sex": "m",
+      "born": [
+        {
+          "date": {
+            "edtf": "1602"
+          },
+          "sources": [
+            {
+              "source": "k_yorinobu"
+            },
+            {
+              "source": "k_gosanke"
+            }
+          ]
+        }
+      ],
+      "died": [
+        {
+          "date": {
+            "edtf": "1671"
+          },
+          "sources": [
+            {
+              "source": "k_yorinobu"
+            },
+            {
+              "source": "k_gosanke"
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "source": "k_yorinobu"
+        },
+        {
+          "source": "k_gosanke"
+        }
+      ],
+      "show": {
+        "box": "minor",
+        "year": 1619,
+        "sub": "1602 – 1671 · 10th son"
+      }
+    },
+    "yorifusa": {
+      "name": "Tokugawa Yorifusa",
+      "aka": [
+        {
+          "ja-Jpan": "徳川頼房"
+        }
+      ],
+      "title": "Daimyō",
+      "house": "mito",
+      "sex": "m",
+      "born": [
+        {
+          "date": {
+            "edtf": "1603"
+          },
+          "sources": [
+            {
+              "source": "k_yorifusa"
+            },
+            {
+              "source": "k_gosanke"
+            }
+          ]
+        }
+      ],
+      "died": [
+        {
+          "date": {
+            "edtf": "1661"
+          },
+          "sources": [
+            {
+              "source": "k_yorifusa"
+            },
+            {
+              "source": "k_gosanke"
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "source": "k_yorifusa"
+        },
+        {
+          "source": "k_gosanke"
+        }
+      ],
+      "show": {
+        "box": "minor",
+        "year": 1609,
+        "sub": "1603 – 1661 · 11th son"
+      }
+    },
+    "go": {
+      "name": "Gō",
+      "aka": [
+        {
+          "ja-Jpan": "江"
+        },
+        {
+          "ja-Jpan": "崇源院"
+        },
+        {
+          "en": "Oeyo"
+        },
+        {
+          "en": "Sūgen-in"
+        }
+      ],
+      "sex": "f",
+      "born": [
+        {
+          "date": {
+            "edtf": "1573"
+          },
+          "sources": [
+            {
+              "source": "k_go"
+            }
+          ]
+        }
+      ],
+      "died": [
+        {
+          "date": {
+            "edtf": "1626"
+          },
+          "sources": [
+            {
+              "source": "k_go"
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "source": "k_go"
+        }
+      ],
+      "show": {
+        "box": "text",
+        "beside": {
+          "of": "hidetada",
+          "side": "r"
+        },
+        "sub": "1573 – 1626 · Sūgen-in"
+      }
+    },
+    "iemitsu": {
+      "name": "Tokugawa Iemitsu",
+      "aka": [
+        {
+          "ja-Jpan": "徳川家光"
+        },
+        {
+          "en": "Daiyū-in"
+        }
+      ],
+      "title": "Shōgun",
+      "house": "tokugawa",
+      "sex": "m",
+      "reigns": [
+        {
+          "court": "tokugawa",
+          "n": 3,
+          "when": {
+            "edtf": "1623/1651",
+            "text": "1623 – 1651"
+          },
+          "sources": [
+            {
+              "source": "k_iemitsu"
+            }
+          ]
+        }
+      ],
+      "born": [
+        {
+          "date": {
+            "edtf": "1604"
+          },
+          "sources": [
+            {
+              "source": "k_iemitsu"
+            }
+          ]
+        }
+      ],
+      "died": [
+        {
+          "date": {
+            "edtf": "1651"
+          },
+          "sources": [
+            {
+              "source": "k_iemitsu"
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "source": "k_iemitsu"
+        }
+      ],
+      "bio": "Born in Edo Castle in 1604 and raised by his wet nurse Kasuga no Tsubone, he reigned through the Shimabara Rebellion (1637–38) and the 1639 ban on Portuguese ships that completed the closed-country system.",
+      "show": {
+        "box": "ruler",
+        "year": 1623,
+        "sub": "r. 1623 – 1651"
+      },
+      "portrait": "p_iemitsu"
+    },
+    "tadanaga": {
+      "name": "Tokugawa Tadanaga",
+      "aka": [
+        {
+          "ja-Jpan": "徳川忠長"
+        },
+        {
+          "en": "Suruga Dainagon"
+        }
+      ],
+      "house": "tokugawa",
+      "sex": "m",
+      "born": [
+        {
+          "date": {
+            "edtf": "1606"
+          },
+          "sources": [
+            {
+              "source": "k_tadanaga"
+            }
+          ]
+        }
+      ],
+      "died": [
+        {
+          "date": {
+            "edtf": "1634",
+            "text": "1634 (lunar year 1633)"
+          },
+          "sources": [
+            {
+              "source": "k_tadanaga"
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "source": "k_tadanaga"
+        }
+      ],
+      "show": {
+        "box": "minor",
+        "year": 1624,
+        "sub": "1606 – 1634"
+      }
+    },
+    "senhime": {
+      "name": "Senhime",
+      "aka": [
+        {
+          "ja-Jpan": "千姫"
+        },
+        {
+          "en": "Tenju-in"
+        }
+      ],
+      "house": "tokugawa",
+      "sex": "f",
+      "born": [
+        {
+          "date": {
+            "edtf": "1597"
+          },
+          "sources": [
+            {
+              "source": "k_senhime"
+            }
+          ]
+        }
+      ],
+      "died": [
+        {
+          "date": {
+            "edtf": "1666"
+          },
+          "sources": [
+            {
+              "source": "k_senhime"
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "source": "k_senhime"
+        }
+      ],
+      "show": {
+        "box": "minor",
+        "year": 1615,
+        "sub": "1597 – 1666 · Tenju-in"
+      }
+    },
+    "masako": {
+      "name": "Tokugawa Masako",
+      "aka": [
+        {
+          "ja-Jpan": "徳川和子"
+        },
+        {
+          "ja-Jpan": "東福門院"
+        },
+        {
+          "en": "Tōfukumon-in"
+        },
+        {
+          "en": "Tokugawa Kazuko"
+        }
+      ],
+      "title": "Empress",
+      "house": "tokugawa",
+      "sex": "f",
+      "born": [
+        {
+          "date": {
+            "edtf": "1607"
+          },
+          "sources": [
+            {
+              "source": "k_tofukumon"
+            }
+          ]
+        }
+      ],
+      "died": [
+        {
+          "date": {
+            "edtf": "1678"
+          },
+          "sources": [
+            {
+              "source": "k_tofukumon"
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "source": "k_tofukumon"
+        }
+      ],
+      "show": {
+        "box": "minor",
+        "year": 1624,
+        "sub": "1607 – 1678 · Tōfukumon-in"
+      }
+    },
+    "gomizunoo": {
+      "name": "Emperor Go-Mizunoo",
+      "aka": [
+        {
+          "ja-Jpan": "後水尾天皇"
+        }
+      ],
+      "sex": "m",
+      "sources": [
+        {
+          "source": "k_tofukumon"
+        },
+        {
+          "source": "wp_pointer"
+        }
+      ],
+      "show": {
+        "box": "neutral",
+        "beside": {
+          "of": "masako",
+          "side": "r"
+        },
+        "sub": "emperor 1611 – 1629"
+      }
+    },
+    "meisho": {
+      "name": "Empress Meishō",
+      "aka": [
+        {
+          "ja-Jpan": "明正天皇"
+        }
+      ],
+      "sex": "f",
+      "sources": [
+        {
+          "source": "k_tofukumon"
+        },
+        {
+          "source": "wp_pointer"
+        }
+      ],
+      "show": {
+        "box": "neutral",
+        "year": 1640,
+        "sub": "empress regnant 1629 – 1643"
+      }
+    },
+    "hoshina": {
+      "name": "Hoshina Masayuki",
+      "aka": [
+        {
+          "ja-Jpan": "保科正之"
+        }
+      ],
+      "title": "Daimyō",
+      "house": "aizu",
+      "sex": "m",
+      "born": [
+        {
+          "date": {
+            "edtf": "1611"
+          },
+          "sources": [
+            {
+              "source": "k_hoshina"
+            }
+          ]
+        }
+      ],
+      "died": [
+        {
+          "date": {
+            "edtf": "1673",
+            "text": "1673 (lunar year 1672)"
+          },
+          "sources": [
+            {
+              "source": "k_hoshina"
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "source": "k_hoshina"
+        }
+      ],
+      "show": {
+        "box": "minor",
+        "year": 1643,
+        "sub": "1611 – 1673"
+      }
+    },
+    "ietsuna": {
+      "name": "Tokugawa Ietsuna",
+      "aka": [
+        {
+          "ja-Jpan": "徳川家綱"
+        },
+        {
+          "en": "Gen'yū-in"
+        }
+      ],
+      "title": "Shōgun",
+      "house": "tokugawa",
+      "sex": "m",
+      "reigns": [
+        {
+          "court": "tokugawa",
+          "n": 4,
+          "when": {
+            "edtf": "1651/1680",
+            "text": "1651 – 1680"
+          },
+          "sources": [
+            {
+              "source": "k_ietsuna"
+            }
+          ]
+        }
+      ],
+      "born": [
+        {
+          "date": {
+            "edtf": "1641"
+          },
+          "sources": [
+            {
+              "source": "k_ietsuna"
+            }
+          ]
+        }
+      ],
+      "died": [
+        {
+          "date": {
+            "edtf": "1680"
+          },
+          "sources": [
+            {
+              "source": "k_ietsuna"
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "source": "k_ietsuna"
+        }
+      ],
+      "bio": "He became shogun as a boy in 1651, with his uncle Hoshina Masayuki assisting him in government.",
+      "show": {
+        "box": "ruler",
+        "year": 1651,
+        "sub": "r. 1651 – 1680"
+      },
+      "portrait": "p_ietsuna"
+    },
+    "tsunashige": {
+      "name": "Tokugawa Tsunashige",
+      "aka": [
+        {
+          "ja-Jpan": "徳川綱重"
+        }
+      ],
+      "title": "Daimyō",
+      "house": "kofu",
+      "sex": "m",
+      "born": [
+        {
+          "date": {
+            "edtf": "1644"
+          },
+          "sources": [
+            {
+              "source": "k_tsunashige"
+            },
+            {
+              "source": "k_kofu"
+            }
+          ]
+        }
+      ],
+      "died": [
+        {
+          "date": {
+            "edtf": "1678"
+          },
+          "sources": [
+            {
+              "source": "k_tsunashige"
+            },
+            {
+              "source": "k_kofu"
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "source": "k_tsunashige"
+        },
+        {
+          "source": "k_kofu"
+        }
+      ],
+      "show": {
+        "box": "minor",
+        "year": 1661,
+        "sub": "1644 – 1678"
+      }
+    },
+    "tsunayoshi": {
+      "name": "Tokugawa Tsunayoshi",
+      "aka": [
+        {
+          "ja-Jpan": "徳川綱吉"
+        },
+        {
+          "en": "Jōken-in"
+        },
+        {
+          "en": "the dog shogun"
+        }
+      ],
+      "title": "Shōgun",
+      "house": "tokugawa",
+      "sex": "m",
+      "reigns": [
+        {
+          "court": "tokugawa",
+          "n": 5,
+          "when": {
+            "edtf": "1680/1709",
+            "text": "1680 – 1709"
+          },
+          "sources": [
+            {
+              "source": "k_tsunayoshi"
+            }
+          ]
+        }
+      ],
+      "born": [
+        {
+          "date": {
+            "edtf": "1646"
+          },
+          "sources": [
+            {
+              "source": "k_tsunayoshi"
+            }
+          ]
+        }
+      ],
+      "died": [
+        {
+          "date": {
+            "edtf": "1709"
+          },
+          "sources": [
+            {
+              "source": "k_tsunayoshi"
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "source": "k_tsunayoshi"
+        }
+      ],
+      "bio": "Lord of Tatebayashi and adopted heir of his elder brother Ietsuna, he is known for the Laws of Compassion for Living Things, which earned him the name “dog shogun”, and for the Genroku cultural flowering.",
+      "show": {
+        "box": "ruler",
+        "year": 1680,
+        "sub": "r. 1680 – 1709"
+      },
+      "portrait": "p_tsunayoshi"
+    },
+    "ienobu": {
+      "name": "Tokugawa Ienobu",
+      "aka": [
+        {
+          "ja-Jpan": "徳川家宣"
+        },
+        {
+          "en": "Tokugawa Tsunatoyo"
+        },
+        {
+          "en": "Bunshō-in"
+        }
+      ],
+      "title": "Shōgun",
+      "house": "tokugawa",
+      "sex": "m",
+      "reigns": [
+        {
+          "court": "tokugawa",
+          "n": 6,
+          "when": {
+            "edtf": "1709/1712",
+            "text": "1709 – 1712"
+          },
+          "sources": [
+            {
+              "source": "k_ienobu"
+            }
+          ]
+        }
+      ],
+      "born": [
+        {
+          "date": {
+            "edtf": "1662"
+          },
+          "sources": [
+            {
+              "source": "k_ienobu"
+            }
+          ]
+        }
+      ],
+      "died": [
+        {
+          "date": {
+            "edtf": "1712"
+          },
+          "sources": [
+            {
+              "source": "k_ienobu"
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "source": "k_ienobu"
+        }
+      ],
+      "bio": "As Tsunatoyo, lord of Kōfu and grandson of Iemitsu, he was adopted by Tsunayoshi in 1704 and reigned only three years.",
+      "show": {
+        "box": "ruler",
+        "year": 1709,
+        "sub": "r. 1709 – 1712"
+      },
+      "portrait": "p_ienobu"
+    },
+    "ietsugu": {
+      "name": "Tokugawa Ietsugu",
+      "aka": [
+        {
+          "ja-Jpan": "徳川家継"
+        },
+        {
+          "en": "Yūshō-in"
+        }
+      ],
+      "title": "Shōgun",
+      "house": "tokugawa",
+      "sex": "m",
+      "reigns": [
+        {
+          "court": "tokugawa",
+          "n": 7,
+          "when": {
+            "edtf": "1713/1716",
+            "text": "1713 – 1716"
+          },
+          "sources": [
+            {
+              "source": "k_ietsugu"
+            }
+          ]
+        }
+      ],
+      "born": [
+        {
+          "date": {
+            "edtf": "1709"
+          },
+          "sources": [
+            {
+              "source": "k_ietsugu"
+            }
+          ]
+        }
+      ],
+      "died": [
+        {
+          "date": {
+            "edtf": "1716"
+          },
+          "sources": [
+            {
+              "source": "k_ietsugu"
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "source": "k_ietsugu"
+        }
+      ],
+      "bio": "Shogun from the age of three (four by Japanese count), he ruled through Manabe Akifusa and Arai Hakuseki and died as a child without an heir, so the succession passed to the Kii house.",
+      "show": {
+        "box": "ruler",
+        "year": 1713,
+        "sub": "r. 1713 – 1716"
+      },
+      "portrait": "p_ietsugu"
+    },
+    "mitsusada": {
+      "name": "Tokugawa Mitsusada",
+      "aka": [
+        {
+          "ja-Jpan": "徳川光貞"
+        }
+      ],
+      "title": "Daimyō",
+      "house": "kii",
+      "sex": "m",
+      "born": [
+        {
+          "date": {
+            "edtf": "1627"
+          },
+          "sources": [
+            {
+              "source": "k_mitsusada"
+            }
+          ]
+        }
+      ],
+      "died": [
+        {
+          "date": {
+            "edtf": "1705"
+          },
+          "sources": [
+            {
+              "source": "k_mitsusada"
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "source": "k_mitsusada"
+        }
+      ],
+      "show": {
+        "box": "minor",
+        "year": 1667,
+        "sub": "1627 – 1705"
+      }
+    },
+    "yoshimune": {
+      "name": "Tokugawa Yoshimune",
+      "aka": [
+        {
+          "ja-Jpan": "徳川吉宗"
+        },
+        {
+          "en": "Tokugawa Yorikata"
+        },
+        {
+          "en": "Yūtoku-in"
+        }
+      ],
+      "title": "Shōgun",
+      "house": "tokugawa",
+      "sex": "m",
+      "reigns": [
+        {
+          "court": "tokugawa",
+          "n": 8,
+          "when": {
+            "edtf": "1716/1745",
+            "text": "1716 – 1745"
+          },
+          "sources": [
+            {
+              "source": "k_yoshimune"
+            }
+          ]
+        }
+      ],
+      "born": [
+        {
+          "date": {
+            "edtf": "1684"
+          },
+          "sources": [
+            {
+              "source": "k_yoshimune"
+            }
+          ]
+        }
+      ],
+      "died": [
+        {
+          "date": {
+            "edtf": "1751"
+          },
+          "sources": [
+            {
+              "source": "k_yoshimune"
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "source": "k_yoshimune"
+        }
+      ],
+      "bio": "Fourth son of the lord of Kii and lord of Kii himself from 1705, he was the first shogun from one of the three senior branch houses and led the Kyōhō reforms (1716–45).",
+      "show": {
+        "box": "ruler",
+        "year": 1716,
+        "sub": "r. 1716 – 1745"
+      },
+      "portrait": "p_yoshimune"
+    },
+    "ieshige": {
+      "name": "Tokugawa Ieshige",
+      "aka": [
+        {
+          "ja-Jpan": "徳川家重"
+        },
+        {
+          "en": "Junshin-in"
+        }
+      ],
+      "title": "Shōgun",
+      "house": "tokugawa",
+      "sex": "m",
+      "reigns": [
+        {
+          "court": "tokugawa",
+          "n": 9,
+          "when": {
+            "edtf": "1745/1760",
+            "text": "1745 – 1760"
+          },
+          "sources": [
+            {
+              "source": "k_ieshige"
+            }
+          ]
+        }
+      ],
+      "born": [
+        {
+          "date": {
+            "edtf": "1712",
+            "text": "1712 (lunar year 1711)"
+          },
+          "sources": [
+            {
+              "source": "k_ieshige"
+            }
+          ]
+        }
+      ],
+      "died": [
+        {
+          "date": {
+            "edtf": "1761"
+          },
+          "sources": [
+            {
+              "source": "k_ieshige"
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "source": "k_ieshige"
+        }
+      ],
+      "bio": "Sickly and hard to understand, he was said to be intelligible only to his chamberlain Ōoka Tadamitsu.",
+      "show": {
+        "box": "ruler",
+        "year": 1745,
+        "sub": "r. 1745 – 1760"
+      },
+      "portrait": "p_ieshige"
+    },
+    "munetake": {
+      "name": "Tayasu Munetake",
+      "aka": [
+        {
+          "ja-Jpan": "田安宗武"
+        }
+      ],
+      "variants": [
+        "Tokugawa Munetake"
+      ],
+      "house": "tayasu",
+      "sex": "m",
+      "born": [
+        {
+          "date": {
+            "edtf": "1715"
+          },
+          "sources": [
+            {
+              "source": "k_munetake"
+            },
+            {
+              "source": "k_tayasu"
+            }
+          ]
+        }
+      ],
+      "died": [
+        {
+          "date": {
+            "edtf": "1771"
+          },
+          "sources": [
+            {
+              "source": "k_munetake"
+            },
+            {
+              "source": "k_tayasu"
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "source": "k_munetake"
+        },
+        {
+          "source": "k_tayasu"
+        }
+      ],
+      "show": {
+        "box": "minor",
+        "year": 1731,
+        "sub": "1715 – 1771"
+      }
+    },
+    "munetada": {
+      "name": "Hitotsubashi Munetada",
+      "aka": [
+        {
+          "ja-Jpan": "一橋宗尹"
+        }
+      ],
+      "variants": [
+        "Tokugawa Munetada"
+      ],
+      "house": "hitotsubashi",
+      "sex": "m",
+      "born": [
+        {
+          "date": {
+            "edtf": "1721"
+          },
+          "sources": [
+            {
+              "source": "k_munetada"
+            },
+            {
+              "source": "k_hitotsubashi"
+            }
+          ]
+        }
+      ],
+      "died": [
+        {
+          "date": {
+            "edtf": "1765"
+          },
+          "sources": [
+            {
+              "source": "k_munetada"
+            },
+            {
+              "source": "k_hitotsubashi"
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "source": "k_munetada"
+        },
+        {
+          "source": "k_hitotsubashi"
+        }
+      ],
+      "show": {
+        "box": "minor",
+        "year": 1741,
+        "sub": "1721 – 1765"
+      }
+    },
+    "ieharu": {
+      "name": "Tokugawa Ieharu",
+      "aka": [
+        {
+          "ja-Jpan": "徳川家治"
+        },
+        {
+          "en": "Shunmei-in"
+        }
+      ],
+      "title": "Shōgun",
+      "house": "tokugawa",
+      "sex": "m",
+      "reigns": [
+        {
+          "court": "tokugawa",
+          "n": 10,
+          "when": {
+            "edtf": "1760/1786",
+            "text": "1760 – 1786"
+          },
+          "sources": [
+            {
+              "source": "k_ieharu"
+            }
+          ]
+        }
+      ],
+      "born": [
+        {
+          "date": {
+            "edtf": "1737"
+          },
+          "sources": [
+            {
+              "source": "k_ieharu"
+            }
+          ]
+        }
+      ],
+      "died": [
+        {
+          "date": {
+            "edtf": "1786"
+          },
+          "sources": [
+            {
+              "source": "k_ieharu"
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "source": "k_ieharu"
+        }
+      ],
+      "bio": "On his father's dying advice he relied on Tanuma Okitsugu.",
+      "show": {
+        "box": "ruler",
+        "year": 1760,
+        "sub": "r. 1760 – 1786"
+      },
+      "portrait": "p_ieharu"
+    },
+    "shigeyoshi": {
+      "name": "Shimizu Shigeyoshi",
+      "aka": [
+        {
+          "ja-Jpan": "清水重好"
+        }
+      ],
+      "variants": [
+        "Tokugawa Shigeyoshi"
+      ],
+      "house": "shimizu",
+      "sex": "m",
+      "born": [
+        {
+          "date": {
+            "edtf": "1745"
+          },
+          "sources": [
+            {
+              "source": "k_shigeyoshi"
+            },
+            {
+              "source": "k_shimizu"
+            }
+          ]
+        }
+      ],
+      "died": [
+        {
+          "date": {
+            "edtf": "1795"
+          },
+          "sources": [
+            {
+              "source": "k_shigeyoshi"
+            },
+            {
+              "source": "k_shimizu"
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "source": "k_shigeyoshi"
+        },
+        {
+          "source": "k_shimizu"
+        }
+      ],
+      "show": {
+        "box": "minor",
+        "year": 1759,
+        "sub": "1745 – 1795"
+      }
+    },
+    "sadanobu": {
+      "name": "Matsudaira Sadanobu",
+      "aka": [
+        {
+          "ja-Jpan": "松平定信"
+        }
+      ],
+      "house": "tayasu",
+      "sex": "m",
+      "born": [
+        {
+          "date": {
+            "edtf": "1759",
+            "text": "1759 (lunar year 1758)"
+          },
+          "sources": [
+            {
+              "source": "k_sadanobu"
+            }
+          ]
+        }
+      ],
+      "died": [
+        {
+          "date": {
+            "edtf": "1829"
+          },
+          "sources": [
+            {
+              "source": "k_sadanobu"
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "source": "k_sadanobu"
+        }
+      ],
+      "show": {
+        "box": "minor",
+        "year": 1787,
+        "sub": "1759 – 1829 · Kansei reforms"
+      }
+    },
+    "harusada": {
+      "name": "Hitotsubashi Harusada",
+      "aka": [
+        {
+          "ja-Jpan": "一橋治済"
+        }
+      ],
+      "house": "hitotsubashi",
+      "sex": "m",
+      "born": [
+        {
+          "date": {
+            "edtf": "1751"
+          },
+          "sources": [
+            {
+              "source": "k_harusada"
+            }
+          ]
+        }
+      ],
+      "died": [
+        {
+          "date": {
+            "edtf": "1827"
+          },
+          "sources": [
+            {
+              "source": "k_harusada"
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "source": "k_harusada"
+        }
+      ],
+      "show": {
+        "box": "minor",
+        "year": 1765,
+        "sub": "1751 – 1827"
+      }
+    },
+    "ienari": {
+      "name": "Tokugawa Ienari",
+      "aka": [
+        {
+          "ja-Jpan": "徳川家斉"
+        },
+        {
+          "en": "Bunkyō-in"
+        }
+      ],
+      "title": "Shōgun",
+      "house": "tokugawa",
+      "sex": "m",
+      "reigns": [
+        {
+          "court": "tokugawa",
+          "n": 11,
+          "when": {
+            "edtf": "1787/1837",
+            "text": "1787 – 1837"
+          },
+          "sources": [
+            {
+              "source": "k_ienari"
+            }
+          ]
+        }
+      ],
+      "born": [
+        {
+          "date": {
+            "edtf": "1773"
+          },
+          "sources": [
+            {
+              "source": "k_ienari"
+            }
+          ]
+        }
+      ],
+      "died": [
+        {
+          "date": {
+            "edtf": "1841"
+          },
+          "sources": [
+            {
+              "source": "k_ienari"
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "source": "k_ienari"
+        }
+      ],
+      "bio": "Adopted by Ieharu from the Hitotsubashi house, he reigned fifty years, the longest of any shogun, and kept real power as ōgosho after retiring in 1837. He is known for fathering 55 children.",
+      "show": {
+        "box": "ruler",
+        "year": 1787,
+        "sub": "r. 1787 – 1837"
+      },
+      "portrait": "p_ienari"
+    },
+    "ieyoshi": {
+      "name": "Tokugawa Ieyoshi",
+      "aka": [
+        {
+          "ja-Jpan": "徳川家慶"
+        },
+        {
+          "en": "Shintoku-in"
+        }
+      ],
+      "title": "Shōgun",
+      "house": "tokugawa",
+      "sex": "m",
+      "reigns": [
+        {
+          "court": "tokugawa",
+          "n": 12,
+          "when": {
+            "edtf": "1837/1853",
+            "text": "1837 – 1853"
+          },
+          "sources": [
+            {
+              "source": "k_ieyoshi"
+            }
+          ]
+        }
+      ],
+      "born": [
+        {
+          "date": {
+            "edtf": "1793"
+          },
+          "sources": [
+            {
+              "source": "k_ieyoshi"
+            }
+          ]
+        }
+      ],
+      "died": [
+        {
+          "date": {
+            "edtf": "1853"
+          },
+          "sources": [
+            {
+              "source": "k_ieyoshi"
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "source": "k_ieyoshi"
+        }
+      ],
+      "bio": "He appointed Mizuno Tadakuni to carry out the Tenpō reforms (1841–43) and died just after Perry's arrival in 1853.",
+      "show": {
+        "box": "ruler",
+        "year": 1837,
+        "sub": "r. 1837 – 1853"
+      },
+      "portrait": "p_ieyoshi"
+    },
+    "nariyuki": {
+      "name": "Tokugawa Nariyuki",
+      "aka": [
+        {
+          "ja-Jpan": "徳川斉順"
+        }
+      ],
+      "title": "Daimyō",
+      "house": "kii",
+      "sex": "m",
+      "born": [
+        {
+          "date": {
+            "edtf": "1801"
+          },
+          "sources": [
+            {
+              "source": "k_nariyuki"
+            }
+          ]
+        }
+      ],
+      "died": [
+        {
+          "date": {
+            "edtf": "1846"
+          },
+          "sources": [
+            {
+              "source": "k_nariyuki"
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "source": "k_nariyuki"
+        }
+      ],
+      "show": {
+        "box": "minor",
+        "year": 1824,
+        "sub": "1801 – 1846"
+      }
+    },
+    "iesada": {
+      "name": "Tokugawa Iesada",
+      "aka": [
+        {
+          "ja-Jpan": "徳川家定"
+        },
+        {
+          "en": "Onkyō-in"
+        }
+      ],
+      "title": "Shōgun",
+      "house": "tokugawa",
+      "sex": "m",
+      "reigns": [
+        {
+          "court": "tokugawa",
+          "n": 13,
+          "when": {
+            "edtf": "1853/1858",
+            "text": "1853 – 1858"
+          },
+          "sources": [
+            {
+              "source": "k_iesada"
+            }
+          ]
+        }
+      ],
+      "born": [
+        {
+          "date": {
+            "edtf": "1824"
+          },
+          "sources": [
+            {
+              "source": "k_iesada"
+            }
+          ]
+        }
+      ],
+      "died": [
+        {
+          "date": {
+            "edtf": "1858"
+          },
+          "sources": [
+            {
+              "source": "k_iesada"
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "source": "k_iesada"
+        }
+      ],
+      "bio": "Too sickly to govern, he left affairs to Abe Masahiro, received the American consul Townsend Harris in 1857 and died during the dispute over his successor.",
+      "show": {
+        "box": "ruler",
+        "year": 1853,
+        "sub": "r. 1853 – 1858"
+      },
+      "portrait": "p_iesada"
+    },
+    "tenshoin": {
+      "name": "Tenshō-in",
+      "aka": [
+        {
+          "ja-Jpan": "天璋院"
+        },
+        {
+          "en": "Atsuhime"
+        }
+      ],
+      "bio": "Born into the Shimazu of Satsuma and adopted by its lord, Shimazu Nariakira, and by the Konoe court family, she married Iesada in 1856. In 1868 she worked with Kazunomiya to save the Tokugawa house and spare Edo Castle from attack, and afterwards raised the young Iesato.",
+      "sex": "f",
+      "born": [
+        {
+          "date": {
+            "edtf": "1836",
+            "text": "1836 (also given as 1835 and 1837)"
+          },
+          "sources": [
+            {
+              "source": "k_tenshoin"
+            }
+          ]
+        }
+      ],
+      "died": [
+        {
+          "date": {
+            "edtf": "1883"
+          },
+          "sources": [
+            {
+              "source": "k_tenshoin"
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "source": "k_tenshoin"
+        }
+      ],
+      "show": {
+        "box": "text",
+        "beside": {
+          "of": "iesada",
+          "side": "r"
+        },
+        "sub": "1836 – 1883 · from Satsuma; pleaded for the house, 1868"
+      }
+    },
+    "iemochi": {
+      "name": "Tokugawa Iemochi",
+      "aka": [
+        {
+          "ja-Jpan": "徳川家茂"
+        },
+        {
+          "en": "Tokugawa Yoshitomi"
+        },
+        {
+          "en": "Shōtoku-in"
+        }
+      ],
+      "title": "Shōgun",
+      "house": "tokugawa",
+      "sex": "m",
+      "reigns": [
+        {
+          "court": "tokugawa",
+          "n": 14,
+          "when": {
+            "edtf": "1858/1866",
+            "text": "1858 – 1866"
+          },
+          "sources": [
+            {
+              "source": "k_iemochi"
+            }
+          ]
+        }
+      ],
+      "born": [
+        {
+          "date": {
+            "edtf": "1846"
+          },
+          "sources": [
+            {
+              "source": "k_iemochi"
+            }
+          ]
+        }
+      ],
+      "died": [
+        {
+          "date": {
+            "edtf": "1866"
+          },
+          "sources": [
+            {
+              "source": "k_iemochi"
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "source": "k_iemochi"
+        }
+      ],
+      "bio": "Brought in from the Kii house as a boy, he married Emperor Kōmei's half-sister Kazunomiya in 1862 to bind court and shogunate together, and died at Osaka Castle in 1866 while his army was losing.",
+      "show": {
+        "box": "ruler",
+        "year": 1858,
+        "sub": "r. 1858 – 1866"
+      },
+      "portrait": "p_iemochi"
+    },
+    "kazunomiya": {
+      "name": "Kazunomiya",
+      "aka": [
+        {
+          "ja-Jpan": "和宮"
+        },
+        {
+          "en": "Princess Chikako"
+        }
+      ],
+      "bio": "A daughter of Emperor Ninkō and half-sister of Emperor Kōmei, she was married to Iemochi in 1862 to bind the imperial court and the shogunate together. In 1868 she petitioned the new government to spare the Tokugawa house and delay the army's advance on Edo, which helped the castle to be handed over without a fight.",
+      "sex": "f",
+      "born": [
+        {
+          "date": {
+            "edtf": "1846"
+          },
+          "sources": [
+            {
+              "source": "k_kazunomiya"
+            }
+          ]
+        }
+      ],
+      "died": [
+        {
+          "date": {
+            "edtf": "1877"
+          },
+          "sources": [
+            {
+              "source": "k_kazunomiya"
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "source": "k_kazunomiya"
+        }
+      ],
+      "show": {
+        "box": "neutral",
+        "beside": {
+          "of": "iemochi",
+          "side": "r"
+        },
+        "sub": "1846 – 1877 · half-sister of Emperor Kōmei"
+      }
+    },
+    "mitsukuni": {
+      "name": "Tokugawa Mitsukuni",
+      "aka": [
+        {
+          "ja-Jpan": "徳川光圀"
+        },
+        {
+          "en": "Mito Kōmon"
+        }
+      ],
+      "title": "Daimyō",
+      "house": "mito",
+      "sex": "m",
+      "born": [
+        {
+          "date": {
+            "edtf": "1628"
+          },
+          "sources": [
+            {
+              "source": "k_mitsukuni"
+            }
+          ]
+        }
+      ],
+      "died": [
+        {
+          "date": {
+            "edtf": "1701",
+            "text": "1701 (lunar year 1700)"
+          },
+          "sources": [
+            {
+              "source": "k_mitsukuni"
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "source": "k_mitsukuni"
+        }
+      ],
+      "show": {
+        "box": "minor",
+        "year": 1661,
+        "sub": "1628 – 1701 · Mito Kōmon"
+      }
+    },
+    "nariaki": {
+      "name": "Tokugawa Nariaki",
+      "aka": [
+        {
+          "ja-Jpan": "徳川斉昭"
+        },
+        {
+          "en": "Rekkō"
+        }
+      ],
+      "title": "Daimyō",
+      "house": "mito",
+      "sex": "m",
+      "born": [
+        {
+          "date": {
+            "edtf": "1800"
+          },
+          "sources": [
+            {
+              "source": "k_nariaki"
+            }
+          ]
+        }
+      ],
+      "died": [
+        {
+          "date": {
+            "edtf": "1860"
+          },
+          "sources": [
+            {
+              "source": "k_nariaki"
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "source": "k_nariaki"
+        }
+      ],
+      "show": {
+        "box": "minor",
+        "year": 1829,
+        "sub": "1800 – 1860"
+      }
+    },
+    "yoshinobu": {
+      "name": "Tokugawa Yoshinobu",
+      "aka": [
+        {
+          "ja-Jpan": "徳川慶喜"
+        },
+        {
+          "en": "Hitotsubashi Yoshinobu"
+        },
+        {
+          "en": "Keiki"
+        }
+      ],
+      "title": "Shōgun",
+      "house": "tokugawa",
+      "sex": "m",
+      "reigns": [
+        {
+          "court": "tokugawa",
+          "n": 15,
+          "when": {
+            "edtf": "1866/1867",
+            "text": "1866 – 1867"
+          },
+          "sources": [
+            {
+              "source": "k_yoshinobu"
+            },
+            {
+              "source": "k_taisei"
+            }
+          ]
+        }
+      ],
+      "born": [
+        {
+          "date": {
+            "edtf": "1837"
+          },
+          "sources": [
+            {
+              "source": "k_yoshinobu"
+            },
+            {
+              "source": "k_taisei"
+            }
+          ]
+        }
+      ],
+      "died": [
+        {
+          "date": {
+            "edtf": "1913"
+          },
+          "sources": [
+            {
+              "source": "k_yoshinobu"
+            },
+            {
+              "source": "k_taisei"
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "source": "k_yoshinobu"
+        },
+        {
+          "source": "k_taisei"
+        }
+      ],
+      "bio": "A son of the Mito lord Nariaki, he headed the Hitotsubashi house before becoming the last shogun; in 1867 he returned governing power to the court. He lived until 1913 and was made a prince in 1902.",
+      "show": {
+        "box": "ruler",
+        "year": 1866,
+        "sub": "r. 1866 – 1867"
+      },
+      "portrait": "p_yoshinobu"
+    },
+    "yoshiyori": {
+      "name": "Tayasu Yoshiyori",
+      "aka": [
+        {
+          "ja-Jpan": "田安慶頼"
+        }
+      ],
+      "variants": [
+        "Tokugawa Yoshiyori"
+      ],
+      "house": "tayasu",
+      "sex": "m",
+      "sources": [
+        {
+          "source": "k_iesato"
+        },
+        {
+          "source": "k_tayasu"
+        }
+      ],
+      "show": {
+        "box": "minor",
+        "year": 1850,
+        "sub": "head of Tayasu"
+      }
+    },
+    "iesato": {
+      "name": "Tokugawa Iesato",
+      "aka": [
+        {
+          "ja-Jpan": "徳川家達"
+        },
+        {
+          "en": "Tayasu Kamenosuke"
+        }
+      ],
+      "house": "tokugawa",
+      "sex": "m",
+      "reigns": [
+        {
+          "court": "tokugawa",
+          "n": 16,
+          "when": {
+            "edtf": "1868/1940",
+            "text": "1868 – 1940"
+          },
+          "sources": [
+            {
+              "source": "k_iesato"
+            }
+          ]
+        }
+      ],
+      "born": [
+        {
+          "date": {
+            "edtf": "1863"
+          },
+          "sources": [
+            {
+              "source": "k_iesato"
+            }
+          ]
+        }
+      ],
+      "died": [
+        {
+          "date": {
+            "edtf": "1940"
+          },
+          "sources": [
+            {
+              "source": "k_iesato"
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "source": "k_iesato"
+        }
+      ],
+      "bio": "A Tayasu son, he succeeded Yoshinobu as head of the house in 1868 as a child of four and was President of the House of Peers from 1903 to 1933.",
+      "show": {
+        "box": "heir",
+        "year": 1868,
+        "sub": "head 1868 – 1940"
+      },
+      "portrait": "p_iesato"
+    },
+    "iemasa": {
+      "name": "Tokugawa Iemasa",
+      "aka": [
+        {
+          "ja-Jpan": "徳川家正"
+        }
+      ],
+      "house": "tokugawa",
+      "sex": "m",
+      "reigns": [
+        {
+          "court": "tokugawa",
+          "n": 17,
+          "when": {
+            "edtf": "1940/1963",
+            "text": "1940 – 1963"
+          },
+          "sources": [
+            {
+              "source": "k_iemasa"
+            }
+          ]
+        }
+      ],
+      "born": [
+        {
+          "date": {
+            "edtf": "1884"
+          },
+          "sources": [
+            {
+              "source": "k_iemasa"
+            }
+          ]
+        }
+      ],
+      "died": [
+        {
+          "date": {
+            "edtf": "1963"
+          },
+          "sources": [
+            {
+              "source": "k_iemasa"
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "source": "k_iemasa"
+        }
+      ],
+      "bio": "A diplomat, he was the last President of the House of Peers (1946).",
+      "show": {
+        "box": "heir",
+        "year": 1940,
+        "sub": "head 1940 – 1963"
+      },
+      "portrait": "p_iemasa"
+    },
+    "toyoko": {
+      "name": "Matsudaira Toyoko",
+      "aka": [
+        {
+          "ja-Jpan": "松平豊子"
+        }
+      ],
+      "house": "tokugawa",
+      "sex": "f",
+      "sources": [
+        {
+          "source": "wp_pointer"
+        }
+      ],
+      "show": {
+        "box": "minor",
+        "year": 1935,
+        "sub": "daughter of Iemasa"
+      }
+    },
+    "ichiro": {
+      "name": "Matsudaira Ichirō",
+      "aka": [
+        {
+          "ja-Jpan": "松平一郎"
+        }
+      ],
+      "house": "aizu",
+      "sex": "m",
+      "sources": [
+        {
+          "source": "wp_pointer"
+        }
+      ],
+      "show": {
+        "box": "minor",
+        "beside": {
+          "of": "toyoko",
+          "side": "r"
+        },
+        "sub": "Aizu Matsudaira"
+      }
+    },
+    "tsunenari": {
+      "name": "Tokugawa Tsunenari",
+      "aka": [
+        {
+          "ja-Jpan": "徳川恒孝"
+        }
+      ],
+      "house": "tokugawa",
+      "sex": "m",
+      "reigns": [
+        {
+          "court": "tokugawa",
+          "n": 18,
+          "when": {
+            "edtf": "1963/2023",
+            "text": "1963 – 2023"
+          },
+          "sources": [
+            {
+              "source": "nippon_2023"
+            },
+            {
+              "source": "k_iemasa"
+            }
+          ]
+        }
+      ],
+      "born": [
+        {
+          "date": {
+            "edtf": "1940"
+          },
+          "sources": [
+            {
+              "source": "wp_pointer"
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "source": "nippon_2023"
+        },
+        {
+          "source": "k_iemasa"
+        }
+      ],
+      "bio": "Son of Iemasa's daughter Toyoko, he took the Tokugawa name as his grandfather's heir and led the house for sixty years, founding the Tokugawa Kinen Zaidan in 2003.",
+      "show": {
+        "box": "heir",
+        "year": 1963,
+        "sub": "head 1963 – 2023"
+      }
+    },
+    "iehiro": {
+      "name": "Tokugawa Iehiro",
+      "aka": [
+        {
+          "ja-Jpan": "徳川家広"
+        }
+      ],
+      "house": "tokugawa",
+      "sex": "m",
+      "reigns": [
+        {
+          "court": "tokugawa",
+          "n": 19,
+          "when": {
+            "edtf": "2023/..",
+            "text": "2023 – present"
+          },
+          "sources": [
+            {
+              "source": "keio_2023"
+            },
+            {
+              "source": "nippon_2023"
+            }
+          ]
+        }
+      ],
+      "born": [
+        {
+          "date": {
+            "edtf": "1965"
+          },
+          "sources": [
+            {
+              "source": "keio_2023"
+            },
+            {
+              "source": "nippon_2023"
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "source": "keio_2023"
+        },
+        {
+          "source": "nippon_2023"
+        }
+      ],
+      "bio": "Tsunenari's eldest son, he became the 19th head of the house on 1 January 2023.",
+      "show": {
+        "box": "heir",
+        "year": 2023,
+        "sub": "head since 2023"
+      },
+      "portrait": "p_iehiro"
+    }
+  },
+  "unions": {
+    "u_hirotada_odai": {
+      "partners": [
+        "hirotada",
+        "odai"
+      ],
+      "kind": "marriage",
+      "sources": [
+        {
+          "source": "k_odai"
+        }
+      ]
+    },
+    "u_ieyasu_tsukiyama": {
+      "partners": [
+        "ieyasu",
+        "tsukiyama"
+      ],
+      "kind": "marriage",
+      "sources": [
+        {
+          "source": "k_tsukiyama"
+        }
+      ]
+    },
+    "u_ieyasu_saigo": {
+      "partners": [
+        "saigo",
+        "ieyasu"
+      ],
+      "kind": "concubinage",
+      "sources": [
+        {
+          "source": "k_saigo"
+        }
+      ]
+    },
+    "u_hidetada_go": {
+      "partners": [
+        "hidetada",
+        "go"
+      ],
+      "kind": "marriage",
+      "sources": [
+        {
+          "source": "k_go"
+        }
+      ]
+    },
+    "u_gomizunoo_masako": {
+      "partners": [
+        "masako",
+        "gomizunoo"
+      ],
+      "kind": "marriage",
+      "sources": [
+        {
+          "source": "k_tofukumon"
+        }
+      ]
+    },
+    "u_iesada_tenshoin": {
+      "partners": [
+        "iesada",
+        "tenshoin"
+      ],
+      "kind": "marriage",
+      "sources": [
+        {
+          "source": "k_tenshoin"
+        }
+      ]
+    },
+    "u_iemochi_kazunomiya": {
+      "partners": [
+        "iemochi",
+        "kazunomiya"
+      ],
+      "kind": "marriage",
+      "sources": [
+        {
+          "source": "k_kazunomiya"
+        }
+      ]
+    },
+    "u_toyoko_ichiro": {
+      "partners": [
+        "toyoko",
+        "ichiro"
+      ],
+      "kind": "marriage",
+      "sources": [
+        {
+          "source": "wp_pointer"
+        }
+      ],
+      "show": {
+        "colour": "tokugawa"
+      }
+    }
+  },
+  "descents": {
+    "d_hirotada_ieyasu": {
+      "parent": "hirotada",
+      "union": "u_hirotada_odai",
+      "child": "ieyasu",
+      "sources": [
+        {
+          "source": "k_ieyasu"
+        }
+      ]
+    },
+    "d_ieyasu_nobuyasu": {
+      "parent": "ieyasu",
+      "union": "u_ieyasu_tsukiyama",
+      "child": "nobuyasu",
+      "sources": [
+        {
+          "source": "k_nobuyasu"
+        }
+      ]
+    },
+    "d_ieyasu_tadayoshi": {
+      "parent": "ieyasu",
+      "union": "u_ieyasu_saigo",
+      "child": "tadayoshi",
+      "sources": [
+        {
+          "source": "k_tadayoshi"
+        }
+      ]
+    },
+    "d_ieyasu_hidetada": {
+      "parent": "ieyasu",
+      "union": "u_ieyasu_saigo",
+      "child": "hidetada",
+      "sources": [
+        {
+          "source": "k_hidetada"
+        },
+        {
+          "source": "k_saigo"
+        }
+      ]
+    },
+    "d_ieyasu_hideyasu": {
+      "parent": "ieyasu",
+      "child": "hideyasu",
+      "sources": [
+        {
+          "source": "k_hideyasu"
+        }
+      ]
+    },
+    "d_ieyasu_tadateru": {
+      "parent": "ieyasu",
+      "child": "tadateru",
+      "sources": [
+        {
+          "source": "k_tadateru"
+        }
+      ]
+    },
+    "d_ieyasu_yoshinao": {
+      "parent": "ieyasu",
+      "child": "yoshinao",
+      "sources": [
+        {
+          "source": "k_yoshinao"
+        }
+      ]
+    },
+    "d_ieyasu_yorinobu": {
+      "parent": "ieyasu",
+      "child": "yorinobu",
+      "sources": [
+        {
+          "source": "k_yorinobu"
+        }
+      ]
+    },
+    "d_ieyasu_yorifusa": {
+      "parent": "ieyasu",
+      "child": "yorifusa",
+      "sources": [
+        {
+          "source": "k_yorifusa"
+        }
+      ]
+    },
+    "d_hidetada_iemitsu": {
+      "parent": "hidetada",
+      "union": "u_hidetada_go",
+      "child": "iemitsu",
+      "sources": [
+        {
+          "source": "k_go"
+        },
+        {
+          "source": "k_iemitsu"
+        }
+      ]
+    },
+    "d_hidetada_tadanaga": {
+      "parent": "hidetada",
+      "union": "u_hidetada_go",
+      "child": "tadanaga",
+      "sources": [
+        {
+          "source": "k_go"
+        },
+        {
+          "source": "k_tadanaga"
+        }
+      ]
+    },
+    "d_hidetada_senhime": {
+      "parent": "hidetada",
+      "union": "u_hidetada_go",
+      "child": "senhime",
+      "sources": [
+        {
+          "source": "k_go"
+        },
+        {
+          "source": "k_senhime"
+        }
+      ]
+    },
+    "d_hidetada_masako": {
+      "parent": "hidetada",
+      "union": "u_hidetada_go",
+      "child": "masako",
+      "sources": [
+        {
+          "source": "k_go"
+        },
+        {
+          "source": "k_tofukumon"
+        }
+      ]
+    },
+    "d_masako_meisho": {
+      "union": "u_gomizunoo_masako",
+      "child": "meisho",
+      "sources": [
+        {
+          "source": "k_tofukumon"
+        }
+      ]
+    },
+    "d_hidetada_hoshina": {
+      "parent": "hidetada",
+      "child": "hoshina",
+      "sources": [
+        {
+          "source": "k_hoshina"
+        }
+      ]
+    },
+    "d_iemitsu_ietsuna": {
+      "parent": "iemitsu",
+      "child": "ietsuna",
+      "sources": [
+        {
+          "source": "k_ietsuna"
+        }
+      ]
+    },
+    "d_iemitsu_tsunashige": {
+      "parent": "iemitsu",
+      "child": "tsunashige",
+      "sources": [
+        {
+          "source": "k_tsunashige"
+        }
+      ]
+    },
+    "d_iemitsu_tsunayoshi": {
+      "parent": "iemitsu",
+      "child": "tsunayoshi",
+      "sources": [
+        {
+          "source": "k_tsunayoshi"
+        }
+      ]
+    },
+    "d_ietsuna_tsunayoshi": {
+      "parent": "ietsuna",
+      "child": "tsunayoshi",
+      "kind": "adoptive",
+      "sources": [
+        {
+          "source": "k_tsunayoshi"
+        }
+      ],
+      "show": {
+        "line": "adopt",
+        "hop": true,
+        "drawn": false
+      }
+    },
+    "d_tsunashige_ienobu": {
+      "parent": "tsunashige",
+      "child": "ienobu",
+      "sources": [
+        {
+          "source": "k_ienobu"
+        }
+      ]
+    },
+    "d_tsunayoshi_ienobu": {
+      "parent": "tsunayoshi",
+      "child": "ienobu",
+      "kind": "adoptive",
+      "sources": [
+        {
+          "source": "k_ienobu"
+        }
+      ],
+      "show": {
+        "line": "adopt",
+        "hop": true,
+        "drawn": false
+      }
+    },
+    "d_ienobu_ietsugu": {
+      "parent": "ienobu",
+      "child": "ietsugu",
+      "sources": [
+        {
+          "source": "k_ietsugu"
+        }
+      ]
+    },
+    "d_yorinobu_mitsusada": {
+      "parent": "yorinobu",
+      "child": "mitsusada",
+      "sources": [
+        {
+          "source": "k_mitsusada"
+        }
+      ]
+    },
+    "d_mitsusada_yoshimune": {
+      "parent": "mitsusada",
+      "child": "yoshimune",
+      "sources": [
+        {
+          "source": "k_yoshimune"
+        }
+      ]
+    },
+    "d_ietsugu_yoshimune": {
+      "parent": "ietsugu",
+      "child": "yoshimune",
+      "kind": "other",
+      "note": "Succeeded from the Kii house; whether Ietsugu formally adopted him is disputed.",
+      "sources": [
+        {
+          "source": "k_ietsugu"
+        },
+        {
+          "source": "k_yoshimune"
+        }
+      ],
+      "show": {
+        "line": "dot",
+        "caption": "successor",
+        "hop": true,
+        "drawn": false
+      }
+    },
+    "d_yoshimune_ieshige": {
+      "parent": "yoshimune",
+      "child": "ieshige",
+      "sources": [
+        {
+          "source": "k_ieshige"
+        }
+      ]
+    },
+    "d_yoshimune_munetake": {
+      "parent": "yoshimune",
+      "child": "munetake",
+      "sources": [
+        {
+          "source": "k_munetake"
+        }
+      ]
+    },
+    "d_yoshimune_munetada": {
+      "parent": "yoshimune",
+      "child": "munetada",
+      "sources": [
+        {
+          "source": "k_munetada"
+        }
+      ]
+    },
+    "d_ieshige_ieharu": {
+      "parent": "ieshige",
+      "child": "ieharu",
+      "sources": [
+        {
+          "source": "k_ieharu"
+        }
+      ]
+    },
+    "d_ieshige_shigeyoshi": {
+      "parent": "ieshige",
+      "child": "shigeyoshi",
+      "sources": [
+        {
+          "source": "k_shigeyoshi"
+        }
+      ]
+    },
+    "d_munetake_sadanobu": {
+      "parent": "munetake",
+      "child": "sadanobu",
+      "sources": [
+        {
+          "source": "k_sadanobu"
+        }
+      ]
+    },
+    "d_munetada_harusada": {
+      "parent": "munetada",
+      "child": "harusada",
+      "sources": [
+        {
+          "source": "k_harusada"
+        }
+      ]
+    },
+    "d_harusada_ienari": {
+      "parent": "harusada",
+      "child": "ienari",
+      "sources": [
+        {
+          "source": "k_ienari"
+        }
+      ]
+    },
+    "d_ieharu_ienari": {
+      "parent": "ieharu",
+      "child": "ienari",
+      "kind": "adoptive",
+      "sources": [
+        {
+          "source": "k_ienari"
+        }
+      ],
+      "show": {
+        "line": "adopt",
+        "hop": true,
+        "drawn": false
+      }
+    },
+    "d_ienari_ieyoshi": {
+      "parent": "ienari",
+      "child": "ieyoshi",
+      "sources": [
+        {
+          "source": "k_ieyoshi"
+        }
+      ]
+    },
+    "d_ienari_nariyuki": {
+      "parent": "ienari",
+      "child": "nariyuki",
+      "sources": [
+        {
+          "source": "k_nariyuki"
+        }
+      ]
+    },
+    "d_ieyoshi_iesada": {
+      "parent": "ieyoshi",
+      "child": "iesada",
+      "sources": [
+        {
+          "source": "k_iesada"
+        }
+      ]
+    },
+    "d_nariyuki_iemochi": {
+      "parent": "nariyuki",
+      "child": "iemochi",
+      "sources": [
+        {
+          "source": "k_iemochi"
+        }
+      ]
+    },
+    "d_iesada_iemochi": {
+      "parent": "iesada",
+      "child": "iemochi",
+      "kind": "adoptive",
+      "sources": [
+        {
+          "source": "k_iemochi"
+        }
+      ],
+      "show": {
+        "line": "adopt",
+        "hop": true,
+        "drawn": false
+      }
+    },
+    "d_yoshinobu_iesato": {
+      "parent": "yoshinobu",
+      "child": "iesato",
+      "kind": "other",
+      "note": "Named head of the house in 1868, when Yoshinobu retired.",
+      "sources": [
+        {
+          "source": "k_iesato"
+        }
+      ],
+      "show": {
+        "line": "dot",
+        "caption": "successor",
+        "hop": true,
+        "drawn": false
+      }
+    },
+    "d_yorifusa_mitsukuni": {
+      "parent": "yorifusa",
+      "child": "mitsukuni",
+      "sources": [
+        {
+          "source": "k_mitsukuni"
+        }
+      ]
+    },
+    "d_yorifusa_nariaki": {
+      "parent": "yorifusa",
+      "child": "nariaki",
+      "generations": "several",
+      "note": "Yorifusa → Yorishige (lord of Takamatsu) → … → Munetaka (from the Takamatsu line, adopted by Tsunaeda) → Munemoto → Harumori → Harutoshi → Nariaki. The 3rd and 4th lords, Tsunaeda and Munetaka, were adopted from the Takamatsu branch, so the line runs through Yorishige rather than through Mitsukuni.",
+      "sources": [
+        {
+          "source": "k_mito"
+        },
+        {
+          "source": "k_nariaki"
+        }
+      ],
+      "show": {
+        "break": "descendant"
+      }
+    },
+    "d_nariaki_yoshinobu": {
+      "parent": "nariaki",
+      "child": "yoshinobu",
+      "sources": [
+        {
+          "source": "k_yoshinobu"
+        }
+      ]
+    },
+    "d_iemochi_yoshinobu": {
+      "parent": "iemochi",
+      "child": "yoshinobu",
+      "kind": "other",
+      "sources": [
+        {
+          "source": "k_yoshinobu"
+        }
+      ],
+      "show": {
+        "line": "dot",
+        "caption": "successor",
+        "hop": true,
+        "drawn": false
+      }
+    },
+    "d_munetake_yoshiyori": {
+      "parent": "munetake",
+      "child": "yoshiyori",
+      "kind": "other",
+      "generations": "several",
+      "note": "Tayasu heads: Munetake, Harusato, Narimasa, Naritaka, Yoshiyori; several were adopted. Narimasa was a son of Hitotsubashi Harusada and Yoshiyori was Narimasa's son, so by birth Yoshiyori and Iesato descend from Harusada; the line shows the headship of the Tayasu house.",
+      "sources": [
+        {
+          "source": "k_tayasu"
+        }
+      ],
+      "show": {
+        "line": "dot",
+        "break": "later head"
+      }
+    },
+    "d_yoshiyori_iesato": {
+      "parent": "yoshiyori",
+      "child": "iesato",
+      "sources": [
+        {
+          "source": "k_iesato"
+        }
+      ]
+    },
+    "d_iesato_iemasa": {
+      "parent": "iesato",
+      "child": "iemasa",
+      "sources": [
+        {
+          "source": "k_iemasa"
+        }
+      ]
+    },
+    "d_iemasa_toyoko": {
+      "parent": "iemasa",
+      "child": "toyoko",
+      "sources": [
+        {
+          "source": "wp_pointer"
+        }
+      ],
+      "show": {
+        "line": "dot"
+      }
+    },
+    "d_toyoko_tsunenari": {
+      "union": "u_toyoko_ichiro",
+      "child": "tsunenari",
+      "sources": [
+        {
+          "source": "wp_pointer"
+        }
+      ]
+    },
+    "d_tsunenari_iehiro": {
+      "parent": "tsunenari",
+      "child": "iehiro",
+      "sources": [
+        {
+          "source": "nippon_2023"
+        }
+      ]
+    }
+  },
+  "houses": {
+    "tokugawa": {
+      "name": "Tokugawa",
+      "colour": "#E3B23C",
+      "reign": "{nth} head of the Tokugawa house"
+    },
+    "matsudaira": {
+      "name": "Matsudaira",
+      "colour": "#C8B68E"
+    },
+    "owari": {
+      "name": "Owari",
+      "colour": "#86B86B"
+    },
+    "kii": {
+      "name": "Kii",
+      "colour": "#E2856B"
+    },
+    "mito": {
+      "name": "Mito",
+      "colour": "#7FA7DB"
+    },
+    "kofu": {
+      "name": "Kōfu",
+      "colour": "#B996C4"
+    },
+    "tayasu": {
+      "name": "Tayasu",
+      "colour": "#E9A3B8"
+    },
+    "hitotsubashi": {
+      "name": "Hitotsubashi",
+      "colour": "#5DBDB0"
+    },
+    "shimizu": {
+      "name": "Shimizu",
+      "colour": "#A8BCCF"
+    },
+    "aizu": {
+      "name": "Aizu",
+      "colour": "#B48A60"
+    }
+  },
+  "sources": {
+    "k_ieyasu": {
+      "kind": "scholarship",
+      "title": "徳川家康 (Kotobank: entries from Japanese reference works)",
+      "accessed": "2026-11-18",
+      "url": "https://kotobank.jp/word/%E5%BE%B3%E5%B7%9D%E5%AE%B6%E5%BA%B7-19082"
+    },
+    "k_hidetada": {
+      "kind": "scholarship",
+      "title": "徳川秀忠 (Kotobank: entries from Japanese reference works)",
+      "accessed": "2026-11-18"
+    },
+    "k_iemitsu": {
+      "kind": "scholarship",
+      "title": "徳川家光 (Kotobank: entries from Japanese reference works)",
+      "accessed": "2026-11-18"
+    },
+    "k_ietsuna": {
+      "kind": "scholarship",
+      "title": "徳川家綱 (Kotobank: entries from Japanese reference works)",
+      "accessed": "2026-11-18"
+    },
+    "k_tsunayoshi": {
+      "kind": "scholarship",
+      "title": "徳川綱吉 (Kotobank: entries from Japanese reference works)",
+      "accessed": "2026-11-18"
+    },
+    "k_ienobu": {
+      "kind": "scholarship",
+      "title": "徳川家宣 (Kotobank: entries from Japanese reference works)",
+      "accessed": "2026-11-18"
+    },
+    "k_ietsugu": {
+      "kind": "scholarship",
+      "title": "徳川家継 (Kotobank: entries from Japanese reference works)",
+      "accessed": "2026-11-18"
+    },
+    "k_yoshimune": {
+      "kind": "scholarship",
+      "title": "徳川吉宗 (Kotobank: entries from Japanese reference works)",
+      "accessed": "2026-11-18"
+    },
+    "k_ieshige": {
+      "kind": "scholarship",
+      "title": "徳川家重 (Kotobank: entries from Japanese reference works)",
+      "accessed": "2026-11-18"
+    },
+    "k_ieharu": {
+      "kind": "scholarship",
+      "title": "徳川家治 (Kotobank: entries from Japanese reference works)",
+      "accessed": "2026-11-18"
+    },
+    "k_ienari": {
+      "kind": "scholarship",
+      "title": "徳川家斉 (Kotobank: entries from Japanese reference works)",
+      "accessed": "2026-11-18"
+    },
+    "k_ieyoshi": {
+      "kind": "scholarship",
+      "title": "徳川家慶 (Kotobank: entries from Japanese reference works)",
+      "accessed": "2026-11-18"
+    },
+    "k_iesada": {
+      "kind": "scholarship",
+      "title": "徳川家定 (Kotobank: entries from Japanese reference works)",
+      "accessed": "2026-11-18"
+    },
+    "k_iemochi": {
+      "kind": "scholarship",
+      "title": "徳川家茂 (Kotobank: entries from Japanese reference works)",
+      "accessed": "2026-11-18"
+    },
+    "k_yoshinobu": {
+      "kind": "scholarship",
+      "title": "徳川慶喜 (Kotobank: entries from Japanese reference works)",
+      "accessed": "2026-11-18"
+    },
+    "k_iesato": {
+      "kind": "scholarship",
+      "title": "徳川家達 (Kotobank: entries from Japanese reference works)",
+      "accessed": "2026-11-18"
+    },
+    "k_iemasa": {
+      "kind": "scholarship",
+      "title": "徳川家正 (Kotobank: entries from Japanese reference works)",
+      "accessed": "2026-11-18"
+    },
+    "k_hirotada": {
+      "kind": "scholarship",
+      "title": "松平広忠 (Kotobank: entries from Japanese reference works)",
+      "accessed": "2026-11-18"
+    },
+    "k_odai": {
+      "kind": "scholarship",
+      "title": "於大の方 (Kotobank: entries from Japanese reference works)",
+      "accessed": "2026-11-18"
+    },
+    "k_tsukiyama": {
+      "kind": "scholarship",
+      "title": "築山殿 (Kotobank: entries from Japanese reference works)",
+      "accessed": "2026-11-18"
+    },
+    "k_nobuyasu": {
+      "kind": "scholarship",
+      "title": "徳川信康 (Kotobank: entries from Japanese reference works)",
+      "accessed": "2026-11-18"
+    },
+    "k_hideyasu": {
+      "kind": "scholarship",
+      "title": "結城秀康 (Kotobank: entries from Japanese reference works)",
+      "accessed": "2026-11-18"
+    },
+    "k_tadayoshi": {
+      "kind": "scholarship",
+      "title": "松平忠吉 (Kotobank: entries from Japanese reference works)",
+      "accessed": "2026-11-18"
+    },
+    "k_tadateru": {
+      "kind": "scholarship",
+      "title": "松平忠輝 (Kotobank: entries from Japanese reference works)",
+      "accessed": "2026-11-18"
+    },
+    "k_yoshinao": {
+      "kind": "scholarship",
+      "title": "徳川義直 (Kotobank: entries from Japanese reference works)",
+      "accessed": "2026-11-18"
+    },
+    "k_yorinobu": {
+      "kind": "scholarship",
+      "title": "徳川頼宣 (Kotobank: entries from Japanese reference works)",
+      "accessed": "2026-11-18"
+    },
+    "k_yorifusa": {
+      "kind": "scholarship",
+      "title": "徳川頼房 (Kotobank: entries from Japanese reference works)",
+      "accessed": "2026-11-18"
+    },
+    "k_saigo": {
+      "kind": "scholarship",
+      "title": "お愛の方 (Kotobank: entries from Japanese reference works)",
+      "accessed": "2026-11-18"
+    },
+    "k_go": {
+      "kind": "scholarship",
+      "title": "崇源院 (Kotobank: entries from Japanese reference works)",
+      "accessed": "2026-11-18"
+    },
+    "k_tadanaga": {
+      "kind": "scholarship",
+      "title": "徳川忠長 (Kotobank: entries from Japanese reference works)",
+      "accessed": "2026-11-18"
+    },
+    "k_senhime": {
+      "kind": "scholarship",
+      "title": "千姫 (Kotobank: entries from Japanese reference works)",
+      "accessed": "2026-11-18"
+    },
+    "k_tofukumon": {
+      "kind": "scholarship",
+      "title": "東福門院 (Kotobank: entries from Japanese reference works)",
+      "accessed": "2026-11-18"
+    },
+    "k_hoshina": {
+      "kind": "scholarship",
+      "title": "保科正之 (Kotobank: entries from Japanese reference works)",
+      "accessed": "2026-11-18"
+    },
+    "k_tsunashige": {
+      "kind": "scholarship",
+      "title": "徳川綱重 (Kotobank: entries from Japanese reference works)",
+      "accessed": "2026-11-18"
+    },
+    "k_mitsusada": {
+      "kind": "scholarship",
+      "title": "徳川光貞 (Kotobank: entries from Japanese reference works)",
+      "accessed": "2026-11-18"
+    },
+    "k_munetada": {
+      "kind": "scholarship",
+      "title": "一橋宗尹 (Kotobank: entries from Japanese reference works)",
+      "accessed": "2026-11-18"
+    },
+    "k_harusada": {
+      "kind": "scholarship",
+      "title": "一橋治済 (Kotobank: entries from Japanese reference works)",
+      "accessed": "2026-11-18"
+    },
+    "k_nariyuki": {
+      "kind": "scholarship",
+      "title": "徳川斉順 (Kotobank: entries from Japanese reference works)",
+      "accessed": "2026-11-18"
+    },
+    "k_mitsukuni": {
+      "kind": "scholarship",
+      "title": "徳川光圀 (Kotobank: entries from Japanese reference works)",
+      "accessed": "2026-11-18"
+    },
+    "k_nariaki": {
+      "kind": "scholarship",
+      "title": "徳川斉昭 (Kotobank: entries from Japanese reference works)",
+      "accessed": "2026-11-18"
+    },
+    "k_munetake": {
+      "kind": "scholarship",
+      "title": "田安宗武 (Kotobank: entries from Japanese reference works)",
+      "accessed": "2026-11-18"
+    },
+    "k_sadanobu": {
+      "kind": "scholarship",
+      "title": "松平定信 (Kotobank: entries from Japanese reference works)",
+      "accessed": "2026-11-18"
+    },
+    "k_shigeyoshi": {
+      "kind": "scholarship",
+      "title": "清水重好 (Kotobank: entries from Japanese reference works)",
+      "accessed": "2026-11-18"
+    },
+    "k_tenshoin": {
+      "kind": "scholarship",
+      "title": "天璋院 (Kotobank: entries from Japanese reference works)",
+      "accessed": "2026-11-18"
+    },
+    "k_kazunomiya": {
+      "kind": "scholarship",
+      "title": "和宮 (Kotobank: entries from Japanese reference works)",
+      "accessed": "2026-11-18"
+    },
+    "k_keishoin": {
+      "kind": "scholarship",
+      "title": "桂昌院 (Kotobank: entries from Japanese reference works)",
+      "accessed": "2026-11-18"
+    },
+    "k_kasuga": {
+      "kind": "scholarship",
+      "title": "春日局 (Kotobank: entries from Japanese reference works)",
+      "accessed": "2026-11-18"
+    },
+    "k_tayasu": {
+      "kind": "scholarship",
+      "title": "田安家 (Kotobank: entries from Japanese reference works)",
+      "accessed": "2026-11-18"
+    },
+    "k_hitotsubashi": {
+      "kind": "scholarship",
+      "title": "一橋家 (Kotobank: entries from Japanese reference works)",
+      "accessed": "2026-11-18"
+    },
+    "k_shimizu": {
+      "kind": "scholarship",
+      "title": "清水家 (Kotobank: entries from Japanese reference works)",
+      "accessed": "2026-11-18"
+    },
+    "k_gosanke": {
+      "kind": "scholarship",
+      "title": "御三家 (Kotobank: entries from Japanese reference works)",
+      "accessed": "2026-11-18"
+    },
+    "k_gosankyo": {
+      "kind": "scholarship",
+      "title": "御三卿 (Kotobank: entries from Japanese reference works)",
+      "accessed": "2026-11-18"
+    },
+    "k_kofu": {
+      "kind": "scholarship",
+      "title": "甲府藩 (Kotobank: entries from Japanese reference works)",
+      "accessed": "2026-11-18"
+    },
+    "k_mito": {
+      "kind": "scholarship",
+      "title": "水戸藩 (Kotobank: entries from Japanese reference works)",
+      "accessed": "2026-11-18"
+    },
+    "k_wakayama": {
+      "kind": "scholarship",
+      "title": "和歌山藩 (Kotobank: entries from Japanese reference works)",
+      "accessed": "2026-11-18"
+    },
+    "k_sakoku": {
+      "kind": "scholarship",
+      "title": "鎖国 (Kotobank: entries from Japanese reference works)",
+      "accessed": "2026-11-18"
+    },
+    "k_shimabara": {
+      "kind": "scholarship",
+      "title": "島原の乱 (Kotobank: entries from Japanese reference works)",
+      "accessed": "2026-11-18"
+    },
+    "k_osaka": {
+      "kind": "scholarship",
+      "title": "大坂の陣 (Kotobank: entries from Japanese reference works)",
+      "accessed": "2026-11-18"
+    },
+    "k_sekigahara": {
+      "kind": "scholarship",
+      "title": "関ヶ原の戦い (Kotobank: entries from Japanese reference works)",
+      "accessed": "2026-11-18"
+    },
+    "k_kyoho": {
+      "kind": "scholarship",
+      "title": "享保の改革 (Kotobank: entries from Japanese reference works)",
+      "accessed": "2026-11-18"
+    },
+    "k_bakumatsu": {
+      "kind": "scholarship",
+      "title": "幕末 (Kotobank: entries from Japanese reference works)",
+      "accessed": "2026-11-18"
+    },
+    "k_taisei": {
+      "kind": "scholarship",
+      "title": "大政奉還 (Kotobank: entries from Japanese reference works)",
+      "accessed": "2026-11-18"
+    },
+    "k_boshin": {
+      "kind": "scholarship",
+      "title": "戊辰戦争 (Kotobank: entries from Japanese reference works)",
+      "accessed": "2026-11-18"
+    },
+    "k_midaidokoro": {
+      "kind": "scholarship",
+      "title": "御台所 (Kotobank: entries from Japanese reference works)",
+      "accessed": "2026-11-18"
+    },
+    "k_ogosho": {
+      "kind": "scholarship",
+      "title": "大御所 (Kotobank: entries from Japanese reference works)",
+      "accessed": "2026-11-18"
+    },
+    "k_kubo": {
+      "kind": "scholarship",
+      "title": "公方 (Kotobank: entries from Japanese reference works)",
+      "accessed": "2026-11-18"
+    },
+    "k_seii": {
+      "kind": "scholarship",
+      "title": "征夷大将軍 (Kotobank: entries from Japanese reference works)",
+      "accessed": "2026-11-18"
+    },
+    "k_toshogu": {
+      "kind": "scholarship",
+      "title": "東照大権現 (Kotobank: entries from Japanese reference works)",
+      "accessed": "2026-11-18"
+    },
+    "keio_2023": {
+      "kind": "news",
+      "title": "Mita Hyōron “Spotlight”: interview with Tokugawa Iehiro",
+      "author": "Keiō University",
+      "year": 2023,
+      "url": "https://www.keio.ac.jp/ja/about/public-relations/mita-hyoron/spotlight/202304-1/",
+      "accessed": "2026-11-18"
+    },
+    "nippon_2023": {
+      "kind": "news",
+      "title": "The Tokugawa main house changes head for the first time in 60 years",
+      "author": "nippon.com",
+      "year": 2023,
+      "url": "https://www.nippon.com/ja/japan-topics/b06914/",
+      "accessed": "2026-11-18"
+    },
+    "wp_pointer": {
+      "kind": "other",
+      "title": "Wikipedia (English and Japanese): used only as a pointer, to be checked",
+      "accessed": "2026-11-18"
+    }
+  },
+  "glossary": {
+    "shogun": {
+      "group": "Titles",
+      "term": "Shōgun",
+      "expansion": "sei-i taishōgun",
+      "gloss": "head of the warrior government"
+    },
+    "ogosho": {
+      "group": "Titles",
+      "term": "Ōgosho",
+      "gloss": "retired shogun who kept power"
+    },
+    "kubo": {
+      "group": "Titles",
+      "term": "Kubō",
+      "gloss": "the shogun (Edo-period name)"
+    },
+    "empress": {
+      "group": "Titles",
+      "term": "Empress",
+      "gloss": "empress consort (chūgū) or empress regnant"
+    },
+    "midaidokoro": {
+      "group": "Titles",
+      "term": "Midaidokoro",
+      "gloss": "the shogun's principal wife"
+    },
+    "soke": {
+      "group": "Houses",
+      "term": "Sōke",
+      "gloss": "the main line of the house"
+    },
+    "gosanke": {
+      "group": "Houses",
+      "term": "Gosanke",
+      "expansion": "Owari, Kii, Mito",
+      "gloss": "the three senior branch houses"
+    },
+    "gosankyo": {
+      "group": "Houses",
+      "term": "Gosankyō",
+      "expansion": "Tayasu, Hitotsubashi, Shimizu",
+      "gloss": "the three later branch houses"
+    },
+    "daimyo": {
+      "group": "Houses",
+      "term": "Daimyō",
+      "gloss": "lord of a domain of 10,000 koku or more"
+    },
+    "ooku": {
+      "group": "Other terms",
+      "term": "Ōoku",
+      "gloss": "the women's quarters of Edo Castle"
+    },
+    "daigongen": {
+      "group": "Other terms",
+      "term": "Daigongen",
+      "gloss": "“great avatar”: Ieyasu's divine title"
+    }
+  },
+  "timeline": {
+    "eras": [
+      {
+        "year": 1603,
+        "name": "Founding of the shogunate"
+      },
+      {
+        "year": 1639,
+        "name": "The closed country"
+      },
+      {
+        "year": 1716,
+        "name": "The age of reforms"
+      },
+      {
+        "year": 1853,
+        "name": "The end of the shogunate"
+      },
+      {
+        "year": 1868,
+        "name": "A family, not a government"
+      }
+    ],
+    "episodes": [
+      {
+        "from": 1614,
+        "to": 1615,
+        "name": "Siege of Osaka"
+      },
+      {
+        "from": 1637,
+        "to": 1638,
+        "name": "Shimabara Rebellion"
+      },
+      {
+        "from": 1868,
+        "to": 1869,
+        "name": "Boshin War"
+      }
+    ]
+  },
+  "notes": {
+    "n_iemitsu": {
+      "anchor": "iemitsu",
+      "text": "Raised by his wet nurse <b>Kasuga no Tsubone</b> (1579–1643), who later ran the Ōoku, the women's quarters of Edo Castle.",
+      "sources": [
+        {
+          "source": "k_kasuga"
+        }
+      ],
+      "show": {
+        "side": "r",
+        "width": 300
+      }
+    },
+    "n_ieyasu": {
+      "anchor": "ieyasu",
+      "text": "Born on the 26th day of the 12th month of Tenbun 11, usually given as 1542; in the Western calendar this is January 1543.",
+      "sources": [
+        {
+          "source": "k_ieyasu"
+        }
+      ],
+      "show": {
+        "side": "r",
+        "width": 300
+      }
+    },
+    "n_tsunayoshi": {
+      "anchor": "tsunayoshi",
+      "text": "His mother <b>Keishō-in</b> (1627–1705), a consort of Iemitsu, was by one account a Kyoto greengrocer's daughter.",
+      "sources": [
+        {
+          "source": "k_keishoin"
+        }
+      ],
+      "show": {
+        "side": "r",
+        "width": 300
+      }
+    },
+    "n_yoshimune": {
+      "anchor": "yoshimune",
+      "text": "Succeeded when the line of Hidetada died out with Ietsugu; whether Ietsugu formally adopted him just before dying is disputed.",
+      "sources": [
+        {
+          "source": "k_ietsugu"
+        },
+        {
+          "source": "k_yoshimune"
+        }
+      ],
+      "show": {
+        "side": "r",
+        "width": 300
+      }
+    },
+    "n_nariaki": {
+      "anchor": "nariaki",
+      "text": "Mito lords between Yorifusa and Nariaki: Mitsukuni, Tsunaeda (Mitsukuni's nephew, adopted), Munetaka, Munemoto, Harumori, Harutoshi, Narinobu. Nariaki succeeded his brother Narinobu.",
+      "sources": [
+        {
+          "source": "k_mito"
+        },
+        {
+          "source": "k_nariaki"
+        }
+      ],
+      "show": {
+        "side": "r",
+        "width": 300
+      }
+    },
+    "n_masako": {
+      "anchor": "masako",
+      "text": "Entered the palace in 1620 and became empress consort in 1624; her daughter reigned as Empress Meishō.",
+      "sources": [
+        {
+          "source": "k_tofukumon"
+        }
+      ],
+      "show": {
+        "side": "r",
+        "width": 300
+      }
+    },
+    "n_tsunenari": {
+      "anchor": "tsunenari",
+      "text": "Whether Iemasa formally adopted him is not confirmed.",
+      "sources": [
+        {
+          "source": "wp_pointer"
+        }
+      ],
+      "show": {
+        "side": "r",
+        "width": 300
+      }
+    },
+    "n_iesada": {
+      "anchor": "iesada",
+      "text": "His first two wives died young; his third was Atsuhime (Tenshō-in), married 1856.",
+      "sources": [
+        {
+          "source": "k_iesada"
+        },
+        {
+          "source": "k_tenshoin"
+        }
+      ],
+      "show": {
+        "side": "r",
+        "width": 300
+      }
+    }
+  },
+  "panels": {
+    "header": {
+      "x": 140,
+      "y": 130,
+      "width": 800,
+      "height": 840,
+      "arrange": "column"
+    },
+    "intro": "In 1603 <b>Tokugawa Ieyasu</b> was appointed shogun, and for 265 years his descendants ruled Japan from Edo. When the main line failed, heirs came from the branch houses Ieyasu and his successors had founded: the <b>Kii</b>, <b>Hitotsubashi</b> and <b>Mito</b> houses each supplied shoguns. In 1867 the last shogun returned power to the emperor; the head of the house today is the nineteenth.",
+    "caveats": [
+      "<b>Notes on uncertain points.</b> Japanese sources date events in the lunar calendar; years here are Western years, which differ for a few people born late in the lunar year (Ieyasu, Ieshige, Tadanaga, Hoshina Masayuki, Tenshō-in, Matsudaira Sadanobu) or who died late in it (Tokugawa Mitsukuni). Reigns run from the imperial appointment to resignation or death.",
+      "From the fifth shogun on, most came to power by adoption, several from a branch house. Solid lines show birth; the crowns give the order, and the succession table says how each came to rule. Tsunenari's adoption by his grandfather is not confirmed in the sources used."
+    ],
+    "sources": [
+      "<b>Sources.</b> Japanese reference works as published on Kotobank (Nihon Daihyakka Zensho, Yamakawa Nihonshi Shōjiten, Sekai Daihyakka Jiten, Nihon Jinmei Daijiten, Britannica Japan); Keiō University and nippon.com (2023) for the present heads. Draft: to be checked against Totman (1967) and the Cambridge History of Japan. "
+    ],
+    "badges": [
+      "b_cc_by_sa"
+    ],
+    "key": {
+      "house": "tokugawa",
+      "contrast": "kii",
+      "labels": {
+        "neutral": "Imperial family",
+        "text": "Wife or consort",
+        "minor": "Family member who was not shogun",
+        "ruler": "Shogun",
+        "heir": "Head of the house after 1868",
+        "crown": "Order as head of the house",
+        "house": "Founding of a branch house",
+        "dot": "Through a daughter, or by adoption",
+        "caption": "Relationship noted on the line",
+        "omitted": "Generations omitted",
+        "marriedIn": "Husband or wife from a branch house",
+        "axis": "People are placed near the year they became shogun or head of their house; half-century bands stretch where many fall close together.",
+        "grey": "Marriage or descent outside the house"
+      }
+    },
+    "glossaryTitle": "Titles and terms",
+    "succession": {
+      "court": "tokugawa",
+      "title": "The succession"
+    },
+    "viewer": {
+      "languages": [
+        "en"
+      ]
+    }
+  },
+  "media": {
+    "b_cc_by_sa": {
+      "kind": "badge",
+      "file": "assets/brand/cc-by-sa-icon.png",
+      "credit": {
+        "title": "CC BY-SA licence badge",
+        "source": "https://creativecommons.org/about/downloads/"
+      }
+    },
+    "p_ieyasu": {
+      "kind": "portrait",
+      "file": "assets/portraits/tokugawa/ieyasu.jpg",
+      "of": "ieyasu",
+      "credit": {
+        "title": "Tokugawa Ieyasu",
+        "source": "https://commons.wikimedia.org/wiki/File:Tokugawa_Ieyasu2.JPG",
+        "fileUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/11/Tokugawa_Ieyasu2.JPG/1280px-Tokugawa_Ieyasu2.JPG",
+        "author": "Kanō Tan'yū, early Edo period (17th century)",
+        "licence": "Public domain",
+        "changes": "cropped to a square"
+      }
+    },
+    "p_hidetada": {
+      "kind": "portrait",
+      "file": "assets/portraits/tokugawa/hidetada.jpg",
+      "of": "hidetada",
+      "credit": {
+        "title": "Tokugawa Hidetada",
+        "source": "https://commons.wikimedia.org/wiki/File:Hidetada.jpg",
+        "fileUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/44/Hidetada.jpg/1280px-Hidetada.jpg",
+        "author": "unknown painter of the Kanō school, 17th century",
+        "licence": "Public domain",
+        "changes": "cropped to a square, tones stretched",
+        "note": "faded original"
+      }
+    },
+    "p_iemitsu": {
+      "kind": "portrait",
+      "file": "assets/portraits/tokugawa/iemitsu.jpg",
+      "of": "iemitsu",
+      "credit": {
+        "title": "Tokugawa Iemitsu",
+        "source": "https://commons.wikimedia.org/wiki/File:Iemitsu_Tokugawa.jpg",
+        "fileUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8a/Iemitsu_Tokugawa.jpg/1280px-Iemitsu_Tokugawa.jpg",
+        "author": "unknown painter; a copy printed by Tokyo Imperial University, 1911",
+        "licence": "Public domain",
+        "changes": "cropped to a square",
+        "note": "a printed copy of an older portrait"
+      }
+    },
+    "p_ietsuna": {
+      "kind": "portrait",
+      "file": "assets/portraits/tokugawa/ietsuna.jpg",
+      "of": "ietsuna",
+      "credit": {
+        "title": "Tokugawa Ietsuna",
+        "source": "https://commons.wikimedia.org/wiki/File:%E5%BE%B3%E5%B7%9D%E5%AE%B6%E7%B6%B1_(2).png",
+        "fileUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/55/%E5%BE%B3%E5%B7%9D%E5%AE%B6%E7%B6%B1_%282%29.png/500px-%E5%BE%B3%E5%B7%9D%E5%AE%B6%E7%B6%B1_%282%29.png",
+        "author": "Kanō Yasunobu, 17th century",
+        "licence": "Public domain",
+        "changes": "cropped to a square"
+      }
+    },
+    "p_tsunayoshi": {
+      "kind": "portrait",
+      "file": "assets/portraits/tokugawa/tsunayoshi.jpg",
+      "of": "tsunayoshi",
+      "credit": {
+        "title": "Tokugawa Tsunayoshi",
+        "source": "https://commons.wikimedia.org/wiki/File:Tsunyaoshi.jpg",
+        "fileUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d9/Tsunyaoshi.jpg/1280px-Tsunyaoshi.jpg",
+        "author": "Tosa Mitsuoki, 17th century (Tokugawa Art Museum)",
+        "licence": "Public domain",
+        "changes": "cropped to a square"
+      }
+    },
+    "p_ienobu": {
+      "kind": "portrait",
+      "file": "assets/portraits/tokugawa/ienobu.jpg",
+      "of": "ienobu",
+      "credit": {
+        "title": "Tokugawa Ienobu",
+        "source": "https://commons.wikimedia.org/wiki/File:Tokugawa_Ienobu.jpg",
+        "fileUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d2/Tokugawa_Ienobu.jpg/1280px-Tokugawa_Ienobu.jpg",
+        "author": "unknown painter of the Kanō school, 18th century",
+        "licence": "Public domain",
+        "changes": "cropped to a square"
+      }
+    },
+    "p_ietsugu": {
+      "kind": "portrait",
+      "file": "assets/portraits/tokugawa/ietsugu.jpg",
+      "of": "ietsugu",
+      "credit": {
+        "title": "Tokugawa Ietsugu",
+        "source": "https://commons.wikimedia.org/wiki/File:Tokugawa_Ietsugu_cropped.jpg",
+        "fileUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6b/Tokugawa_Ietsugu_cropped.jpg/1280px-Tokugawa_Ietsugu_cropped.jpg",
+        "author": "unknown painter, 1735",
+        "licence": "Public domain",
+        "changes": "cropped to a square",
+        "note": "painted after his death (1716)"
+      }
+    },
+    "p_yoshimune": {
+      "kind": "portrait",
+      "file": "assets/portraits/tokugawa/yoshimune.jpg",
+      "of": "yoshimune",
+      "credit": {
+        "title": "Tokugawa Yoshimune",
+        "source": "https://commons.wikimedia.org/wiki/File:Tokugawa_Yoshimune.jpg",
+        "fileUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/50/Tokugawa_Yoshimune.jpg/1280px-Tokugawa_Yoshimune.jpg",
+        "author": "Kanō Tadanobu, dated 1929 on Commons",
+        "licence": "Public domain",
+        "changes": "cropped to a square",
+        "note": "later depiction; date and licence as given on Commons, not checked further"
+      }
+    },
+    "p_ieshige": {
+      "kind": "portrait",
+      "file": "assets/portraits/tokugawa/ieshige.jpg",
+      "of": "ieshige",
+      "credit": {
+        "title": "Tokugawa Ieshige",
+        "source": "https://commons.wikimedia.org/wiki/File:Tokugawa_Ieshige.jpg",
+        "fileUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8d/Tokugawa_Ieshige.jpg/1280px-Tokugawa_Ieshige.jpg",
+        "author": "attributed to Kanō Terunobu, 18th century",
+        "licence": "Public domain",
+        "changes": "cropped to a square"
+      }
+    },
+    "p_ieharu": {
+      "kind": "portrait",
+      "file": "assets/portraits/tokugawa/ieharu.jpg",
+      "of": "ieharu",
+      "credit": {
+        "title": "Tokugawa Ieharu",
+        "source": "https://commons.wikimedia.org/wiki/File:%E5%BE%B3%E5%B7%9D%E5%AE%B6%E6%B2%BB_(2).png",
+        "fileUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d2/%E5%BE%B3%E5%B7%9D%E5%AE%B6%E6%B2%BB_%282%29.png/500px-%E5%BE%B3%E5%B7%9D%E5%AE%B6%E6%B2%BB_%282%29.png",
+        "author": "unknown painter, 18th century",
+        "licence": "Public domain",
+        "changes": "cropped to a square"
+      }
+    },
+    "p_ienari": {
+      "kind": "portrait",
+      "file": "assets/portraits/tokugawa/ienari.jpg",
+      "of": "ienari",
+      "credit": {
+        "title": "Tokugawa Ienari",
+        "source": "https://commons.wikimedia.org/wiki/File:Tokugawa_Ienari_(1).png",
+        "fileUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/34/Tokugawa_Ienari_%281%29.png/500px-Tokugawa_Ienari_%281%29.png",
+        "author": "unknown painter, 19th century",
+        "licence": "Public domain",
+        "changes": "cropped to a square"
+      }
+    },
+    "p_ieyoshi": {
+      "kind": "portrait",
+      "file": "assets/portraits/tokugawa/ieyoshi.jpg",
+      "of": "ieyoshi",
+      "credit": {
+        "title": "Tokugawa Ieyoshi",
+        "source": "https://commons.wikimedia.org/wiki/File:Tokugawa_Ieyoshi.JPG",
+        "fileUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/eb/Tokugawa_Ieyoshi.JPG/1280px-Tokugawa_Ieyoshi.JPG",
+        "author": "unknown painter of the Kanō school, 19th century",
+        "licence": "Public domain",
+        "changes": "cropped to a square"
+      }
+    },
+    "p_iesada": {
+      "kind": "portrait",
+      "file": "assets/portraits/tokugawa/iesada.jpg",
+      "of": "iesada",
+      "credit": {
+        "title": "Tokugawa Iesada",
+        "source": "https://commons.wikimedia.org/wiki/File:%E5%BE%B3%E5%B7%9D%E5%AE%B6%E5%AE%9A%E5%83%8F.png",
+        "fileUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/53/%E5%BE%B3%E5%B7%9D%E5%AE%B6%E5%AE%9A%E5%83%8F.png/500px-%E5%BE%B3%E5%B7%9D%E5%AE%B6%E5%AE%9A%E5%83%8F.png",
+        "author": "unknown painter, 19th century",
+        "licence": "Public domain",
+        "changes": "cropped to a square",
+        "note": "Commons gives “18th century”, which cannot be right for a man born in 1824"
+      }
+    },
+    "p_iemochi": {
+      "kind": "portrait",
+      "file": "assets/portraits/tokugawa/iemochi.jpg",
+      "of": "iemochi",
+      "credit": {
+        "title": "Tokugawa Iemochi",
+        "source": "https://commons.wikimedia.org/wiki/File:Toku14-2.jpg",
+        "fileUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/10/Toku14-2.jpg/1280px-Toku14-2.jpg",
+        "author": "Tokugawa Mochinaga, 1866–67",
+        "licence": "Public domain",
+        "changes": "cropped to a square",
+        "note": "painted at about the time of his death"
+      }
+    },
+    "p_yoshinobu": {
+      "kind": "portrait",
+      "file": "assets/portraits/tokugawa/yoshinobu.jpg",
+      "of": "yoshinobu",
+      "credit": {
+        "title": "Tokugawa Yoshinobu",
+        "source": "https://commons.wikimedia.org/wiki/File:1867_Osaka_Yoshinobu_Tokugawa.jpg",
+        "fileUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/31/1867_Osaka_Yoshinobu_Tokugawa.jpg/500px-1867_Osaka_Yoshinobu_Tokugawa.jpg",
+        "author": "Frederick Sutton (photograph), Osaka, 1867",
+        "licence": "Public domain",
+        "changes": "cropped to a square"
+      }
+    },
+    "p_iesato": {
+      "kind": "portrait",
+      "file": "assets/portraits/tokugawa/iesato.jpg",
+      "of": "iesato",
+      "credit": {
+        "title": "Tokugawa Iesato",
+        "source": "https://commons.wikimedia.org/wiki/File:Prince_Tokugawa_Iesato_(cropped).jpg",
+        "fileUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e2/Prince_Tokugawa_Iesato_%28cropped%29.jpg/500px-Prince_Tokugawa_Iesato_%28cropped%29.jpg",
+        "author": "Harris & Ewing (photograph), c. 1921–22",
+        "licence": "Public domain",
+        "changes": "cropped to a square",
+        "note": "Library of Congress, no known restrictions"
+      }
+    },
+    "p_iemasa": {
+      "kind": "portrait",
+      "file": "assets/portraits/tokugawa/iemasa.jpg",
+      "of": "iemasa",
+      "credit": {
+        "title": "Tokugawa Iemasa",
+        "source": "https://commons.wikimedia.org/wiki/File:Tokugawa_Iemasa_as_the_president_of_the_house_of_peers.jpg",
+        "fileUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/51/Tokugawa_Iemasa_as_the_president_of_the_house_of_peers.jpg/330px-Tokugawa_Iemasa_as_the_president_of_the_house_of_peers.jpg",
+        "author": "unknown photographer, as President of the House of Peers (1946)",
+        "licence": "Public domain",
+        "changes": "cropped to a square"
+      }
+    },
+    "p_iehiro": {
+      "kind": "portrait",
+      "file": "assets/portraits/tokugawa/iehiro.jpg",
+      "of": "iehiro",
+      "credit": {
+        "title": "Tokugawa Iehiro",
+        "source": "https://commons.wikimedia.org/wiki/File:%E5%BE%B3%E5%B7%9D%E5%AE%97%E5%AE%B6%EF%BC%91%EF%BC%99%E4%BB%A3%E5%BE%B3%E5%B7%9D%E5%AE%B6%E5%BA%83%E6%B0%8F_(cropped).JPG",
+        "fileUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dd/%E5%BE%B3%E5%B7%9D%E5%AE%97%E5%AE%B6%EF%BC%91%EF%BC%99%E4%BB%A3%E5%BE%B3%E5%B7%9D%E5%AE%B6%E5%BA%83%E6%B0%8F_%28cropped%29.JPG/1280px-%E5%BE%B3%E5%B7%9D%E5%AE%97%E5%AE%B6%EF%BC%91%EF%BC%99%E4%BB%A3%E5%BE%B3%E5%B7%9D%E5%AE%B6%E5%BA%83%E6%B0%8F_%28cropped%29.JPG",
+        "author": "Commons user Mikkabie (photograph), 2015",
+        "licence": "CC BY-SA 4.0",
+        "changes": "cropped to a square"
+      }
+    }
+  },
+  "display": {
+    "pills": {
+      "ieyasu": {
+        "label": "TOKUGAWA",
+        "house": "tokugawa"
+      },
+      "yoshinao": {
+        "label": "OWARI",
+        "house": "owari"
+      },
+      "yorinobu": {
+        "label": "KII",
+        "house": "kii"
+      },
+      "yorifusa": {
+        "label": "MITO",
+        "house": "mito"
+      },
+      "munetake": {
+        "label": "TAYASU",
+        "house": "tayasu"
+      },
+      "munetada": {
+        "label": "HITOTSUBASHI",
+        "house": "hitotsubashi"
+      },
+      "shigeyoshi": {
+        "label": "SHIMIZU",
+        "house": "shimizu"
+      },
+      "hoshina": {
+        "label": "AIZU",
+        "house": "aizu"
+      }
+    },
+    "headers": {
+      "ieyasu": {
+        "kind": "Shogunate of",
+        "name": "Edo",
+        "years": "1603 – 1867",
+        "seat": "Edo Castle",
+        "founded": "Ieyasu appointed shogun, 1603"
+      },
+      "yorinobu": {
+        "kind": "Gosanke house of",
+        "name": "Kii",
+        "years": "1619 – 1871",
+        "seat": "Wakayama",
+        "founded": "Founded by Ieyasu's 10th son"
+      },
+      "yorifusa": {
+        "kind": "Gosanke house of",
+        "name": "Mito",
+        "years": "1609 – 1871",
+        "seat": "Mito, Hitachi",
+        "founded": "Founded by Ieyasu's 11th son"
+      },
+      "munetada": {
+        "kind": "Gosankyō house of",
+        "name": "Hitotsubashi",
+        "years": "1741 – 1868",
+        "seat": "Hitotsubashi Gate, Edo Castle",
+        "founded": "Founded by Yoshimune's 4th son"
+      }
+    },
+    "timeOrder": true
+  },
+  "adjustments": {
+    "nudge_sadanobu": {
+      "kind": "nudge",
+      "target": "sadanobu",
+      "dx": 260,
+      "reason": "clear of the dotted line from Munetake down to the later Tayasu head Yoshiyori"
+    },
+    "side_tsukiyama": {
+      "kind": "coupleSide",
+      "target": "u_ieyasu_tsukiyama",
+      "side": 0,
+      "reason": "Nobuyasu under his parents, before Ieyasu's other sons"
+    }
+  },
+  "theme": {
+    "palette": {
+      "background": "#EDE8D8",
+      "band": "#E6E0CD",
+      "ink": "#1F1F1F",
+      "noteInk": "#3A372F",
+      "muted": "#5E5848",
+      "faint": "#857D68",
+      "neutral": "#D5D1C3",
+      "greyLine": "#C2BBA8"
+    },
+    "type": {
+      "title": 14,
+      "name": 21,
+      "reign": 15,
+      "name2": 17,
+      "sub2": 14,
+      "note": 17,
+      "cap": 15,
+      "small": 14
+    },
+    "fonts": {
+      "sans": "gantari",
+      "script": "felipa",
+      "secondScript": "noto-jp"
+    }
+  }
+}

@@ -1,0 +1,41 @@
+name: Chart correction
+description: A wrong or missing fact in one of the charts (a date, a name, a person, a marriage)
+labels: ["chart"]
+body:
+  - type: dropdown
+    id: chart
+    attributes:
+      label: Which chart
+      options:
+        - Wangsa Mataram
+        - The Tokugawa Shoguns
+        - The tutorial chart
+        - Another chart
+    validations:
+      required: true
+  - type: input
+    id: who
+    attributes:
+      label: Who or what
+      description: The person, marriage or note (the name as the chart shows it)
+    validations:
+      required: true
+  - type: textarea
+    id: now
+    attributes:
+      label: What the chart says now
+    validations:
+      required: true
+  - type: textarea
+    id: should
+    attributes:
+      label: What it should say
+    validations:
+      required: true
+  - type: textarea
+    id: source
+    attributes:
+      label: Your source
+      description: A book, an article or a page, precise enough for someone else to find the statement (author, title, page, or a link). Corrections without a source cannot be made.
+    validations:
+      required: true

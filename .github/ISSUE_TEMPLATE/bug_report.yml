@@ -1,0 +1,27 @@
+name: Bug report
+description: Something in the app, the viewer, the editor, the engine or the tools does not work
+labels: ["bug"]
+body:
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened
+      description: What you did, what you expected, and what happened instead. A screenshot helps with a drawing problem.
+    validations:
+      required: true
+  - type: input
+    id: where
+    attributes:
+      label: Where
+      description: The chart, and the part of Crownline (the app, the demo site, the command line, the MCP server)
+  - type: input
+    id: setup
+    attributes:
+      label: Your setup
+      description: Operating system, browser and its version, Node version
+  - type: textarea
+    id: output
+    attributes:
+      label: Output
+      description: The output of npm run check, or the browser console's errors, if there are any
+      render: text

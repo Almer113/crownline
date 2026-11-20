@@ -1,0 +1,16 @@
+name: Idea
+description: Something Crownline could do
+labels: ["idea"]
+body:
+  - type: textarea
+    id: what
+    attributes:
+      label: What you would like
+      description: What you are trying to do, and what gets in the way now
+    validations:
+      required: true
+  - type: textarea
+    id: example
+    attributes:
+      label: An example
+      description: A chart, a picture or another tool that shows it, if you have one

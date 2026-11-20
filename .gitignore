@@ -1,0 +1,40 @@
+# version snapshots from before git (1.3 GB); git history and tags replace them
+archive/
+
+# rendered output: rebuild with `npm run build:chart` (add --png --pdf for the images); attach to releases instead
+# (every chart's outputs are written to the repository root: <chart id>[-public][-preview].*)
+/*.html
+/*.png
+/*.pdf
+/*.part
+
+_tile_*.html
+
+# Python
+__pycache__/
+*.pyc
+
+# raw downloads (geoBoundaries etc.) are kept outside the project
+assets/maps/raw/
+
+# editors and OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# local scratch space
+.scratch/
+/*.layout.json
+node_modules/
+.cache/
+site/
+packages/*/dist/
+_print_*.html
+
+# the crownline tools: their journal of applied batches and the regions they render
+.crownline/
+
+# the public repository, built here by npm run public-repo (tools/public_repo.py); never committed here
+release/

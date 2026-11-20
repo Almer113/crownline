@@ -1,0 +1,6 @@
+# Building the chart. Text is measured from the font files with fontTools (textmeasure.py),
+# not Pillow; Pillow only handles images (portrait crops, previews).
+pillow==11.2.1
+shapely==2.2.0
+numpy==2.4.2        # clean_emblem.py only
+fonttools==4.66.1   # text measurement (textmeasure.py), tests, and cutting static fonts

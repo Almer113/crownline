@@ -1,0 +1,34 @@
+{
+  "name": "crownline",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Crownline: viewer, editor and tools for large royal-genealogy charts",
+  "license": "MIT",
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "portraits": "python tools/portrait_sizes.py",
+    "dev": "npm run dev -w @crownline/app",
+    "demo": "npm run portraits && npm run dev -w @crownline/viewer",
+    "build": "npm run build -w @crownline/viewer",
+    "build:app": "npm run build -w @crownline/app",
+    "build:chart": "npm run build -w @crownline/engine --",
+    "typecheck": "npm run typecheck -w @crownline/viewer && npm run typecheck -w @crownline/schema && npm run typecheck -w @crownline/engine && npm run typecheck -w @crownline/ops && npm run typecheck -w @crownline/cli && npm run typecheck -w @crownline/editor && npm run typecheck -w @crownline/app",
+    "smoke": "python tools/viewer_smoke.py",
+    "test:browsers": "node packages/viewer/tests/browsers.mjs",
+    "test:engine": "node packages/viewer/tests/engine-vs-chrome.mjs",
+    "bench": "node packages/viewer/tests/bench.mjs",
+    "check": "npm run check -w @crownline/schema --",
+    "test:schema": "npm test -w @crownline/schema",
+    "test:port": "npm test -w @crownline/engine",
+    "fixtures": "python tools/engine_fixtures.py",
+    "edit": "npm run dev -w @crownline/app",
+    "crownline": "node --import tsx packages/cli/src/main.ts",
+    "guide": "node --import tsx packages/cli/src/write-guide.ts",
+    "test:cli": "npm test -w @crownline/cli",
+    "public-repo": "python tools/public_repo.py",
+    "build:site": "python tools/build_site.py",
+    "test:site": "node packages/app/tests/site.mjs"
+  }
+}

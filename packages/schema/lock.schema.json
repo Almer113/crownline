@@ -1,0 +1,208 @@
+{
+ "$schema": "https://json-schema.org/draft/2020-12/schema",
+ "additionalProperties": false,
+ "$id": "https://almer113.github.io/crownline/schema/lock-1.json",
+ "title": "Crownline layout lock, format 1",
+ "type": "object",
+ "required": [
+  "format",
+  "chart",
+  "canvas",
+  "errors",
+  "warnings",
+  "boxes",
+  "drops",
+  "lines",
+  "notes",
+  "letters",
+  "pills",
+  "headers",
+  "crowns",
+  "brackets",
+  "axis",
+  "eraLabels"
+ ],
+ "properties": {
+  "$schema": {
+   "type": "string"
+  },
+  "format": {
+   "const": 1,
+   "type": "number"
+  },
+  "chart": {
+   "description": "meta.id of the chart document",
+   "type": "string"
+  },
+  "canvas": {
+   "minItems": 2,
+   "maxItems": 2,
+   "description": "[width, height]",
+   "type": "array",
+   "items": {
+    "minimum": 1,
+    "type": "integer"
+   }
+  },
+  "errors": {
+   "minimum": 0,
+   "description": "layout errors when the lock was written (should be 0)",
+   "type": "integer"
+  },
+  "warnings": {
+   "description": "layout warnings when the lock was written",
+   "type": "array",
+   "items": {
+    "type": "string"
+   }
+  },
+  "boxes": {
+   "description": "each person's box, by person id",
+   "type": "object",
+   "patternProperties": {
+    "^(.*)$": {
+     "minItems": 4,
+     "maxItems": 4,
+     "description": "[left, top, right, bottom] in px",
+     "type": "array",
+     "items": {
+      "type": "number"
+     }
+    }
+   }
+  },
+  "drops": {
+   "description": "the line into each child, by person id (\"child@descent\" when a child has more than one line): [x, y of the horizontal line it leaves]",
+   "type": "object",
+   "patternProperties": {
+    "^(.*)$": {
+     "minItems": 2,
+     "maxItems": 2,
+     "type": "array",
+     "items": {
+      "type": "number"
+     }
+    }
+   }
+  },
+  "lines": {
+   "description": "the levels (y) of each line's horizontal runs, by descent id (a line's first descent) or union id",
+   "type": "object",
+   "patternProperties": {
+    "^(.*)$": {
+     "type": "array",
+     "items": {
+      "type": "number"
+     }
+    }
+   }
+  },
+  "notes": {
+   "description": "inline notes, by note id",
+   "type": "object",
+   "patternProperties": {
+    "^(.*)$": {
+     "minItems": 4,
+     "maxItems": 4,
+     "description": "[left, top, right, bottom] in px",
+     "type": "array",
+     "items": {
+      "type": "number"
+     }
+    }
+   }
+  },
+  "letters": {
+   "description": "the letter of each numbered note, by note id",
+   "type": "object",
+   "patternProperties": {
+    "^(.*)$": {
+     "pattern": "^[a-z]{1,2}$",
+     "type": "string"
+    }
+   }
+  },
+  "pills": {
+   "description": "house pills, by person id: centre [x, y]",
+   "type": "object",
+   "patternProperties": {
+    "^(.*)$": {
+     "minItems": 2,
+     "maxItems": 2,
+     "type": "array",
+     "items": {
+      "type": "number"
+     }
+    }
+   }
+  },
+  "headers": {
+   "description": "house headers, by person id",
+   "type": "object",
+   "patternProperties": {
+    "^(.*)$": {
+     "minItems": 4,
+     "maxItems": 4,
+     "description": "[left, top, right, bottom] in px",
+     "type": "array",
+     "items": {
+      "type": "number"
+     }
+    }
+   }
+  },
+  "crowns": {
+   "description": "crowns, by person id",
+   "type": "object",
+   "patternProperties": {
+    "^(.*)$": {
+     "minItems": 4,
+     "maxItems": 4,
+     "description": "[left, top, right, bottom] in px",
+     "type": "array",
+     "items": {
+      "type": "number"
+     }
+    }
+   }
+  },
+  "brackets": {
+   "description": "brackets, by their members joined with +: [x0, x1, y]",
+   "type": "object",
+   "patternProperties": {
+    "^(.*)$": {
+     "minItems": 3,
+     "maxItems": 3,
+     "type": "array",
+     "items": {
+      "type": "number"
+     }
+    }
+   }
+  },
+  "axis": {
+   "description": "the y of each era's year on the time axis, by year",
+   "type": "object",
+   "patternProperties": {
+    "^(.*)$": {
+     "type": "number"
+    }
+   }
+  },
+  "eraLabels": {
+   "description": "era labels, by year",
+   "type": "object",
+   "patternProperties": {
+    "^(.*)$": {
+     "minItems": 4,
+     "maxItems": 4,
+     "description": "[left, top, right, bottom] in px",
+     "type": "array",
+     "items": {
+      "type": "number"
+     }
+    }
+   }
+  }
+ }
+}

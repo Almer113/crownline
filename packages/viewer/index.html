@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Crownline</title>
+<meta name="description" content="A royal family tree as an interactive chart.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 32 32%27%3E%3Cpath d=%27M4 24 L6 10 L12 16 L16 6 L20 16 L26 10 L28 24 Z%27 fill=%27%23B08A2E%27/%3E%3Crect x=%274%27 y=%2725%27 width=%2724%27 height=%274%27 fill=%27%23B08A2E%27/%3E%3C/svg%3E">
+<style>
+  :root { --bg: #CFC8B4; --ink: #1F1F1F; --bar: #EDE8D8; }
+  html, body { margin: 0; height: 100%; background: var(--bg); color: var(--ink); font: 15px system-ui, sans-serif; }
+  body { display: flex; flex-direction: column; }
+  header { display: flex; align-items: baseline; gap: 12px; padding: 8px 16px; background: var(--bar);
+           border-bottom: 1px solid #D5CDB6; flex-wrap: wrap; }
+  header h1 { font-size: 17px; margin: 0; }
+  header .hint { color: #5F5A4C; font-size: 13px; }
+  crownline-viewer { flex: 1; min-height: 0; }
+</style>
+<script type="module" src="./src/main.ts"></script>
+</head>
+<body>
+<header>
+  <h1 id="chart-title">Crownline</h1>
+  <span class="hint">Drag to move · scroll or pinch to zoom · double-click a card to fly to it · shift-drag to zoom into a box · 0 shows the whole chart · / searches</span>
+</header>
+<crownline-viewer src="chart/chart.html" layout="chart/chart.layout.json"
+                  portraits="chart/portraits/"></crownline-viewer>
+</body>
+</html>

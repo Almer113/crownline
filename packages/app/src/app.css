@@ -1,0 +1,48 @@
+/* The app's library and view screens; the editor brings its own (packages/editor/src/style.css). */
+@import "@crownline/editor/base.css";
+
+.loading { padding: 40px; color: var(--muted); }
+
+/* the library */
+.library { max-width: 1040px; margin: 0 auto; padding: 40px 16px 60px; }
+.library header h1 { font-size: 28px; margin: 0; color: var(--accent); }
+.library .lead { color: var(--muted); font-size: 15px; margin: 6px 0 24px; }
+.library .note { max-width: 640px; margin: -12px 0 24px; font-size: 14px; }
+.edited { margin-top: 32px; max-width: 640px; }
+.edited h2 { font-size: 16px; margin: 0 0 6px; }
+.edited p { margin: 0 0 10px; overflow-wrap: anywhere; }
+.library .empty { color: var(--muted); }
+.cards { list-style: none; margin: 0; padding: 0; display: grid; gap: 16px; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); }
+.card { position: relative; background: #fff; border: 1px solid var(--line); border-radius: 8px; overflow: hidden; }
+.card:hover, .card:focus-within { border-color: var(--accent); }
+.card a.open { display: block; color: var(--ink); text-decoration: none; }
+.card a.open:focus-visible, .card a.edit:focus-visible { outline: 3px solid #2B6CB0; outline-offset: -3px; }
+.card .pic { aspect-ratio: 2 / 1; background: var(--chart); border-bottom: 1px solid var(--line); }
+.card .pic svg { display: block; width: 100%; height: 100%; padding: 8px; }
+.card .pic.none { background: repeating-linear-gradient(-45deg, var(--chart) 0 10px, #D8D2C0 10px 20px); }
+.card .text { display: grid; gap: 4px; padding: 12px 14px 14px; }
+.card strong { font-size: 17px; padding-right: 54px; }
+.card .sub { margin: 0; color: var(--muted); font-size: 13px; }
+.card .facts { margin: 0; font-size: 13px; }
+.card .swatches { display: flex; gap: 3px; flex-wrap: wrap; margin-top: 4px; }
+.card .swatches span { width: 14px; height: 14px; border-radius: 3px; border: 1px solid rgb(0 0 0 / .12); }
+.card a.edit { position: absolute; right: 10px; bottom: 12px; font-size: 13px; color: var(--accent); text-decoration: none;
+               border: 1px solid var(--line); border-radius: 4px; padding: 2px 10px; background: #fff; }
+.card a.edit:hover { border-color: var(--accent); }
+.library .actions { margin: 20px 0 0; }
+.folders { margin-top: 40px; padding-top: 20px; border-top: 1px solid var(--line); max-width: 640px; }
+.folders h2 { font-size: 16px; margin: 0 0 6px; }
+.folders p { margin: 0; }
+.folders small { display: block; margin-top: 8px; }
+
+/* the view */
+.view { height: 100%; display: flex; flex-direction: column; }
+.view .bar { display: flex; gap: 12px; align-items: center; padding: 6px 12px; background: var(--panel);
+             border-bottom: 1px solid var(--line); flex-wrap: wrap; }
+.view .bar h1 { font-size: 17px; margin: 0; }
+.view .bar .home { font-weight: 700; color: var(--accent); border: 0; background: none; padding: 4px 2px; }
+.view .bar .status { margin-left: auto; color: var(--error); font-size: 13px; }
+.view .bar .status:empty { margin-left: auto; }
+.view crownline-viewer { flex: 1; min-height: 0; }
+@media (max-width: 700px) { .view .bar .hint { display: none; } }
+.card .id { font-size: 12px; color: var(--muted); }

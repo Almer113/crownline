@@ -1,0 +1,120 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><title>Shared</title><style>
+@font-face { font-family: 'AHG'; src: url('assets/fonts/open/Gantari-Regular.ttf'); font-weight: 400; }
+@font-face { font-family: 'AHG'; src: url('assets/fonts/open/Gantari-Bold.ttf'); font-weight: 700; }
+@font-face { font-family: 'Chancery'; src: url('assets/fonts/open/Felipa-Regular.ttf'); }
+@page { size: 1460px 1309px; margin: 0; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html, body { background: #EDE8D8; }
+body { width: 1460px; height: 1309px; font-family: 'AHG', Helvetica, Arial, sans-serif; color: #1F1F1F;
+  -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+#chart { position: relative; width: 1460px; height: 1309px; overflow: hidden; background: #EDE8D8; }
+svg.layer { position: absolute; left: 0; top: 0; }
+svg.layer path.ln { fill: none; stroke-width: 4.5; stroke-linejoin: round; stroke-linecap: butt; }
+.halo { paint-order: stroke; stroke-width: 7px; stroke-linejoin: round; }
+.pill { font: 700 17px 'AHG'; text-anchor: middle; fill: #1F1F1F; letter-spacing: .3px; }
+.yr { font: 400 17px 'AHG'; fill: #857D68; }
+.yrc { font: 700 19px 'AHG'; fill: #857D68; }
+.yre { font: 700 19px 'AHG'; fill: #5E5848; }
+.tick { stroke: #857D68; stroke-width: 1.5; }
+.era { stroke: #D2CAB4; stroke-width: 5; stroke-dasharray: 18 10; }
+.eralab { font: 700 30px 'AHG'; fill: #9A9078; letter-spacing: 6px; }
+.epi { font: 700 17px 'AHG'; fill: #5E5848; letter-spacing: 1.5px; }
+.cap { font: 700 13px 'AHG'; fill: #5E5848; letter-spacing: 1.2px; }
+.brkt { fill: none; stroke: #5E5848; stroke-width: 1.8; }
+.brktx { font: 700 14px 'AHG'; fill: #5E5848; text-anchor: middle; letter-spacing: 1.2px; }
+.ruler { position: absolute; display: flex; height: 88px; }
+.ruler .pic { width: 88px; height: 88px; overflow: hidden; background: #DDD8C9; border-radius: 9px 0 0 9px; }
+.ruler .pic img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.lab { position: relative; height: 88px; border-radius: 0 9px 9px 0; display: flex; flex-direction: column; justify-content: center;
+  align-items: center; text-align: center; }
+.hatched { text-shadow: 0 0 3px #FFFFFF, 0 0 3px #FFFFFF, 0 0 5px rgba(255,255,255,.8); }
+.t { font-weight: 700; font-size: 14px; letter-spacing: .4px; line-height: 1.1; }
+.n { font-weight: 700; font-size: 21px; line-height: 1.12; margin-top: 2px; white-space: nowrap; }
+.s { font-size: 15px; line-height: 1.2; margin-top: 3px; white-space: nowrap; }
+.tag { position: absolute; right: -10px; top: -26px; font-weight: 700; font-size: 14px; letter-spacing: 1px;
+  text-transform: uppercase; color: #5E5848; background: #EDE8D8; border: 1.5px solid #5E5848; padding: 1px 6px;
+  text-shadow: none; }
+.minor, .txt, .neutral { position: absolute; display: flex; flex-direction: column; justify-content: center;
+  align-items: center; text-align: center; }
+.n2 { font-weight: 700; font-size: 17px; line-height: 1.15; white-space: nowrap; }
+.s2 { font-size: 14px; line-height: 1.2; margin-top: 1px; white-space: nowrap; }
+.txt { text-shadow: 0 0 3px #EDE8D8, 0 0 3px #EDE8D8, 0 0 6px #EDE8D8, 0 0 6px #EDE8D8; }
+.neutral { background: #D5D1C3; }
+.minor, .neutral { border-radius: 7px; }
+.legendbox { position: absolute; display: flex; flex-direction: column; justify-content: center; align-items: center;
+  text-align: center; border: 2.5px dashed; border-radius: 7px; background: rgba(255,255,255,.25); color: #5E5848; }
+.legendbox .n2 { font-style: italic; }
+.hist { stroke: #5E5848; stroke-width: 2.5; }
+.histh { font: 700 14px 'AHG'; fill: #1F1F1F; letter-spacing: 1.3px; }
+.histt { font: 400 15px 'AHG'; fill: #3A372F; }
+.npic { border-radius: 7px 0 0 7px; }
+.npic { position: absolute; object-fit: cover; }
+.note { position: absolute; font-size: 17px; line-height: 1.3; color: #3A372F;
+  text-shadow: 0 0 3px #EAE4D3, 0 0 3px #EAE4D3, 0 0 5px #EAE4D3, 0 0 5px #EAE4D3; }
+.note b { color: #1F1F1F; }
+.hhead { position: absolute; display: flex; align-items: center; gap: 16px; }
+.hhead img { height: 74px; width: 90px; object-fit: contain; flex: none; }
+.hhead .hname { font-size: 48.4px; line-height: 1.05; margin-top: 0; }
+.hhead .facts { font-size: 14.5px; line-height: 1.3; margin-top: 2px; white-space: nowrap; }
+.crown { position: absolute; display: flex; align-items: center; justify-content: center; gap: 5px;
+  font: 700 18px 'AHG'; color: #5A4520; }
+.crown svg { display: block; }
+.marker { position: absolute; min-width: 26px; padding: 0 4px; height: 26px; border-radius: 13px; border: 2px solid; color: #1F1F1F;
+  font: italic 700 15px/22px 'AHG'; text-align: center; box-shadow: 0 0 0 2.5px #EDE8D8; }
+.event { font: 700 14px 'AHG'; fill: #1F1F1F; letter-spacing: 1.3px; }
+.fnotes { position: absolute; font-size: 15px; line-height: 1.35; color: #3A372F; }
+.fnotes ol { list-style: none; columns: 2; column-gap: 46px; }
+.fnotes li { break-inside: avoid; margin-bottom: 7px; }
+.fnotes li .no { display: inline-block; min-width: 22px; height: 22px; border-radius: 11px; border: 2px solid;
+  color: #1F1F1F; font-size: 13px; font-weight: 700; font-style: italic; line-height: 18px; text-align: center;
+  margin-right: 6px; }
+.jawa { font-family: 'Jawa', serif; font-size: 40px; color: #5E5848; margin-top: 4px; line-height: 1.2; margin-bottom: 26px; }
+.kind { font-weight: 700; font-size: 14px; letter-spacing: 1.4px; text-transform: uppercase; }
+.hname { font-family: 'Chancery', serif; font-size: 55.7px; line-height: 1.15; margin-top: 2px; }
+.facts { font-size: 15px; line-height: 1.35; margin-top: 4px; }
+.header { position: absolute; background: #EFEBDD; border: 1px solid #CFC8B3; padding: 24px 28px; }
+.hrow { display: flex; gap: 40px; }
+.title { width: 1250px; flex: none; }
+.title h1 { font-weight: 700; font-size: 150px; line-height: .95; letter-spacing: -3px; }
+.title h2 { font-weight: 400; font-size: 36px; line-height: 1.2; margin-top: 22px; }
+.title p { font-size: 19px; line-height: 1.45; margin-top: 22px; color: #3A372F; }
+.gloss { font-size: 16px; margin-top: 26px; }
+.gh { font-weight: 700; font-size: 15px; letter-spacing: 1.4px; text-transform: uppercase; margin-bottom: 10px; }
+.gcols { display: flex; gap: 40px; align-items: flex-start; }
+.gloss td { padding: 2px 18px 2px 0; line-height: 1.25; white-space: nowrap; }
+.gloss td.ab { font-weight: 700; }
+.gloss td.en { font-style: italic; }
+.gloss td.full { color: #5E5848; font-size: 14px; white-space: normal; max-width: 240px; }
+.gloss td.gg { font-weight: 700; font-size: 13px; letter-spacing: 1.2px; text-transform: uppercase; color: #5E5848;
+  padding-top: 6px; }
+.key { font-size: 16px; }
+.kcols { display: flex; gap: 40px; }
+.kev { display: inline-block; width: 74px; font: 700 10.5px 'AHG'; letter-spacing: .6px; white-space: nowrap; }
+.kcrown { display: inline-flex; align-items: center; gap: 4px; width: 74px; font: 700 15px 'AHG'; color: #5A4520; }
+.kmark { display: inline-block; width: 26px; height: 26px; margin: 0 24px; border-radius: 13px; border: 2px solid;
+  font: italic 700 15px/22px 'AHG'; text-align: center; }
+.krow { display: flex; align-items: center; gap: 14px; height: 32px; white-space: nowrap; }
+.kbox { display: inline-block; width: 74px; overflow: hidden; flex: none; }
+.kstripe { height: 22px; width: 54px; background: repeating-linear-gradient(135deg, #DCD5BF 0 5px, #EDE8D8 5px 15px); }
+.ktext { display: inline-block; width: 74px; text-align: center; font-weight: 700; }
+.ktag { display: inline-block; width: 74px; text-align: center; font-weight: 700; font-size: 13px;
+  letter-spacing: .5px; text-transform: uppercase; color: #5E5848; border: 1.5px solid #5E5848; padding: 1px 0; }
+.kpill { font: 700 12px 'AHG'; text-anchor: middle; fill: #1F1F1F; letter-spacing: .5px; }
+.houses { display: flex; flex-wrap: wrap; gap: 8px 22px; margin-top: 10px; }
+.hk { display: flex; align-items: center; gap: 8px; font-weight: 700; }
+.hk span { width: 22px; height: 22px; display: inline-block; }
+.kbg { display: flex; align-items: center; gap: 12px; margin-top: 10px; white-space: nowrap; }
+.kbg svg, .kbg .kbox { margin-left: 12px; }
+.kn { font-size: 15px; color: #5E5848; margin-top: 8px; line-height: 1.35; width: 830px; }
+.header.top .hrow { gap: 70px; }
+.header.top .gloss { margin-top: 0; }
+.header.top .gcols { flex-direction: column; gap: 6px; }
+.header.top .succ { margin-top: 0; flex: 1 1 0; min-width: 0; }
+.footer { position: absolute; display: flex; align-items: center; gap: 26px; }
+.footer img.fm { height: 120px; }
+.footer img.cc { height: 36px; }
+.sources, .caveats { position: absolute; font-size: 15px; line-height: 1.45; color: #3A372F; }
+.caveats { columns: 2; column-gap: 50px; }
+.caveats div { break-inside: avoid; margin-bottom: 3px; }
+
+</style></head><body><div id="chart"><svg class="layer" width="1460" height="1309"><defs><pattern id="stripes" width="22" height="22" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="7" height="22" fill="#DCD5BF" opacity=".5"/></pattern><pattern id="hatchpill" width="12" height="12" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="12" height="12" fill="#FFFFFF"/><rect width="5" height="12" fill="#F0D594"/></pattern></defs><rect x="0" y="1130.0" width="1460" height="230.0" fill="#E6E0CD"/><rect x="0" y="1590.0" width="1460" height="230.0" fill="#E6E0CD"/><rect x="0" y="2050.0" width="1460" height="230.0" fill="#E6E0CD"/><text x="104" y="745.0" class="yrc" text-anchor="end">1700</text><text x="1356" y="745.0" class="yrc">1700</text><line x1="112" y1="740.0" x2="120" y2="740.0" class="tick"/><line x1="1340" y1="740.0" x2="1348" y2="740.0" class="tick"/><text x="104" y="1135.0" class="yr" text-anchor="end">1750</text><text x="1356" y="1135.0" class="yr">1750</text><line x1="112" y1="1130.0" x2="120" y2="1130.0" class="tick"/><line x1="1340" y1="1130.0" x2="1348" y2="1130.0" class="tick"/><text x="104" y="1365.0" class="yrc" text-anchor="end">1800</text><text x="1356" y="1365.0" class="yrc">1800</text><line x1="112" y1="1360.0" x2="120" y2="1360.0" class="tick"/><line x1="1340" y1="1360.0" x2="1348" y2="1360.0" class="tick"/><text x="104" y="1595.0" class="yr" text-anchor="end">1850</text><text x="1356" y="1595.0" class="yr">1850</text><line x1="112" y1="1590.0" x2="120" y2="1590.0" class="tick"/><line x1="1340" y1="1590.0" x2="1348" y2="1590.0" class="tick"/><text x="104" y="1825.0" class="yrc" text-anchor="end">1900</text><text x="1356" y="1825.0" class="yrc">1900</text><line x1="112" y1="1820.0" x2="120" y2="1820.0" class="tick"/><line x1="1340" y1="1820.0" x2="1348" y2="1820.0" class="tick"/><text x="104" y="2055.0" class="yr" text-anchor="end">1950</text><text x="1356" y="2055.0" class="yr">1950</text><line x1="112" y1="2050.0" x2="120" y2="2050.0" class="tick"/><line x1="1340" y1="2050.0" x2="1348" y2="2050.0" class="tick"/><text x="104" y="2285.0" class="yrc" text-anchor="end">2000</text><text x="1356" y="2285.0" class="yrc">2000</text><line x1="112" y1="2280.0" x2="120" y2="2280.0" class="tick"/><line x1="1340" y1="2280.0" x2="1348" y2="2280.0" class="tick"/><text x="1326.0" y="782.0" class="eralab halo" text-anchor="end" style="stroke:#EDE8D8">THE FIRST AGE</text><line x1="120" y1="938.7" x2="1340" y2="938.7" class="era"/><text x="104" y="943.7" class="yre" text-anchor="end">1720</text><text x="1356" y="943.7" class="yre">1720</text><text x="1326.0" y="980.7" class="eralab halo" text-anchor="end" style="stroke:#EDE8D8">THE SECOND AGE</text></svg><svg class="layer" width="1460" height="1309"><path class="ln" data-owner="d1" d="M444.0,815.0 L611.6,815.0 Q625.6,815.0 625.6,829.0 L625.6,1007.0" stroke="#E3B23C" stroke-dasharray="4.5 5.5"/><path class="ln" data-owner="d0" d="M355.0,784.0 L355.0,815.0" stroke="#E3B23C"/><path class="ln" data-owner="d0" d="M355.0,815.0 L280.0,815.0 Q266.0,815.0 266.0,829.0 L266.0,1007.0" stroke="#E3B23C"/><path class="ln" data-owner="d0" d="M355.0,815.0 L430.0,815.0 Q444.0,815.0 444.0,829.0 L444.0,1007.0" stroke="#E3B23C"/></svg><div class="header top" style="left:140px;top:130.0px;width:1180px;height:420px"><div class="hrow"><div class="title"><h1>Shared</h1><div class="jawa"></div><h2></h2><p>Two lines from one parent: the second shares the first one's level (shareBus).</p></div><div class="key"><div class="gh">Key</div><div class="kcols"><div><div class="krow"><svg width="74" height="16"><line x1="2" y1="8" x2="72" y2="8" stroke="#E3B23C" stroke-width="4.5"/></svg><span>Father to son</span></div><div class="krow"><svg width="74" height="16"><line x1="2" y1="8" x2="72" y2="8" stroke="#E3B23C" stroke-width="4.5" stroke-dasharray="4.5 5.5"/></svg><span>Through a daughter, or by marriage</span></div></div><div><div class="krow"><span class="kbox" style="background:#E3B23C;height:22px;"></span><span>Ruler</span></div><div class="krow"><span class="kbox" style="background:#E3B23C;height:16px;width:52px;margin:0 11px"></span><span>Royal family member who did not reign</span></div><div class="krow"><span class="kbox" style="width:30px;height:30px;margin-left:22px;margin-right:22px"><svg viewBox="0 0 88 88" width="100%" height="100%"><rect width="88" height="88" fill="#DDD8C9"/><circle cx="44" cy="34" r="16" fill="#B8B2A2"/><path d="M14 88 C14 64 28 56 44 56 C60 56 74 64 74 88 Z" fill="#B8B2A2"/></svg></span><span>No known portrait</span></div><div class="krow"><span class="kcrown"><svg width="26" height="19" viewBox="0 0 22 16"><path d="M2 14 L1 3 L6.5 8 L11 1 L15.5 8 L21 3 L20 14 Z" fill="#E3B23C" stroke="#7A5A1E" stroke-width="1.2" stroke-linejoin="round"/></svg><b>2 · 4</b></span><span>Order of reign (one number per reign)</span></div></div></div><div class="houses"><div class="hk"><span style="background:#E3B23C"></span>Alpha</div><div class="hk"><span style="background:#7FA7DB"></span>Beta</div></div><div class="kbg"><span class="kbox" style="background:#E6E0CD;height:22px;width:54px;border:1px solid #D8D1BC"></span>Half-century band<svg width="60" height="12"><line x1="0" y1="6" x2="60" y2="6" class="era"/></svg>Start of an era</div><div class="kn">People are placed near the year they began to reign; half-century bands stretch where many reigns fall close together.</div></div><div class="gloss"><div class="gh">Titles and honorifics</div><div class="gcols"><table><tr><td colspan="3" class="gg">Titles</td></tr><tr><td class="ab">King</td><td class="en">the ruler of a house</td><td class="full"></td></tr><tr><td class="ab">Prince</td><td class="en">a king&#x27;s son, or the ruler of a junior house</td><td class="full"></td></tr></table></div></div></div></div><div data-id="king"><div class="ruler" style="left:160.0px;top:696.0px"><div class="pic"><svg viewBox="0 0 88 88" width="100%" height="100%"><rect width="88" height="88" fill="#DDD8C9"/><circle cx="44" cy="34" r="16" fill="#B8B2A2"/><path d="M14 88 C14 64 28 56 44 56 C60 56 74 64 74 88 Z" fill="#B8B2A2"/></svg></div><div class="lab" style="width:214.0px;background:#E3B23C"><div class="t">KING</div><div class="n">Aryan</div><div class="s">r. 1700 – 1730</div></div></div></div><div data-id="a"><div class="minor" style="left:201.0px;top:1007.0px;width:130.0px;height:62px;background:#E3B23C"><div class="n2">Prince Bayu</div><div class="s2">1702 – 1760</div></div></div><div data-id="b"><div class="minor" style="left:375.0px;top:1007.0px;width:138.1px;height:62px;background:#E3B23C"><div class="n2">Prince Candra</div><div class="s2">1704 – 1765</div></div></div><div data-id="c"><div class="minor" style="left:557.1px;top:1007.0px;width:137.0px;height:62px;background:#E3B23C"><div class="n2">Princess Dewi</div><div class="s2">1706 – 1770</div></div></div><div class="crown" data-for="king" style="left:184.9px;top:665.0px;background:#EDE8D8"><svg width="26" height="19" viewBox="0 0 22 16"><path d="M2 14 L1 3 L6.5 8 L11 1 L15.5 8 L21 3 L20 14 Z" fill="#E3B23C" stroke="#7A5A1E" stroke-width="1.2" stroke-linejoin="round"/></svg><span>1</span></div><div class="caveats" style="left:160px;top:1139px;width:492px"></div><div class="sources" style="left:712px;top:1139px;width:208px"><b>Information as of November 2026.</b></div><div class="footer" style="right:160px;top:1139px"></div></div></body></html>

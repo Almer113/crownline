@@ -1,0 +1,158 @@
+{
+  "$schema": "../../../../schema/chart.schema.json",
+  "format": 1,
+  "meta": {
+    "id": "test-break",
+    "title": "Gaps",
+    "asOf": {
+      "edtf": "2026-11",
+      "text": "November 2026"
+    },
+    "languages": [
+      "en"
+    ],
+    "defaultLang": "en",
+    "assetRoot": "../../../../.."
+  },
+  "people": {
+    "king": {
+      "name": "Aryan",
+      "title": "King",
+      "house": "alpha",
+      "reigns": [
+        {
+          "court": "alpha",
+          "n": 1
+        }
+      ],
+      "show": {
+        "box": "ruler",
+        "year": 1700,
+        "sub": "r. 1700 – 1740"
+      }
+    },
+    "grandson": {
+      "name": "Bima",
+      "title": "King",
+      "house": "alpha",
+      "reigns": [
+        {
+          "court": "alpha",
+          "n": 2
+        }
+      ],
+      "show": {
+        "box": "ruler",
+        "year": 1760,
+        "sub": "r. 1760 – 1790"
+      }
+    },
+    "poet": {
+      "name": "Candra the Poet",
+      "show": {
+        "box": "neutral",
+        "year": 1735,
+        "sub": "1710 – 1772"
+      }
+    }
+  },
+  "unions": {},
+  "descents": {
+    "d_king_grandson": {
+      "parent": "king",
+      "child": "grandson",
+      "generations": 2,
+      "show": {
+        "break": "grandson"
+      }
+    },
+    "d_king_poet": {
+      "parent": "king",
+      "child": "poet",
+      "kind": "other",
+      "show": {
+        "caption": "court poet",
+        "line": "grey"
+      }
+    }
+  },
+  "houses": {
+    "alpha": {
+      "name": "Alpha",
+      "colour": "#E3B23C"
+    },
+    "beta": {
+      "name": "Beta",
+      "colour": "#7FA7DB"
+    }
+  },
+  "glossary": {
+    "t_king": {
+      "group": "Titles",
+      "term": "King",
+      "gloss": "the ruler of a house"
+    },
+    "t_prince": {
+      "group": "Titles",
+      "term": "Prince",
+      "gloss": "a king's son, or the ruler of a junior house"
+    }
+  },
+  "timeline": {
+    "eras": [
+      {
+        "year": 1700,
+        "name": "The first age"
+      },
+      {
+        "year": 1760,
+        "name": "The second age"
+      }
+    ],
+    "episodes": []
+  },
+  "panels": {
+    "header": {
+      "x": 140,
+      "y": 130,
+      "width": 1200,
+      "height": 420,
+      "arrange": "top"
+    },
+    "intro": "A grandson drawn directly (the break mark) and a son-in-law (a captioned link)."
+  },
+  "theme": {
+    "palette": {
+      "background": "#EDE8D8",
+      "band": "#E6E0CD",
+      "ink": "#1F1F1F",
+      "noteInk": "#3A372F",
+      "muted": "#5E5848",
+      "faint": "#857D68",
+      "neutral": "#D5D1C3",
+      "greyLine": "#C2BBA8"
+    },
+    "type": {
+      "title": 14,
+      "name": 21,
+      "reign": 15,
+      "name2": 17,
+      "sub2": 14,
+      "note": 17,
+      "cap": 15,
+      "small": 14
+    },
+    "fonts": {
+      "sans": "gantari",
+      "script": "felipa"
+    }
+  },
+  "adjustments": {
+    "break_grandson": {
+      "kind": "breakAt",
+      "target": "d_king_grandson",
+      "at": 0.6,
+      "reason": "the mark below the era line"
+    }
+  }
+}

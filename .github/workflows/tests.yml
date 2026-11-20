@@ -1,0 +1,32 @@
+name: tests
+on: [push, pull_request]
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+      - run: pip install -r requirements-dev.txt
+      - run: ruff check .
+      - run: python -m pytest -rs
+      - run: python tools/engine_fixtures.py --check   # the TypeScript tests compare against up-to-date Python output
+  viewer:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+          cache: npm
+      - run: npm ci
+      - run: npm run check
+      - run: npm run test:schema
+      - run: npm run test:port
+      - run: npm run test:cli
+      - run: npm test -w @crownline/ops
+      - run: npm run build:chart -- --public
+      - run: npm run typecheck
+      - run: npm run build
+      - run: npm run build:app

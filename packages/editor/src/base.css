@@ -1,0 +1,29 @@
+/* What the app and the editor share: the colours, controls and dialogs. */
+:root { --bg: #F4F1E8; --panel: #FBFAF6; --ink: #1F1F1F; --muted: #5F5A4C; --line: #D5CDB6; --accent: #7A4B12;
+        --error: #A3261B; --warning: #8A6100; --chart: #CFC8B4; }
+* { box-sizing: border-box; }
+html, body { margin: 0; height: 100%; background: var(--bg); color: var(--ink); font: 14px system-ui, sans-serif; }
+#app { height: 100%; }
+button, input, select, textarea { font: inherit; }
+button { border: 1px solid var(--line); background: #fff; border-radius: 4px; padding: 4px 10px; cursor: pointer; color: var(--ink); }
+button:hover:not(:disabled) { border-color: var(--accent); }
+button:disabled { opacity: .5; cursor: default; }
+button.primary { background: var(--accent); color: #fff; border-color: var(--accent); }
+button.danger { color: var(--error); }
+button.primary.danger { background: var(--error); color: #fff; border-color: var(--error); }
+input[type=text], input[type=search], input[type=number], select, textarea {
+  width: 100%; border: 1px solid var(--line); border-radius: 4px; padding: 4px 6px; background: #fff; color: var(--ink); }
+.row { display: flex; gap: 6px; align-items: center; }
+.row.wrap { flex-wrap: wrap; margin-top: 10px; }
+.row.end { justify-content: flex-end; margin-top: 14px; }
+.hint, small { color: var(--muted); font-size: 12px; }
+dialog.ask { border: 1px solid var(--line); border-radius: 8px; padding: 16px 18px; min-width: 340px; max-width: 520px; }
+dialog.ask h3 { margin: 0 0 10px; }
+dialog.ask label { display: grid; gap: 4px; margin: 8px 0; }
+dialog.ask .choices { display: grid; gap: 6px; }
+dialog.ask .choices button { text-align: left; }
+dialog::backdrop { background: rgb(0 0 0 / .25); }
+dialog.ask label.radio, dialog.ask label.check { display: flex; gap: 8px; align-items: center; margin: 4px 0; }
+dialog.ask label.check { margin: 12px 0 4px; }
+dialog.ask.wide { max-width: 980px; }
+dialog.ask figure { margin: 0; text-align: center; font-size: 12px; color: var(--muted); }

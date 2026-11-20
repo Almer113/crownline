@@ -1,0 +1,10 @@
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 120
+extend-exclude = ["archive", ".scratch"]
+
+[tool.ruff.lint]
+# real errors only (undefined names, unused imports, syntax); the code is not run through a formatter
+select = ["F", "E9"]

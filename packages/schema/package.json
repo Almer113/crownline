@@ -1,0 +1,29 @@
+{
+  "name": "@crownline/schema",
+  "version": "0.1.0",
+  "private": true,
+  "license": "MIT",
+  "description": "The Crownline chart document: schema, checks and migrations",
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "bin": {
+    "crownline-check": "./src/cli.ts"
+  },
+  "scripts": {
+    "check": "tsx src/cli.ts check",
+    "emit": "tsx src/cli.ts emit",
+    "test": "node --import tsx --test tests/*.test.ts",
+    "typecheck": "tsc --noEmit -p ."
+  },
+  "devDependencies": {
+    "@types/node": "^22.20.5",
+    "tsx": "^4.23.15",
+    "typescript": "^5.9.3"
+  },
+  "dependencies": {
+    "@sinclair/typebox": "^0.34.52",
+    "ajv": "^8.20.0"
+  }
+}

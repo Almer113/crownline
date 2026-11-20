@@ -1,0 +1,232 @@
+{
+  "$schema": "../../../../schema/chart.schema.json",
+  "format": 1,
+  "meta": {
+    "id": "test-houses",
+    "title": "Houses",
+    "asOf": {
+      "edtf": "2026-11",
+      "text": "November 2026"
+    },
+    "languages": [
+      "en"
+    ],
+    "defaultLang": "en",
+    "assetRoot": "../../../../.."
+  },
+  "people": {
+    "king": {
+      "name": "Aryan",
+      "title": "King",
+      "house": "alpha",
+      "reigns": [
+        {
+          "court": "alpha",
+          "n": 1
+        }
+      ],
+      "show": {
+        "box": "ruler",
+        "year": 1700,
+        "sub": "r. 1700 – 1730"
+      }
+    },
+    "heir": {
+      "name": "Bayu",
+      "title": "King",
+      "house": "alpha",
+      "reigns": [
+        {
+          "court": "alpha",
+          "n": 2
+        }
+      ],
+      "show": {
+        "box": "ruler",
+        "year": 1730,
+        "sub": "r. 1730 – 1760"
+      }
+    },
+    "founder": {
+      "name": "Cakra",
+      "title": "Prince",
+      "house": "beta",
+      "reigns": [
+        {
+          "court": "beta",
+          "n": 1
+        }
+      ],
+      "show": {
+        "box": "ruler",
+        "year": 1735,
+        "sub": "r. 1735 – 1770"
+      }
+    },
+    "beta2": {
+      "name": "Dharma",
+      "title": "Prince",
+      "house": "beta",
+      "reigns": [
+        {
+          "court": "beta",
+          "n": 2
+        }
+      ],
+      "show": {
+        "box": "ruler",
+        "year": 1770,
+        "sub": "r. 1770 – 1800"
+      }
+    },
+    "heir2": {
+      "name": "Eko",
+      "title": "King",
+      "house": "alpha",
+      "reigns": [
+        {
+          "court": "alpha",
+          "n": 3
+        }
+      ],
+      "show": {
+        "box": "ruler",
+        "year": 1760,
+        "sub": "r. 1760 – 1795"
+      }
+    },
+    "girl": {
+      "name": "Princess Fitri",
+      "house": "alpha",
+      "show": {
+        "box": "minor",
+        "year": 1764,
+        "sub": "1745 – 1800"
+      }
+    }
+  },
+  "unions": {},
+  "descents": {
+    "d_king_heir": {
+      "parent": "king",
+      "child": "heir"
+    },
+    "d_king_founder": {
+      "parent": "king",
+      "child": "founder"
+    },
+    "d_founder_beta2": {
+      "parent": "founder",
+      "child": "beta2"
+    },
+    "d_heir_heir2": {
+      "parent": "heir",
+      "child": "heir2"
+    },
+    "d_heir_girl": {
+      "parent": "heir",
+      "child": "girl"
+    },
+    "d_founder_girl": {
+      "parent": "founder",
+      "child": "girl",
+      "kind": "adoptive",
+      "show": {
+        "hop": true,
+        "line": "adopt"
+      }
+    }
+  },
+  "houses": {
+    "alpha": {
+      "name": "Alpha",
+      "colour": "#E3B23C"
+    },
+    "beta": {
+      "name": "Beta",
+      "colour": "#7FA7DB"
+    }
+  },
+  "glossary": {
+    "t_king": {
+      "group": "Titles",
+      "term": "King",
+      "gloss": "the ruler of a house"
+    },
+    "t_prince": {
+      "group": "Titles",
+      "term": "Prince",
+      "gloss": "a king's son, or the ruler of a junior house"
+    }
+  },
+  "timeline": {
+    "eras": [
+      {
+        "year": 1700,
+        "name": "The first age"
+      },
+      {
+        "year": 1750,
+        "name": "The second age"
+      }
+    ],
+    "episodes": []
+  },
+  "panels": {
+    "header": {
+      "x": 140,
+      "y": 130,
+      "width": 1200,
+      "height": 420,
+      "arrange": "top"
+    },
+    "intro": "A younger son founds the house of Beta (its pill and header); an adoption line (long dashes) crosses over to a daughter of Alpha."
+  },
+  "theme": {
+    "palette": {
+      "background": "#EDE8D8",
+      "band": "#E6E0CD",
+      "ink": "#1F1F1F",
+      "noteInk": "#3A372F",
+      "muted": "#5E5848",
+      "faint": "#857D68",
+      "neutral": "#D5D1C3",
+      "greyLine": "#C2BBA8"
+    },
+    "type": {
+      "title": 14,
+      "name": 21,
+      "reign": 15,
+      "name2": 17,
+      "sub2": 14,
+      "note": 17,
+      "cap": 15,
+      "small": 14
+    },
+    "fonts": {
+      "sans": "gantari",
+      "script": "felipa"
+    }
+  },
+  "display": {
+    "pills": {
+      "king": {
+        "label": "ALPHA",
+        "house": "alpha"
+      },
+      "founder": {
+        "label": "BETA",
+        "house": "beta"
+      }
+    },
+    "headers": {
+      "founder": {
+        "kind": "Principality",
+        "name": "Beta",
+        "years": "1735 – 1800",
+        "seat": "Barat",
+        "founded": "1735"
+      }
+    }
+  }
+}

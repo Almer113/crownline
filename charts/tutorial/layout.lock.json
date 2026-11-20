@@ -1,0 +1,61 @@
+{
+"$schema": "../../packages/schema/lock.schema.json",
+"format": 1,
+"chart": "tutorial",
+"canvas": [2289, 1660],
+"errors": 0,
+"warnings": [],
+"boxes": {
+ "aldric_the_elder": [1448.1, 139.0, 1600.8, 201.0],
+ "edmund_ii": [1266.0, 454.0, 1568.0, 542.0],
+ "edric_the_founder": [1329.5, 286.0, 1631.5, 374.0],
+ "lady_ceinwen": [1614.0, 477.0, 1738.2, 519.0],
+ "lord_osric": [1959.8, 460.0, 2109.8, 536.0],
+ "prince_edwin": [1396.0, 622.0, 1698.0, 710.0],
+ "princess_alys": [1782.2, 467.0, 1913.8, 529.0],
+ "queen_maud": [1677.5, 309.0, 1794.0, 351.0],
+ "rowena": [1871.8, 616.0, 2001.8, 678.0]
+},
+"drops": {
+ "edmund_ii": [1461.0, 388.0],
+ "edric_the_founder": [1524.5, 201.0],
+ "prince_edwin": [1591.0, 498.0],
+ "princess_alys": [1848.0, 388.0],
+ "rowena": [1936.8, 498.0]
+},
+"lines": {
+ "d_aldric_the_elder_edric_the_founder": [],
+ "d_edmund_ii_prince_edwin": [],
+ "d_edric_the_founder_edmund_ii": [388.0],
+ "d_princess_alys_rowena": [],
+ "u_edmund_ii_lady_ceinwen": [498.0],
+ "u_edric_the_founder_queen_maud": [330.0],
+ "u_princess_alys_lord_osric": [498.0]
+},
+"notes": {
+ "n_edmund_ii": [1000.0, 454.0, 1240.0, 520.3]
+},
+"letters": {
+
+},
+"pills": {
+
+},
+"headers": {
+
+},
+"crowns": {
+
+},
+"brackets": {
+
+},
+"axis": {
+ "1600": 330.0,
+ "1650": 662.0
+},
+"eraLabels": {
+ "1600": [984.0, 344.0, 1278.4, 378.0],
+ "1650": [984.0, 676.0, 1315.1, 710.0]
+}
+}
