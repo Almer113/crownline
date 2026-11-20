@@ -44,6 +44,8 @@ docs/AI.md
 docs/AI_GUIDE.md
 docs/HOW_IT_WORKS.md
 docs/ASSET_AUDIT.md
+# the Crownline wordmark the README shows (light and dark)
+docs/images/
 # not docs/PLAN.md, docs/PROGRESS.md, docs/research/, docs/review/ or prototypes/: the working records stay here
 
 # the Python reference engine, its tests and the tools

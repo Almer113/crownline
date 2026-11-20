@@ -1,4 +1,4 @@
-# Crownline
+<h1><picture><source media="(prefers-color-scheme: dark)" srcset="docs/images/wordmark-dark.svg"><img src="docs/images/wordmark.svg" alt="Crownline" height="64"></picture></h1>
 
 Crownline makes large royal family-tree charts. Cards for people sit on a time axis, lines run from parents to children and marriage lines join couples, coloured by house, with notes, eras and a header card holding the title, key and glossary. A chart is one JSON document. Crownline lays it out, routes the lines, checks for collisions, and gives a print-size PNG and PDF and an interactive viewer for the web. You edit it in the browser, by hand in the file, or through a language model.
 
@@ -43,6 +43,7 @@ npm run crownline -- help                                  # the tools for langu
 | [ASSET_AUDIT.md](docs/ASSET_AUDIT.md) | Which fonts, portraits and marks may be published |
 | [CONTRIBUTING.md](CONTRIBUTING.md) | Corrections, new charts and code: the rules and the checks |
 | [CHANGELOG.md](CHANGELOG.md) | What changed in each release |
+
 
 ## The pieces
 
@@ -95,6 +96,7 @@ The charts use open fonts, kept in `assets/fonts/open/` with their SIL Open Font
 - Noto Sans Javanese for the aksara Jawa title;
 - Noto Sans JP, cut to the characters used, for the Tokugawa chart's Japanese title.
 
+
 A chart picks its fonts in `theme.fonts`. A public build (`--public`) and the demo site refuse the proprietary ones. A different main font changes the widths of the cards, so the layout re-flows: run the layout check afterwards.
 
 ## Licence
@@ -102,4 +104,5 @@ A chart picks its fonts in `theme.fonts`. A public build (`--public`) and the de
 - **Code:** MIT, see [LICENSE](LICENSE).
 - **Charts and data:** CC BY-SA 4.0, see [LICENSE-CONTENT.md](LICENSE-CONTENT.md).
 - **Assets** keep their own licences. Credits for portraits and emblems are in each chart's `media` records and on the published credits page. The map data (geoBoundaries, CC BY 3.0 IGO) is credited on the chart.
+
 

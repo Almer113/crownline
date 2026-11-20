@@ -2,11 +2,12 @@
 @import "./base.css";
 .cl-editor { height: 100%; display: grid; grid-template: "top top top" auto "left chart right" 1fr / 260px 1fr 330px; }
 .cl-editor > .loading { grid-column: 1 / -1; grid-row: 1 / -1; align-self: start; }
-.top button.home { font-weight: 700; color: var(--accent); border: 0; background: none; padding: 4px 2px; margin-right: 6px; }
+.top button.home { color: var(--accent); border: 0; background: none; padding: 4px 2px; margin-right: 6px; }
 
 .top { grid-area: top; display: flex; gap: 8px; align-items: center; padding: 6px 12px; background: var(--panel);
        border-bottom: 1px solid var(--line); flex-wrap: wrap; }
-.top .home { font-weight: 700; color: var(--accent); text-decoration: none; margin-right: 6px; }
+.top .home { color: var(--accent); text-decoration: none; margin-right: 6px; }
+.top .home img { position: relative; top: -2px; }   /* the wordmark's baseline on the header text's */
 .top strong { font-weight: 500; color: var(--muted); margin-right: 10px; }
 .top .status { margin-left: auto; color: var(--muted); font-size: 13px; }
 label.check { display: flex; gap: 6px; align-items: center; }

@@ -40,7 +40,8 @@
 .view .bar { display: flex; gap: 12px; align-items: center; padding: 6px 12px; background: var(--panel);
              border-bottom: 1px solid var(--line); flex-wrap: wrap; }
 .view .bar h1 { font-size: 17px; margin: 0; }
-.view .bar .home { font-weight: 700; color: var(--accent); border: 0; background: none; padding: 4px 2px; }
+.view .bar .home { color: var(--accent); border: 0; background: none; padding: 4px 2px; cursor: pointer; }
+.view .bar .home img { position: relative; top: -1px; }   /* the wordmark's baseline on the title's */
 .view .bar .status { margin-left: auto; color: var(--error); font-size: 13px; }
 .view .bar .status:empty { margin-left: auto; }
 .view crownline-viewer { flex: 1; min-height: 0; }

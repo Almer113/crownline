@@ -37,7 +37,8 @@ export async function viewScreen(app: HTMLElement, store: Store, chartPath: stri
   const titleEl = h("h1", {}, title);
   render(app, h("div", { class: "view" },
     h("header", { class: "bar" },
-      h("button", { type: "button", class: "home", onclick: o.home, title: "Back to the library of charts" }, "Crownline"),
+      h("button", { type: "button", class: "home", onclick: o.home, title: "Back to the library of charts" },
+        h("img", { src: "./crownline-wordmark.svg", alt: "Crownline", height: "22", style: "display:block" })),
       titleEl,
       h("span", { class: "hint" }, "Drag to move · scroll or pinch to zoom · double-click a card to fly to it · / searches"),
       status, edit),

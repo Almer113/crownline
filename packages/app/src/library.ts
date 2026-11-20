@@ -37,7 +37,7 @@ export async function library(app: HTMLElement, o: LibraryOptions): Promise<Scre
 
   render(app, h("main", { class: "library" },
     h("header", {},
-      h("h1", {}, local ? o.store.name : "Crownline"),
+      h("h1", {}, local ? o.store.name : h("img", { src: "./crownline-wordmark.svg", alt: "Crownline", height: "40", style: "display:block" })),
       h("p", { class: "lead" }, local ? "The charts in this folder." : "Royal family trees as charts to explore. Open one to read it; edit it from there."),
       site ? h("p", { class: "note" }, "This is the demo: the editor runs in your browser, and what you change stays in this browser. Save also downloads the chart’s folder as a .zip, to keep or to open in Crownline on your own computer. ",
         h("a", { href: "credits.html" }, "Picture credits"), " · ", h("a", { href: "https://github.com/Almer113/crownline" }, "The code on GitHub")) : null),

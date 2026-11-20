@@ -6,6 +6,11 @@ A chart document carries its own format number (`"format": 1`), separate from th
 
 ## Unreleased
 
+**The app**
+
+- A logo, the crowned C: the wordmark on the library page and the home buttons, a favicon that follows the browser's light or dark theme, an icon for phones' home screens, and an image for links shared on social sites.
+- The viewer's panel shows each person's birth and death, with notes and numbered sources.
+
 **Charts**
 
 - Wangsa Mataram: birth and death dates, other names and spellings for 141 people, and a short biography for each of the 51 rulers, with 152 sources. Where the sources disagree, each version is kept with its source. Most rest on Wikipedia for now and are marked at that quality. Nothing on the chart moved.

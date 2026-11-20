@@ -19,6 +19,10 @@ import { ChartPanel } from "./chartpanel.ts";
 import { showPage, type Store } from "./store.ts";
 import { bindExport } from "./export.ts";
 import { choose } from "./dialog.ts";
+import { WORDMARK } from "./wordmark.ts";
+
+/** the Crownline wordmark for the home button */
+const logo = () => h("img", { src: WORDMARK, alt: "Crownline", height: "22", style: "display:block" });
 
 export interface EditorOptions {
   /** where to open: the view and the selected person (from the view screen) */
@@ -174,8 +178,8 @@ export async function mountEditor(app: HTMLElement, store: Store, path: string, 
 
   render(app,
     h("header", { class: "top" },
-      opts.home ? h("button", { type: "button", class: "home", onclick: opts.home, title: "Back to the library of charts" }, "Crownline")
-        : h("a", { href: "./", class: "home", title: "Choose another chart" }, "Crownline"),
+      opts.home ? h("button", { type: "button", class: "home", onclick: opts.home, title: "Back to the library of charts" }, logo())
+        : h("a", { href: "./", class: "home", title: "Choose another chart" }, logo()),
       opts.done ? h("button", { type: "button", onclick: opts.done, title: "Back to reading the chart" }, "Done") : null,
       h("strong", {}, store.kind === "server" || store.kind === "site" ? path : `${store.name} / ${path}`),
       undo, redo, save, exportBtn,
