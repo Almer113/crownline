@@ -46,6 +46,7 @@ test("without the private files (the public repository), the private build draws
   const all = render(doc, env, compose(doc, env, headerPanel(doc)));
   const some = render(doc, absent, compose(doc, absent, headerPanel(doc)));
   for (const f of priv) assert.ok(!some.html.includes(`src="${f}"`), `${f} is still drawn`);
-  assert.ok(all.html.includes('src="assets/brand/fanmade-logo-brown.png"'), "with the files, the badge is drawn");
+  // with the files (this repository, not the public one, which never has them), the badge is drawn
+  if ([...priv].every(p => env.exists(p))) assert.ok(all.html.includes('src="assets/brand/fanmade-logo-brown.png"'), "with the files, the badge is drawn");
   assert.deepEqual(some.report, all.report);
 });

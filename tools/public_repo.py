@@ -239,6 +239,7 @@ def main():
     ap.add_argument("--keep-history", action="store_true", help="build over the copy's own history and add a commit")
     ap.add_argument("--message", "-m", help="the commit's message (default: Crownline <version>)")
     a = ap.parse_args()
+    sys.stdout.reconfigure(errors="replace")             # a console that cannot show every character the tests print
 
     tracked = [f for f in git("ls-files", "-z").split("\0") if f and os.path.exists(os.path.join(ROOT, f))]
     files, left = selection(tracked)
@@ -252,6 +253,9 @@ def main():
     else:
         if os.path.commonpath([out, ROOT]) == ROOT and not out.startswith(os.path.join(ROOT, "release")):
             raise SystemExit(f"{out}: build it under release/ or outside the repository")
+        published = os.path.isdir(os.path.join(out, ".git")) and git("remote", cwd=out).strip()
+        if published and not a.keep_history:
+            raise SystemExit(f"{out} is published (it has a remote): build it with --keep-history, so its history stays")
         if a.keep_history and not os.path.isdir(os.path.join(out, ".git")):
             raise SystemExit(f"{out} has no history to keep: build it once without --keep-history")
         if os.path.exists(out):
@@ -360,14 +364,19 @@ def verify(out):
         if os.path.isdir(own):
             links.append(os.path.join(out, "packages", e, "node_modules")); link(own, links[-1])
     try:
-        for cmd in (["node", "--import", "tsx", "packages/schema/src/cli.ts", "check"],
-                    *[["node", "--import", "tsx", "packages/engine/src/cli.ts", f"charts/{d}/chart.json", w, "--lock",
-                       "--out", f"release-check-{d}{w}"] for d, _ in charts() for w in ("", "--public")]):
+        # the charts, checked and built against their locks; then the tests, as the public repository's CI runs them
+        tests = [(f"packages/{p}", ["node", "--import", "tsx", "--test", "tests/*.test.ts"]) for p in ("schema", "engine", "ops", "cli")]
+        for where, cmd in (("", ["node", "--import", "tsx", "packages/schema/src/cli.ts", "check"]),
+                           *[("", ["node", "--import", "tsx", "packages/engine/src/cli.ts", f"charts/{d}/chart.json", w, "--lock",
+                                   "--out", f"release-check-{d}{w}"]) for d, _ in charts() for w in ("", "--public")],
+                           *tests, ("", [sys.executable, "-m", "pytest", "-q", "-p", "no:cacheprovider"])):
             cmd = [c for c in cmd if c]
             env = {k: v for k, v in os.environ.items() if k != "INIT_CWD"}   # npm's: it would point back here
-            r = subprocess.run(cmd, cwd=out, capture_output=True, text=True, encoding="utf-8", env=env)
-            tail = (r.stdout + r.stderr).strip().splitlines()[-1:] or [""]
-            print(f"  {'ok' if r.returncode == 0 else 'FAILED'}  {' '.join(cmd[3:])}: {tail[0].strip()[-110:]}")
+            r = subprocess.run(cmd, cwd=os.path.join(out, where), capture_output=True, text=True, encoding="utf-8", env=env)
+            lines = (r.stdout + r.stderr).strip().splitlines()
+            tail = [x for x in lines if x.startswith(("ℹ pass", "ℹ fail"))] or lines[-1:] or [""]
+            what = where or " ".join(cmd[3:] if cmd[0] == "node" and "--test" not in cmd else cmd[1:])
+            print(f"  {'ok' if r.returncode == 0 else 'FAILED'}  {what}: {', '.join(t.strip() for t in tail)[-110:]}")
             if r.returncode:
                 raise SystemExit("the copy does not build as it should")
     finally:
