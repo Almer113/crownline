@@ -28,7 +28,11 @@
         "box": "legend",
         "year": 1470,
         "sub": "last king of Majapahit"
-      }
+      },
+      "aka": [
+        "Raden Alit",
+        "Raden Angkawijaya"
+      ]
     },
     "lg_bondan": {
       "name": "Bondan Kejawan",
@@ -39,7 +43,20 @@
         "box": "legend",
         "year": 1490,
         "sub": "“Lembu Peteng”"
-      }
+      },
+      "aka": [
+        "Dyah Lembu Peteng",
+        "Ki Ageng Tarub II"
+      ],
+      "variants": [
+        "Bondan Kajawan"
+      ],
+      "sources": [
+        {
+          "source": "o_wp_id_bondan",
+          "quay": 1
+        }
+      ]
     },
     "lg_getas": {
       "name": "Getas Pandawa",
@@ -49,7 +66,16 @@
       "show": {
         "box": "legend",
         "year": 1505
-      }
+      },
+      "aka": [
+        "Dyah Depok"
+      ],
+      "sources": [
+        {
+          "source": "o_wp_id_getas",
+          "quay": 1
+        }
+      ]
     },
     "lg_sela": {
       "name": "Sela",
@@ -59,7 +85,17 @@
       "show": {
         "box": "legend",
         "year": 1520
-      }
+      },
+      "aka": [
+        "Bagus Sogom",
+        "Kyai Abdurrahman"
+      ],
+      "sources": [
+        {
+          "source": "o_wp_id_sela",
+          "quay": 1
+        }
+      ]
     },
     "lg_enis": {
       "name": "Enis",
@@ -69,7 +105,17 @@
       "show": {
         "box": "legend",
         "year": 1535
-      }
+      },
+      "variants": [
+        "Ngenis",
+        "Henis"
+      ],
+      "sources": [
+        {
+          "source": "o_wp_en_ngenis",
+          "quay": 1
+        }
+      ]
     },
     "pamanahan": {
       "name": "Pamanahan",
@@ -81,7 +127,53 @@
         "year": 1556,
         "sub": "d. c. 1584",
         "portraitFrame": true
-      }
+      },
+      "aka": [
+        "Kyai Gedhe Mataram",
+        "Bagus Kacung"
+      ],
+      "variants": [
+        "Pemanahan",
+        "Gedhe Pamanahan",
+        "Gede Pamanahan"
+      ],
+      "died": [
+        {
+          "date": {
+            "edtf": "1584~",
+            "text": "c. 1584"
+          },
+          "certainty": "low",
+          "note": "Per court tradition.",
+          "sources": [
+            {
+              "source": "o_wp_id_pamanahan",
+              "where": "body text",
+              "quay": 1
+            },
+            {
+              "source": "o_wp_en_pamanahan",
+              "where": "succession box: reign to ca. 1584",
+              "quay": 1
+            }
+          ]
+        },
+        {
+          "date": {
+            "edtf": "1577/1578",
+            "text": "1577 (or 1578)"
+          },
+          "certainty": "low",
+          "note": "The same article gives 1584 in its text.",
+          "sources": [
+            {
+              "source": "o_wp_id_pamanahan",
+              "where": "infobox",
+              "quay": 1
+            }
+          ]
+        }
+      ]
     },
     "juru": {
       "name": "Juru Martani",
@@ -92,7 +184,27 @@
         "box": "minor",
         "year": 1556,
         "sub": "first chief minister"
-      }
+      },
+      "aka": [
+        "Kyai Adipati Mandaraka"
+      ],
+      "died": [
+        {
+          "date": {
+            "edtf": "1615/1616",
+            "text": "1615 (or 1616)"
+          },
+          "certainty": "low",
+          "note": "Per court tradition (Babad Tanah Jawi: died of old age).",
+          "sources": [
+            {
+              "source": "o_wp_id_juru",
+              "where": "infobox",
+              "quay": 1
+            }
+          ]
+        }
+      ]
     },
     "benawa": {
       "name": "Pangeran Benawa",
@@ -101,7 +213,46 @@
         "year": 1586,
         "sub": "of Pajang · son of<br>Sultan Hadiwijaya",
         "width": 190
-      }
+      },
+      "aka": [
+        "Sultan Prabuwijaya",
+        "Sunan Parakan"
+      ],
+      "variants": [
+        "Pangeran Benowo"
+      ],
+      "died": [
+        {
+          "date": {
+            "edtf": "1587",
+            "text": "1587"
+          },
+          "certainty": "low",
+          "note": "Some babad versions; others have him become a cleric (Sunan Parakan).",
+          "sources": [
+            {
+              "source": "o_wp_id_benawa",
+              "where": "Berakhirnya Pajang",
+              "quay": 1
+            }
+          ]
+        },
+        {
+          "date": {
+            "edtf": "1612",
+            "text": "1612"
+          },
+          "place": "Kendal",
+          "certainty": "low",
+          "sources": [
+            {
+              "source": "o_wp_id_benawa",
+              "where": "infobox",
+              "quay": 1
+            }
+          ]
+        }
+      ]
     },
     "senapati": {
       "name": "Senapati",
@@ -123,7 +274,41 @@
         "box": "ruler",
         "year": 1587,
         "sub": "r. c. 1587 – 1601"
-      }
+      },
+      "bio": "Founder of the Mataram kingdom, born Danang Sutawijaya, son of Ki Ageng Pemanahan and adopted son of Sultan Hadiwijaya of Pajang. Much of his story, including his bond with the sea goddess Nyai Roro Kidul, comes from later court chronicles.",
+      "aka": [
+        "Danang Sutawijaya",
+        "Panembahan Senapati",
+        "Senapati ing Alaga",
+        "Panembahan Seda ing Kajenar"
+      ],
+      "variants": [
+        "Senopati"
+      ],
+      "died": [
+        {
+          "date": {
+            "edtf": "1601",
+            "text": "1601"
+          },
+          "place": "Kajenar (Jenar, Purworejo)",
+          "certainty": "medium",
+          "sources": [
+            {
+              "source": "wp_en_senapati",
+              "quay": 1,
+              "where": "infobox and text (infobox: 1601 (1602))"
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "source": "wp_en_senapati",
+          "quay": 1,
+          "where": "lead, Origin, Legacy"
+        }
+      ]
     },
     "hanyakrawati": {
       "name": "Hanyakrawati",
@@ -143,7 +328,42 @@
         "box": "ruler",
         "year": 1601,
         "sub": "r. 1601 – 1613"
-      }
+      },
+      "bio": "Second ruler of Mataram, born Raden Mas Jolang, son of Senapati. He died in 1613 in an accident while hunting deer in the Krapyak forest, which gave him his posthumous name, Panembahan Seda ing Krapyak.",
+      "aka": [
+        "Raden Mas Jolang",
+        "Panembahan Seda ing Krapyak",
+        "Susuhunan Adi Prabu Anyakrawati"
+      ],
+      "variants": [
+        "Anyakrawati",
+        "Anyokrowati",
+        "Nyakrawati"
+      ],
+      "died": [
+        {
+          "date": {
+            "edtf": "1613",
+            "text": "1613"
+          },
+          "place": "Krapyak",
+          "certainty": "high",
+          "sources": [
+            {
+              "source": "wp_id_hanyakrawati",
+              "quay": 1,
+              "where": "infobox and text; dates cited there to Hadiwidjojo 1956"
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "source": "wp_id_hanyakrawati",
+          "quay": 1,
+          "where": "lead and text"
+        }
+      ]
     },
     "banawati": {
       "name": "Ratu Mas Banawati",
@@ -154,7 +374,21 @@
           "side": "r"
         },
         "sub": "daughter of Pangeran Benawa · per chronicles"
-      }
+      },
+      "aka": [
+        "Ratu Mas Adi"
+      ],
+      "variants": [
+        "Banowati",
+        "Dyah Banawati"
+      ],
+      "sources": [
+        {
+          "source": "o_wp_id_benawa",
+          "where": "Keluarga; infobox",
+          "quay": 1
+        }
+      ]
     },
     "martapura": {
       "name": "Martapura",
@@ -175,7 +409,42 @@
         "box": "ruler",
         "year": 1613,
         "sub": "1613, one day"
-      }
+      },
+      "bio": "Son of Hanyakrawati by Ratu Tulungayu of Ponorogo. Tradition holds that he was enthroned for a single day in 1613, to keep a promise his father had made to his mother, before the throne passed to his half-brother, Sultan Agung.",
+      "aka": [
+        "Raden Mas Wuryah",
+        "Pangeran Arya Martapura",
+        "Adipati Martapura"
+      ],
+      "born": [
+        {
+          "date": {
+            "edtf": "1605",
+            "text": "1605"
+          },
+          "place": "Kutagede",
+          "certainty": "low",
+          "sources": [
+            {
+              "source": "wp_id_martapura",
+              "quay": 1,
+              "where": "infobox (no source cited)"
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "source": "wp_id_martapura",
+          "quay": 1,
+          "where": "infobox"
+        },
+        {
+          "source": "wp_id_hanyakrawati",
+          "quay": 1,
+          "where": "succession"
+        }
+      ]
     },
     "agung": {
       "name": "Agung",
@@ -196,7 +465,58 @@
         "box": "ruler",
         "year": 1613,
         "sub": "r. 1613 – 1645"
-      }
+      },
+      "bio": "Mataram's most powerful ruler, born Raden Mas Jatmika (Rangsang). He took Madura and Surabaya, besieged Dutch Batavia without success in 1628–29, began the royal cemetery at Imogiri and is credited with the Javanese calendar. National Hero of Indonesia (1975).",
+      "aka": [
+        "Raden Mas Jatmika",
+        "Raden Mas Rangsang",
+        "Sultan Agung Adi Prabu Anyakrakusuma",
+        "Sultan Abdullah Muhammad Maulana Matarani"
+      ],
+      "variants": [
+        "Agoeng"
+      ],
+      "born": [
+        {
+          "date": {
+            "edtf": "1593",
+            "text": "1593"
+          },
+          "place": "Kutagede",
+          "certainty": "medium",
+          "sources": [
+            {
+              "source": "wp_en_agung",
+              "quay": 1,
+              "where": "infobox"
+            }
+          ]
+        }
+      ],
+      "died": [
+        {
+          "date": {
+            "edtf": "1645",
+            "text": "spring of 1645"
+          },
+          "place": "Karta",
+          "certainty": "high",
+          "sources": [
+            {
+              "source": "wp_en_agung",
+              "quay": 1,
+              "where": "infobox and text"
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "source": "wp_en_agung",
+          "quay": 1,
+          "where": "lead, Reign, Legacy"
+        }
+      ]
     },
     "ratuwetan": {
       "name": "Ratu Wetan of Batang",
@@ -207,7 +527,17 @@
           "side": "r"
         },
         "sub": "queen · identity uncertain"
-      }
+      },
+      "aka": [
+        "Ratu Batang"
+      ],
+      "sources": [
+        {
+          "source": "o_wp_id_am1",
+          "where": "infobox (mother of Amangkurat I)",
+          "quay": 1
+        }
+      ]
     },
     "pandansari": {
       "name": "Pandansari",
@@ -229,7 +559,24 @@
         },
         "sub": "of Surabaya · killed 1659",
         "width": 200
-      }
+      },
+      "died": [
+        {
+          "date": {
+            "edtf": "1659",
+            "text": "1659"
+          },
+          "certainty": "medium",
+          "sources": [
+            {
+              "source": "o_wp_id_am1",
+              "where": "Pembunuhan dan penindasan, citing van Hoëvell 1849, p. 213",
+              "quay": 1
+            }
+          ],
+          "note": "Killed with his family on Amangkurat I's orders. One article's 1672 confuses him with later lords of Surabaya."
+        }
+      ]
     },
     "alit_am1": {
       "name": "Alit",
@@ -239,7 +586,40 @@
         "box": "minor",
         "year": 1646,
         "sub": "killed 1647/48"
-      }
+      },
+      "died": [
+        {
+          "date": {
+            "edtf": "1648",
+            "text": "1648"
+          },
+          "certainty": "medium",
+          "note": "Slain attacking the kraton.",
+          "sources": [
+            {
+              "source": "o_wp_en_am1",
+              "where": "citing Ooi 2004, pp. 139–140",
+              "quay": 1
+            }
+          ]
+        },
+        {
+          "date": {
+            "edtf": "1647",
+            "text": "1647"
+          },
+          "place": "Plered",
+          "certainty": "low",
+          "note": "The article places the attack in the context of 1647.",
+          "sources": [
+            {
+              "source": "o_wp_id_am1",
+              "where": "citing Ooi 2004, p. 140",
+              "quay": 1
+            }
+          ]
+        }
+      ]
     },
     "am1": {
       "name": "Amangkurat I",
@@ -259,7 +639,55 @@
         "box": "ruler",
         "year": 1646,
         "sub": "r. 1646 – 1677"
-      }
+      },
+      "bio": "Son of Sultan Agung, born Raden Mas Sayyidin. He moved the court to a brick palace at Plered and ruled harshly, ordering mass killings of religious scholars and their families after a 1648 revolt. Trunajaya's rebels took his court in 1677; he died while fleeing.",
+      "aka": [
+        "Raden Mas Sayyidin",
+        "Amangkurat Agung",
+        "Sunan Tegalarum",
+        "Sunan Tegalwangi"
+      ],
+      "born": [
+        {
+          "date": {
+            "edtf": "1619",
+            "text": "1619"
+          },
+          "place": "Kutagede",
+          "certainty": "medium",
+          "sources": [
+            {
+              "source": "wp_en_am1",
+              "quay": 1,
+              "where": "infobox"
+            }
+          ]
+        }
+      ],
+      "died": [
+        {
+          "date": {
+            "edtf": "1677-07-13",
+            "text": "13 July 1677"
+          },
+          "place": "Tegalarum",
+          "certainty": "high",
+          "sources": [
+            {
+              "source": "wp_en_am1",
+              "quay": 1,
+              "where": "infobox"
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "source": "wp_en_am1",
+          "quay": 1,
+          "where": "lead, Reign, Trunajaya rebellion"
+        }
+      ]
     },
     "ratukulon": {
       "name": "Kulon",
@@ -272,7 +700,18 @@
           "side": "l"
         },
         "sub": "daughter of Pangeran Pekik of Surabaya"
-      }
+      },
+      "aka": [
+        "Ratu Pangayun",
+        "Ratu Ageng"
+      ],
+      "sources": [
+        {
+          "source": "o_wp_en_am1",
+          "where": "family list, unsourced",
+          "quay": 1
+        }
+      ]
     },
     "ratumalang": {
       "name": "Ratu Malang",
@@ -283,7 +722,17 @@
           "side": "r"
         },
         "sub": "his beloved · d. 1665"
-      }
+      },
+      "died": [
+        {
+          "date": {
+            "edtf": "1665",
+            "text": "1665"
+          },
+          "certainty": "low",
+          "note": "The chart's date. No source opened in November 2026 gives it; probably de Graaf. A source is still needed."
+        }
+      ]
     },
     "trunajaya": {
       "name": "Trunajaya",
@@ -292,7 +741,50 @@
         "year": 1677,
         "sub": "Madurese rebel, 1674 – 1680<br>not of the dynasty",
         "width": 190
-      }
+      },
+      "aka": [
+        "Panembahan Maduretna Panatagama"
+      ],
+      "variants": [
+        "Tronajâyâ",
+        "Trunojoyo",
+        "Truna Jaya"
+      ],
+      "born": [
+        {
+          "date": {
+            "edtf": "1649",
+            "text": "1649"
+          },
+          "place": "Arosbaya, Madura",
+          "certainty": "medium",
+          "sources": [
+            {
+              "source": "o_wp_en_trunajaya",
+              "where": "lead and infobox, citing de Graaf 1976, p. 81",
+              "quay": 1
+            }
+          ]
+        }
+      ],
+      "died": [
+        {
+          "date": {
+            "edtf": "1680-01-02",
+            "text": "2 January 1680"
+          },
+          "place": "Payak",
+          "certainty": "high",
+          "note": "Executed on Amangkurat II's orders. The article places Payak both in Bantul and in \"East Java\".",
+          "sources": [
+            {
+              "source": "o_wp_en_trunajaya",
+              "where": "citing de Graaf 1976, pp. 81–84",
+              "quay": 1
+            }
+          ]
+        }
+      ]
     },
     "surapati": {
       "name": "Untung Surapati",
@@ -302,7 +794,49 @@
         "year": 1706,
         "sub": "Balinese rebel, lord of<br>Pasuruan · not of the dynasty",
         "width": 210
-      }
+      },
+      "aka": [
+        "Surawiraaji",
+        "Tumenggung Wiranegara"
+      ],
+      "variants": [
+        "Untung Suropati"
+      ],
+      "born": [
+        {
+          "date": {
+            "edtf": "1660~",
+            "text": "c. 1660"
+          },
+          "place": "Gelgel, Bali",
+          "certainty": "low",
+          "sources": [
+            {
+              "source": "o_wp_en_surapati",
+              "where": "lead and infobox, uncited",
+              "quay": 1
+            }
+          ]
+        }
+      ],
+      "died": [
+        {
+          "date": {
+            "edtf": "1706",
+            "text": "1706"
+          },
+          "place": "Bangil",
+          "certainty": "medium",
+          "note": "The lead gives 5 December 1706, uncited.",
+          "sources": [
+            {
+              "source": "o_wp_en_surapati",
+              "where": "infobox",
+              "quay": 1
+            }
+          ]
+        }
+      ]
     },
     "am2": {
       "name": "Amangkurat II",
@@ -323,7 +857,37 @@
         "box": "ruler",
         "year": 1677,
         "sub": "r. 1677 – 1703"
-      }
+      },
+      "bio": "Born Raden Mas Rahmat, son of Amangkurat I. He won back the throne with VOC help after 1677, mortgaging north-coast lands to the Company, crushed Trunajaya and moved the court to Kartasura. He later sheltered the fugitive Untung Surapati, whom the Dutch wanted.",
+      "aka": [
+        "Raden Mas Rahmat",
+        "Pangeran Adipati Anom",
+        "Sunan Amral"
+      ],
+      "died": [
+        {
+          "date": {
+            "edtf": "1703-11-03",
+            "text": "3 November 1703"
+          },
+          "place": "Kartasura",
+          "certainty": "high",
+          "sources": [
+            {
+              "source": "wp_en_am2",
+              "quay": 1,
+              "where": "infobox"
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "source": "wp_en_am2",
+          "quay": 1,
+          "where": "lead, Reign"
+        }
+      ]
     },
     "pb1": {
       "name": "Pakubuwana I",
@@ -344,7 +908,58 @@
         "box": "ruler",
         "year": 1704,
         "sub": "r. 1704 – 1719"
-      }
+      },
+      "bio": "Born Raden Mas Darajat and long known as Pangeran Puger, a son of Amangkurat I. He rose against his nephew Amangkurat III and, with VOC troops, took Kartasura in 1705, paying the Company with land on Madura and yearly rice deliveries.",
+      "aka": [
+        "Raden Mas Darajat",
+        "Pangeran Puger",
+        "Sunan Ingalaga"
+      ],
+      "variants": [
+        "Pakubuwono I",
+        "Paku Buwana I"
+      ],
+      "born": [
+        {
+          "date": {
+            "edtf": "1648~",
+            "text": "ca. 1648"
+          },
+          "place": "Plered",
+          "certainty": "low",
+          "sources": [
+            {
+              "source": "wp_en_pb1",
+              "quay": 1,
+              "where": "infobox"
+            }
+          ]
+        }
+      ],
+      "died": [
+        {
+          "date": {
+            "edtf": "1719-02-22",
+            "text": "22 February 1719"
+          },
+          "place": "Kartasura",
+          "certainty": "high",
+          "sources": [
+            {
+              "source": "wp_en_pb1",
+              "quay": 1,
+              "where": "infobox"
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "source": "wp_en_pb1",
+          "quay": 1,
+          "where": "lead and Reign"
+        }
+      ]
     },
     "ratupb": {
       "name": "Ratu Pakubuwana",
@@ -355,7 +970,17 @@
           "side": "l"
         },
         "sub": "queen · patron of letters"
-      }
+      },
+      "aka": [
+        "Ratu Mas Blitar"
+      ],
+      "sources": [
+        {
+          "source": "o_wp_en_pb1",
+          "where": "infobox",
+          "quay": 1
+        }
+      ]
     },
     "purbaya_p": {
       "name": "Purbaya",
@@ -365,7 +990,24 @@
         "box": "minor",
         "year": 1719,
         "sub": "rebelled 1719 – 1723"
-      }
+      },
+      "aka": [
+        "Raden Mas Sangka",
+        "Pangeran Arya Purbaya",
+        "Panembahan Purbaya"
+      ],
+      "sources": [
+        {
+          "source": "o_wp_en_pb1",
+          "where": "family list",
+          "quay": 1
+        },
+        {
+          "source": "o_wp_id_purbaya",
+          "where": "Pangeran Purbaya dari Kartasura",
+          "quay": 1
+        }
+      ]
     },
     "am3": {
       "name": "Amangkurat III",
@@ -386,7 +1028,38 @@
         "box": "ruler",
         "year": 1703,
         "sub": "r. 1703 – 1705"
-      }
+      },
+      "bio": "Born Raden Mas Sutikna, called Sunan Mas, son of Amangkurat II. His uncle Pangeran Puger, backed by the VOC, displaced him in the First Javanese War of Succession. He surrendered at Surabaya in 1708 and died in exile in Ceylon.",
+      "aka": [
+        "Raden Mas Sutikna",
+        "Sunan Mas",
+        "Amangkurat Mas",
+        "Pangeran Kencet"
+      ],
+      "died": [
+        {
+          "date": {
+            "edtf": "1734?",
+            "text": "1734 (1735)"
+          },
+          "place": "Ceylon (Sri Lanka)",
+          "certainty": "low",
+          "sources": [
+            {
+              "source": "wp_en_am3",
+              "quay": 1,
+              "where": "infobox gives '1734 (1735)'"
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "source": "wp_en_am3",
+          "quay": 1,
+          "where": "lead and text"
+        }
+      ]
     },
     "tepasana": {
       "name": "Tepasana",
@@ -416,7 +1089,52 @@
         "box": "ruler",
         "year": 1719,
         "sub": "r. 1719 – 1726"
-      }
+      },
+      "bio": "Born Raden Mas Suryaputra, son of Pakubuwana I, also called Sunan Jawi. His reign was taken up by the Second Javanese War of Succession (1719–23), in which his brothers and an uncle rose against him and the VOC backed him. He died in 1726, reportedly of poison.",
+      "aka": [
+        "Raden Mas Suryaputra",
+        "Sunan Jawi"
+      ],
+      "born": [
+        {
+          "date": {
+            "edtf": "1680~",
+            "text": "ca. 1680"
+          },
+          "certainty": "low",
+          "sources": [
+            {
+              "source": "wp_en_am4",
+              "quay": 1,
+              "where": "infobox"
+            }
+          ]
+        }
+      ],
+      "died": [
+        {
+          "date": {
+            "edtf": "1726-04-20",
+            "text": "20 April 1726"
+          },
+          "place": "Kartasura",
+          "certainty": "high",
+          "sources": [
+            {
+              "source": "wp_en_am4",
+              "quay": 1,
+              "where": "infobox"
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "source": "wp_en_am4",
+          "quay": 1,
+          "where": "lead and Reign"
+        }
+      ]
     },
     "am5": {
       "name": "Amangkurat V",
@@ -427,7 +1145,11 @@
         "year": 1742,
         "sub": "“Sunan Kuning” · claimed 1742 – 1743",
         "hatch": true
-      }
+      },
+      "aka": [
+        "Raden Mas Garendi",
+        "Sunan Kuning"
+      ]
     },
     "pb2": {
       "name": "Pakubuwana II",
@@ -448,7 +1170,60 @@
         "box": "ruler",
         "year": 1726,
         "sub": "r. 1726 – 1749 (interrupted 1742)"
-      }
+      },
+      "bio": "Born Raden Mas Prabasuyasa, son of Amangkurat IV; he came to the throne as a boy of about fifteen. His rule was broken in 1742–43, and the court later left Kartasura for the new palace at Surakarta. He was the last ruler of undivided Mataram.",
+      "aka": [
+        "Raden Mas Prabasuyasa"
+      ],
+      "variants": [
+        "Pakubuwono II"
+      ],
+      "born": [
+        {
+          "date": {
+            "edtf": "1711-12-08",
+            "text": "8 December 1711"
+          },
+          "place": "Kartasura",
+          "certainty": "high",
+          "sources": [
+            {
+              "source": "wp_en_pb2",
+              "quay": 1,
+              "where": "infobox"
+            }
+          ]
+        }
+      ],
+      "died": [
+        {
+          "date": {
+            "edtf": "1749-12-20",
+            "text": "20 December 1749"
+          },
+          "place": "Surakarta",
+          "certainty": "high",
+          "sources": [
+            {
+              "source": "wp_en_pb2",
+              "quay": 1,
+              "where": "infobox"
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "source": "wp_en_pb2",
+          "quay": 1,
+          "where": "lead and infobox"
+        },
+        {
+          "source": "wp_en_am4",
+          "quay": 1,
+          "where": "succession"
+        }
+      ]
     },
     "hemas_pb2": {
       "name": "Hemas",
@@ -461,7 +1236,28 @@
           "side": "l"
         },
         "sub": "daughter of Pangeran Purbaya"
-      }
+      },
+      "aka": [
+        "Ratu Mas",
+        "Ratu Kencana"
+      ],
+      "died": [
+        {
+          "date": {
+            "edtf": "1738",
+            "text": "1738"
+          },
+          "certainty": "medium",
+          "note": "After childbirth, per the article.",
+          "sources": [
+            {
+              "source": "o_wp_en_pb2",
+              "where": "infobox",
+              "quay": 1
+            }
+          ]
+        }
+      ]
     },
     "kpa_mn": {
       "name": "Mangkunegara",
@@ -481,7 +1277,28 @@
         "box": "minor",
         "year": 1719,
         "sub": "rebelled 1719 – 1721"
-      }
+      },
+      "aka": [
+        "Raden Mas Sudama",
+        "Pangeran Arya Balitar"
+      ],
+      "died": [
+        {
+          "date": {
+            "edtf": "1721",
+            "text": "1721"
+          },
+          "place": "Malang",
+          "certainty": "medium",
+          "sources": [
+            {
+              "source": "o_wp_id_purbaya",
+              "where": "Pangeran Purbaya dari Kartasura",
+              "quay": 1
+            }
+          ]
+        }
+      ]
     },
     "wulan": {
       "name": "Wulan",
@@ -515,7 +1332,81 @@
         "box": "ruler",
         "year": 1749,
         "sub": "r. 1749 – 1788"
-      }
+      },
+      "bio": "Born Raden Mas Suryadi, son of Pakubuwana II. Early in his reign Mataram was divided: the Treaty of Giyanti (1755) gave half the realm to Mangkubumi (Hamengkubuwana I), and the Treaty of Salatiga (1757) created the Mangkunegaran. First Susuhunan of Surakarta alone.",
+      "aka": [
+        "Raden Mas Suryadi",
+        "Sinuhun Paliyan Negari"
+      ],
+      "variants": [
+        "Pakubuwono III"
+      ],
+      "born": [
+        {
+          "date": {
+            "edtf": "1732-02-24",
+            "text": "24 February 1732"
+          },
+          "place": "Kartasura",
+          "certainty": "medium",
+          "sources": [
+            {
+              "source": "wp_en_pb3",
+              "quay": 1,
+              "where": "infobox"
+            },
+            {
+              "source": "wp_id_pb3",
+              "quay": 1,
+              "where": "infobox"
+            }
+          ]
+        },
+        {
+          "date": {
+            "edtf": "1732-02-25",
+            "text": "25 February 1732"
+          },
+          "place": "Kartasura",
+          "certainty": "low",
+          "sources": [
+            {
+              "source": "wp_en_pb3",
+              "quay": 1,
+              "where": "Biography section"
+            }
+          ]
+        }
+      ],
+      "died": [
+        {
+          "date": {
+            "edtf": "1788-09-26",
+            "text": "26 September 1788"
+          },
+          "place": "Surakarta",
+          "certainty": "high",
+          "sources": [
+            {
+              "source": "wp_en_pb3",
+              "quay": 1,
+              "where": "infobox"
+            },
+            {
+              "source": "wp_id_pb3",
+              "quay": 1,
+              "where": "infobox"
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "source": "wp_en_pb3",
+          "quay": 1,
+          "where": "lead and Reign"
+        }
+      ]
     },
     "beruk": {
       "name": "GKR Kencana Beruk",
@@ -526,7 +1417,22 @@
           "side": "l"
         },
         "sub": "queen · by one account a dancer"
-      }
+      },
+      "aka": [
+        "Mas Rara Bêruk",
+        "Bok Lara Bêruk",
+        "Gusti Kanjeng Ratu Kencana"
+      ],
+      "variants": [
+        "Bêruk"
+      ],
+      "sources": [
+        {
+          "source": "o_wp_en_pb3",
+          "where": "Personal life, citing Wedhapradangga 1944",
+          "quay": 1
+        }
+      ]
     },
     "yasadipura1": {
       "name": "Yasadipura I",
@@ -535,7 +1441,66 @@
         "year": 1770,
         "sub": "court poet<br>1729 – 1802/03",
         "width": 170
-      }
+      },
+      "aka": [
+        "Bagus Banjar",
+        "Jaka Subuh",
+        "Raden Ngabehi Yasadipura Tus Pajang"
+      ],
+      "variants": [
+        "Jasadipura I"
+      ],
+      "born": [
+        {
+          "date": {
+            "edtf": "1729",
+            "text": "1729 (Friday-Paing, Sapar, Jimakir AJ 1654)"
+          },
+          "place": "Pengging",
+          "certainty": "medium",
+          "note": "Ricklefs (\"The Yasadipura Problem\", 1997) doubts the Tus Pajang birth date.",
+          "sources": [
+            {
+              "source": "o_nasuhi2021",
+              "where": "section \"Yasadipura I and the Book of Cabolek\", n. 24 (from Soebardi and the Tus Pajang)",
+              "quay": 2
+            }
+          ]
+        }
+      ],
+      "died": [
+        {
+          "date": {
+            "edtf": "1803-03-14",
+            "text": "14 March 1803"
+          },
+          "place": "Surakarta",
+          "certainty": "medium",
+          "note": "Buried at Pengging.",
+          "sources": [
+            {
+              "source": "o_nasuhi2021",
+              "where": "n. 28 (from Soebardi)",
+              "quay": 2
+            }
+          ]
+        },
+        {
+          "date": {
+            "edtf": "1802/1803",
+            "text": "Wawu AJ 1729"
+          },
+          "certainty": "medium",
+          "note": "Ricklefs' corrected year; AJ 1729 falls in 1802–1803.",
+          "sources": [
+            {
+              "source": "o_nasuhi2021",
+              "where": "n. 28, reporting Ricklefs 1997, p. 275",
+              "quay": 2
+            }
+          ]
+        }
+      ]
     },
     "yasadipura2": {
       "name": "Yasadipura II",
@@ -544,7 +1509,37 @@
         "year": 1814,
         "sub": "credited co-author of<br>the Serat Centhini",
         "width": 180
-      }
+      },
+      "aka": [
+        "Raden Tumenggung Sastranegara",
+        "Mas Pajangwasistho"
+      ],
+      "variants": [
+        "Sastronagoro"
+      ],
+      "died": [
+        {
+          "date": {
+            "edtf": "1844-04-21",
+            "text": "21 April 1844"
+          },
+          "place": "Surakarta",
+          "certainty": "medium",
+          "sources": [
+            {
+              "source": "o_wp_id_yasadipura2",
+              "quay": 1
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "source": "o_nasuhi2021",
+          "where": "son and successor of Yasadipura I",
+          "quay": 2
+        }
+      ]
     },
     "ranggawarsita": {
       "name": "Ranggawarsita",
@@ -553,7 +1548,48 @@
         "year": 1845,
         "sub": "court poet<br>1802 – 1873",
         "width": 170
-      }
+      },
+      "aka": [
+        "Bagus Burhan",
+        "Raden Ngabehi Ronggawarsita"
+      ],
+      "variants": [
+        "Ronggawarsita"
+      ],
+      "born": [
+        {
+          "date": {
+            "edtf": "1802-03-14",
+            "text": "14 March 1802"
+          },
+          "place": "Surakarta",
+          "certainty": "medium",
+          "sources": [
+            {
+              "source": "o_wp_en_ranggawarsita",
+              "where": "infobox",
+              "quay": 1
+            }
+          ]
+        }
+      ],
+      "died": [
+        {
+          "date": {
+            "edtf": "1873-12-24",
+            "text": "24 December 1873"
+          },
+          "place": "Surakarta",
+          "certainty": "medium",
+          "sources": [
+            {
+              "source": "o_wp_en_ranggawarsita",
+              "where": "infobox",
+              "quay": 1
+            }
+          ]
+        }
+      ]
     },
     "pb4": {
       "name": "Pakubuwana IV",
@@ -574,7 +1610,56 @@
         "box": "ruler",
         "year": 1788,
         "sub": "r. 1788 – 1820"
-      }
+      },
+      "bio": "Born Raden Mas Subadya, called Sunan Bagus. In 1790 VOC, Yogyakarta and Mangkunegaran forces surrounded his palace until he handed over the religious advisers they objected to, an episode known as the Pakepung. He is credited with the moral poem Serat Wulangreh.",
+      "aka": [
+        "Raden Mas Subadya",
+        "Sunan Bagus"
+      ],
+      "variants": [
+        "Pakubuwono IV"
+      ],
+      "born": [
+        {
+          "date": {
+            "edtf": "1768-08-31",
+            "text": "31 August 1768"
+          },
+          "place": "Surakarta",
+          "certainty": "high",
+          "sources": [
+            {
+              "source": "wp_en_pb4",
+              "quay": 1,
+              "where": "infobox"
+            }
+          ]
+        }
+      ],
+      "died": [
+        {
+          "date": {
+            "edtf": "1820-10-01",
+            "text": "1 October 1820"
+          },
+          "place": "Surakarta",
+          "certainty": "high",
+          "sources": [
+            {
+              "source": "wp_en_pb4",
+              "quay": 1,
+              "where": "infobox"
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "source": "wp_en_pb4",
+          "quay": 1,
+          "where": "lead, Reign, Personal life"
+        }
+      ]
     },
     "pb5": {
       "name": "Pakubuwana V",
@@ -595,7 +1680,55 @@
         "box": "ruler",
         "year": 1820,
         "sub": "r. 1820 – 1823"
-      }
+      },
+      "bio": "Born Gusti Raden Mas Sugandhi, son of Pakubuwana IV; reigned only 1820–1823. He was called Sunan Sugih, 'the wealthy', which Wikipedia explains by his generosity, such as paying his stepmother's funeral and debts.",
+      "aka": [
+        "Gusti Raden Mas Sugandhi",
+        "Sunan Sugih"
+      ],
+      "variants": [
+        "Pakubuwono V"
+      ],
+      "born": [
+        {
+          "date": {
+            "edtf": "1784-12-13",
+            "text": "13 December 1784"
+          },
+          "place": "Surakarta",
+          "certainty": "high",
+          "sources": [
+            {
+              "source": "wp_en_pb5",
+              "quay": 1,
+              "where": "infobox"
+            }
+          ]
+        }
+      ],
+      "died": [
+        {
+          "date": {
+            "edtf": "1823-09-05",
+            "text": "5 September 1823"
+          },
+          "certainty": "high",
+          "sources": [
+            {
+              "source": "wp_en_pb5",
+              "quay": 1,
+              "where": "infobox"
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "source": "wp_en_pb5",
+          "quay": 1,
+          "where": "lead and Personal life"
+        }
+      ]
     },
     "pb7": {
       "name": "Pakubuwana VII",
@@ -616,7 +1749,57 @@
         "box": "ruler",
         "year": 1830,
         "sub": "r. 1830 – 1858"
-      }
+      },
+      "bio": "Born Gusti Raden Mas Malik-i-Salikin, a son of Pakubuwana IV. He took the throne in 1830 when the Dutch removed his nephew Pakubuwana VI, and reigned until his death in 1858.",
+      "aka": [
+        "Gusti Raden Mas Malik-i-Salikin",
+        "Kanjeng Gusti Pangeran Adipati Harya Purbaya"
+      ],
+      "variants": [
+        "Pakubuwono VII",
+        "Pakoeboewono VII"
+      ],
+      "born": [
+        {
+          "date": {
+            "edtf": "1796-07-28",
+            "text": "28 July 1796"
+          },
+          "place": "Surakarta",
+          "certainty": "high",
+          "sources": [
+            {
+              "source": "wp_en_pb7",
+              "quay": 1,
+              "where": "infobox"
+            }
+          ]
+        }
+      ],
+      "died": [
+        {
+          "date": {
+            "edtf": "1858-05-10",
+            "text": "10 May 1858"
+          },
+          "place": "Surakarta",
+          "certainty": "high",
+          "sources": [
+            {
+              "source": "wp_en_pb7",
+              "quay": 1,
+              "where": "infobox"
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "source": "wp_en_pb7",
+          "quay": 1,
+          "where": "infobox"
+        }
+      ]
     },
     "pb8": {
       "name": "Pakubuwana VIII",
@@ -637,7 +1820,81 @@
         "box": "ruler",
         "year": 1858,
         "sub": "r. 1858 – 1861"
-      }
+      },
+      "bio": "Born Raden Mas Kusen (also given as Kuseini), the eldest son of Pakubuwana IV by a concubine. He came to the throne at about 69 after his half-brother Pakubuwana VII, and his three-year reign was the shortest at Surakarta.",
+      "aka": [
+        "Bendara Raden Mas Kusen",
+        "Gusti Raden Mas Kuseini"
+      ],
+      "variants": [
+        "Pakubuwono VIII"
+      ],
+      "born": [
+        {
+          "date": {
+            "edtf": "1789-04-20",
+            "text": "20 April 1789"
+          },
+          "place": "Surakarta",
+          "certainty": "medium",
+          "sources": [
+            {
+              "source": "wp_en_pb8",
+              "quay": 1,
+              "where": "lead"
+            },
+            {
+              "source": "wp_id_pb8",
+              "quay": 1,
+              "where": "infobox"
+            }
+          ]
+        },
+        {
+          "date": {
+            "edtf": "1789-05-20",
+            "text": "20 May 1789"
+          },
+          "place": "Surakarta",
+          "certainty": "low",
+          "sources": [
+            {
+              "source": "wp_en_pb8",
+              "quay": 1,
+              "where": "infobox"
+            }
+          ]
+        }
+      ],
+      "died": [
+        {
+          "date": {
+            "edtf": "1861-12-28",
+            "text": "28 December 1861"
+          },
+          "place": "Surakarta",
+          "certainty": "high",
+          "sources": [
+            {
+              "source": "wp_en_pb8",
+              "quay": 1,
+              "where": "infobox"
+            },
+            {
+              "source": "wp_id_pb8",
+              "quay": 1,
+              "where": "infobox"
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "source": "wp_en_pb8",
+          "quay": 1,
+          "where": "lead and text"
+        }
+      ]
     },
     "pb6": {
       "name": "Pakubuwana VI",
@@ -658,7 +1915,72 @@
         "box": "ruler",
         "year": 1823,
         "sub": "r. 1823 – 1830"
-      }
+      },
+      "bio": "Born Raden Mas Sapardan, called Sinuhun Bangun Tapa for his ascetic practice. He is said to have secretly backed Diponegoro in the Java War; the Dutch deposed him in 1830 and exiled him to Ambon, where he died. National Hero of Indonesia (1964).",
+      "aka": [
+        "Raden Mas Sapardan",
+        "Sinuhun Bangun Tapa"
+      ],
+      "variants": [
+        "Pakubuwono VI"
+      ],
+      "born": [
+        {
+          "date": {
+            "edtf": "1807-04-26",
+            "text": "26 April 1807"
+          },
+          "place": "Surakarta",
+          "certainty": "high",
+          "sources": [
+            {
+              "source": "wp_en_pb6",
+              "quay": 1,
+              "where": "infobox"
+            },
+            {
+              "source": "wp_id_pb6",
+              "quay": 1,
+              "where": "text"
+            }
+          ]
+        }
+      ],
+      "died": [
+        {
+          "date": {
+            "edtf": "1849-06-02",
+            "text": "2 June 1849"
+          },
+          "place": "Ambon",
+          "certainty": "high",
+          "note": "Dutch reports called it an accident; a 1957 exhumation is said to have found a bullet wound (unsourced in Wikipedia).",
+          "sources": [
+            {
+              "source": "wp_en_pb6",
+              "quay": 1,
+              "where": "infobox"
+            },
+            {
+              "source": "wp_id_pb6",
+              "quay": 1,
+              "where": "text"
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "source": "wp_en_pb6",
+          "quay": 1,
+          "where": "lead, Reign, Exile"
+        },
+        {
+          "source": "wp_id_pb6",
+          "quay": 1,
+          "where": "text; hero decree 294/TK/1964"
+        }
+      ]
     },
     "pb9": {
       "name": "Pakubuwana IX",
@@ -679,7 +2001,87 @@
         "box": "ruler",
         "year": 1861,
         "sub": "r. 1861 – 1893"
-      }
+      },
+      "bio": "Born Gusti Raden Mas Duksina, son of the exiled Pakubuwana VI. Called Sinuhun Bangun Kedhaton for his rebuilding of the palace, he patronised letters; his court poet Ranggawarsita wrote the Serat Kalatidha in this reign.",
+      "aka": [
+        "Gusti Raden Mas Duksina",
+        "Kanjeng Gusti Pangeran Harya Prabuwijaya",
+        "Sinuhun Bangun Kedhaton"
+      ],
+      "variants": [
+        "Pakubuwono IX"
+      ],
+      "born": [
+        {
+          "date": {
+            "edtf": "1830-12-22",
+            "text": "22 December 1830"
+          },
+          "place": "Surakarta",
+          "certainty": "high",
+          "sources": [
+            {
+              "source": "wp_en_pb9",
+              "quay": 1,
+              "where": "infobox"
+            },
+            {
+              "source": "wp_id_pb9",
+              "quay": 1,
+              "where": "infobox"
+            }
+          ]
+        }
+      ],
+      "died": [
+        {
+          "date": {
+            "edtf": "1893-03-16",
+            "text": "16 March 1893"
+          },
+          "place": "Surakarta",
+          "certainty": "medium",
+          "sources": [
+            {
+              "source": "wp_en_pb9",
+              "quay": 1,
+              "where": "body text"
+            },
+            {
+              "source": "wp_id_pb9",
+              "quay": 1,
+              "where": "infobox"
+            }
+          ]
+        },
+        {
+          "date": {
+            "edtf": "1893-03-17",
+            "text": "17 March 1893"
+          },
+          "place": "Surakarta",
+          "certainty": "low",
+          "sources": [
+            {
+              "source": "wp_en_pb9",
+              "quay": 1,
+              "where": "infobox"
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "source": "wp_en_pb9",
+          "quay": 1,
+          "where": "lead and Legacy"
+        },
+        {
+          "source": "wp_id_pb9",
+          "quay": 1,
+          "where": "lead"
+        }
+      ]
     },
     "pb10": {
       "name": "Pakubuwana X",
@@ -700,7 +2102,56 @@
         "box": "ruler",
         "year": 1893,
         "sub": "r. 1893 – 1939"
-      }
+      },
+      "bio": "Born Gusti Raden Mas Sayyidin Malikul Kusna, son of Pakubuwana IX; he reigned 46 years, 1893–1939. He and his family were patrons of early Indonesian organisations such as Budi Utomo and Sarekat Islam, and he was later named a National Hero of Indonesia.",
+      "aka": [
+        "Gusti Raden Mas Sayyidin Malikul Kusna",
+        "PB X"
+      ],
+      "variants": [
+        "Pakubuwono X"
+      ],
+      "born": [
+        {
+          "date": {
+            "edtf": "1866-11-29",
+            "text": "29 November 1866"
+          },
+          "place": "Surakarta",
+          "certainty": "high",
+          "sources": [
+            {
+              "source": "wp_en_pb10",
+              "quay": 1,
+              "where": "infobox"
+            }
+          ]
+        }
+      ],
+      "died": [
+        {
+          "date": {
+            "edtf": "1939-02-22",
+            "text": "22 February 1939"
+          },
+          "place": "Surakarta",
+          "certainty": "high",
+          "sources": [
+            {
+              "source": "wp_en_pb10",
+              "quay": 1,
+              "where": "infobox"
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "source": "wp_en_pb10",
+          "quay": 1,
+          "where": "lead and Reign"
+        }
+      ]
     },
     "hemas_pb10": {
       "name": "Hemas",
@@ -714,7 +2165,52 @@
           "side": "l"
         },
         "sub": "daughter of Hamengkubuwana VII"
-      }
+      },
+      "aka": [
+        "Gusti Raden Ajeng Mursudarinah"
+      ],
+      "born": [
+        {
+          "date": {
+            "edtf": "1895",
+            "text": "1895"
+          },
+          "certainty": "medium",
+          "sources": [
+            {
+              "source": "o_wp_en_pb10",
+              "where": "Family",
+              "quay": 1
+            },
+            {
+              "source": "o_wp_en_hb7",
+              "where": "Family",
+              "quay": 1
+            }
+          ]
+        }
+      ],
+      "died": [
+        {
+          "date": {
+            "edtf": "1944",
+            "text": "1944"
+          },
+          "certainty": "medium",
+          "sources": [
+            {
+              "source": "o_wp_en_pb10",
+              "where": "Family",
+              "quay": 1
+            },
+            {
+              "source": "o_wp_en_hb7",
+              "where": "Family",
+              "quay": 1
+            }
+          ]
+        }
+      ]
     },
     "gkrpb": {
       "name": "Pakubuwana",
@@ -728,7 +2224,33 @@
           "side": "r"
         },
         "sub": "daughter of Mangkunegara IV"
-      }
+      },
+      "aka": [
+        "Bendara Raden Ajeng Sumarti"
+      ],
+      "died": [
+        {
+          "date": {
+            "edtf": "1924",
+            "text": "1924"
+          },
+          "certainty": "medium",
+          "sources": [
+            {
+              "source": "o_wp_en_pb10",
+              "where": "Family, unsourced",
+              "quay": 1
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "source": "o_wp_en_mn4",
+          "where": "family list: \"Gusti Raden Ajeng Sumarti\"",
+          "quay": 1
+        }
+      ]
     },
     "mooryati": {
       "name": "Mooryati Soedibyo",
@@ -738,7 +2260,39 @@
         "year": 1928,
         "sub": "founder of Mustika Ratu<br>1928 – 2024",
         "width": 230
-      }
+      },
+      "born": [
+        {
+          "date": {
+            "edtf": "1928-01-05",
+            "text": "5 January 1928"
+          },
+          "place": "Surakarta",
+          "certainty": "high",
+          "sources": [
+            {
+              "source": "o_wp_en_mooryati",
+              "quay": 1
+            }
+          ]
+        }
+      ],
+      "died": [
+        {
+          "date": {
+            "edtf": "2024-04-24",
+            "text": "24 April 2024"
+          },
+          "place": "Jakarta",
+          "certainty": "high",
+          "sources": [
+            {
+              "source": "o_wp_en_mooryati",
+              "quay": 1
+            }
+          ]
+        }
+      ]
     },
     "pb11": {
       "name": "Pakubuwana XI",
@@ -759,7 +2313,57 @@
         "box": "ruler",
         "year": 1939,
         "sub": "r. 1939 – 1945"
-      }
+      },
+      "bio": "Born Raden Mas Antasena (also given as Ontoseno), son of Pakubuwana X. His reign, 1939–1945, ran through the Japanese occupation, when the court lost most of its assets; he died weeks before Indonesia declared independence.",
+      "aka": [
+        "Bendara Raden Mas Antasena",
+        "Raden Mas Ontoseno",
+        "Gusti Bendara Kanjeng Pangeran Hangabehi"
+      ],
+      "variants": [
+        "Pakubuwono XI"
+      ],
+      "born": [
+        {
+          "date": {
+            "edtf": "1886-02-01",
+            "text": "1 February 1886"
+          },
+          "place": "Surakarta",
+          "certainty": "high",
+          "sources": [
+            {
+              "source": "wp_en_pb11",
+              "quay": 1,
+              "where": "infobox"
+            }
+          ]
+        }
+      ],
+      "died": [
+        {
+          "date": {
+            "edtf": "1945-06-01",
+            "text": "1 June 1945"
+          },
+          "place": "Surakarta",
+          "certainty": "high",
+          "sources": [
+            {
+              "source": "wp_en_pb11",
+              "quay": 1,
+              "where": "infobox"
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "source": "wp_en_pb11",
+          "quay": 1,
+          "where": "lead and Reign"
+        }
+      ]
     },
     "djatikusumo": {
       "name": "Djatikusumo",
@@ -770,7 +2374,46 @@
         "box": "minor",
         "year": 1945,
         "sub": "first Army Chief of Staff"
-      }
+      },
+      "aka": [
+        "Bendara Raden Mas Subandana"
+      ],
+      "variants": [
+        "Djatikoesoemo",
+        "Jatikusumo"
+      ],
+      "born": [
+        {
+          "date": {
+            "edtf": "1917-07-01",
+            "text": "1 July 1917"
+          },
+          "place": "Surakarta",
+          "certainty": "high",
+          "sources": [
+            {
+              "source": "o_wp_id_djatikoesoemo",
+              "quay": 1
+            }
+          ]
+        }
+      ],
+      "died": [
+        {
+          "date": {
+            "edtf": "1992-07-04",
+            "text": "4 July 1992"
+          },
+          "place": "Jakarta",
+          "certainty": "high",
+          "sources": [
+            {
+              "source": "o_wp_id_djatikoesoemo",
+              "quay": 1
+            }
+          ]
+        }
+      ]
     },
     "haryomataram": {
       "name": "Haryo Mataram",
@@ -781,7 +2424,44 @@
         "box": "minor",
         "year": 1945,
         "sub": "first rector of UNS"
-      }
+      },
+      "born": [
+        {
+          "date": {
+            "edtf": "1925-03-14",
+            "text": "14 March 1925"
+          },
+          "place": "Surakarta",
+          "certainty": "medium",
+          "sources": [
+            {
+              "source": "o_wp_id_haryomataram",
+              "quay": 1
+            }
+          ]
+        }
+      ],
+      "died": [
+        {
+          "date": {
+            "edtf": "2011-02-15",
+            "text": "15 February 2011"
+          },
+          "place": "Jakarta (RSPAD)",
+          "certainty": "high",
+          "note": "Aged 86 per Hukumonline; the Wikipedia infobox says 85.",
+          "sources": [
+            {
+              "source": "o_hukumonline2011",
+              "quay": 2
+            },
+            {
+              "source": "o_wp_id_haryomataram",
+              "quay": 1
+            }
+          ]
+        }
+      ]
     },
     "pb12": {
       "name": "Pakubuwana XII",
@@ -802,7 +2482,64 @@
         "box": "ruler",
         "year": 1945,
         "sub": "r. 1945 – 2004"
-      }
+      },
+      "bio": "Born Raden Mas Suryo Guritno, he succeeded as a young man in 1945 and reigned 59 years. From 1946 Surakarta lost its special status and became a residency of Central Java, leaving the Susuhunan a ceremonial figure. Called Sinuhun Hamardika.",
+      "aka": [
+        "Gusti Raden Mas Suryo Guritno",
+        "Raden Mas Soerjo Goeritno",
+        "Kanjeng Gusti Pangeran Harya Poerbojo",
+        "Sinuhun Hamardika"
+      ],
+      "variants": [
+        "Pakubuwono XII",
+        "Paku Buwono XII"
+      ],
+      "born": [
+        {
+          "date": {
+            "edtf": "1925-04-14",
+            "text": "14 April 1925"
+          },
+          "place": "Surakarta",
+          "certainty": "high",
+          "sources": [
+            {
+              "source": "wp_en_pb12",
+              "quay": 1,
+              "where": "infobox"
+            }
+          ]
+        }
+      ],
+      "died": [
+        {
+          "date": {
+            "edtf": "2004-06-11",
+            "text": "11 June 2004"
+          },
+          "place": "Surakarta",
+          "certainty": "high",
+          "sources": [
+            {
+              "source": "wp_en_pb12",
+              "quay": 1,
+              "where": "infobox"
+            },
+            {
+              "source": "wp_id_pb13",
+              "quay": 1,
+              "where": "2004 succession"
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "source": "wp_en_pb12",
+          "quay": 1,
+          "where": "lead and Reign"
+        }
+      ]
     },
     "pb13": {
       "name": "Pakubuwana XIII",
@@ -823,7 +2560,83 @@
         "box": "ruler",
         "year": 2004,
         "sub": "r. 2004 – 2025"
-      }
+      },
+      "bio": "Born Gusti Raden Mas Suryo Partono, known as Hangabehi. His accession in 2004 was disputed by his half-brother Tedjowulan, crowned by other siblings; they were reconciled in 2012. He died in November 2025, and his own succession is disputed between two sons.",
+      "aka": [
+        "Gusti Raden Mas Suryo Partono",
+        "Gusti Raden Mas Suryadi",
+        "KGPH Hangabehi"
+      ],
+      "variants": [
+        "Pakubuwono XIII",
+        "Paku Buwono XIII",
+        "Paku Buwana XIII"
+      ],
+      "born": [
+        {
+          "date": {
+            "edtf": "1948-06-28",
+            "text": "28 June 1948"
+          },
+          "place": "Surakarta",
+          "certainty": "medium",
+          "note": "Stated without a citation in both Wikipedias.",
+          "sources": [
+            {
+              "source": "wp_id_pb13",
+              "quay": 1,
+              "where": "infobox"
+            },
+            {
+              "source": "wp_en_pb13",
+              "quay": 1,
+              "where": "infobox"
+            }
+          ]
+        }
+      ],
+      "died": [
+        {
+          "date": {
+            "edtf": "2025-11-02",
+            "text": "2 November 2025, about 07.30"
+          },
+          "place": "Indriyati Hospital, Solo Baru, Sukoharjo",
+          "certainty": "high",
+          "note": "Date from news reports; the hospital is from Wikipedia only.",
+          "sources": [
+            {
+              "source": "cnbc2025",
+              "quay": 2
+            },
+            {
+              "source": "cnn2025",
+              "quay": 2
+            },
+            {
+              "source": "wp_id_pb13",
+              "quay": 1,
+              "where": "place"
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "source": "wp_id_pb13",
+          "quay": 1,
+          "where": "lead, 2004 dispute, 2012 reconciliation, succession"
+        },
+        {
+          "source": "wp_en_pakubuwono",
+          "quay": 1,
+          "where": "list notes on disputes"
+        },
+        {
+          "source": "cnbc2025",
+          "quay": 2
+        }
+      ]
     },
     "winari": {
       "name": "KRAy. Winari Sri Haryani",
@@ -834,7 +2647,21 @@
           "side": "l"
         },
         "sub": "second wife · divorced"
-      }
+      },
+      "variants": [
+        "Winari Sri Harjani"
+      ],
+      "sources": [
+        {
+          "source": "o_wp_en_pb13",
+          "where": "Family",
+          "quay": 1
+        },
+        {
+          "source": "o_detik_pb14_2025",
+          "quay": 2
+        }
+      ]
     },
     "asihwinarni": {
       "name": "GKR Pakubuwana",
@@ -845,7 +2672,24 @@
           "side": "r"
         },
         "sub": "born Asih Winarni · queen"
-      }
+      },
+      "aka": [
+        "KRAy. Pradapaningsih"
+      ],
+      "variants": [
+        "KRAy. Adipati Pradoponingsih"
+      ],
+      "sources": [
+        {
+          "source": "o_cnn_purbaya2025",
+          "quay": 2
+        },
+        {
+          "source": "o_wp_en_pb13",
+          "where": "Family",
+          "quay": 1
+        }
+      ]
     },
     "tedjowulan": {
       "name": "Tedjowulan",
@@ -857,7 +2701,30 @@
         "year": 2004,
         "sub": "claimed 2004 – 2012",
         "hatch": true
-      }
+      },
+      "aka": [
+        "Gusti Raden Mas Soerjo Soetedjo",
+        "KGPH Panembahan Agung Tedjowulan"
+      ],
+      "variants": [
+        "Tejowulan"
+      ],
+      "born": [
+        {
+          "date": {
+            "edtf": "1954-08-03",
+            "text": "3 August 1954"
+          },
+          "place": "Surakarta",
+          "certainty": "medium",
+          "sources": [
+            {
+              "source": "o_wp_id_tedjowulan",
+              "quay": 1
+            }
+          ]
+        }
+      ]
     },
     "moeng": {
       "name": "Wandansari",
@@ -868,7 +2735,28 @@
         "box": "minor",
         "year": 2004,
         "sub": "“Gusti Moeng” · former MP"
-      }
+      },
+      "aka": [
+        "G.R.Ay. Koes Murtiyah",
+        "Gusti Moeng"
+      ],
+      "born": [
+        {
+          "date": {
+            "edtf": "1960-11-01",
+            "text": "1 November 1960"
+          },
+          "place": "Surakarta",
+          "certainty": "medium",
+          "sources": [
+            {
+              "source": "o_herawati2018",
+              "where": "biographical paragraph on GKR Wandansari",
+              "quay": 2
+            }
+          ]
+        }
+      ]
     },
     "pb14h": {
       "name": "Pakubuwana XIV",
@@ -880,7 +2768,32 @@
         "year": 2025,
         "sub": "Hangabehi · claimed 2025 – present",
         "hatch": true
-      }
+      },
+      "aka": [
+        "Gusti Raden Mas Soerjo Soeharto",
+        "KGPH Mangkubumi",
+        "KGPH Hangabehi"
+      ],
+      "born": [
+        {
+          "date": {
+            "edtf": "1985-02-05",
+            "text": "5 February 1985"
+          },
+          "place": "Surakarta",
+          "certainty": "high",
+          "sources": [
+            {
+              "source": "o_detik_pb14_2025",
+              "quay": 2
+            },
+            {
+              "source": "o_popmama_hangabehi",
+              "quay": 1
+            }
+          ]
+        }
+      ]
     },
     "pb14p": {
       "name": "Pakubuwana XIV",
@@ -892,7 +2805,34 @@
         "year": 2025,
         "sub": "Purbaya · claimed 2025 – present",
         "hatch": true
-      }
+      },
+      "aka": [
+        "Gusti Raden Mas Suryo Aryo Mustiko",
+        "KGPH Purbaya",
+        "KGPAA Hamangkunegoro"
+      ],
+      "born": [
+        {
+          "date": {
+            "edtf": "2002-09-26",
+            "text": "26 September 2002"
+          },
+          "certainty": "medium",
+          "note": "One report gives 27 February 2003.",
+          "sources": [
+            {
+              "source": "o_detik_pb14_2025",
+              "quay": 2
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "source": "o_cnn_purbaya2025",
+          "quay": 2
+        }
+      ]
     },
     "hb1": {
       "name": "Hamengkubuwana I",
@@ -913,7 +2853,86 @@
         "box": "ruler",
         "year": 1755,
         "sub": "r. 1755 – 1792"
-      }
+      },
+      "bio": "Known before his accession as Pangeran Mangkubumi. He fought the VOC until the Treaty of Giyanti (1755) gave him half of Mataram, where he founded the Yogyakarta sultanate and laid out its palace and the Taman Sari water garden. National Hero of Indonesia (2006).",
+      "aka": [
+        "Bendara Raden Mas Sujono",
+        "Pangeran Mangkubumi",
+        "Pangeran Lurah"
+      ],
+      "variants": [
+        "Hamengkubuwono I",
+        "Hamengku Buwono I"
+      ],
+      "born": [
+        {
+          "date": {
+            "edtf": "1717-08-16",
+            "text": "Friday Kliwon, 16 August 1717"
+          },
+          "certainty": "medium",
+          "sources": [
+            {
+              "source": "jogja200",
+              "quay": 2,
+              "where": "p. 190 of the scan (I = birth, II = accession, III = death)"
+            }
+          ]
+        },
+        {
+          "date": {
+            "edtf": "1717-08-05",
+            "text": "5 August 1717"
+          },
+          "certainty": "medium",
+          "sources": [
+            {
+              "source": "kraton_hb1",
+              "quay": 2
+            }
+          ]
+        },
+        {
+          "date": {
+            "edtf": "1717-08-06",
+            "text": "6 August 1717"
+          },
+          "certainty": "low",
+          "sources": [
+            {
+              "source": "wp_en_hamengkubuwono",
+              "quay": 1,
+              "where": "list of sultans"
+            }
+          ]
+        }
+      ],
+      "died": [
+        {
+          "date": {
+            "edtf": "1792-03-24",
+            "text": "24 March 1792"
+          },
+          "certainty": "high",
+          "sources": [
+            {
+              "source": "kraton_hb1",
+              "quay": 2
+            },
+            {
+              "source": "jogja200",
+              "quay": 2,
+              "where": "p. 190 of the scan (I = birth, II = accession, III = death)"
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "source": "kraton_hb1",
+          "quay": 2
+        }
+      ]
     },
     "ratuageng": {
       "name": "Ratu Ageng Tegalrejo",
@@ -924,7 +2943,43 @@
           "side": "l"
         },
         "sub": "queen · raised Diponegoro"
-      }
+      },
+      "aka": [
+        "Niken Ayu Yuwati",
+        "Gusti Kanjeng Ratu Kadipaten"
+      ],
+      "born": [
+        {
+          "date": {
+            "edtf": "1735",
+            "text": "1735"
+          },
+          "certainty": "medium",
+          "sources": [
+            {
+              "source": "o_wp_id_ratuageng",
+              "quay": 1
+            }
+          ]
+        }
+      ],
+      "died": [
+        {
+          "date": {
+            "edtf": "1803-10-17",
+            "text": "17 October 1803"
+          },
+          "place": "Yogyakarta",
+          "certainty": "medium",
+          "note": "Buried at Imogiri.",
+          "sources": [
+            {
+              "source": "o_wp_id_ratuageng",
+              "quay": 1
+            }
+          ]
+        }
+      ]
     },
     "hb2": {
       "name": "Hamengkubuwana II",
@@ -961,7 +3016,82 @@
         "box": "ruler",
         "year": 1792,
         "sub": "r. 1792–1810, 1811–12, 1826–28"
-      }
+      },
+      "bio": "Born Raden Mas Sundoro; called Sultan Sepuh after his removals. He defied Dutch and then British authority, and reigned three times: deposed in 1810 under Daendels, restored in 1811, deposed and exiled after the British stormed the palace in 1812, and restored in 1826 during the Java War.",
+      "aka": [
+        "Raden Mas Sundoro",
+        "Sultan Sepuh"
+      ],
+      "variants": [
+        "Hamengkubuwono II",
+        "Hamengku Buwono II"
+      ],
+      "born": [
+        {
+          "date": {
+            "edtf": "1750-03-07",
+            "text": "7 March 1750"
+          },
+          "place": "slopes of Mount Sindoro",
+          "certainty": "high",
+          "sources": [
+            {
+              "source": "kraton_hb2",
+              "quay": 2
+            },
+            {
+              "source": "jogja200",
+              "quay": 2,
+              "where": "p. 190 of the scan (I = birth, II = accession, III = death)"
+            }
+          ]
+        }
+      ],
+      "died": [
+        {
+          "date": {
+            "edtf": "1828-01-03",
+            "text": "3 January 1828"
+          },
+          "certainty": "medium",
+          "sources": [
+            {
+              "source": "kraton_hb2",
+              "quay": 2
+            },
+            {
+              "source": "wp_en_hamengkubuwono",
+              "quay": 1,
+              "where": "list of sultans"
+            }
+          ]
+        },
+        {
+          "date": {
+            "edtf": "1828-01-02",
+            "text": "2 January 1828"
+          },
+          "certainty": "medium",
+          "sources": [
+            {
+              "source": "jogja200",
+              "quay": 2,
+              "where": "p. 190 of the scan (I = birth, II = accession, III = death)"
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "source": "kraton_hb2",
+          "quay": 2
+        },
+        {
+          "source": "jogja200",
+          "quay": 2,
+          "where": "p. 190 of the scan (I = birth, II = accession, III = death)"
+        }
+      ]
     },
     "hb3": {
       "name": "Hamengkubuwana III",
@@ -990,7 +3120,76 @@
         "box": "ruler",
         "year": 1810,
         "sub": "regent 1810–11 · r. 1812–14"
-      }
+      },
+      "bio": "Born Raden Mas Surojo, son of Hamengkubuwana II. He twice replaced his father: as regent from 1810 and as sultan under the British from 1812. That second accession cost Yogyakarta Kedu and other lands, its army, and land for the new Pakualaman.",
+      "aka": [
+        "Raden Mas Surojo",
+        "Adipati Anom"
+      ],
+      "variants": [
+        "Hamengkubuwono III",
+        "Hamengku Buwono III"
+      ],
+      "born": [
+        {
+          "date": {
+            "edtf": "1769-02-20",
+            "text": "20 February 1769"
+          },
+          "certainty": "medium",
+          "sources": [
+            {
+              "source": "kraton_hb3",
+              "quay": 2
+            },
+            {
+              "source": "wp_en_hamengkubuwono",
+              "quay": 1,
+              "where": "list of sultans"
+            }
+          ]
+        },
+        {
+          "date": {
+            "edtf": "1770-02-14",
+            "text": "Wednesday Kliwon, 14 February 1770"
+          },
+          "certainty": "medium",
+          "sources": [
+            {
+              "source": "jogja200",
+              "quay": 2,
+              "where": "p. 190 of the scan (I = birth, II = accession, III = death)"
+            }
+          ]
+        }
+      ],
+      "died": [
+        {
+          "date": {
+            "edtf": "1814-11-03",
+            "text": "3 November 1814"
+          },
+          "certainty": "high",
+          "sources": [
+            {
+              "source": "kraton_hb3",
+              "quay": 2
+            },
+            {
+              "source": "jogja200",
+              "quay": 2,
+              "where": "p. 190 of the scan (I = birth, II = accession, III = death)"
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "source": "kraton_hb3",
+          "quay": 2
+        }
+      ]
     },
     "diponegoro": {
       "name": "Diponegoro",
@@ -1001,7 +3200,47 @@
         "box": "minor",
         "year": 1825,
         "sub": "led the Java War, 1825 – 1830"
-      }
+      },
+      "aka": [
+        "Bendara Raden Mas Mustahar",
+        "Bendara Raden Mas Antawirya"
+      ],
+      "variants": [
+        "Dipanegara",
+        "Dipanagara"
+      ],
+      "born": [
+        {
+          "date": {
+            "edtf": "1785-11-11",
+            "text": "11 November 1785"
+          },
+          "place": "Yogyakarta",
+          "certainty": "high",
+          "sources": [
+            {
+              "source": "o_wp_en_diponegoro",
+              "quay": 1
+            }
+          ]
+        }
+      ],
+      "died": [
+        {
+          "date": {
+            "edtf": "1855-01-08",
+            "text": "8 January 1855"
+          },
+          "place": "Makassar",
+          "certainty": "high",
+          "sources": [
+            {
+              "source": "o_wp_en_diponegoro",
+              "quay": 1
+            }
+          ]
+        }
+      ]
     },
     "pmangkubumi": {
       "name": "Mangkubumi",
@@ -1032,7 +3271,44 @@
           "side": "l"
         },
         "sub": "regent of Madiun · rebelled 1810"
-      }
+      },
+      "aka": [
+        "Raden Ronggo III"
+      ],
+      "born": [
+        {
+          "date": {
+            "edtf": "1779~",
+            "text": "c. 1779"
+          },
+          "certainty": "low",
+          "note": "Only from the subtitle of the book cited by iNews (Banteng Terakhir Kesultanan Yogyakarta).",
+          "sources": [
+            {
+              "source": "o_inews_ronggo2023",
+              "where": "title of the book it cites",
+              "quay": 1
+            }
+          ]
+        }
+      ],
+      "died": [
+        {
+          "date": {
+            "edtf": "1810-12-17",
+            "text": "17 December 1810"
+          },
+          "place": "Sekaran, on the Bengawan Solo (Bojonegoro)",
+          "certainty": "medium",
+          "note": "Killed in battle with the Yogyakarta court's troops.",
+          "sources": [
+            {
+              "source": "o_inews_ronggo2023",
+              "quay": 2
+            }
+          ]
+        }
+      ]
     },
     "sentot": {
       "name": "Sentot Prawirodirjo",
@@ -1042,7 +3318,47 @@
         "year": 1825,
         "sub": "Java War commander<br>c. 1808 – 1855",
         "width": 200
-      }
+      },
+      "aka": [
+        "Sentot Ali Basah",
+        "Ali Basya Abdullah Mustafa Prawirodirjo"
+      ],
+      "variants": [
+        "Sentot Prawirodirdjo"
+      ],
+      "born": [
+        {
+          "date": {
+            "edtf": "1808",
+            "text": "1808"
+          },
+          "place": "Maospati, Magetan",
+          "certainty": "medium",
+          "note": "The article's categories say 1807.",
+          "sources": [
+            {
+              "source": "o_wp_id_sentot",
+              "quay": 1
+            }
+          ]
+        }
+      ],
+      "died": [
+        {
+          "date": {
+            "edtf": "1855-04-17",
+            "text": "17 April 1855"
+          },
+          "place": "Bengkulu",
+          "certainty": "medium",
+          "sources": [
+            {
+              "source": "o_wp_id_sentot",
+              "quay": 1
+            }
+          ]
+        }
+      ]
     },
     "kyaimaja": {
       "name": "Kyai Maja",
@@ -1052,7 +3368,46 @@
         "year": 1825,
         "sub": "Diponegoro's religious<br>adviser · d. 1849",
         "width": 190
-      }
+      },
+      "aka": [
+        "Muslim Mochammad Khalifah"
+      ],
+      "variants": [
+        "Kyai Modjo"
+      ],
+      "born": [
+        {
+          "date": {
+            "edtf": "1792~",
+            "text": "c. 1792"
+          },
+          "place": "Mojo",
+          "certainty": "low",
+          "sources": [
+            {
+              "source": "o_wp_en_kyaimaja",
+              "quay": 1
+            }
+          ]
+        }
+      ],
+      "died": [
+        {
+          "date": {
+            "edtf": "1849-12-20",
+            "text": "20 December 1849"
+          },
+          "place": "Tondano",
+          "certainty": "medium",
+          "sources": [
+            {
+              "source": "o_wp_en_kyaimaja",
+              "where": "citing tirto.id and Historia",
+              "quay": 1
+            }
+          ]
+        }
+      ]
     },
     "ramaduretno": {
       "name": "Maduretno",
@@ -1086,7 +3441,82 @@
         "box": "ruler",
         "year": 1814,
         "sub": "r. 1814 – 1822"
-      }
+      },
+      "bio": "Born Gusti Raden Mas Ibnu Jarot, he became sultan aged about ten in 1814, with Paku Alam I governing for him. His own short rule was dominated by the chief minister Danureja IV and the Dutch. He died suddenly after an outing, hence the name Sultan Seda Besiyar.",
+      "aka": [
+        "Gusti Raden Mas Ibnu Jarot",
+        "Sultan Seda Besiyar"
+      ],
+      "variants": [
+        "Hamengkubuwono IV",
+        "Hamengku Buwono IV"
+      ],
+      "born": [
+        {
+          "date": {
+            "edtf": "1804-04-03",
+            "text": "3 April 1804"
+          },
+          "certainty": "high",
+          "sources": [
+            {
+              "source": "kraton_hb4",
+              "quay": 2
+            },
+            {
+              "source": "jogja200",
+              "quay": 2,
+              "where": "p. 190 of the scan (I = birth, II = accession, III = death)"
+            }
+          ]
+        }
+      ],
+      "died": [
+        {
+          "date": {
+            "edtf": "1822-12-06",
+            "text": "6 December 1822"
+          },
+          "certainty": "medium",
+          "note": "Fits the accession of Hamengkubuwana V on 19 December 1822 (same book, p. 193 of the scan).",
+          "sources": [
+            {
+              "source": "jogja200",
+              "quay": 2,
+              "where": "p. 190 of the scan (I = birth, II = accession, III = death)"
+            }
+          ]
+        },
+        {
+          "date": {
+            "edtf": "1823-12-06",
+            "text": "6 December 1823"
+          },
+          "certainty": "medium",
+          "sources": [
+            {
+              "source": "kraton_hb4",
+              "quay": 2
+            },
+            {
+              "source": "wp_en_hamengkubuwono",
+              "quay": 1,
+              "where": "list of sultans"
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "source": "kraton_hb4",
+          "quay": 2
+        },
+        {
+          "source": "jogja200",
+          "quay": 2,
+          "where": "p. 190 of the scan (I = birth, II = accession, III = death)"
+        }
+      ]
     },
     "hb5": {
       "name": "Hamengkubuwana V",
@@ -1115,7 +3545,105 @@
         "box": "ruler",
         "year": 1822,
         "sub": "r. 1822–26, 1828–55"
-      }
+      },
+      "bio": "Born Gusti Raden Mas Gatot Menol, he became sultan as a small child under a regency council. Set aside in 1826 for his great-grandfather Hamengkubuwana II during the Java War, he was restored in 1828, sought accommodation with the Dutch after the war, and patronised dance and letters.",
+      "aka": [
+        "Gusti Raden Mas Gatot Menol"
+      ],
+      "variants": [
+        "Hamengkubuwono V",
+        "Hamengku Buwono V"
+      ],
+      "born": [
+        {
+          "date": {
+            "edtf": "1820-01-25",
+            "text": "Tuesday Legi, 25 January 1820"
+          },
+          "certainty": "medium",
+          "sources": [
+            {
+              "source": "jogja200",
+              "quay": 2,
+              "where": "p. 193 of the scan, printed p. 153"
+            }
+          ]
+        },
+        {
+          "date": {
+            "edtf": "1820-01-24",
+            "text": "24 January 1820"
+          },
+          "certainty": "low",
+          "sources": [
+            {
+              "source": "wp_en_hb5",
+              "quay": 1,
+              "where": "infobox"
+            }
+          ]
+        },
+        {
+          "date": {
+            "edtf": "1821-01-20",
+            "text": "20 January 1821"
+          },
+          "certainty": "low",
+          "note": "Hard to square with his accession as a two-year-old in December 1822.",
+          "sources": [
+            {
+              "source": "kraton_hb5",
+              "quay": 2
+            }
+          ]
+        }
+      ],
+      "died": [
+        {
+          "date": {
+            "edtf": "1855-06-05",
+            "text": "5 June 1855"
+          },
+          "place": "Yogyakarta palace",
+          "certainty": "medium",
+          "sources": [
+            {
+              "source": "kraton_hb5",
+              "quay": 2
+            },
+            {
+              "source": "wp_en_hb5",
+              "quay": 1,
+              "where": "infobox"
+            }
+          ]
+        },
+        {
+          "date": {
+            "edtf": "1855-06-04",
+            "text": "4 June 1855"
+          },
+          "certainty": "medium",
+          "sources": [
+            {
+              "source": "jogja200",
+              "quay": 2,
+              "where": "p. 193 of the scan, printed p. 153"
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "source": "kraton_hb5",
+          "quay": 2
+        },
+        {
+          "source": "jogja200",
+          "quay": 2,
+          "where": "p. 193 of the scan, printed p. 153"
+        }
+      ]
     },
     "ratuibu": {
       "name": "Kencana",
@@ -1128,7 +3656,29 @@
           "side": "r"
         },
         "sub": "“Ratu Ibu” · a guardian of her son"
-      }
+      },
+      "aka": [
+        "Gusti Kanjeng Ratu Hageng"
+      ],
+      "variants": [
+        "Kencono"
+      ],
+      "born": [
+        {
+          "date": {
+            "edtf": "1802",
+            "text": "1802"
+          },
+          "certainty": "medium",
+          "sources": [
+            {
+              "source": "o_wp_en_hb4",
+              "where": "Family",
+              "quay": 1
+            }
+          ]
+        }
+      ]
     },
     "gustiahmad": {
       "name": "Timur Muhammad",
@@ -1138,7 +3688,39 @@
         "box": "minor",
         "year": 1855,
         "sub": "“Gusti Ahmad” · bypassed heir"
-      }
+      },
+      "born": [
+        {
+          "date": {
+            "edtf": "1855",
+            "text": "1855, about 13 days after his father's death"
+          },
+          "certainty": "medium",
+          "sources": [
+            {
+              "source": "o_wp_id_hb5",
+              "quay": 1
+            }
+          ]
+        }
+      ],
+      "died": [
+        {
+          "place": "Manado (in exile)",
+          "certainty": "low",
+          "note": "No date found; died in exile with his mother.",
+          "sources": [
+            {
+              "source": "o_wp_id_hb5",
+              "quay": 1
+            },
+            {
+              "source": "o_wp_en_hb7",
+              "quay": 1
+            }
+          ]
+        }
+      ]
     },
     "hb6": {
       "name": "Hamengkubuwana VI",
@@ -1159,7 +3741,76 @@
         "box": "ruler",
         "year": 1855,
         "sub": "r. 1855 – 1877"
-      }
+      },
+      "bio": "Born Gusti Raden Mas Mustojo and known as Pangeran Adipati Mangkubumi before his accession, he was chosen by the Dutch when Hamengkubuwana V died without a son. His marriage to a daughter of Pakubuwana VIII eased tension with Surakarta. A strong earthquake hit Yogyakarta in 1867.",
+      "aka": [
+        "Gusti Raden Mas Mustojo",
+        "Pangeran Adipati Mangkubumi"
+      ],
+      "variants": [
+        "Hamengkubuwono VI",
+        "Hamengku Buwono VI"
+      ],
+      "born": [
+        {
+          "date": {
+            "edtf": "1821-08-10",
+            "text": "10 August 1821"
+          },
+          "certainty": "medium",
+          "sources": [
+            {
+              "source": "kraton_hb6",
+              "quay": 2
+            },
+            {
+              "source": "wp_en_hamengkubuwono",
+              "quay": 1,
+              "where": "list of sultans"
+            }
+          ]
+        },
+        {
+          "date": {
+            "edtf": "1821-08-19",
+            "text": "Sunday Pon, 19 August 1821"
+          },
+          "certainty": "medium",
+          "sources": [
+            {
+              "source": "jogja200",
+              "quay": 2,
+              "where": "p. 193 of the scan, printed p. 153"
+            }
+          ]
+        }
+      ],
+      "died": [
+        {
+          "date": {
+            "edtf": "1877-07-20",
+            "text": "20 July 1877"
+          },
+          "certainty": "high",
+          "sources": [
+            {
+              "source": "kraton_hb6",
+              "quay": 2
+            },
+            {
+              "source": "jogja200",
+              "quay": 2,
+              "where": "p. 193 of the scan, printed p. 153"
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "source": "kraton_hb6",
+          "quay": 2
+        }
+      ]
     },
     "hb7": {
       "name": "Hamengkubuwana VII",
@@ -1180,7 +3831,77 @@
         "box": "ruler",
         "year": 1877,
         "sub": "r. 1877 – 1921"
-      }
+      },
+      "bio": "Born Gusti Raden Mas Murtejo, son of Hamengkubuwana VI. Called Sultan Sugih, 'the rich sultan', for the income his court drew from sugar mills, land leases and railway fees. He lent a building for Budi Utomo's first congress, and abdicated in January 1921.",
+      "aka": [
+        "Gusti Raden Mas Murtejo",
+        "Sultan Sugih"
+      ],
+      "variants": [
+        "Hamengkubuwono VII",
+        "Hamengku Buwono VII"
+      ],
+      "born": [
+        {
+          "date": {
+            "edtf": "1839-02-04",
+            "text": "4 February 1839"
+          },
+          "certainty": "high",
+          "sources": [
+            {
+              "source": "kraton_hb7",
+              "quay": 2
+            },
+            {
+              "source": "jogja200",
+              "quay": 2,
+              "where": "p. 193 of the scan, printed p. 153"
+            }
+          ]
+        }
+      ],
+      "died": [
+        {
+          "date": {
+            "edtf": "1921-12-30",
+            "text": "30 December 1921"
+          },
+          "certainty": "medium",
+          "sources": [
+            {
+              "source": "kraton_hb7",
+              "quay": 2
+            }
+          ]
+        },
+        {
+          "date": {
+            "edtf": "1931-12-29",
+            "text": "29 December 1931"
+          },
+          "certainty": "low",
+          "note": "As transcribed on Wikisource; possibly a misprint for 1921.",
+          "sources": [
+            {
+              "source": "jogja200",
+              "quay": 2,
+              "where": "p. 193 of the scan, printed p. 153"
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "source": "kraton_hb7",
+          "quay": 2
+        },
+        {
+          "source": "jogja200",
+          "quay": 2,
+          "where": "p. 193 of the scan, printed p. 153"
+        }
+      ]
     },
     "hb8": {
       "name": "Hamengkubuwana VIII",
@@ -1201,7 +3922,63 @@
         "box": "ruler",
         "year": 1921,
         "sub": "r. 1921 – 1939"
-      }
+      },
+      "bio": "Born Gusti Raden Mas Sujadi, he was recalled from study in the Netherlands to become sultan in 1921. He funded schools and health care, rebuilt much of the palace and the Great Mosque, and presided over a golden age of Yogyakarta dance and wayang wong.",
+      "aka": [
+        "Gusti Raden Mas Sujadi",
+        "Gusti Pangeran Haryo Puruboyo"
+      ],
+      "variants": [
+        "Hamengkubuwono VIII",
+        "Hamengku Buwono VIII"
+      ],
+      "born": [
+        {
+          "date": {
+            "edtf": "1880-03-03",
+            "text": "3 March 1880"
+          },
+          "certainty": "high",
+          "sources": [
+            {
+              "source": "kraton_hb8",
+              "quay": 2
+            },
+            {
+              "source": "jogja200",
+              "quay": 2,
+              "where": "p. 193 of the scan, printed p. 153"
+            }
+          ]
+        }
+      ],
+      "died": [
+        {
+          "date": {
+            "edtf": "1939-10-22",
+            "text": "22 October 1939"
+          },
+          "place": "Panti Rapih Hospital, Yogyakarta",
+          "certainty": "high",
+          "sources": [
+            {
+              "source": "kraton_hb8",
+              "quay": 2
+            },
+            {
+              "source": "jogja200",
+              "quay": 2,
+              "where": "p. 193 of the scan, printed p. 153"
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "source": "kraton_hb8",
+          "quay": 2
+        }
+      ]
     },
     "juminah": {
       "name": "Hamengkunegara II",
@@ -1211,7 +3988,10 @@
         "box": "minor",
         "year": 1893,
         "sub": "“Juminah” · crown prince · set aside"
-      }
+      },
+      "aka": [
+        "Kanjeng Gusti Pangeran Juminah"
+      ]
     },
     "bagong": {
       "name": "Bagong Kussudiardja",
@@ -1220,7 +4000,42 @@
         "year": 1958,
         "sub": "pioneer of modern dance<br>1928 – 2004",
         "width": 220
-      }
+      },
+      "variants": [
+        "Bagong Kussudiardjo"
+      ],
+      "born": [
+        {
+          "date": {
+            "edtf": "1928-10-09",
+            "text": "9 October 1928"
+          },
+          "place": "Yogyakarta",
+          "certainty": "high",
+          "sources": [
+            {
+              "source": "o_wp_en_bagong",
+              "quay": 1
+            }
+          ]
+        }
+      ],
+      "died": [
+        {
+          "date": {
+            "edtf": "2004-06-15",
+            "text": "15 June 2004"
+          },
+          "place": "Yogyakarta",
+          "certainty": "high",
+          "sources": [
+            {
+              "source": "o_wp_en_bagong",
+              "quay": 1
+            }
+          ]
+        }
+      ]
     },
     "butet": {
       "name": "Butet Kertaredjasa",
@@ -1230,7 +4045,30 @@
         "year": 1990,
         "sub": "actor and monologist",
         "width": 190
-      }
+      },
+      "aka": [
+        "R.M. Bambang Ekoloyo Butet Kartaredjasa"
+      ],
+      "variants": [
+        "Butet Kartaredjasa",
+        "Butet Kertaradjasa"
+      ],
+      "born": [
+        {
+          "date": {
+            "edtf": "1961-11-21",
+            "text": "21 November 1961"
+          },
+          "place": "Yogyakarta",
+          "certainty": "high",
+          "sources": [
+            {
+              "source": "o_wp_id_butet",
+              "quay": 1
+            }
+          ]
+        }
+      ]
     },
     "djaduk": {
       "name": "Djaduk Ferianto",
@@ -1239,7 +4077,44 @@
         "year": 1990,
         "sub": "musician · 1964 – 2019",
         "width": 190
-      }
+      },
+      "aka": [
+        "R.M. Gregorius Djaduk Ferianto"
+      ],
+      "born": [
+        {
+          "date": {
+            "edtf": "1964-07-19",
+            "text": "19 July 1964"
+          },
+          "place": "Yogyakarta",
+          "certainty": "high",
+          "note": "The infobox says Bantul.",
+          "sources": [
+            {
+              "source": "o_wp_id_djaduk",
+              "quay": 1
+            }
+          ]
+        }
+      ],
+      "died": [
+        {
+          "date": {
+            "edtf": "2019-11-13",
+            "text": "13 November 2019"
+          },
+          "place": "Bantul",
+          "certainty": "high",
+          "note": "The infobox says Yogyakarta.",
+          "sources": [
+            {
+              "source": "o_wp_id_djaduk",
+              "quay": 1
+            }
+          ]
+        }
+      ]
     },
     "hb9": {
       "name": "Hamengkubuwana IX",
@@ -1260,7 +4135,60 @@
         "box": "ruler",
         "year": 1940,
         "sub": "r. 1940 – 1988"
-      }
+      },
+      "bio": "Born Gusti Raden Mas Dorojatun. In 1945 he and Paku Alam VIII declared Yogyakarta part of the new Republic, which he helped fund from the palace treasury. Vice-President of Indonesia 1973–1978, father of Indonesian scouting, and National Hero (1990).",
+      "aka": [
+        "Gusti Raden Mas Dorojatun",
+        "Henkie"
+      ],
+      "variants": [
+        "Hamengkubuwono IX",
+        "Hamengku Buwono IX"
+      ],
+      "born": [
+        {
+          "date": {
+            "edtf": "1912-04-12",
+            "text": "12 April 1912"
+          },
+          "certainty": "medium",
+          "sources": [
+            {
+              "source": "kraton_hb9",
+              "quay": 2
+            },
+            {
+              "source": "jogja200",
+              "quay": 2,
+              "where": "p. 194 of the scan, printed p. 154"
+            }
+          ],
+          "note": "12 April 1912 was a Friday. The Javanese day begins at sunset, so a birth that evening is Saturday Pahing, 13 April, the date the 1956 Kota Jogjakarta 200 Tahun gives."
+        }
+      ],
+      "died": [
+        {
+          "date": {
+            "edtf": "1988-10-02",
+            "text": "2 October 1988 (evening, US time)"
+          },
+          "place": "George Washington University Medical Center, Washington, D.C.",
+          "certainty": "high",
+          "note": "Some sources give 3 October 1988, the date in Indonesia.",
+          "sources": [
+            {
+              "source": "kraton_hb9",
+              "quay": 2
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "source": "kraton_hb9",
+          "quay": 2
+        }
+      ]
     },
     "norma": {
       "name": "KRAy. Nindyokirono",
@@ -1271,7 +4199,43 @@
           "side": "r"
         },
         "sub": "born Norma Musa · of Bangka"
-      }
+      },
+      "aka": [
+        "Norma Musa",
+        "Bu Norma"
+      ],
+      "born": [
+        {
+          "date": {
+            "edtf": "1930-12-03",
+            "text": "3 December 1930"
+          },
+          "place": "Bangka",
+          "certainty": "high",
+          "sources": [
+            {
+              "source": "o_republika2015",
+              "quay": 2
+            }
+          ]
+        }
+      ],
+      "died": [
+        {
+          "date": {
+            "edtf": "2015-09-02",
+            "text": "2 September 2015"
+          },
+          "place": "Jakarta",
+          "certainty": "high",
+          "sources": [
+            {
+              "source": "o_republika2015",
+              "quay": 2
+            }
+          ]
+        }
+      ]
     },
     "hb10": {
       "name": "Hamengkubuwana X",
@@ -1292,7 +4256,60 @@
         "box": "ruler",
         "year": 1989,
         "sub": "r. 1989 – present"
-      }
+      },
+      "bio": "Born Bendara Raden Mas Herjuno Darpito, son of Hamengkubuwana IX. Sultan since 1989 and Governor of Yogyakarta since 1998. Royal decrees in 2015 changed his court title to Hamengku Bawono and named his eldest daughter heir; some of his brothers dispute the changes.",
+      "aka": [
+        "Bendara Raden Mas Herjuno Darpito",
+        "KGPH Mangkubumi",
+        "Hamengku Bawono Ka 10",
+        "Sri Sultan Hamengku Bawono Ingkang Jumeneng Kasepuluh"
+      ],
+      "variants": [
+        "Hamengkubuwono X",
+        "Hamengku Buwono X"
+      ],
+      "born": [
+        {
+          "date": {
+            "edtf": "1946-04-02",
+            "text": "2 April 1946"
+          },
+          "place": "Yogyakarta",
+          "certainty": "high",
+          "sources": [
+            {
+              "source": "wp_en_hb10",
+              "quay": 1,
+              "where": "infobox"
+            },
+            {
+              "source": "wp_id_hb10",
+              "quay": 1,
+              "where": "infobox"
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "source": "wp_en_hb10",
+          "quay": 1,
+          "where": "lead and Titles"
+        },
+        {
+          "source": "wp_id_hb10",
+          "quay": 1,
+          "where": "Sabda Raja"
+        },
+        {
+          "source": "antara2015",
+          "quay": 2
+        },
+        {
+          "source": "suarasby2015",
+          "quay": 2
+        }
+      ]
     },
     "hemas_hb10": {
       "name": "Hemas",
@@ -1306,7 +4323,30 @@
         },
         "sub": "queen consort · deputy chair<br>of the Senate (DPD) since 2024",
         "width": 200
-      }
+      },
+      "aka": [
+        "Tatiek Dradjad Supriastuti",
+        "BRAy. Mangkubumi"
+      ],
+      "variants": [
+        "Ratu Hemas"
+      ],
+      "born": [
+        {
+          "date": {
+            "edtf": "1952-10-31",
+            "text": "31 October 1952"
+          },
+          "place": "Jakarta (Kebayoran Baru)",
+          "certainty": "high",
+          "sources": [
+            {
+              "source": "o_wp_id_ratuhemas",
+              "quay": 1
+            }
+          ]
+        }
+      ]
     },
     "yudhaningrat": {
       "name": "Yudhaningrat",
@@ -1336,7 +4376,44 @@
         "box": "minor",
         "year": 2001,
         "sub": "Sultan's brother · d. 2021"
-      }
+      },
+      "aka": [
+        "Bendara Raden Mas Ibnu Prastawa"
+      ],
+      "born": [
+        {
+          "date": {
+            "edtf": "1948-08-09",
+            "text": "9 August 1948"
+          },
+          "place": "Yogyakarta",
+          "certainty": "medium",
+          "sources": [
+            {
+              "source": "o_wp_id_hadiwinoto",
+              "quay": 1
+            }
+          ]
+        }
+      ],
+      "died": [
+        {
+          "date": {
+            "edtf": "2021-03-31",
+            "text": "31 March 2021"
+          },
+          "place": "Yogyakarta",
+          "certainty": "low",
+          "sources": [
+            {
+              "source": "o_wp_id_hadiwinoto",
+              "where": "citing CNN Indonesia, 31 March 2021 (not opened)",
+              "quay": 1
+            }
+          ],
+          "note": "Rests on one source; searches in November 2026 found no news report of his death."
+        }
+      ]
     },
     "mangkubumi": {
       "name": "Mangkubumi",
@@ -1348,7 +4425,27 @@
         "year": 2015,
         "sub": "b. 1972 · presumed heir · renamed 2015",
         "tag": "disputed"
-      }
+      },
+      "aka": [
+        "Gusti Raden Ajeng Nurmalitasari",
+        "GKR Pembayun"
+      ],
+      "born": [
+        {
+          "date": {
+            "edtf": "1972-02-24",
+            "text": "24 February 1972"
+          },
+          "place": "Bogor",
+          "certainty": "medium",
+          "sources": [
+            {
+              "source": "o_wp_id_gkrmangkubumi",
+              "quay": 1
+            }
+          ]
+        }
+      ]
     },
     "condrokirono": {
       "name": "Condrokirono",
@@ -1359,7 +4456,28 @@
         "box": "minor",
         "year": 2015,
         "sub": "b. 1975"
-      }
+      },
+      "aka": [
+        "Raden Ajeng Nurmagupita",
+        "GRAy. Suryokusumo"
+      ],
+      "born": [
+        {
+          "date": {
+            "edtf": "1975-02-02",
+            "text": "2 February 1975"
+          },
+          "place": "Yogyakarta",
+          "certainty": "medium",
+          "sources": [
+            {
+              "source": "o_wp_en_condrokirono",
+              "where": "uncited",
+              "quay": 1
+            }
+          ]
+        }
+      ]
     },
     "maduretno": {
       "name": "Maduretno",
@@ -1370,7 +4488,28 @@
         "box": "minor",
         "year": 2015,
         "sub": "b. 1978"
-      }
+      },
+      "aka": [
+        "Gusti Raden Ajeng Nurkamnari Dewi",
+        "GRAy. Purbodiningrat"
+      ],
+      "born": [
+        {
+          "date": {
+            "edtf": "1978-04-12",
+            "text": "12 April 1978"
+          },
+          "place": "Yogyakarta",
+          "certainty": "medium",
+          "sources": [
+            {
+              "source": "o_wp_en_maduretno",
+              "where": "uncited",
+              "quay": 1
+            }
+          ]
+        }
+      ]
     },
     "hayu": {
       "name": "Hayu",
@@ -1381,7 +4520,28 @@
         "box": "minor",
         "year": 2015,
         "sub": "b. 1983"
-      }
+      },
+      "aka": [
+        "Gusti Raden Ajeng Nurabra Juwita"
+      ],
+      "born": [
+        {
+          "date": {
+            "edtf": "1983-12-24",
+            "text": "24 December 1983"
+          },
+          "place": "Yogyakarta",
+          "certainty": "medium",
+          "note": "Indonesian Wikipedia gives 1982.",
+          "sources": [
+            {
+              "source": "o_wp_en_hayu",
+              "where": "uncited",
+              "quay": 1
+            }
+          ]
+        }
+      ]
     },
     "bendara2": {
       "name": "Bendara",
@@ -1392,7 +4552,27 @@
         "box": "minor",
         "year": 2015,
         "sub": "b. 1986"
-      }
+      },
+      "aka": [
+        "Gusti Raden Ajeng Nurastuti Wijareni"
+      ],
+      "born": [
+        {
+          "date": {
+            "edtf": "1986-09-18",
+            "text": "18 September 1986"
+          },
+          "place": "Yogyakarta",
+          "certainty": "medium",
+          "sources": [
+            {
+              "source": "o_wp_en_bendara",
+              "where": "uncited",
+              "quay": 1
+            }
+          ]
+        }
+      ]
     },
     "pa1": {
       "name": "Paku Alam I",
@@ -1412,7 +4592,85 @@
         "box": "ruler",
         "year": 1813,
         "sub": "r. 1813 – 1829"
-      }
+      },
+      "bio": "Born Natakusuma, a son of Hamengkubuwana I. Rewarded for helping the British in the Yogyakarta conflict of 1812, he received a small hereditary principality, the Pakualaman, within the sultanate. He governed for the boy sultan Hamengkubuwana IV from 1814.",
+      "aka": [
+        "Bendara Pangeran Harya Natakusuma",
+        "Notokusumo"
+      ],
+      "variants": [
+        "Pakualam I",
+        "Pakoe Alam I"
+      ],
+      "born": [
+        {
+          "date": {
+            "edtf": "1764-03-21",
+            "text": "21 March 1764 (18 Puasa 1689)"
+          },
+          "certainty": "high",
+          "sources": [
+            {
+              "source": "jogja200",
+              "quay": 2,
+              "where": "p. 194 of the scan, printed p. 154"
+            },
+            {
+              "source": "wp_id_pakualaman",
+              "quay": 1,
+              "where": "list"
+            },
+            {
+              "source": "wp_en_pa1",
+              "quay": 1,
+              "where": "infobox"
+            }
+          ]
+        }
+      ],
+      "died": [
+        {
+          "date": {
+            "edtf": "1829-12-19",
+            "text": "19 December 1829 (22 Jumadilakir 1757)"
+          },
+          "place": "Pura Pakualaman",
+          "certainty": "medium",
+          "sources": [
+            {
+              "source": "jogja200",
+              "quay": 2,
+              "where": "p. 194 of the scan, printed p. 154"
+            }
+          ]
+        },
+        {
+          "date": {
+            "edtf": "1829-10-04",
+            "text": "4 October 1829"
+          },
+          "certainty": "low",
+          "sources": [
+            {
+              "source": "wp_id_pakualaman",
+              "quay": 1,
+              "where": "list"
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "source": "wp_en_pa1",
+          "quay": 1,
+          "where": "lead and infobox (father Hamengkubuwana I)"
+        },
+        {
+          "source": "jogja200",
+          "quay": 2,
+          "where": "p. 190 of the scan (I = birth, II = accession, III = death)"
+        }
+      ]
     },
     "pa2": {
       "name": "Paku Alam II",
@@ -1433,7 +4691,66 @@
         "box": "ruler",
         "year": 1829,
         "sub": "r. 1829 – 1858"
-      }
+      },
+      "bio": "Born Raden Tumenggung Natadiningrat, son of Paku Alam I; reigned 1829/30–1858. His court is remembered for its literature, with manuscripts such as Sestra Ageng Adidarma from his time.",
+      "aka": [
+        "Raden Tumenggung Natadiningrat",
+        "Pangeran Suryaningrat"
+      ],
+      "variants": [
+        "Pakualam II",
+        "Pakoe Alam II"
+      ],
+      "born": [
+        {
+          "date": {
+            "edtf": "1786-06-25",
+            "text": "25 June 1786 (27 Ruwah 1712)"
+          },
+          "certainty": "high",
+          "sources": [
+            {
+              "source": "jogja200",
+              "quay": 2,
+              "where": "p. 194 of the scan, printed p. 154"
+            },
+            {
+              "source": "wp_id_pa2",
+              "quay": 1,
+              "where": "infobox"
+            }
+          ]
+        }
+      ],
+      "died": [
+        {
+          "date": {
+            "edtf": "1858-07-23",
+            "text": "23 July 1858 (12 Besar 1786)"
+          },
+          "place": "Pura Pakualaman",
+          "certainty": "high",
+          "sources": [
+            {
+              "source": "jogja200",
+              "quay": 2,
+              "where": "p. 194 of the scan, printed p. 154"
+            },
+            {
+              "source": "wp_id_pa2",
+              "quay": 1,
+              "where": "infobox"
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "source": "wp_id_pa2",
+          "quay": 1,
+          "where": "infobox"
+        }
+      ]
     },
     "hayu_pa2": {
       "name": "Hayu",
@@ -1466,7 +4783,49 @@
         "year": 1915,
         "sub": "“the Strike King”<br>National Hero",
         "width": 190
-      }
+      },
+      "aka": [
+        "Raden Mas Soerjapranata",
+        "Iskandar"
+      ],
+      "variants": [
+        "Soerjopranoto",
+        "Surjopranoto",
+        "Suryapranata"
+      ],
+      "born": [
+        {
+          "date": {
+            "edtf": "1871-01-11",
+            "text": "11 January 1871"
+          },
+          "place": "Pakualaman",
+          "certainty": "medium",
+          "sources": [
+            {
+              "source": "o_wp_id_soerjopranoto",
+              "quay": 1
+            }
+          ]
+        }
+      ],
+      "died": [
+        {
+          "date": {
+            "edtf": "1959-10-15",
+            "text": "15 October 1959"
+          },
+          "place": "Cimahi",
+          "certainty": "medium",
+          "note": "One passage of the article says he died in 1951 aged 67, apparently about his wife.",
+          "sources": [
+            {
+              "source": "o_wp_id_soerjopranoto",
+              "quay": 1
+            }
+          ]
+        }
+      ]
     },
     "pa3": {
       "name": "Paku Alam III",
@@ -1487,7 +4846,64 @@
         "box": "ruler",
         "year": 1858,
         "sub": "r. 1858 – 1864"
-      }
+      },
+      "bio": "Born Sasraningrat, son of Paku Alam II; reigned 1858–1864. He is credited with moral and religious writings including Serat Darmo Wirayat, and was buried at the old royal graves of Kotagede.",
+      "aka": [
+        "Gusti Pangeran Haryo Sasraningrat",
+        "Kanjeng Gusti Pangeran Adipati Surya Sasraningrat"
+      ],
+      "variants": [
+        "Pakualam III"
+      ],
+      "born": [
+        {
+          "date": {
+            "edtf": "1827-12-20",
+            "text": "20 December 1827 (1 Jumadilakir 1755)"
+          },
+          "certainty": "high",
+          "sources": [
+            {
+              "source": "jogja200",
+              "quay": 2,
+              "where": "p. 194 of the scan, printed p. 154"
+            },
+            {
+              "source": "wp_id_pa3",
+              "quay": 1,
+              "where": "infobox"
+            }
+          ]
+        }
+      ],
+      "died": [
+        {
+          "date": {
+            "edtf": "1864-10-17",
+            "text": "17 October 1864 (16 Jumadilawal 1793)"
+          },
+          "certainty": "high",
+          "sources": [
+            {
+              "source": "jogja200",
+              "quay": 2,
+              "where": "p. 194 of the scan, printed p. 154"
+            },
+            {
+              "source": "wp_id_pa3",
+              "quay": 1,
+              "where": "infobox"
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "source": "wp_id_pa3",
+          "quay": 1,
+          "where": "infobox"
+        }
+      ]
     },
     "nataningprang": {
       "name": "Nataningprang",
@@ -1517,7 +4933,78 @@
         "box": "ruler",
         "year": 1864,
         "sub": "r. 1864 – 1878"
-      }
+      },
+      "bio": "Born Raden Mas Nataningrat, a nephew of Paku Alam III; reigned 1864–1878. Indonesian Wikipedia describes the duchy as in decline in his time. He was the last Paku Alam buried at Kotagede.",
+      "aka": [
+        "Raden Mas Nataningrat",
+        "Kanjeng Gusti Pangeran Adipati Surya Sasraningrat"
+      ],
+      "variants": [
+        "Pakualam IV"
+      ],
+      "born": [
+        {
+          "date": {
+            "edtf": "1841-10-25",
+            "text": "25 October 1841 (10 Puasa 1769)"
+          },
+          "certainty": "high",
+          "sources": [
+            {
+              "source": "jogja200",
+              "quay": 2,
+              "where": "p. 194 of the scan, printed p. 154"
+            },
+            {
+              "source": "wp_id_pa4",
+              "quay": 1,
+              "where": "infobox"
+            }
+          ]
+        }
+      ],
+      "died": [
+        {
+          "date": {
+            "edtf": "1878-09-24",
+            "text": "24 September 1878 (27 Puasa 1807)"
+          },
+          "certainty": "high",
+          "sources": [
+            {
+              "source": "jogja200",
+              "quay": 2,
+              "where": "p. 194 of the scan, printed p. 154"
+            },
+            {
+              "source": "wp_id_pa4",
+              "quay": 1,
+              "where": "text"
+            }
+          ]
+        },
+        {
+          "date": {
+            "edtf": "1878-09-25",
+            "text": "25 September 1878"
+          },
+          "certainty": "low",
+          "sources": [
+            {
+              "source": "wp_id_pa4",
+              "quay": 1,
+              "where": "infobox"
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "source": "wp_id_pa4",
+          "quay": 1,
+          "where": "infobox"
+        }
+      ]
     },
     "pa5": {
       "name": "Paku Alam V",
@@ -1538,7 +5025,70 @@
         "box": "ruler",
         "year": 1878,
         "sub": "r. 1878 – 1900"
-      }
+      },
+      "bio": "Born Raden Mas Natawijaya, he took over in 1878 but was allowed the title Paku Alam V only in 1883. He disbanded the Pakualaman troops in 1892, sent relatives to study in the Netherlands, and founded the Girigondo royal cemetery.",
+      "aka": [
+        "Raden Mas Natawijaya",
+        "Bendoro Raden Mas Noto Wiloyo",
+        "Prabu Suryodilogo"
+      ],
+      "variants": [
+        "Pakualam V"
+      ],
+      "born": [
+        {
+          "date": {
+            "edtf": "1833-06-23",
+            "text": "23 June 1833 (5 Sapar 1761)"
+          },
+          "certainty": "high",
+          "sources": [
+            {
+              "source": "jogja200",
+              "quay": 2,
+              "where": "p. 194 of the scan, printed p. 154"
+            },
+            {
+              "source": "wp_id_pa5",
+              "quay": 1,
+              "where": "infobox"
+            }
+          ]
+        }
+      ],
+      "died": [
+        {
+          "date": {
+            "edtf": "1900-11-06",
+            "text": "6 November 1900 (13 Rejeb 1830)"
+          },
+          "certainty": "high",
+          "sources": [
+            {
+              "source": "jogja200",
+              "quay": 2,
+              "where": "p. 194 of the scan, printed p. 154"
+            },
+            {
+              "source": "wp_id_pa5",
+              "quay": 1,
+              "where": "infobox"
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "source": "wp_id_pa5",
+          "quay": 1,
+          "where": "infobox"
+        },
+        {
+          "source": "wp_id_pa4",
+          "quay": 1,
+          "where": "Girigondo"
+        }
+      ]
     },
     "pa6": {
       "name": "Paku Alam VI",
@@ -1559,7 +5109,69 @@
         "box": "ruler",
         "year": 1901,
         "sub": "r. 1901 – 1902"
-      }
+      },
+      "bio": "Born Raden Mas Natakusuma, son of Paku Alam V. Crowned in April 1901 and dead by June 1902, he had the shortest reign of any Paku Alam; a regency council governed until 1906.",
+      "aka": [
+        "Raden Mas Natakusuma",
+        "KPH Notokusumo"
+      ],
+      "variants": [
+        "Pakualam VI"
+      ],
+      "born": [
+        {
+          "date": {
+            "edtf": "1856-04-09",
+            "text": "9 April 1856 (4 Ruwah 1784)"
+          },
+          "certainty": "high",
+          "sources": [
+            {
+              "source": "jogja200",
+              "quay": 2,
+              "where": "p. 194 of the scan, printed p. 154"
+            },
+            {
+              "source": "wp_id_pa6",
+              "quay": 1,
+              "where": "infobox"
+            }
+          ]
+        }
+      ],
+      "died": [
+        {
+          "date": {
+            "edtf": "1902-06-09",
+            "text": "9 June 1902 (2 Rabingulakir 1832)"
+          },
+          "certainty": "high",
+          "sources": [
+            {
+              "source": "jogja200",
+              "quay": 2,
+              "where": "p. 194 of the scan, printed p. 154"
+            },
+            {
+              "source": "wp_id_pa6",
+              "quay": 1,
+              "where": "infobox"
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "source": "wp_id_pa6",
+          "quay": 1,
+          "where": "infobox"
+        },
+        {
+          "source": "wp_id_pakualaman",
+          "quay": 1,
+          "where": "list (regency council 1902–1906)"
+        }
+      ]
     },
     "notodirojo": {
       "name": "Notodirojo",
@@ -1569,7 +5181,17 @@
         "box": "minor",
         "year": 1901,
         "sub": "chaired Budi Utomo, 1911 – 1914"
-      }
+      },
+      "variants": [
+        "Notodirodjo"
+      ],
+      "sources": [
+        {
+          "source": "o_diplomatika2020",
+          "where": "on Paku Alam V's sons: active in Budi Utomo",
+          "quay": 2
+        }
+      ]
     },
     "notosoeroto": {
       "name": "Noto Soeroto",
@@ -1579,7 +5201,40 @@
         "year": 1918,
         "sub": "poet · 1888 – 1951",
         "width": 170
-      }
+      },
+      "aka": [
+        "Raden Mas Noto Soeroto"
+      ],
+      "born": [
+        {
+          "date": {
+            "edtf": "1888",
+            "text": "1888"
+          },
+          "certainty": "medium",
+          "sources": [
+            {
+              "source": "o_wp_en_notosoeroto",
+              "quay": 1
+            }
+          ]
+        }
+      ],
+      "died": [
+        {
+          "date": {
+            "edtf": "1951",
+            "text": "1951"
+          },
+          "certainty": "medium",
+          "sources": [
+            {
+              "source": "o_wp_en_notosoeroto",
+              "quay": 1
+            }
+          ]
+        }
+      ]
     },
     "pa7": {
       "name": "Paku Alam VII",
@@ -1600,7 +5255,64 @@
         "box": "ruler",
         "year": 1906,
         "sub": "r. 1906 – 1937"
-      }
+      },
+      "bio": "Born Raden Mas Surarjo, son of Paku Alam VI; appointed in 1906 after a regency. He married a daughter of Pakubuwana X and worked with the colonial government on social and land reforms.",
+      "aka": [
+        "Bendara Raden Mas Haryo Surardjo",
+        "Prabu Suryodilogo"
+      ],
+      "variants": [
+        "Pakualam VII"
+      ],
+      "born": [
+        {
+          "date": {
+            "edtf": "1882-12-09",
+            "text": "9 December 1882 (28 Sura 1812)"
+          },
+          "certainty": "high",
+          "sources": [
+            {
+              "source": "jogja200",
+              "quay": 2,
+              "where": "p. 194 of the scan, printed p. 154"
+            },
+            {
+              "source": "wp_id_pa7",
+              "quay": 1,
+              "where": "infobox"
+            }
+          ]
+        }
+      ],
+      "died": [
+        {
+          "date": {
+            "edtf": "1937-02-16",
+            "text": "16 February 1937 (5 Besar 1867)"
+          },
+          "certainty": "high",
+          "sources": [
+            {
+              "source": "jogja200",
+              "quay": 2,
+              "where": "p. 194 of the scan, printed p. 154"
+            },
+            {
+              "source": "wp_id_pa7",
+              "quay": 1,
+              "where": "infobox"
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "source": "wp_id_pa7",
+          "quay": 1,
+          "where": "infobox"
+        }
+      ]
     },
     "retnopuwoso": {
       "name": "Retno Puwoso",
@@ -1614,7 +5326,36 @@
           "side": "r"
         },
         "sub": "daughter of Pakubuwana X"
-      }
+      },
+      "aka": [
+        "Gusti Bendara Raden Ayu Adipati Paku Alam VII"
+      ],
+      "variants": [
+        "Rêtna Puwasa"
+      ],
+      "born": [
+        {
+          "date": {
+            "edtf": "1892",
+            "text": "1892"
+          },
+          "certainty": "medium",
+          "sources": [
+            {
+              "source": "o_wp_en_pb10",
+              "where": "Family, unsourced",
+              "quay": 1
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "source": "o_wp_en_pa7",
+          "where": "Early life: married 5 January 1909",
+          "quay": 1
+        }
+      ]
     },
     "pa8": {
       "name": "Paku Alam VIII",
@@ -1635,7 +5376,65 @@
         "box": "ruler",
         "year": 1937,
         "sub": "r. 1937 – 1998"
-      }
+      },
+      "bio": "Born Raden Mas Sularso Kunto Suratno, son of Paku Alam VII. In 1945 he joined Hamengkubuwana IX in bringing Yogyakarta into the Republic. First Vice-Governor of Yogyakarta from 1950, he was Governor from 1988 until his death in 1998.",
+      "aka": [
+        "Gusti Raden Mas Sularso Kunto Suratno"
+      ],
+      "variants": [
+        "Pakualam VIII",
+        "Pakoe Alam VIII"
+      ],
+      "born": [
+        {
+          "date": {
+            "edtf": "1910-04-10",
+            "text": "10 April 1910"
+          },
+          "certainty": "high",
+          "sources": [
+            {
+              "source": "wp_en_pa8",
+              "quay": 1,
+              "where": "infobox"
+            },
+            {
+              "source": "wp_id_pakualaman",
+              "quay": 1,
+              "where": "list"
+            }
+          ]
+        }
+      ],
+      "died": [
+        {
+          "date": {
+            "edtf": "1998-09-11",
+            "text": "11 September 1998"
+          },
+          "place": "Yogyakarta",
+          "certainty": "high",
+          "sources": [
+            {
+              "source": "wp_en_pa8",
+              "quay": 1,
+              "where": "infobox"
+            },
+            {
+              "source": "wp_id_pakualaman",
+              "quay": 1,
+              "where": "list"
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "source": "wp_en_pa8",
+          "quay": 1,
+          "where": "lead, Independence, Governor"
+        }
+      ]
     },
     "ratnaningrum": {
       "name": "KRAy. Ratnaningrum",
@@ -1646,7 +5445,22 @@
           "side": "l"
         },
         "sub": "senior wife"
-      }
+      },
+      "variants": [
+        "Retnaningrum"
+      ],
+      "sources": [
+        {
+          "source": "o_wp_en_pa10",
+          "where": "Family dispute",
+          "quay": 1
+        },
+        {
+          "source": "o_wp_en_pa8",
+          "where": "infobox",
+          "quay": 1
+        }
+      ]
     },
     "purnamaningrum": {
       "name": "KRAy. Purnamaningrum",
@@ -1678,7 +5492,69 @@
         "box": "ruler",
         "year": 1999,
         "sub": "r. 1999 – 2015"
-      }
+      },
+      "bio": "Born Raden Mas Ambarkusumo, son of Paku Alam VIII. His succession in 1998 was disputed by his half-brother Anglingkusumo; he was formally installed in 1999 and served as Vice-Governor of Yogyakarta from 2002 until his death in 2015.",
+      "aka": [
+        "Bendara Raden Mas Ambarkusumo"
+      ],
+      "variants": [
+        "Pakualam IX"
+      ],
+      "born": [
+        {
+          "date": {
+            "edtf": "1938-05-07",
+            "text": "7 May 1938"
+          },
+          "place": "Yogyakarta",
+          "certainty": "high",
+          "sources": [
+            {
+              "source": "wp_en_pa9",
+              "quay": 1,
+              "where": "infobox"
+            },
+            {
+              "source": "wp_id_pakualaman",
+              "quay": 1,
+              "where": "list"
+            }
+          ]
+        }
+      ],
+      "died": [
+        {
+          "date": {
+            "edtf": "2015-11-21",
+            "text": "21 November 2015, about 15.10"
+          },
+          "place": "Dr Sardjito Hospital, Yogyakarta",
+          "certainty": "high",
+          "sources": [
+            {
+              "source": "liputan6_2015",
+              "quay": 2
+            },
+            {
+              "source": "wp_en_pa9",
+              "quay": 1,
+              "where": "infobox"
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "source": "wp_en_pa9",
+          "quay": 1,
+          "where": "infobox"
+        },
+        {
+          "source": "wp_en_pa10",
+          "quay": 1,
+          "where": "accession dispute"
+        }
+      ]
     },
     "pa10": {
       "name": "Paku Alam X",
@@ -1699,7 +5575,44 @@
         "box": "ruler",
         "year": 2016,
         "sub": "r. 2016 – present"
-      }
+      },
+      "bio": "Born Raden Mas Wijoseno Hario Bimo, eldest son of Paku Alam IX, and known as KGPH Suryodilogo before his accession in January 2016. Vice-Governor of Yogyakarta since May 2016. His accession was challenged by the side of Anglingkusumo, a rival claimant since 1998.",
+      "aka": [
+        "Raden Mas Wijoseno Hario Bimo",
+        "KGPH Suryodilogo"
+      ],
+      "variants": [
+        "Pakualam X"
+      ],
+      "born": [
+        {
+          "date": {
+            "edtf": "1962-12-15",
+            "text": "15 December 1962"
+          },
+          "place": "Yogyakarta",
+          "certainty": "high",
+          "sources": [
+            {
+              "source": "wp_en_pa10",
+              "quay": 1,
+              "where": "infobox"
+            },
+            {
+              "source": "wp_id_pakualaman",
+              "quay": 1,
+              "where": "list"
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "source": "wp_en_pa10",
+          "quay": 1,
+          "where": "infobox"
+        }
+      ]
     },
     "bimantoro": {
       "name": "Kusumo Bimantoro",
@@ -1710,7 +5623,26 @@
         "box": "heir",
         "year": 2019,
         "sub": "eldest son · presumed heir"
-      }
+      },
+      "aka": [
+        "Bendara Pangeran Hario Kusumo Bimantoro"
+      ],
+      "born": [
+        {
+          "date": {
+            "edtf": "1991/1992",
+            "text": "aged 26 in December 2018"
+          },
+          "certainty": "medium",
+          "note": "Year worked out from his age; no birth date was found in a source that could be opened.",
+          "sources": [
+            {
+              "source": "o_gnfi_bimantoro2018",
+              "quay": 2
+            }
+          ]
+        }
+      ]
     },
     "kihajar": {
       "name": "Ki Hajar Dewantara",
@@ -1720,7 +5652,47 @@
         "year": 1922,
         "sub": "“Father of Indonesian<br>Education”",
         "width": 210
-      }
+      },
+      "aka": [
+        "Raden Mas Soewardi Soerjaningrat",
+        "Suwardi Suryaningrat"
+      ],
+      "variants": [
+        "Ki Hadjar Dewantara",
+        "Ki Hajar Dewantoro"
+      ],
+      "born": [
+        {
+          "date": {
+            "edtf": "1889-05-02",
+            "text": "2 May 1889"
+          },
+          "place": "Pakualaman",
+          "certainty": "high",
+          "sources": [
+            {
+              "source": "o_wp_en_kihajar",
+              "quay": 1
+            }
+          ]
+        }
+      ],
+      "died": [
+        {
+          "date": {
+            "edtf": "1959-04-26",
+            "text": "26 April 1959"
+          },
+          "place": "Yogyakarta",
+          "certainty": "high",
+          "sources": [
+            {
+              "source": "o_wp_en_kihajar",
+              "quay": 1
+            }
+          ]
+        }
+      ]
     },
     "nyihajar": {
       "name": "Nyi Hajar Dewantara",
@@ -1733,7 +5705,44 @@
           "side": "r"
         },
         "sub": "led Taman Siswa, 1959 – c. 1970"
-      }
+      },
+      "aka": [
+        "Raden Ajeng Sutartinah"
+      ],
+      "variants": [
+        "Nyi Hadjar Dewantara"
+      ],
+      "born": [
+        {
+          "date": {
+            "edtf": "1890-09-14",
+            "text": "14 September 1890"
+          },
+          "certainty": "medium",
+          "sources": [
+            {
+              "source": "o_wp_id_nyihajar",
+              "quay": 1
+            }
+          ]
+        }
+      ],
+      "died": [
+        {
+          "date": {
+            "edtf": "1971-04-16",
+            "text": "16 April 1971"
+          },
+          "place": "Panti Rapih hospital",
+          "certainty": "medium",
+          "sources": [
+            {
+              "source": "o_wp_id_nyihajar",
+              "quay": 1
+            }
+          ]
+        }
+      ]
     },
     "anglingkusumo": {
       "name": "Mangku Alam I",
@@ -1745,7 +5754,23 @@
         "year": 2012,
         "sub": "Anglingkusumo · claimed 2021 – 2022",
         "hatch": true
-      }
+      },
+      "aka": [
+        "KPH Anglingkusumo",
+        "Paku Alam IX Al-Haj"
+      ],
+      "sources": [
+        {
+          "source": "o_wp_en_pa10",
+          "where": "Family dispute",
+          "quay": 1
+        },
+        {
+          "source": "o_wp_en_mangkualam2",
+          "where": "Accession: abdicated 26 January 2022",
+          "quay": 1
+        }
+      ]
     },
     "wiroyudho": {
       "name": "Mangku Alam II",
@@ -1757,7 +5782,26 @@
         "year": 2022,
         "sub": "Wiroyudho · claimed 2022 – present",
         "hatch": true
-      }
+      },
+      "aka": [
+        "Sutan Rheindra Jais",
+        "KPH Wiroyudho"
+      ],
+      "born": [
+        {
+          "date": {
+            "edtf": "1978-08-27",
+            "text": "27 August 1978"
+          },
+          "certainty": "medium",
+          "sources": [
+            {
+              "source": "o_wp_en_mangkualam2",
+              "quay": 1
+            }
+          ]
+        }
+      ]
     },
     "mn1": {
       "name": "Mangkunegara I",
@@ -1778,7 +5822,83 @@
         "box": "ruler",
         "year": 1757,
         "sub": "r. 1757 – 1795"
-      }
+      },
+      "bio": "Born Raden Mas Said and known as Pangeran Sambernyawa. He fought the VOC and the courts for some sixteen years, for a time alongside Mangkubumi, until the Treaty of Salatiga (1757) gave him his own principality, the Mangkunegaran. National Hero of Indonesia (1988).",
+      "aka": [
+        "Raden Mas Said",
+        "Pangeran Sambernyawa"
+      ],
+      "variants": [
+        "Mangkunagara I",
+        "Mangkunegoro I"
+      ],
+      "born": [
+        {
+          "date": {
+            "edtf": "1726-04-07",
+            "text": "7 April 1726"
+          },
+          "place": "Kartasura",
+          "certainty": "medium",
+          "note": "Ricklefs' biography, cited by Wikipedia, is titled 'Soul Catcher: Java's Fiery Prince Mangkunagara I, 1726–95'.",
+          "sources": [
+            {
+              "source": "wp_en_mn1",
+              "quay": 1,
+              "where": "infobox and Personal life"
+            }
+          ]
+        },
+        {
+          "date": {
+            "edtf": "1725-04-07",
+            "text": "7 April 1725"
+          },
+          "place": "Kartasura",
+          "certainty": "medium",
+          "sources": [
+            {
+              "source": "wp_en_mn1",
+              "quay": 1,
+              "where": "lead"
+            },
+            {
+              "source": "wp_en_mangkunegaran",
+              "quay": 1,
+              "where": "list"
+            }
+          ]
+        }
+      ],
+      "died": [
+        {
+          "date": {
+            "edtf": "1795-12-28",
+            "text": "28 December 1795"
+          },
+          "place": "Surakarta",
+          "certainty": "high",
+          "sources": [
+            {
+              "source": "wp_en_mn1",
+              "quay": 1,
+              "where": "infobox"
+            },
+            {
+              "source": "wp_en_mangkunegaran",
+              "quay": 1,
+              "where": "list"
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "source": "wp_en_mn1",
+          "quay": 1,
+          "where": "lead and War"
+        }
+      ]
     },
     "rubiyah": {
       "name": "Rubiyah “Matah Ati”",
@@ -1789,7 +5909,28 @@
           "side": "r"
         },
         "sub": "wife · led his women soldiers (tradition)"
-      }
+      },
+      "aka": [
+        "Raden Ayu Matahati",
+        "Raden Ayu Mangkunegara Sepuh"
+      ],
+      "died": [
+        {
+          "date": {
+            "edtf": "1787",
+            "text": "1787"
+          },
+          "certainty": "low",
+          "note": "The article's \"Raden Ayu Matahati\"; the name Rubiyah does not appear in it.",
+          "sources": [
+            {
+              "source": "o_wp_en_mn1",
+              "where": "infobox",
+              "quay": 1
+            }
+          ]
+        }
+      ]
     },
     "bendara": {
       "name": "Bendara",
@@ -1802,7 +5943,18 @@
           "side": "l"
         },
         "sub": "daughter of Hamengkubuwana I · m. c. 1746, div. 1763"
-      }
+      },
+      "aka": [
+        "Raden Ajeng Inten",
+        "Bruwok"
+      ],
+      "sources": [
+        {
+          "source": "o_wp_en_mn1",
+          "where": "infobox: m. 1747, div. 1763",
+          "quay": 1
+        }
+      ]
     },
     "hamijaya": {
       "name": "Prabu Hamijaya",
@@ -1811,7 +5963,23 @@
       "show": {
         "box": "minor",
         "year": 1776
-      }
+      },
+      "variants": [
+        "Prabu Amijaya",
+        "Prabuhamijaya",
+        "Prabuwijaya"
+      ],
+      "sources": [
+        {
+          "source": "o_wp_en_mn1",
+          "quay": 1
+        },
+        {
+          "source": "o_wp_en_pb3",
+          "where": "Family",
+          "quay": 1
+        }
+      ]
     },
     "alit": {
       "name": "Alit",
@@ -1824,7 +5992,17 @@
           "side": "r"
         },
         "sub": "daughter of Pakubuwana III"
-      }
+      },
+      "aka": [
+        "Bendara Raden Ajeng Botor"
+      ],
+      "sources": [
+        {
+          "source": "o_wp_en_pb3",
+          "where": "Family, unsourced",
+          "quay": 1
+        }
+      ]
     },
     "mn2": {
       "name": "Mangkunegara II",
@@ -1845,7 +6023,95 @@
         "box": "ruler",
         "year": 1796,
         "sub": "r. 1796 – 1835"
-      }
+      },
+      "bio": "Born Raden Mas Sulama (one source gives Slamet), grandson and successor of Mangkunegara I. In 1808 he raised the Mangkunegaran Legion, a force of some 1,150 men that remained the principality's army.",
+      "aka": [
+        "Bendara Raden Mas Sulama",
+        "Raden Mas Slamet"
+      ],
+      "variants": [
+        "Mangkunagara II",
+        "Mangkoe Negoro II"
+      ],
+      "born": [
+        {
+          "date": {
+            "edtf": "1768-01-05",
+            "text": "5 January 1768"
+          },
+          "place": "Surakarta",
+          "certainty": "medium",
+          "sources": [
+            {
+              "source": "wp_en_mn2",
+              "quay": 1,
+              "where": "infobox"
+            },
+            {
+              "source": "wp_en_mangkunegaran",
+              "quay": 1,
+              "where": "list"
+            }
+          ]
+        },
+        {
+          "date": {
+            "edtf": "1767",
+            "text": "1767"
+          },
+          "certainty": "low",
+          "sources": [
+            {
+              "source": "wp_en_mn2",
+              "quay": 1,
+              "where": "Early life, citing a source naming him Raden Mas Slamet"
+            }
+          ]
+        }
+      ],
+      "died": [
+        {
+          "date": {
+            "edtf": "1836-01-17",
+            "text": "17 January 1836"
+          },
+          "place": "Surakarta",
+          "certainty": "medium",
+          "sources": [
+            {
+              "source": "wp_en_mn2",
+              "quay": 1,
+              "where": "infobox"
+            },
+            {
+              "source": "wp_en_mangkunegaran",
+              "quay": 1,
+              "where": "list"
+            }
+          ]
+        },
+        {
+          "date": {
+            "edtf": "1835",
+            "text": "1835"
+          },
+          "certainty": "low",
+          "sources": [
+            {
+              "source": "wp_en_mn2",
+              "quay": 1,
+              "where": "Early life"
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "source": "wp_en_mn2",
+          "quay": 1,
+          "where": "infobox"
+        }
+      ]
     },
     "sekeli": {
       "name": "Sekeli",
@@ -1855,7 +6121,21 @@
         "box": "minor",
         "year": 1815,
         "sub": "m. KPH Hadiwijaya I"
-      }
+      },
+      "aka": [
+        "Raden Ajeng Kèli",
+        "Bendara Raden Ayu Hadiwijaya"
+      ],
+      "variants": [
+        "Kèli"
+      ],
+      "sources": [
+        {
+          "source": "o_wp_en_mn4",
+          "where": "mother, citing Suma Atmaka 1936",
+          "quay": 1
+        }
+      ]
     },
     "sayati": {
       "name": "Sayati",
@@ -1865,7 +6145,18 @@
         "box": "minor",
         "year": 1815,
         "sub": "m. KPH Natakusuma"
-      }
+      },
+      "aka": [
+        "Raden Ajeng Sayati",
+        "Bendara Raden Ayu Natakusuma"
+      ],
+      "sources": [
+        {
+          "source": "o_wp_en_mn3",
+          "where": "citing Kajawen 1939",
+          "quay": 1
+        }
+      ]
     },
     "mn3": {
       "name": "Mangkunegara III",
@@ -1886,7 +6177,87 @@
         "box": "ruler",
         "year": 1835,
         "sub": "r. 1835 – 1853"
-      }
+      },
+      "bio": "Born Raden Mas Sarengat, a grandson of Mangkunegara II through his mother. An officer of the Mangkunegaran Legion who fought in the Java War, he reigned 1835–1853 and brought up his cousin, the future Mangkunegara IV.",
+      "aka": [
+        "Bandara Raden Mas Sarengat",
+        "Kangjeng Pangeran Riya",
+        "Prangwadana III"
+      ],
+      "variants": [
+        "Mangkunagara III"
+      ],
+      "born": [
+        {
+          "date": {
+            "edtf": "1803-01-16",
+            "text": "16 January 1803"
+          },
+          "place": "Surakarta",
+          "certainty": "high",
+          "sources": [
+            {
+              "source": "wp_en_mn3",
+              "quay": 1,
+              "where": "infobox"
+            },
+            {
+              "source": "wp_id_mn3",
+              "quay": 1,
+              "where": "infobox"
+            }
+          ]
+        }
+      ],
+      "died": [
+        {
+          "date": {
+            "edtf": "1853-01-06",
+            "text": "6 January 1853"
+          },
+          "place": "Surakarta",
+          "certainty": "medium",
+          "sources": [
+            {
+              "source": "wp_en_mn3",
+              "quay": 1,
+              "where": "infobox"
+            },
+            {
+              "source": "wp_id_mn3",
+              "quay": 1,
+              "where": "infobox"
+            }
+          ]
+        },
+        {
+          "date": {
+            "edtf": "1853-01-08",
+            "text": "8 January 1853"
+          },
+          "place": "Surakarta",
+          "certainty": "low",
+          "sources": [
+            {
+              "source": "wp_en_mangkunegaran",
+              "quay": 1,
+              "where": "list"
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "source": "wp_en_mn3",
+          "quay": 1,
+          "where": "infobox"
+        },
+        {
+          "source": "wp_id_mn3",
+          "quay": 1,
+          "where": "infobox"
+        }
+      ]
     },
     "mn4": {
       "name": "Mangkunegara IV",
@@ -1907,7 +6278,67 @@
         "box": "ruler",
         "year": 1853,
         "sub": "r. 1853 – 1881"
-      }
+      },
+      "bio": "Born Raden Mas Sudira. Remembered as the poet of the Serat Wedhatama and as a modernising ruler who built the Colomadu and Tasikmadu sugar mills and paid officials salaries instead of land grants.",
+      "aka": [
+        "Bendara Raden Mas Sudira",
+        "Kanjeng Pangeran Arya Gandakusuma",
+        "Prangwadana IV"
+      ],
+      "variants": [
+        "Mangkunagara IV"
+      ],
+      "born": [
+        {
+          "date": {
+            "edtf": "1811-03-03",
+            "text": "3 March 1811"
+          },
+          "place": "Surakarta",
+          "certainty": "high",
+          "sources": [
+            {
+              "source": "wp_en_mn4",
+              "quay": 1,
+              "where": "infobox"
+            },
+            {
+              "source": "wp_en_mangkunegaran",
+              "quay": 1,
+              "where": "list"
+            }
+          ]
+        }
+      ],
+      "died": [
+        {
+          "date": {
+            "edtf": "1881-09-02",
+            "text": "2 September 1881"
+          },
+          "place": "Surakarta",
+          "certainty": "high",
+          "sources": [
+            {
+              "source": "wp_en_mn4",
+              "quay": 1,
+              "where": "infobox"
+            },
+            {
+              "source": "wp_en_mangkunegaran",
+              "quay": 1,
+              "where": "list"
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "source": "wp_en_mn4",
+          "quay": 1,
+          "where": "lead and Legacy"
+        }
+      ]
     },
     "dunuk": {
       "name": "Dunuk",
@@ -1920,7 +6351,28 @@
           "side": "r"
         },
         "sub": "daughter of Mangkunegara III"
-      }
+      },
+      "aka": [
+        "Raden Ajeng Dunuk",
+        "Kanjeng Bendara Raden Ayu Adipati Mangkunegara IV"
+      ],
+      "born": [
+        {
+          "date": {
+            "edtf": "1830/1831",
+            "text": "AJ 1758"
+          },
+          "certainty": "medium",
+          "note": "Given in the Javanese era; the conversion to 1830/31 is mine.",
+          "sources": [
+            {
+              "source": "o_wp_en_mn4",
+              "where": "Personal life",
+              "quay": 1
+            }
+          ]
+        }
+      ]
     },
     "mn5": {
       "name": "Mangkunegara V",
@@ -1941,7 +6393,62 @@
         "box": "ruler",
         "year": 1881,
         "sub": "r. 1881 – 1896"
-      }
+      },
+      "bio": "Born Gusti Raden Mas Sunita, son of Mangkunegara IV. Falling sugar prices, cane disease and debt brought a financial crisis in his reign, and the Dutch placed the principality's finances under supervision. He died after an accident in a Wonogiri forest.",
+      "aka": [
+        "Gusti Raden Mas Sunita",
+        "Prabu Prangwadana V"
+      ],
+      "variants": [
+        "Mangkunagara V"
+      ],
+      "born": [
+        {
+          "date": {
+            "edtf": "1855-04-04",
+            "text": "4 April 1855"
+          },
+          "place": "Surakarta",
+          "certainty": "high",
+          "sources": [
+            {
+              "source": "wp_en_mn5",
+              "quay": 1,
+              "where": "infobox"
+            }
+          ]
+        }
+      ],
+      "died": [
+        {
+          "date": {
+            "edtf": "1896-10-10",
+            "text": "10 October 1896"
+          },
+          "place": "Wonogiri",
+          "certainty": "medium",
+          "note": "The article body ends his reign on 2 October 1896.",
+          "sources": [
+            {
+              "source": "wp_en_mn5",
+              "quay": 1,
+              "where": "infobox"
+            },
+            {
+              "source": "wp_en_mangkunegaran",
+              "quay": 1,
+              "where": "list"
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "source": "wp_en_mn5",
+          "quay": 1,
+          "where": "infobox"
+        }
+      ]
     },
     "mn6": {
       "name": "Mangkunegara VI",
@@ -1962,7 +6469,62 @@
         "box": "ruler",
         "year": 1896,
         "sub": "r. 1896 – 1916"
-      }
+      },
+      "bio": "Born Gusti Raden Mas Suyitno, a son of Mangkunegara IV, he succeeded his brother in 1896. He paid down the principality's debts and modernised court custom, then in 1916 became the only Mangkunegara to abdicate, moving to Surabaya.",
+      "aka": [
+        "Gusti Raden Mas Suyitno",
+        "Kanjeng Pangeran Harya Dayaningrat"
+      ],
+      "variants": [
+        "Mangkunagara VI",
+        "Mangkoe Negoro VI"
+      ],
+      "born": [
+        {
+          "date": {
+            "edtf": "1857-03-01",
+            "text": "1 March 1857"
+          },
+          "place": "Pura Mangkunegaran, Surakarta",
+          "certainty": "high",
+          "sources": [
+            {
+              "source": "wp_en_mn6",
+              "quay": 1,
+              "where": "infobox"
+            }
+          ]
+        }
+      ],
+      "died": [
+        {
+          "date": {
+            "edtf": "1928-06-25",
+            "text": "25 June 1928"
+          },
+          "place": "Surabaya",
+          "certainty": "high",
+          "sources": [
+            {
+              "source": "wp_en_mn6",
+              "quay": 1,
+              "where": "infobox"
+            },
+            {
+              "source": "wp_en_mangkunegaran",
+              "quay": 1,
+              "where": "list"
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "source": "wp_en_mn6",
+          "quay": 1,
+          "where": "infobox"
+        }
+      ]
     },
     "suyono": {
       "name": "Suyono Handayaningrat",
@@ -2002,7 +6564,62 @@
         "box": "ruler",
         "year": 1916,
         "sub": "r. 1916 – 1944"
-      }
+      },
+      "bio": "Born Raden Mas Surya Suprapta; he studied at Leiden. A leading patron of Javanese culture, he helped found the Java Instituut and in 1933 the Solosche Radio Vereeniging, described as the first radio station owned by Indonesians.",
+      "aka": [
+        "Bendara Raden Mas Surya Suprapta",
+        "Raden Mas Soerjosoeparto"
+      ],
+      "variants": [
+        "Mangkunagara VII",
+        "Mangkoe Negoro VII"
+      ],
+      "born": [
+        {
+          "date": {
+            "edtf": "1885-11-12",
+            "text": "12 November 1885"
+          },
+          "place": "Surakarta",
+          "certainty": "high",
+          "sources": [
+            {
+              "source": "wp_en_mn7",
+              "quay": 1,
+              "where": "infobox"
+            }
+          ]
+        }
+      ],
+      "died": [
+        {
+          "date": {
+            "edtf": "1944-07-19",
+            "text": "19 July 1944"
+          },
+          "place": "Surakarta",
+          "certainty": "medium",
+          "sources": [
+            {
+              "source": "wp_en_mn7",
+              "quay": 1,
+              "where": "infobox"
+            },
+            {
+              "source": "wp_en_mangkunegaran",
+              "quay": 1,
+              "where": "list"
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "source": "wp_en_mn7",
+          "quay": 1,
+          "where": "infobox"
+        }
+      ]
     },
     "partini": {
       "name": "Partini",
@@ -2012,7 +6629,48 @@
         "box": "minor",
         "year": 1925,
         "sub": "b. 1902"
-      }
+      },
+      "aka": [
+        "Arti Purbani",
+        "Ny. Husein Djajadiningrat"
+      ],
+      "variants": [
+        "Partini Djajadiningrat"
+      ],
+      "born": [
+        {
+          "date": {
+            "edtf": "1902",
+            "text": "1902"
+          },
+          "certainty": "high",
+          "sources": [
+            {
+              "source": "o_lontar2025",
+              "quay": 2
+            },
+            {
+              "source": "o_wp_en_mn7",
+              "quay": 1
+            }
+          ]
+        }
+      ],
+      "died": [
+        {
+          "date": {
+            "edtf": "1998",
+            "text": "1998"
+          },
+          "certainty": "medium",
+          "sources": [
+            {
+              "source": "o_lontar2025",
+              "quay": 2
+            }
+          ]
+        }
+      ]
     },
     "hoesein": {
       "name": "Hoesein Djajadiningrat",
@@ -2025,7 +6683,43 @@
         },
         "sub": "scholar · first Indonesian doctorate<br>by dissertation (Leiden, 1913)",
         "width": 230
-      }
+      },
+      "variants": [
+        "Husein Jayadiningrat",
+        "Hussein Jayadiningrat"
+      ],
+      "born": [
+        {
+          "date": {
+            "edtf": "1886-12-08",
+            "text": "8 December 1886"
+          },
+          "place": "Kramatwatu, Serang",
+          "certainty": "high",
+          "sources": [
+            {
+              "source": "o_wp_en_hoesein",
+              "quay": 1
+            }
+          ]
+        }
+      ],
+      "died": [
+        {
+          "date": {
+            "edtf": "1960-11-12",
+            "text": "12 November 1960"
+          },
+          "place": "Jakarta",
+          "certainty": "high",
+          "sources": [
+            {
+              "source": "o_wp_en_hoesein",
+              "quay": 1
+            }
+          ]
+        }
+      ]
     },
     "timur": {
       "name": "Timur",
@@ -2039,7 +6733,29 @@
           "side": "l"
         },
         "sub": "daughter of Hamengkubuwana VII"
-      }
+      },
+      "aka": [
+        "Gusti Raden Ajeng Mursudariyah"
+      ],
+      "variants": [
+        "Timoer"
+      ],
+      "born": [
+        {
+          "date": {
+            "edtf": "1896",
+            "text": "1896"
+          },
+          "certainty": "medium",
+          "sources": [
+            {
+              "source": "o_wp_en_hb7",
+              "where": "Family, unsourced",
+              "quay": 1
+            }
+          ]
+        }
+      ]
     },
     "mn8": {
       "name": "Mangkunegara VIII",
@@ -2060,7 +6776,92 @@
         "box": "ruler",
         "year": 1944,
         "sub": "r. 1944 – 1987"
-      }
+      },
+      "bio": "Son of Mangkunegara VII, he succeeded in 1944. He was Vice-Governor of the short-lived Special Region of Surakarta in 1945–46, later an honorary army major general and a member of parliament, and helped revive court dance.",
+      "aka": [
+        "Bendara Raden Mas Saroso Notosuparto",
+        "Natasoeparto"
+      ],
+      "variants": [
+        "Mangkunagara VIII",
+        "Mangkoe Nagoro VIII"
+      ],
+      "born": [
+        {
+          "date": {
+            "edtf": "1925-04-07",
+            "text": "7 April 1925"
+          },
+          "place": "Kartasura",
+          "certainty": "low",
+          "sources": [
+            {
+              "source": "wp_en_mn8",
+              "quay": 1,
+              "where": "infobox"
+            },
+            {
+              "source": "wp_en_mangkunegaran",
+              "quay": 1,
+              "where": "list"
+            }
+          ]
+        },
+        {
+          "date": {
+            "edtf": "1920-01-01",
+            "text": "1 January 1920"
+          },
+          "place": "Pura Mangkunegaran, Surakarta",
+          "certainty": "low",
+          "sources": [
+            {
+              "source": "wp_id_mn8",
+              "quay": 1,
+              "where": "infobox"
+            },
+            {
+              "source": "wp_en_mn8",
+              "quay": 1,
+              "where": "Early life"
+            }
+          ]
+        }
+      ],
+      "died": [
+        {
+          "date": {
+            "edtf": "1987-08-02",
+            "text": "2 August 1987"
+          },
+          "place": "Surakarta",
+          "certainty": "medium",
+          "note": "Place from English Wikipedia's infobox only. Indonesian Wikipedia's 3 September 1987, in Jakarta, appears to be Mangkunegara IX's accession date.",
+          "sources": [
+            {
+              "source": "jatimtimes2021",
+              "quay": 2
+            },
+            {
+              "source": "wp_en_mn8",
+              "quay": 1,
+              "where": "infobox"
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "source": "wp_id_mn8",
+          "quay": 1,
+          "where": "infobox"
+        },
+        {
+          "source": "wp_en_mn8",
+          "quay": 1,
+          "where": "infobox"
+        }
+      ]
     },
     "sunituti": {
       "name": "Sunituti",
@@ -2073,7 +6874,26 @@
           "side": "r"
         },
         "sub": "m. 1941"
-      }
+      },
+      "aka": [
+        "Raden Ajeng Sunituti"
+      ],
+      "died": [
+        {
+          "date": {
+            "edtf": "1978",
+            "text": "1978"
+          },
+          "certainty": "medium",
+          "sources": [
+            {
+              "source": "o_wp_en_mn8",
+              "where": "infobox",
+              "quay": 1
+            }
+          ]
+        }
+      ]
     },
     "retnosatuti": {
       "name": "Retno Satuti",
@@ -2083,7 +6903,17 @@
         "box": "minor",
         "year": 1969,
         "sub": "m. 1969"
-      }
+      },
+      "aka": [
+        "G.R.Ay. Retno Satuti Rahadiyan Yamin"
+      ],
+      "sources": [
+        {
+          "source": "o_wp_en_mn8",
+          "where": "family table",
+          "quay": 1
+        }
+      ]
     },
     "rahadian": {
       "name": "Rahadian Yamin",
@@ -2095,7 +6925,43 @@
         },
         "sub": "only son of<br>Mohammad Yamin",
         "width": 190
-      }
+      },
+      "aka": [
+        "Dang Rahadian Sinayangish Yamin"
+      ],
+      "born": [
+        {
+          "date": {
+            "edtf": "1937-04-24",
+            "text": "24 April 1937"
+          },
+          "place": "Batavia",
+          "certainty": "medium",
+          "sources": [
+            {
+              "source": "o_wp_id_rahadian",
+              "quay": 1
+            }
+          ]
+        }
+      ],
+      "died": [
+        {
+          "date": {
+            "edtf": "1979-08-21",
+            "text": "21 August 1979"
+          },
+          "place": "Bandar Lampung",
+          "certainty": "medium",
+          "note": "Road accident.",
+          "sources": [
+            {
+              "source": "o_wp_id_rahadian",
+              "quay": 1
+            }
+          ]
+        }
+      ]
     },
     "royyamin": {
       "name": "Roy Rahajasa Yamin",
@@ -2126,7 +6992,18 @@
         },
         "sub": "of the Johor<br>royal family",
         "width": 190
-      }
+      },
+      "aka": [
+        "Tunku Abu Bakar ibn Tunku Aris Bendahara Abdul Rahman",
+        "KPH Tunku Abu Bakar Dutahadiningrat"
+      ],
+      "sources": [
+        {
+          "source": "o_wp_en_mn8",
+          "where": "family table",
+          "quay": 1
+        }
+      ]
     },
     "nurul": {
       "name": "Siti Nurul",
@@ -2137,7 +7014,46 @@
         "box": "minor",
         "year": 1933,
         "sub": "“Gusti Nurul” · 1921 – 2015"
-      }
+      },
+      "aka": [
+        "Gusti Raden Ayu Siti Nurul Kamaril Ngasarati Kusumowardhani"
+      ],
+      "variants": [
+        "Siti Noeroel",
+        "Gusti Nurul"
+      ],
+      "born": [
+        {
+          "date": {
+            "edtf": "1921-09-17",
+            "text": "17 September 1921"
+          },
+          "place": "Surakarta",
+          "certainty": "high",
+          "sources": [
+            {
+              "source": "o_wp_en_nurul",
+              "quay": 1
+            }
+          ]
+        }
+      ],
+      "died": [
+        {
+          "date": {
+            "edtf": "2015-11-10",
+            "text": "10 November 2015"
+          },
+          "place": "Bandung",
+          "certainty": "high",
+          "sources": [
+            {
+              "source": "o_wp_en_nurul",
+              "quay": 1
+            }
+          ]
+        }
+      ]
     },
     "mn9": {
       "name": "Mangkunegara IX",
@@ -2158,7 +7074,71 @@
         "box": "ruler",
         "year": 1987,
         "sub": "r. 1987 – 2021"
-      }
+      },
+      "bio": "Born Gusti Pangeran Harya Sujiwakusuma, son of Mangkunegara VIII; he succeeded in 1987 and was crowned in January 1988. His first wife was Sukmawati Sukarnoputri, daughter of President Sukarno.",
+      "aka": [
+        "Gusti Pangeran Harya Sudjiwo Kusumo"
+      ],
+      "variants": [
+        "Mangkunagoro IX",
+        "Mangkoenagoro IX"
+      ],
+      "born": [
+        {
+          "date": {
+            "edtf": "1951-08-18",
+            "text": "18 August 1951"
+          },
+          "place": "Surakarta",
+          "certainty": "high",
+          "sources": [
+            {
+              "source": "kompastv2021",
+              "quay": 2
+            },
+            {
+              "source": "jatimtimes2021",
+              "quay": 2
+            },
+            {
+              "source": "wp_en_mn9",
+              "quay": 1,
+              "where": "infobox"
+            }
+          ]
+        }
+      ],
+      "died": [
+        {
+          "date": {
+            "edtf": "2021-08-13",
+            "text": "13 August 2021, 02.50"
+          },
+          "place": "Jakarta",
+          "certainty": "high",
+          "sources": [
+            {
+              "source": "kompastv2021",
+              "quay": 2
+            },
+            {
+              "source": "jatimtimes2021",
+              "quay": 2
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "source": "wp_en_mn9",
+          "quay": 1,
+          "where": "infobox"
+        },
+        {
+          "source": "jatimtimes2021",
+          "quay": 2
+        }
+      ]
     },
     "sukmawati": {
       "name": "Sukmawati Sukarnoputri",
@@ -2171,7 +7151,29 @@
         },
         "sub": "m. 1974, div. 1984",
         "width": 230
-      }
+      },
+      "aka": [
+        "Diah Mutiara Sukmawati Sukarnoputri"
+      ],
+      "variants": [
+        "Sukmawati Soekarnoputri"
+      ],
+      "born": [
+        {
+          "date": {
+            "edtf": "1951-10-26",
+            "text": "26 October 1951"
+          },
+          "place": "Jakarta",
+          "certainty": "high",
+          "sources": [
+            {
+              "source": "o_wp_en_sukmawati",
+              "quay": 1
+            }
+          ]
+        }
+      ]
     },
     "prisca": {
       "name": "GKP Prisca Marina Haryogi Supardi",
@@ -2182,7 +7184,21 @@
           "side": "r"
         },
         "sub": "m. 1990"
-      }
+      },
+      "aka": [
+        "Gusti Kanjeng Putri Mangkunegara IX"
+      ],
+      "sources": [
+        {
+          "source": "o_rcti_gustisura2026",
+          "quay": 2
+        },
+        {
+          "source": "o_wp_en_mn9",
+          "where": "married 28 June 1990",
+          "quay": 1
+        }
+      ]
     },
     "sukarno": {
       "name": "Sukarno",
@@ -2192,7 +7208,45 @@
         "year": 1958,
         "sub": "first President<br>of Indonesia",
         "width": 160
-      }
+      },
+      "aka": [
+        "Koesno Sosrodihardjo"
+      ],
+      "variants": [
+        "Soekarno"
+      ],
+      "born": [
+        {
+          "date": {
+            "edtf": "1901-06-06",
+            "text": "6 June 1901"
+          },
+          "place": "Surabaya",
+          "certainty": "high",
+          "sources": [
+            {
+              "source": "o_wp_en_sukarno",
+              "quay": 1
+            }
+          ]
+        }
+      ],
+      "died": [
+        {
+          "date": {
+            "edtf": "1970-06-21",
+            "text": "21 June 1970"
+          },
+          "place": "Jakarta",
+          "certainty": "high",
+          "sources": [
+            {
+              "source": "o_wp_en_sukarno",
+              "quay": 1
+            }
+          ]
+        }
+      ]
     },
     "paundrakarna": {
       "name": "Paundrakarna",
@@ -2203,7 +7257,28 @@
         "box": "minor",
         "year": 2003,
         "sub": "actor and singer"
-      }
+      },
+      "aka": [
+        "GPH Paundrakarna Sukmaputra Jiwanegara",
+        "GPH Paundrakarna Jiwo Suryonegoro",
+        "Paundra"
+      ],
+      "born": [
+        {
+          "date": {
+            "edtf": "1975-04-19",
+            "text": "19 April 1975"
+          },
+          "place": "Jakarta",
+          "certainty": "medium",
+          "sources": [
+            {
+              "source": "o_wp_id_paundrakarna",
+              "quay": 1
+            }
+          ]
+        }
+      ]
     },
     "putri": {
       "name": "Putri Agung",
@@ -2212,7 +7287,20 @@
       "show": {
         "box": "minor",
         "year": 2003
-      }
+      },
+      "aka": [
+        "GRA Putri Agung Suniwati"
+      ],
+      "sources": [
+        {
+          "source": "o_merahputih2021",
+          "quay": 2
+        },
+        {
+          "source": "o_wp_en_mn9",
+          "quay": 1
+        }
+      ]
     },
     "ancilla": {
       "name": "Ancillasura Marina",
@@ -2223,7 +7311,20 @@
         "box": "minor",
         "year": 2010,
         "sub": "m. KPH F.X. Adimas Rosdian, 6 Nov 2026"
-      }
+      },
+      "aka": [
+        "Gusti Raden Ajeng Ancillasura Marina Sudjiwo",
+        "Gusti Sura"
+      ],
+      "variants": [
+        "Ancillasura Marina Sujiwo"
+      ],
+      "sources": [
+        {
+          "source": "o_rcti_gustisura2026",
+          "quay": 2
+        }
+      ]
     },
     "mn10": {
       "name": "Mangkunegara X",
@@ -2244,7 +7345,47 @@
         "box": "ruler",
         "year": 2022,
         "sub": "r. 2022 – present"
-      }
+      },
+      "bio": "Born Bhre Cakrahutomo Wira Sudjiwo, son of Mangkunegara IX and Prisca Marina. A law graduate of the University of Indonesia, he was crowned in March 2022 at 24, and has promoted Javanese culture through digital media and tourism.",
+      "aka": [
+        "GPH Bhre Cakrahutomo Wira Sudjiwo",
+        "Gusti Bhre"
+      ],
+      "variants": [
+        "Mangkunagoro X",
+        "Mangkunegoro X"
+      ],
+      "born": [
+        {
+          "date": {
+            "edtf": "1997-03-29",
+            "text": "29 March 1997"
+          },
+          "certainty": "high",
+          "sources": [
+            {
+              "source": "kompastv2022",
+              "quay": 2
+            },
+            {
+              "source": "wp_en_mn10",
+              "quay": 1,
+              "where": "infobox"
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "source": "wp_en_mn10",
+          "quay": 1,
+          "where": "infobox"
+        },
+        {
+          "source": "kompastv2022",
+          "quay": 2
+        }
+      ]
     },
     "tien": {
       "name": "Tien Suharto",
@@ -2254,7 +7395,43 @@
         "year": 1947,
         "sub": "First Lady, 1967 – 1996",
         "width": 200
-      }
+      },
+      "aka": [
+        "Raden Ayu Siti Hartinah",
+        "Ibu Tien"
+      ],
+      "born": [
+        {
+          "date": {
+            "edtf": "1923-08-23",
+            "text": "23 August 1923"
+          },
+          "place": "Surakarta",
+          "certainty": "high",
+          "sources": [
+            {
+              "source": "o_wp_en_tien",
+              "quay": 1
+            }
+          ]
+        }
+      ],
+      "died": [
+        {
+          "date": {
+            "edtf": "1996-04-28",
+            "text": "28 April 1996"
+          },
+          "place": "Jakarta",
+          "certainty": "high",
+          "sources": [
+            {
+              "source": "o_wp_en_tien",
+              "quay": 1
+            }
+          ]
+        }
+      ]
     },
     "suharto": {
       "name": "Suharto",
@@ -2267,7 +7444,45 @@
         },
         "sub": "second President<br>of Indonesia",
         "width": 170
-      }
+      },
+      "aka": [
+        "Haji Mohammad Suharto"
+      ],
+      "variants": [
+        "Soeharto"
+      ],
+      "born": [
+        {
+          "date": {
+            "edtf": "1921-06-08",
+            "text": "8 June 1921"
+          },
+          "place": "Kemusuk, Bantul",
+          "certainty": "high",
+          "sources": [
+            {
+              "source": "o_wp_en_suharto",
+              "quay": 1
+            }
+          ]
+        }
+      ],
+      "died": [
+        {
+          "date": {
+            "edtf": "2008-01-27",
+            "text": "27 January 2008"
+          },
+          "place": "Jakarta",
+          "certainty": "high",
+          "sources": [
+            {
+              "source": "o_wp_en_suharto",
+              "quay": 1
+            }
+          ]
+        }
+      ]
     },
     "titiek": {
       "name": "Titiek Suharto",
@@ -2277,7 +7492,34 @@
         "year": 1983,
         "sub": "m. 1983, div. 1998",
         "width": 200
-      }
+      },
+      "aka": [
+        "Siti Hediati Hariyadi"
+      ],
+      "variants": [
+        "Titiek Soeharto"
+      ],
+      "born": [
+        {
+          "date": {
+            "edtf": "1959-04-14",
+            "text": "14 April 1959"
+          },
+          "place": "Semarang",
+          "certainty": "medium",
+          "note": "One article's categories give 1960.",
+          "sources": [
+            {
+              "source": "o_wp_id_titiek",
+              "quay": 1
+            },
+            {
+              "source": "o_wp_en_titiek",
+              "quay": 1
+            }
+          ]
+        }
+      ]
     },
     "prabowo": {
       "name": "Prabowo Subianto",
@@ -2290,7 +7532,26 @@
         },
         "sub": "eighth President<br>of Indonesia",
         "width": 190
-      }
+      },
+      "aka": [
+        "Prabowo Subianto Djojohadikusumo"
+      ],
+      "born": [
+        {
+          "date": {
+            "edtf": "1951-10-17",
+            "text": "17 October 1951"
+          },
+          "place": "Jakarta",
+          "certainty": "high",
+          "sources": [
+            {
+              "source": "o_wp_en_prabowo",
+              "quay": 1
+            }
+          ]
+        }
+      ]
     }
   },
   "unions": {
@@ -6693,6 +11954,946 @@
       "sans": "gantari",
       "script": "felipa",
       "secondScript": "noto"
+    }
+  },
+  "sources": {
+    "antara2015": {
+      "kind": "news",
+      "title": "Sultan HB X jelaskan pergantian gelarnya (Antara Jogja, 8 May 2015)",
+      "url": "https://jogja.antaranews.com/berita/331501/sultan-hb-x-jelaskan-pergantian-gelarnya",
+      "accessed": "2026-11-20"
+    },
+    "cnbc2025": {
+      "kind": "news",
+      "title": "Raja Keraton Solo Pakubuwono XIII meninggal dunia, ini dia sosoknya (CNBC Indonesia, 2 Nov 2025)",
+      "url": "https://www.cnbcindonesia.com/news/20251102170243-7-681490/raja-keraton-solo-pakubuwono-xiii-meninggal-dunia-ini-dia-sosoknya",
+      "accessed": "2026-11-20"
+    },
+    "cnn2025": {
+      "kind": "news",
+      "title": "PB XIII wafat, Keraton Surakarta kirim utusan ke Keraton Yogyakarta (CNN Indonesia, 3 Nov 2025)",
+      "url": "https://www.cnnindonesia.com/nasional/20251103032507-20-1291117/pb-xiii-wafat-keraton-surakarta-kirim-utusan-ke-keraton-yogyakarta",
+      "accessed": "2026-11-20"
+    },
+    "jatimtimes2021": {
+      "kind": "news",
+      "title": "Penguasa Mangkunegaran Solo wafat, ini riwayat singkat kehidupan KGPAA Mangkunegara IX (Jatim Times, 15 Aug 2021)",
+      "url": "https://jatimtimes.com/amp/baca/247609/20210815/101700/privacy",
+      "accessed": "2026-11-20"
+    },
+    "jogja200": {
+      "kind": "other",
+      "title": "Kota Jogjakarta 200 Tahun, 1756–1956 (section 'Peristiwa-peristiwa penting', by Pitojo)",
+      "year": 1956,
+      "url": "https://id.wikisource.org/wiki/Halaman:Kota_Jogjakarta_200_Tahun_(1956).pdf/190",
+      "accessed": "2026-11-20"
+    },
+    "kompastv2021": {
+      "kind": "news",
+      "title": "Kangjeng Gusti Aria Adhipati Mangkunegara IX meninggal dunia (Kompas TV, 13 Aug 2021)",
+      "url": "https://www.kompas.tv/article/201235/kangjeng-gusti-aria-adhipati-mangkunegara-ix-meninggal-dunia",
+      "accessed": "2026-11-20"
+    },
+    "kompastv2022": {
+      "kind": "news",
+      "title": "Profil GPH Bhre Cakrahutama, putra tunggal permaisuri penerus tahta Mangkunegaran (Kompas TV, 2022)",
+      "url": "https://www.kompas.tv/article/266437/profil-gph-bhre-cakrahutama-putra-tunggal-permaisuri-penerus-tahta-mangkunegaran",
+      "accessed": "2026-11-20"
+    },
+    "kraton_hb1": {
+      "kind": "court",
+      "title": "Sri Sultan Hamengku Buwono I (Raja-raja)",
+      "author": "Kraton Ngayogyakarta Hadiningrat",
+      "url": "https://www.kratonjogja.id/raja-raja/2-sri-sultan-hamengku-buwono-i/",
+      "accessed": "2026-11-20"
+    },
+    "kraton_hb2": {
+      "kind": "court",
+      "title": "Sri Sultan Hamengku Buwono II (Raja-raja)",
+      "author": "Kraton Ngayogyakarta Hadiningrat",
+      "url": "https://www.kratonjogja.id/raja-raja/3-sri-sultan-hamengku-buwono-ii/",
+      "accessed": "2026-11-20"
+    },
+    "kraton_hb3": {
+      "kind": "court",
+      "title": "Sri Sultan Hamengku Buwono III (Raja-raja)",
+      "author": "Kraton Ngayogyakarta Hadiningrat",
+      "url": "https://www.kratonjogja.id/raja-raja/4-sri-sultan-hamengku-buwono-iii/",
+      "accessed": "2026-11-20"
+    },
+    "kraton_hb4": {
+      "kind": "court",
+      "title": "Sri Sultan Hamengku Buwono IV (Raja-raja)",
+      "author": "Kraton Ngayogyakarta Hadiningrat",
+      "url": "https://www.kratonjogja.id/raja-raja/5-sri-sultan-hamengku-buwono-iv/",
+      "accessed": "2026-11-20"
+    },
+    "kraton_hb5": {
+      "kind": "court",
+      "title": "Sri Sultan Hamengku Buwono V (Raja-raja)",
+      "author": "Kraton Ngayogyakarta Hadiningrat",
+      "url": "https://www.kratonjogja.id/raja-raja/6-sri-sultan-hamengku-buwono-v/",
+      "accessed": "2026-11-20"
+    },
+    "kraton_hb6": {
+      "kind": "court",
+      "title": "Sri Sultan Hamengku Buwono VI (Raja-raja)",
+      "author": "Kraton Ngayogyakarta Hadiningrat",
+      "url": "https://www.kratonjogja.id/raja-raja/7-sri-sultan-hamengku-buwono-vi/",
+      "accessed": "2026-11-20"
+    },
+    "kraton_hb7": {
+      "kind": "court",
+      "title": "Sri Sultan Hamengku Buwono VII (Raja-raja)",
+      "author": "Kraton Ngayogyakarta Hadiningrat",
+      "url": "https://www.kratonjogja.id/raja-raja/8-sri-sultan-hamengku-buwono-vii/",
+      "accessed": "2026-11-20"
+    },
+    "kraton_hb8": {
+      "kind": "court",
+      "title": "Sri Sultan Hamengku Buwono VIII (Raja-raja)",
+      "author": "Kraton Ngayogyakarta Hadiningrat",
+      "url": "https://www.kratonjogja.id/raja-raja/9-sri-sultan-hamengku-buwono-viii/",
+      "accessed": "2026-11-20"
+    },
+    "kraton_hb9": {
+      "kind": "court",
+      "title": "Sri Sultan Hamengku Buwono IX (Raja-raja)",
+      "author": "Kraton Ngayogyakarta Hadiningrat",
+      "url": "https://www.kratonjogja.id/raja-raja/10-sri-sultan-hamengku-buwono-ix/",
+      "accessed": "2026-11-20"
+    },
+    "liputan6_2015": {
+      "kind": "news",
+      "title": "Paku Alam IX wafat (Liputan6, 21 Nov 2015)",
+      "url": "https://www.liputan6.com/news/read/2371638/paku-alam-ix-wafat",
+      "accessed": "2026-11-20"
+    },
+    "o_cnn_purbaya2025": {
+      "kind": "news",
+      "title": "Profil KGPH Purbaya, Putra Mahkota Keraton Surakarta (CNN Indonesia)",
+      "year": 2025,
+      "url": "https://www.cnnindonesia.com/nasional/20251103163546-32-1291391/profil-kgph-purbaya-putra-mahkota-keraton-surakarta",
+      "accessed": "2026-11-20"
+    },
+    "o_detik_pb14_2025": {
+      "kind": "news",
+      "title": "2 Putra Mendiang PB XIII Beda Ibu Berebut Takhta Keraton Solo (detikJateng)",
+      "year": 2025,
+      "url": "https://www.detik.com/jateng/berita/d-8211153/2-putra-mendiang-pb-xiii-beda-ibu-berebut-takhta-keraton-solo",
+      "accessed": "2026-11-20"
+    },
+    "o_diplomatika2020": {
+      "kind": "scholarship",
+      "title": "Praktik Deskripsi dan Klasifikasi Khazanah Arsip Paku Alam V (1878-1900) di Puro Pakualaman Yogyakarta (Diplomatika 3, no. 2)",
+      "author": "Iskarohma binti Nurhamidyah, Yofa Pradhani Nabillah and Lillyana Mulya",
+      "year": 2020,
+      "url": "https://journal.ugm.ac.id/diplomatika/article/download/60885/29671",
+      "accessed": "2026-11-20"
+    },
+    "o_gnfi_bimantoro2018": {
+      "kind": "news",
+      "title": "Akan Ada Pernikahan Kerajaan di Bulan Januari Mendatang (Good News from Indonesia)",
+      "year": 2018,
+      "url": "https://ceritakawan.goodnewsfromindonesia.id/humaniora/akan-ada-pernikahan-kerajaan-di-bulan-januari-mendatang",
+      "accessed": "2026-11-20"
+    },
+    "o_herawati2018": {
+      "kind": "scholarship",
+      "title": "Rekonstruksi Tari Bedhaya Endhol-endhol di Keraton Kasunanan Surakarta Hadiningrat (Panggung 28, no. 2)",
+      "author": "Kezia Putri Herawati and Nanik Sri Prihatini",
+      "year": 2018,
+      "url": "https://jurnal.isbi.ac.id/index.php/panggung/article/download/521/pdf/1361",
+      "accessed": "2026-11-20"
+    },
+    "o_hukumonline2011": {
+      "kind": "news",
+      "title": "Profesor Berdarah Bangsawan (Hukumonline)",
+      "year": 2011,
+      "url": "https://www.hukumonline.com/berita/a/profesor-berdarah-bangsawan-lt4d5fe58d51cc5/",
+      "accessed": "2026-11-20"
+    },
+    "o_inews_ronggo2023": {
+      "kind": "news",
+      "title": "Kisah Bupati Ronggo Tewas Dibunuh Pasukan Keraton Yogyakarta di Tepi Bengawan Solo (iNews)",
+      "year": 2023,
+      "url": "https://www.inews.id/regional/jatim/kisah-bupati-ronggo-tewas-dibunuh-pasukan-keraton-yogyakarta-di-tepi-bengawan-solo/all",
+      "accessed": "2026-11-20"
+    },
+    "o_lontar2025": {
+      "kind": "other",
+      "title": "Lontar Newsletter, May 2025 (note on Arti Purbani)",
+      "author": "Lontar Foundation",
+      "year": 2025,
+      "url": "https://lontar.org/wp-content/uploads/2025/05/2025-Mei-Lontar-Newsletter.pdf",
+      "accessed": "2026-11-20"
+    },
+    "o_merahputih2021": {
+      "kind": "news",
+      "title": "Raja Mangkunegara IX Solo Meninggal (Merahputih.com)",
+      "year": 2021,
+      "url": "https://www.merahputih.com/post/read/raja-mangkunegara-ix-solo-meninggal",
+      "accessed": "2026-11-20"
+    },
+    "o_nasuhi2021": {
+      "kind": "scholarship",
+      "title": "Mystical Discourse in Java in the 18th Century Narrated by the Book of Cabolek (Ilmu Ushuluddin 8, no. 1)",
+      "author": "Hamid Nasuhi",
+      "year": 2021,
+      "url": "https://journal.uinjkt.ac.id/index.php/ilmu-ushuluddin/article/download/23365/pdf",
+      "accessed": "2026-11-20"
+    },
+    "o_popmama_hangabehi": {
+      "kind": "news",
+      "title": "Profil dan Biodata KGPH Hangabehi (Popmama)",
+      "url": "https://www.popmama.com/life/health/profil-dan-biodata-kgph-hangabehi-00-kd2wt-2sdw21",
+      "accessed": "2026-11-20"
+    },
+    "o_rcti_gustisura2026": {
+      "kind": "news",
+      "title": "Profil Gusti Sura, Kakak Gusti Bhre yang Akan Menikah November 2026 (iNews / RCTI+)",
+      "year": 2026,
+      "url": "https://www.rctiplus.com/news/detail/inews/5462633/profil-gusti-sura--kakak-gusti-bhre-yang-akan-menikah-november-2026",
+      "accessed": "2026-11-20"
+    },
+    "o_republika2015": {
+      "kind": "news",
+      "title": "Istri Sultan HB IX Wafat (Republika)",
+      "year": 2015,
+      "url": "https://news.republika.co.id/berita/nu3afc346/istri-sultan-hb-ix-wafat",
+      "accessed": "2026-11-20"
+    },
+    "o_wp_en_am1": {
+      "kind": "other",
+      "title": "Amangkurat I (English Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Amangkurat_I",
+      "accessed": "2026-11-20"
+    },
+    "o_wp_en_bagong": {
+      "kind": "other",
+      "title": "Bagong Kussudiardja (English Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Bagong_Kussudiardja",
+      "accessed": "2026-11-20"
+    },
+    "o_wp_en_bendara": {
+      "kind": "other",
+      "title": "Princess Bendara (English Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Princess_Bendara",
+      "accessed": "2026-11-20"
+    },
+    "o_wp_en_condrokirono": {
+      "kind": "other",
+      "title": "Princess Condrokirono (English Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Princess_Condrokirono",
+      "accessed": "2026-11-20"
+    },
+    "o_wp_en_diponegoro": {
+      "kind": "other",
+      "title": "Diponegoro (English Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Diponegoro",
+      "accessed": "2026-11-20"
+    },
+    "o_wp_en_hayu": {
+      "kind": "other",
+      "title": "Princess Hayu (English Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Princess_Hayu",
+      "accessed": "2026-11-20"
+    },
+    "o_wp_en_hb4": {
+      "kind": "other",
+      "title": "Hamengkubuwono IV (English Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Hamengkubuwono_IV",
+      "accessed": "2026-11-20"
+    },
+    "o_wp_en_hb7": {
+      "kind": "other",
+      "title": "Hamengkubuwono VII (English Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Hamengkubuwono_VII",
+      "accessed": "2026-11-20"
+    },
+    "o_wp_en_hoesein": {
+      "kind": "other",
+      "title": "Hoesein Djajadiningrat (English Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Hoesein_Djajadiningrat",
+      "accessed": "2026-11-20"
+    },
+    "o_wp_en_kihajar": {
+      "kind": "other",
+      "title": "Ki Hajar Dewantara (English Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Ki_Hajar_Dewantara",
+      "accessed": "2026-11-20"
+    },
+    "o_wp_en_kyaimaja": {
+      "kind": "other",
+      "title": "Kyai Maja (English Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Kyai_Maja",
+      "accessed": "2026-11-20"
+    },
+    "o_wp_en_maduretno": {
+      "kind": "other",
+      "title": "Princess Maduretno (English Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Princess_Maduretno",
+      "accessed": "2026-11-20"
+    },
+    "o_wp_en_mangkualam2": {
+      "kind": "other",
+      "title": "Mangku Alam II (English Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Mangku_Alam_II",
+      "accessed": "2026-11-20"
+    },
+    "o_wp_en_mn1": {
+      "kind": "other",
+      "title": "Mangkunegara I (English Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Mangkunegara_I",
+      "accessed": "2026-11-20"
+    },
+    "o_wp_en_mn3": {
+      "kind": "other",
+      "title": "Mangkunegara III (English Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Mangkunegara_III",
+      "accessed": "2026-11-20"
+    },
+    "o_wp_en_mn4": {
+      "kind": "other",
+      "title": "Mangkunegara IV (English Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Mangkunegara_IV",
+      "accessed": "2026-11-20"
+    },
+    "o_wp_en_mn7": {
+      "kind": "other",
+      "title": "Mangkunegara VII (English Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Mangkunegara_VII",
+      "accessed": "2026-11-20"
+    },
+    "o_wp_en_mn8": {
+      "kind": "other",
+      "title": "Mangkunegara VIII (English Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Mangkunegara_VIII",
+      "accessed": "2026-11-20"
+    },
+    "o_wp_en_mn9": {
+      "kind": "other",
+      "title": "Mangkunegara IX (English Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Mangkunegara_IX",
+      "accessed": "2026-11-20"
+    },
+    "o_wp_en_mooryati": {
+      "kind": "other",
+      "title": "Mooryati Soedibyo (English Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Mooryati_Soedibyo",
+      "accessed": "2026-11-20"
+    },
+    "o_wp_en_ngenis": {
+      "kind": "other",
+      "title": "Ki Ageng Ngenis (English Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Ki_Ageng_Ngenis",
+      "accessed": "2026-11-20"
+    },
+    "o_wp_en_notosoeroto": {
+      "kind": "other",
+      "title": "Noto Soeroto (English Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Noto_Soeroto",
+      "accessed": "2026-11-20"
+    },
+    "o_wp_en_nurul": {
+      "kind": "other",
+      "title": "Gusti Nurul (English Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Gusti_Nurul",
+      "accessed": "2026-11-20"
+    },
+    "o_wp_en_pa10": {
+      "kind": "other",
+      "title": "Paku Alam X (English Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Paku_Alam_X",
+      "accessed": "2026-11-20"
+    },
+    "o_wp_en_pa7": {
+      "kind": "other",
+      "title": "Paku Alam VII (English Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Paku_Alam_VII",
+      "accessed": "2026-11-20"
+    },
+    "o_wp_en_pa8": {
+      "kind": "other",
+      "title": "Paku Alam VIII (English Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Paku_Alam_VIII",
+      "accessed": "2026-11-20"
+    },
+    "o_wp_en_pamanahan": {
+      "kind": "other",
+      "title": "Gedhe Pamanahan (English Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Gedhe_Pamanahan",
+      "accessed": "2026-11-20"
+    },
+    "o_wp_en_pb1": {
+      "kind": "other",
+      "title": "Pakubuwono I of Mataram (English Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Pakubuwono_I",
+      "accessed": "2026-11-20"
+    },
+    "o_wp_en_pb10": {
+      "kind": "other",
+      "title": "Pakubuwono X (English Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Pakubuwono_X",
+      "accessed": "2026-11-20"
+    },
+    "o_wp_en_pb13": {
+      "kind": "other",
+      "title": "Pakubuwono XIII (English Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Pakubuwono_XIII",
+      "accessed": "2026-11-20"
+    },
+    "o_wp_en_pb2": {
+      "kind": "other",
+      "title": "Pakubuwono II (English Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Pakubuwono_II",
+      "accessed": "2026-11-20"
+    },
+    "o_wp_en_pb3": {
+      "kind": "other",
+      "title": "Pakubuwono III (English Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Pakubuwono_III",
+      "accessed": "2026-11-20"
+    },
+    "o_wp_en_prabowo": {
+      "kind": "other",
+      "title": "Prabowo Subianto (English Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Prabowo_Subianto",
+      "accessed": "2026-11-20"
+    },
+    "o_wp_en_ranggawarsita": {
+      "kind": "other",
+      "title": "Ranggawarsita (English Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Ranggawarsita",
+      "accessed": "2026-11-20"
+    },
+    "o_wp_en_suharto": {
+      "kind": "other",
+      "title": "Suharto (English Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Suharto",
+      "accessed": "2026-11-20"
+    },
+    "o_wp_en_sukarno": {
+      "kind": "other",
+      "title": "Sukarno (English Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Sukarno",
+      "accessed": "2026-11-20"
+    },
+    "o_wp_en_sukmawati": {
+      "kind": "other",
+      "title": "Sukmawati Sukarnoputri (English Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Sukmawati_Sukarnoputri",
+      "accessed": "2026-11-20"
+    },
+    "o_wp_en_surapati": {
+      "kind": "other",
+      "title": "Untung Surapati (English Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Untung_Surapati",
+      "accessed": "2026-11-20"
+    },
+    "o_wp_en_tien": {
+      "kind": "other",
+      "title": "Siti Hartinah (English Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Siti_Hartinah",
+      "accessed": "2026-11-20"
+    },
+    "o_wp_en_titiek": {
+      "kind": "other",
+      "title": "Titiek Suharto (English Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Titiek_Suharto",
+      "accessed": "2026-11-20"
+    },
+    "o_wp_en_trunajaya": {
+      "kind": "other",
+      "title": "Trunajaya (English Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Trunajaya",
+      "accessed": "2026-11-20"
+    },
+    "o_wp_id_am1": {
+      "kind": "other",
+      "title": "Amangkurat I (Indonesian Wikipedia)",
+      "url": "https://id.wikipedia.org/wiki/Amangkurat_I",
+      "accessed": "2026-11-20"
+    },
+    "o_wp_id_benawa": {
+      "kind": "other",
+      "title": "Pangeran Benawa (Indonesian Wikipedia)",
+      "url": "https://id.wikipedia.org/wiki/Pangeran_Benawa",
+      "accessed": "2026-11-20"
+    },
+    "o_wp_id_bondan": {
+      "kind": "other",
+      "title": "Bondan Kajawan (Indonesian Wikipedia)",
+      "url": "https://id.wikipedia.org/wiki/Bondan_Kejawan",
+      "accessed": "2026-11-20"
+    },
+    "o_wp_id_butet": {
+      "kind": "other",
+      "title": "Butet Kartaredjasa (Indonesian Wikipedia)",
+      "url": "https://id.wikipedia.org/wiki/Butet_Kartaredjasa",
+      "accessed": "2026-11-20"
+    },
+    "o_wp_id_djaduk": {
+      "kind": "other",
+      "title": "Djaduk Ferianto (Indonesian Wikipedia)",
+      "url": "https://id.wikipedia.org/wiki/Djaduk_Ferianto",
+      "accessed": "2026-11-20"
+    },
+    "o_wp_id_djatikoesoemo": {
+      "kind": "other",
+      "title": "Djatikoesoemo (Indonesian Wikipedia)",
+      "url": "https://id.wikipedia.org/wiki/Djatikoesoemo",
+      "accessed": "2026-11-20"
+    },
+    "o_wp_id_getas": {
+      "kind": "other",
+      "title": "Ki Getas Pandawa (Indonesian Wikipedia)",
+      "url": "https://id.wikipedia.org/wiki/Ki_Ageng_Getas_Pandawa",
+      "accessed": "2026-11-20"
+    },
+    "o_wp_id_gkrmangkubumi": {
+      "kind": "other",
+      "title": "Gusti Kanjeng Ratu Mangkubumi (Indonesian Wikipedia)",
+      "url": "https://id.wikipedia.org/wiki/Gusti_Kanjeng_Ratu_Mangkubumi",
+      "accessed": "2026-11-20"
+    },
+    "o_wp_id_hadiwinoto": {
+      "kind": "other",
+      "title": "Hadiwinoto (Indonesian Wikipedia)",
+      "url": "https://id.wikipedia.org/wiki/Hadiwinoto",
+      "accessed": "2026-11-20"
+    },
+    "o_wp_id_haryomataram": {
+      "kind": "other",
+      "title": "Haryo Mataram (Indonesian Wikipedia)",
+      "url": "https://id.wikipedia.org/wiki/Haryo_Mataram",
+      "accessed": "2026-11-20"
+    },
+    "o_wp_id_hb5": {
+      "kind": "other",
+      "title": "Hamengkubuwana V (Indonesian Wikipedia)",
+      "url": "https://id.wikipedia.org/wiki/Hamengkubuwana_V",
+      "accessed": "2026-11-20"
+    },
+    "o_wp_id_juru": {
+      "kind": "other",
+      "title": "Ki Juru Martani (Indonesian Wikipedia)",
+      "url": "https://id.wikipedia.org/wiki/Ki_Juru_Martani",
+      "accessed": "2026-11-20"
+    },
+    "o_wp_id_nyihajar": {
+      "kind": "other",
+      "title": "Nyi Hajar Dewantara (Indonesian Wikipedia)",
+      "url": "https://id.wikipedia.org/wiki/Nyi_Hadjar_Dewantara",
+      "accessed": "2026-11-20"
+    },
+    "o_wp_id_pamanahan": {
+      "kind": "other",
+      "title": "Ki Ageng Pamanahan (Indonesian Wikipedia)",
+      "url": "https://id.wikipedia.org/wiki/Ki_Ageng_Pemanahan",
+      "accessed": "2026-11-20"
+    },
+    "o_wp_id_paundrakarna": {
+      "kind": "other",
+      "title": "Paundrakarna (Indonesian Wikipedia)",
+      "url": "https://id.wikipedia.org/wiki/Paundrakarna",
+      "accessed": "2026-11-20"
+    },
+    "o_wp_id_purbaya": {
+      "kind": "other",
+      "title": "Pangeran Purbaya (Indonesian Wikipedia)",
+      "url": "https://id.wikipedia.org/wiki/Pangeran_Purbaya",
+      "accessed": "2026-11-20"
+    },
+    "o_wp_id_rahadian": {
+      "kind": "other",
+      "title": "Rahadian Yamin (Indonesian Wikipedia)",
+      "url": "https://id.wikipedia.org/wiki/Rahadian_Yamin",
+      "accessed": "2026-11-20"
+    },
+    "o_wp_id_ratuageng": {
+      "kind": "other",
+      "title": "Ratu Ageng Tegalrejo (Indonesian Wikipedia)",
+      "url": "https://id.wikipedia.org/wiki/Ratu_Ageng_Tegalrejo",
+      "accessed": "2026-11-20"
+    },
+    "o_wp_id_ratuhemas": {
+      "kind": "other",
+      "title": "Ratu Hemas (Indonesian Wikipedia)",
+      "url": "https://id.wikipedia.org/wiki/Gusti_Kanjeng_Ratu_Hemas",
+      "accessed": "2026-11-20"
+    },
+    "o_wp_id_sela": {
+      "kind": "other",
+      "title": "Ki Ageng Sela (Indonesian Wikipedia)",
+      "url": "https://id.wikipedia.org/wiki/Ki_Ageng_Sela",
+      "accessed": "2026-11-20"
+    },
+    "o_wp_id_sentot": {
+      "kind": "other",
+      "title": "Sentot Prawirodirdjo (Indonesian Wikipedia)",
+      "url": "https://id.wikipedia.org/wiki/Sentot_Prawirodirdjo",
+      "accessed": "2026-11-20"
+    },
+    "o_wp_id_soerjopranoto": {
+      "kind": "other",
+      "title": "Soerjopranoto (Indonesian Wikipedia)",
+      "url": "https://id.wikipedia.org/wiki/Soerjopranoto",
+      "accessed": "2026-11-20"
+    },
+    "o_wp_id_tedjowulan": {
+      "kind": "other",
+      "title": "Tedjowulan (Indonesian Wikipedia)",
+      "url": "https://id.wikipedia.org/wiki/Tedjowulan",
+      "accessed": "2026-11-20"
+    },
+    "o_wp_id_titiek": {
+      "kind": "other",
+      "title": "Titiek Soeharto (Indonesian Wikipedia)",
+      "url": "https://id.wikipedia.org/wiki/Titiek_Soeharto",
+      "accessed": "2026-11-20"
+    },
+    "o_wp_id_yasadipura2": {
+      "kind": "other",
+      "title": "Yasadipura II (Indonesian Wikipedia)",
+      "url": "https://id.wikipedia.org/wiki/Yasadipura_II",
+      "accessed": "2026-11-20"
+    },
+    "suarasby2015": {
+      "kind": "news",
+      "title": "Adik Sultan HB X minta Sabda Raja dibatalkan (Suara Surabaya, 8 May 2015)",
+      "url": "https://www.suarasurabaya.net/kelanakota/2015/Adik-Sultan-HB-X-Minta-Sabda-Raja-Dibatalkan/",
+      "accessed": "2026-11-20"
+    },
+    "wp_en_agung": {
+      "kind": "other",
+      "title": "Wikipedia (English): Sultan Agung of Mataram",
+      "url": "https://en.wikipedia.org/wiki/Sultan_Agung_of_Mataram",
+      "accessed": "2026-11-20"
+    },
+    "wp_en_am1": {
+      "kind": "other",
+      "title": "Wikipedia (English): Amangkurat I",
+      "url": "https://en.wikipedia.org/wiki/Amangkurat_I",
+      "accessed": "2026-11-20"
+    },
+    "wp_en_am2": {
+      "kind": "other",
+      "title": "Wikipedia (English): Amangkurat II",
+      "url": "https://en.wikipedia.org/wiki/Amangkurat_II",
+      "accessed": "2026-11-20"
+    },
+    "wp_en_am3": {
+      "kind": "other",
+      "title": "Wikipedia (English): Amangkurat III",
+      "url": "https://en.wikipedia.org/wiki/Amangkurat_III",
+      "accessed": "2026-11-20"
+    },
+    "wp_en_am4": {
+      "kind": "other",
+      "title": "Wikipedia (English): Amangkurat IV",
+      "url": "https://en.wikipedia.org/wiki/Amangkurat_IV",
+      "accessed": "2026-11-20"
+    },
+    "wp_en_hamengkubuwono": {
+      "kind": "other",
+      "title": "Wikipedia (English): Hamengkubuwono",
+      "url": "https://en.wikipedia.org/wiki/Hamengkubuwono",
+      "accessed": "2026-11-20"
+    },
+    "wp_en_hb10": {
+      "kind": "other",
+      "title": "Wikipedia (English): Hamengkubuwono X",
+      "url": "https://en.wikipedia.org/wiki/Hamengkubuwono_X",
+      "accessed": "2026-11-20"
+    },
+    "wp_en_hb5": {
+      "kind": "other",
+      "title": "Wikipedia (English): Hamengkubuwono V",
+      "url": "https://en.wikipedia.org/wiki/Hamengkubuwono_V",
+      "accessed": "2026-11-20"
+    },
+    "wp_en_mangkunegaran": {
+      "kind": "other",
+      "title": "Wikipedia (English): Mangkunegaran",
+      "url": "https://en.wikipedia.org/wiki/Mangkunegaran",
+      "accessed": "2026-11-20"
+    },
+    "wp_en_mn1": {
+      "kind": "other",
+      "title": "Wikipedia (English): Mangkunegara I",
+      "url": "https://en.wikipedia.org/wiki/Mangkunegara_I",
+      "accessed": "2026-11-20"
+    },
+    "wp_en_mn10": {
+      "kind": "other",
+      "title": "Wikipedia (English): Mangkunegara X",
+      "url": "https://en.wikipedia.org/wiki/Mangkunegara_X",
+      "accessed": "2026-11-20"
+    },
+    "wp_en_mn2": {
+      "kind": "other",
+      "title": "Wikipedia (English): Mangkunegara II",
+      "url": "https://en.wikipedia.org/wiki/Mangkunegara_II",
+      "accessed": "2026-11-20"
+    },
+    "wp_en_mn3": {
+      "kind": "other",
+      "title": "Wikipedia (English): Mangkunegara III",
+      "url": "https://en.wikipedia.org/wiki/Mangkunegara_III",
+      "accessed": "2026-11-20"
+    },
+    "wp_en_mn4": {
+      "kind": "other",
+      "title": "Wikipedia (English): Mangkunegara IV",
+      "url": "https://en.wikipedia.org/wiki/Mangkunegara_IV",
+      "accessed": "2026-11-20"
+    },
+    "wp_en_mn5": {
+      "kind": "other",
+      "title": "Wikipedia (English): Mangkunegara V",
+      "url": "https://en.wikipedia.org/wiki/Mangkunegara_V",
+      "accessed": "2026-11-20"
+    },
+    "wp_en_mn6": {
+      "kind": "other",
+      "title": "Wikipedia (English): Mangkunegara VI",
+      "url": "https://en.wikipedia.org/wiki/Mangkunegara_VI",
+      "accessed": "2026-11-20"
+    },
+    "wp_en_mn7": {
+      "kind": "other",
+      "title": "Wikipedia (English): Mangkunegara VII",
+      "url": "https://en.wikipedia.org/wiki/Mangkunegara_VII",
+      "accessed": "2026-11-20"
+    },
+    "wp_en_mn8": {
+      "kind": "other",
+      "title": "Wikipedia (English): Mangkunegara VIII",
+      "url": "https://en.wikipedia.org/wiki/Mangkunegara_VIII",
+      "accessed": "2026-11-20"
+    },
+    "wp_en_mn9": {
+      "kind": "other",
+      "title": "Wikipedia (English): Mangkunegara IX",
+      "url": "https://en.wikipedia.org/wiki/Mangkunegara_IX",
+      "accessed": "2026-11-20"
+    },
+    "wp_en_pa1": {
+      "kind": "other",
+      "title": "Wikipedia (English): Paku Alam I",
+      "url": "https://en.wikipedia.org/wiki/Paku_Alam_I",
+      "accessed": "2026-11-20"
+    },
+    "wp_en_pa10": {
+      "kind": "other",
+      "title": "Wikipedia (English): Paku Alam X",
+      "url": "https://en.wikipedia.org/wiki/Paku_Alam_X",
+      "accessed": "2026-11-20"
+    },
+    "wp_en_pa8": {
+      "kind": "other",
+      "title": "Wikipedia (English): Paku Alam VIII",
+      "url": "https://en.wikipedia.org/wiki/Paku_Alam_VIII",
+      "accessed": "2026-11-20"
+    },
+    "wp_en_pa9": {
+      "kind": "other",
+      "title": "Wikipedia (English): Paku Alam IX",
+      "url": "https://en.wikipedia.org/wiki/Paku_Alam_IX",
+      "accessed": "2026-11-20"
+    },
+    "wp_en_pakubuwono": {
+      "kind": "other",
+      "title": "Wikipedia (English): Pakubuwono",
+      "url": "https://en.wikipedia.org/wiki/Pakubuwono",
+      "accessed": "2026-11-20"
+    },
+    "wp_en_pb1": {
+      "kind": "other",
+      "title": "Wikipedia (English): Pakubuwono I",
+      "url": "https://en.wikipedia.org/wiki/Pakubuwono_I",
+      "accessed": "2026-11-20"
+    },
+    "wp_en_pb10": {
+      "kind": "other",
+      "title": "Wikipedia (English): Pakubuwono X",
+      "url": "https://en.wikipedia.org/wiki/Pakubuwono_X",
+      "accessed": "2026-11-20"
+    },
+    "wp_en_pb11": {
+      "kind": "other",
+      "title": "Wikipedia (English): Pakubuwono XI",
+      "url": "https://en.wikipedia.org/wiki/Pakubuwono_XI",
+      "accessed": "2026-11-20"
+    },
+    "wp_en_pb12": {
+      "kind": "other",
+      "title": "Wikipedia (English): Pakubuwono XII",
+      "url": "https://en.wikipedia.org/wiki/Pakubuwono_XII",
+      "accessed": "2026-11-20"
+    },
+    "wp_en_pb13": {
+      "kind": "other",
+      "title": "Wikipedia (English): Pakubuwono XIII",
+      "url": "https://en.wikipedia.org/wiki/Pakubuwono_XIII",
+      "accessed": "2026-11-20"
+    },
+    "wp_en_pb2": {
+      "kind": "other",
+      "title": "Wikipedia (English): Pakubuwono II",
+      "url": "https://en.wikipedia.org/wiki/Pakubuwono_II",
+      "accessed": "2026-11-20"
+    },
+    "wp_en_pb3": {
+      "kind": "other",
+      "title": "Wikipedia (English): Pakubuwono III",
+      "url": "https://en.wikipedia.org/wiki/Pakubuwono_III",
+      "accessed": "2026-11-20"
+    },
+    "wp_en_pb4": {
+      "kind": "other",
+      "title": "Wikipedia (English): Pakubuwono IV",
+      "url": "https://en.wikipedia.org/wiki/Pakubuwono_IV",
+      "accessed": "2026-11-20"
+    },
+    "wp_en_pb5": {
+      "kind": "other",
+      "title": "Wikipedia (English): Pakubuwono V",
+      "url": "https://en.wikipedia.org/wiki/Pakubuwono_V",
+      "accessed": "2026-11-20"
+    },
+    "wp_en_pb6": {
+      "kind": "other",
+      "title": "Wikipedia (English): Pakubuwono VI",
+      "url": "https://en.wikipedia.org/wiki/Pakubuwono_VI",
+      "accessed": "2026-11-20"
+    },
+    "wp_en_pb7": {
+      "kind": "other",
+      "title": "Wikipedia (English): Pakubuwono VII",
+      "url": "https://en.wikipedia.org/wiki/Pakubuwono_VII",
+      "accessed": "2026-11-20"
+    },
+    "wp_en_pb8": {
+      "kind": "other",
+      "title": "Wikipedia (English): Pakubuwono VIII",
+      "url": "https://en.wikipedia.org/wiki/Pakubuwono_VIII",
+      "accessed": "2026-11-20"
+    },
+    "wp_en_pb9": {
+      "kind": "other",
+      "title": "Wikipedia (English): Pakubuwono IX",
+      "url": "https://en.wikipedia.org/wiki/Pakubuwono_IX",
+      "accessed": "2026-11-20"
+    },
+    "wp_en_senapati": {
+      "kind": "other",
+      "title": "Wikipedia (English): Senapati of Mataram",
+      "url": "https://en.wikipedia.org/wiki/Senapati_of_Mataram",
+      "accessed": "2026-11-20"
+    },
+    "wp_id_hanyakrawati": {
+      "kind": "other",
+      "title": "Wikipedia (Indonesian): Anyakrawati",
+      "url": "https://id.wikipedia.org/wiki/Anyakrawati",
+      "accessed": "2026-11-20"
+    },
+    "wp_id_hb10": {
+      "kind": "other",
+      "title": "Wikipedia (Indonesian): Hamengkubuwana X",
+      "url": "https://id.wikipedia.org/wiki/Hamengkubuwana_X",
+      "accessed": "2026-11-20"
+    },
+    "wp_id_martapura": {
+      "kind": "other",
+      "title": "Wikipedia (Indonesian): Adipati Martapura",
+      "url": "https://id.wikipedia.org/wiki/Adipati_Martapura",
+      "accessed": "2026-11-20"
+    },
+    "wp_id_mn3": {
+      "kind": "other",
+      "title": "Wikipedia (Indonesian): Mangkunegara III",
+      "url": "https://id.wikipedia.org/wiki/Mangkunegara_III",
+      "accessed": "2026-11-20"
+    },
+    "wp_id_mn8": {
+      "kind": "other",
+      "title": "Wikipedia (Indonesian): Mangkunegara VIII",
+      "url": "https://id.wikipedia.org/wiki/Mangkunegara_VIII",
+      "accessed": "2026-11-20"
+    },
+    "wp_id_pa2": {
+      "kind": "other",
+      "title": "Wikipedia (Indonesian): Paku Alam II",
+      "url": "https://id.wikipedia.org/wiki/Paku_Alam_II",
+      "accessed": "2026-11-20"
+    },
+    "wp_id_pa3": {
+      "kind": "other",
+      "title": "Wikipedia (Indonesian): Paku Alam III",
+      "url": "https://id.wikipedia.org/wiki/Paku_Alam_III",
+      "accessed": "2026-11-20"
+    },
+    "wp_id_pa4": {
+      "kind": "other",
+      "title": "Wikipedia (Indonesian): Paku Alam IV",
+      "url": "https://id.wikipedia.org/wiki/Paku_Alam_IV",
+      "accessed": "2026-11-20"
+    },
+    "wp_id_pa5": {
+      "kind": "other",
+      "title": "Wikipedia (Indonesian): Paku Alam V",
+      "url": "https://id.wikipedia.org/wiki/Paku_Alam_V",
+      "accessed": "2026-11-20"
+    },
+    "wp_id_pa6": {
+      "kind": "other",
+      "title": "Wikipedia (Indonesian): Paku Alam VI",
+      "url": "https://id.wikipedia.org/wiki/Paku_Alam_VI",
+      "accessed": "2026-11-20"
+    },
+    "wp_id_pa7": {
+      "kind": "other",
+      "title": "Wikipedia (Indonesian): Paku Alam VII",
+      "url": "https://id.wikipedia.org/wiki/Paku_Alam_VII",
+      "accessed": "2026-11-20"
+    },
+    "wp_id_pakualaman": {
+      "kind": "other",
+      "title": "Wikipedia (Indonesian): Kadipaten Pakualaman",
+      "url": "https://id.wikipedia.org/wiki/Kadipaten_Pakualaman",
+      "accessed": "2026-11-20"
+    },
+    "wp_id_pb13": {
+      "kind": "other",
+      "title": "Wikipedia (Indonesian): Pakubuwana XIII",
+      "url": "https://id.wikipedia.org/wiki/Pakubuwana_XIII",
+      "accessed": "2026-11-20"
+    },
+    "wp_id_pb3": {
+      "kind": "other",
+      "title": "Wikipedia (Indonesian): Pakubuwana III",
+      "url": "https://id.wikipedia.org/wiki/Pakubuwana_III",
+      "accessed": "2026-11-20"
+    },
+    "wp_id_pb6": {
+      "kind": "other",
+      "title": "Wikipedia (Indonesian): Pakubuwana VI",
+      "url": "https://id.wikipedia.org/wiki/Pakubuwana_VI",
+      "accessed": "2026-11-20"
+    },
+    "wp_id_pb8": {
+      "kind": "other",
+      "title": "Wikipedia (Indonesian): Pakubuwana VIII",
+      "url": "https://id.wikipedia.org/wiki/Pakubuwana_VIII",
+      "accessed": "2026-11-20"
+    },
+    "wp_id_pb9": {
+      "kind": "other",
+      "title": "Wikipedia (Indonesian): Pakubuwana IX",
+      "url": "https://id.wikipedia.org/wiki/Pakubuwana_IX",
+      "accessed": "2026-11-20"
     }
   }
 }

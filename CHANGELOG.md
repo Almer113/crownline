@@ -4,6 +4,12 @@ What changes from one release to the next. Versions follow [semantic versioning]
 
 A chart document carries its own format number (`"format": 1`), separate from the version of the software. A newer release reads every older format and brings a document up to date with `npm run check -- migrate <chart.json>`.
 
+## Unreleased
+
+**Charts**
+
+- Wangsa Mataram: birth and death dates, other names and spellings for 141 people, and a short biography for each of the 51 rulers, with 152 sources. Where the sources disagree, each version is kept with its source. Most rest on Wikipedia for now and are marked at that quality. Nothing on the chart moved.
+
 ## 0.1.0 (20 November 2026)
 
 The first release.
