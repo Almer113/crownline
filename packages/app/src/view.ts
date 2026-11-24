@@ -6,7 +6,7 @@ import "@crownline/viewer";
 import type { Layout } from "@crownline/viewer/layout";
 import { h, render, textOf } from "@crownline/editor/dom";
 import { Drawing } from "@crownline/editor/load";
-import { showPage, type Store } from "@crownline/editor/store";
+import { onChartFile, showPage, type Store } from "@crownline/editor/store";
 import type { Screen } from "./main.ts";
 
 export interface ViewOptions {
@@ -67,16 +67,14 @@ export async function viewScreen(app: HTMLElement, store: Store, chartPath: stri
 
   // the chart changed on disk (a save in another tab, a model's batch): drawn again where the reader is
   let off = () => {};
-  if (import.meta.hot && store.kind === "server") {
-    const hot = import.meta.hot;
+  if (store.kind === "server") {
     let pending: Promise<unknown> = Promise.resolve();
-    const onFile = ({ path }: { path: string }) => {
+    const onFile = (path: string) => {
       if (path !== d.chartPath && path !== d.lockPath) return;
       pending = pending.then(async () => { await d.reload(); await show(); })
         .catch(err => { status.textContent = `Could not read the change: ${(err as Error).message}`; });
     };
-    hot.on("crownline:file", onFile);
-    off = () => hot.off("crownline:file", onFile);
+    off = onChartFile(onFile);
   }
   return screen;
 }

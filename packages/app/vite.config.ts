@@ -1,9 +1,9 @@
 import { spawn } from "node:child_process";
 import { createHash } from "node:crypto";
-import { closeSync, existsSync, mkdirSync, openSync, readdirSync, readFileSync, renameSync, rmSync, statSync, unlinkSync, writeFileSync, createReadStream } from "node:fs";
+import { closeSync, existsSync, watch, mkdirSync, openSync, readdirSync, readFileSync, renameSync, rmSync, statSync, unlinkSync, writeFileSync, createReadStream } from "node:fs";
 import { dirname, extname, join, normalize, relative, sep } from "node:path";
 import { fileURLToPath } from "node:url";
-import { defineConfig, type Plugin } from "vite";
+import { defineConfig, type Connect, type Plugin } from "vite";
 
 // The app's local server (`npm run dev`, or `npm run edit`): the library, the view and the editor run in the
 // browser and work on the chart folders in this repository, which this server reads and writes. (A folder on
@@ -23,6 +23,12 @@ import { defineConfig, type Plugin } from "vite";
 //                                    build the saved chart with the engine's command line: {ok, log, files}
 //   GET  /api/output?name=<file>     a file the export wrote at the repository's root (<id>.png, …), to download
 //   DELETE /api/save?path=<lock>     a chart's layout.lock.json, removed (its lock undone after a save); X-Crownline-Expect as for PUT
+//   GET  /api/events                 (the built app, `vite preview`) the chart files that change on disk, as server-sent
+//                                    events named "file", {path}; the dev server sends them over its own socket instead
+//
+// The built app is served by `vite preview` (npm run serve -w @crownline/app) with the same requests: a lasting local
+// deployment rather than the dev server. CROWNLINE_ALLOWED_HOSTS (comma-separated) lets it answer to other host
+// names, such as a tailnet name that `tailscale serve` passes on.
 const REPO = normalize(fileURLToPath(new URL("../..", import.meta.url)));
 const ASSET = /^assets\/(portraits|portraits_src|emblems)\/([a-z0-9][a-z0-9_-]*\/)?[a-z0-9][a-z0-9_.-]*\.(jpg|jpeg|png|webp|json)$/;
 const TYPES: Record<string, string> = {
@@ -144,105 +150,136 @@ function appFiles(): Plugin {
         told.set(rel, setTimeout(() => { told.delete(rel); server.ws.send({ type: "custom", event: "crownline:file", data: { path: rel } }); }, 150));
       };
       for (const ev of ["add", "change", "unlink"] as const) server.watcher.on(ev, tell);
-      server.middlewares.use((req, res, next) => {
-        const url = new URL(req.url ?? "/", "http://localhost");
-        const json = (v: unknown, code = 200) => { res.statusCode = code; res.setHeader("Content-Type", "application/json"); res.end(JSON.stringify(v)); };
-        if (url.pathname === "/api/charts" && req.method === "GET") return json(charts());
-        if (url.pathname === "/api/files" && req.method === "GET") {
-          const out: string[] = [];
-          walk(join(REPO, "assets"), out); walk(join(REPO, "charts"), out);
-          return json(out);
-        }
-        if (url.pathname.startsWith("/repo/") && req.method === "GET") {
-          const rel = decodeURIComponent(url.pathname.slice("/repo/".length)), full = inRepo(rel);
-          if (!full || !READABLE.test(rel) || !existsSync(full) || !statSync(full).isFile()) return json({ error: `no file ${rel}` }, 404);
-          res.setHeader("Content-Type", TYPES[extname(full).toLowerCase()] ?? "application/octet-stream");
-          res.setHeader("Cache-Control", "no-cache");
-          createReadStream(full).pipe(res);
-          return;
-        }
-        if (url.pathname === "/api/save" && req.method === "PUT") {
-          const rel = url.searchParams.get("path") ?? "", full = inRepo(rel);
-          if (req.headers["x-crownline"] !== "save") return json({ error: "missing X-Crownline header" }, 403);
-          if (!full || !SAVABLE.test(rel)) return json({ error: `cannot save to ${rel}` }, 400);
-          const parts: Buffer[] = [];
-          req.on("data", (c: Buffer) => parts.push(c));
-          const expect = req.headers["x-crownline-expect"] as string | undefined;
-          req.on("end", () => {
-            const body = Buffer.concat(parts).toString("utf8");
-            try { JSON.parse(body); } catch { return json({ error: "not JSON" }, 400); }
-            mkdirSync(dirname(full), { recursive: true });         // a new chart's folder
-            // the check and the write under the chart's lock: nothing lands between them
-            exclusive(dirname(full), () => {
-              if (!asExpected(full, expect)) return false;
-              return writeWhole(full, body).then(() => true);
-            }).then(done => (done === false
-              ? json({ error: `${rel} changed on disk since the editor read it`, changed: true }, 409)
-              : json({ saved: rel, bytes: Buffer.byteLength(body) })))
-              .catch(e => json({ error: (e as Error).message }, 500));
-          });
-          return;
-        }
-        if (url.pathname === "/api/save" && req.method === "DELETE") {
-          // only a chart's lock (Keep this layout, undone after a save); its chart.json is never deleted here
-          const rel = url.searchParams.get("path") ?? "", full = inRepo(rel);
-          if (req.headers["x-crownline"] !== "save") return json({ error: "missing X-Crownline header" }, 403);
-          if (!full || !SAVABLE.test(rel) || !rel.endsWith("/layout.lock.json")) return json({ error: `cannot delete ${rel}` }, 400);
-          const expect = req.headers["x-crownline-expect"] as string | undefined;
-          exclusive(dirname(full), () => {
-            if (!asExpected(full, expect)) return false;
-            if (existsSync(full)) unlinkSync(full);
-            return true;
-          }).then(done => (done ? json({ removed: rel }) : json({ error: `${rel} changed on disk since the editor read it`, changed: true }, 409)))
-            .catch(e => json({ error: (e as Error).message }, 500));
-          return;
-        }
-        if (url.pathname === "/api/export" && req.method === "POST") {
-          const chart = url.searchParams.get("chart") ?? "", what = url.searchParams.get("what") ?? "";
-          if (req.headers["x-crownline"] !== "save") return json({ error: "missing X-Crownline header" }, 403);
-          if (!SAVABLE.test(chart) || !chart.endsWith("/chart.json") || !existsSync(join(REPO, chart))) return json({ error: `no chart ${chart}` }, 400);
-          if (!["png", "pdf", "page"].includes(what)) return json({ error: `cannot export ${what}` }, 400);
-          if (exporting) return json({ error: "an export is already running" }, 409);
-          exporting = true;
-          exportChart(chart, what, url.searchParams.get("public") === "1", url.searchParams.get("frozen") === "1")
-            .then(r => json(r), e => json({ ok: false, log: String(e), files: [] }))
-            .finally(() => { exporting = false; });
-          return;
-        }
-        if (url.pathname === "/api/output" && req.method === "GET") {
-          const name = url.searchParams.get("name") ?? "";
-          if (!OUTPUT.test(name) || !existsSync(join(REPO, name))) return json({ error: `no output ${name}` }, 404);
-          res.setHeader("Content-Type", TYPES[extname(name).toLowerCase()] ?? "application/pdf");
-          res.setHeader("Content-Disposition", `attachment; filename="${name}"`);
-          createReadStream(join(REPO, name)).pipe(res);
-          return;
-        }
-        if (url.pathname === "/api/asset" && req.method === "PUT") {
-          const rel = url.searchParams.get("path") ?? "", full = inRepo(rel);
-          if (req.headers["x-crownline"] !== "save") return json({ error: "missing X-Crownline header" }, 403);
-          if (!full || !ASSET.test(rel)) return json({ error: `cannot write ${rel}` }, 400);
-          const parts: Buffer[] = [];
-          req.on("data", (c: Buffer) => parts.push(c));
-          req.on("end", () => {
-            const body = Buffer.concat(parts);
-            if (rel.endsWith(".json")) try { JSON.parse(body.toString("utf8")); } catch { return json({ error: "not JSON" }, 400); }
-            mkdirSync(dirname(full), { recursive: true });
-            writeFileSync(full, body);
-            json({ saved: rel, bytes: body.length });
-          });
-          return;
-        }
-        next();
+      server.middlewares.use(api);
+    },
+    configurePreviewServer(server) {
+      // the built app has no dev socket: the changes go out as server-sent events
+      const clients = new Set<import("node:http").ServerResponse>();
+      const told = new Map<string, NodeJS.Timeout>();
+      const watcher = watch(join(REPO, "charts"), { recursive: true }, (_ev, name) => {
+        if (!name) return;
+        const rel = `charts/${String(name).split(sep).join("/")}`;
+        if (!SAVABLE.test(rel)) return;
+        clearTimeout(told.get(rel));
+        told.set(rel, setTimeout(() => {
+          told.delete(rel);
+          for (const c of clients) c.write(`event: file\ndata: ${JSON.stringify({ path: rel })}\n\n`);
+        }, 150));
       });
+      server.httpServer.on("close", () => watcher.close());
+      server.middlewares.use((req, res, next) => {
+        if (req.url !== "/api/events" || req.method !== "GET") return next();
+        res.writeHead(200, { "Content-Type": "text/event-stream", "Cache-Control": "no-cache", Connection: "keep-alive" });
+        res.write(": crownline\n\n");
+        const ping = setInterval(() => res.write(": ping\n\n"), 25_000);        // kept open through proxies
+        clients.add(res);
+        req.on("close", () => { clearInterval(ping); clients.delete(res); });
+      });
+      server.middlewares.use(api);
     },
   };
 }
+
+/** the requests above, for the dev server and the built app alike */
+const api: Connect.NextHandleFunction = (req, res, next) => {
+  const url = new URL(req.url ?? "/", "http://localhost");
+  const json = (v: unknown, code = 200) => { res.statusCode = code; res.setHeader("Content-Type", "application/json"); res.end(JSON.stringify(v)); };
+  if (url.pathname === "/api/charts" && req.method === "GET") return json(charts());
+  if (url.pathname === "/api/files" && req.method === "GET") {
+    const out: string[] = [];
+    walk(join(REPO, "assets"), out); walk(join(REPO, "charts"), out);
+    return json(out);
+  }
+  if (url.pathname.startsWith("/repo/") && req.method === "GET") {
+    const rel = decodeURIComponent(url.pathname.slice("/repo/".length)), full = inRepo(rel);
+    if (!full || !READABLE.test(rel) || !existsSync(full) || !statSync(full).isFile()) return json({ error: `no file ${rel}` }, 404);
+    res.setHeader("Content-Type", TYPES[extname(full).toLowerCase()] ?? "application/octet-stream");
+    res.setHeader("Cache-Control", "no-cache");
+    createReadStream(full).pipe(res);
+    return;
+  }
+  if (url.pathname === "/api/save" && req.method === "PUT") {
+    const rel = url.searchParams.get("path") ?? "", full = inRepo(rel);
+    if (req.headers["x-crownline"] !== "save") return json({ error: "missing X-Crownline header" }, 403);
+    if (!full || !SAVABLE.test(rel)) return json({ error: `cannot save to ${rel}` }, 400);
+    const parts: Buffer[] = [];
+    req.on("data", (c: Buffer) => parts.push(c));
+    const expect = req.headers["x-crownline-expect"] as string | undefined;
+    req.on("end", () => {
+      const body = Buffer.concat(parts).toString("utf8");
+      try { JSON.parse(body); } catch { return json({ error: "not JSON" }, 400); }
+      mkdirSync(dirname(full), { recursive: true });         // a new chart's folder
+      // the check and the write under the chart's lock: nothing lands between them
+      exclusive(dirname(full), () => {
+        if (!asExpected(full, expect)) return false;
+        return writeWhole(full, body).then(() => true);
+      }).then(done => (done === false
+        ? json({ error: `${rel} changed on disk since the editor read it`, changed: true }, 409)
+        : json({ saved: rel, bytes: Buffer.byteLength(body) })))
+        .catch(e => json({ error: (e as Error).message }, 500));
+    });
+    return;
+  }
+  if (url.pathname === "/api/save" && req.method === "DELETE") {
+    // only a chart's lock (Keep this layout, undone after a save); its chart.json is never deleted here
+    const rel = url.searchParams.get("path") ?? "", full = inRepo(rel);
+    if (req.headers["x-crownline"] !== "save") return json({ error: "missing X-Crownline header" }, 403);
+    if (!full || !SAVABLE.test(rel) || !rel.endsWith("/layout.lock.json")) return json({ error: `cannot delete ${rel}` }, 400);
+    const expect = req.headers["x-crownline-expect"] as string | undefined;
+    exclusive(dirname(full), () => {
+      if (!asExpected(full, expect)) return false;
+      if (existsSync(full)) unlinkSync(full);
+      return true;
+    }).then(done => (done ? json({ removed: rel }) : json({ error: `${rel} changed on disk since the editor read it`, changed: true }, 409)))
+      .catch(e => json({ error: (e as Error).message }, 500));
+    return;
+  }
+  if (url.pathname === "/api/export" && req.method === "POST") {
+    const chart = url.searchParams.get("chart") ?? "", what = url.searchParams.get("what") ?? "";
+    if (req.headers["x-crownline"] !== "save") return json({ error: "missing X-Crownline header" }, 403);
+    if (!SAVABLE.test(chart) || !chart.endsWith("/chart.json") || !existsSync(join(REPO, chart))) return json({ error: `no chart ${chart}` }, 400);
+    if (!["png", "pdf", "page"].includes(what)) return json({ error: `cannot export ${what}` }, 400);
+    if (exporting) return json({ error: "an export is already running" }, 409);
+    exporting = true;
+    exportChart(chart, what, url.searchParams.get("public") === "1", url.searchParams.get("frozen") === "1")
+      .then(r => json(r), e => json({ ok: false, log: String(e), files: [] }))
+      .finally(() => { exporting = false; });
+    return;
+  }
+  if (url.pathname === "/api/output" && req.method === "GET") {
+    const name = url.searchParams.get("name") ?? "";
+    if (!OUTPUT.test(name) || !existsSync(join(REPO, name))) return json({ error: `no output ${name}` }, 404);
+    res.setHeader("Content-Type", TYPES[extname(name).toLowerCase()] ?? "application/pdf");
+    res.setHeader("Content-Disposition", `attachment; filename="${name}"`);
+    createReadStream(join(REPO, name)).pipe(res);
+    return;
+  }
+  if (url.pathname === "/api/asset" && req.method === "PUT") {
+    const rel = url.searchParams.get("path") ?? "", full = inRepo(rel);
+    if (req.headers["x-crownline"] !== "save") return json({ error: "missing X-Crownline header" }, 403);
+    if (!full || !ASSET.test(rel)) return json({ error: `cannot write ${rel}` }, 400);
+    const parts: Buffer[] = [];
+    req.on("data", (c: Buffer) => parts.push(c));
+    req.on("end", () => {
+      const body = Buffer.concat(parts);
+      if (rel.endsWith(".json")) try { JSON.parse(body.toString("utf8")); } catch { return json({ error: "not JSON" }, 400); }
+      mkdirSync(dirname(full), { recursive: true });
+      writeFileSync(full, body);
+      json({ saved: rel, bytes: body.length });
+    });
+    return;
+  }
+  next();
+};
 
 // `vite build --mode site` (npm run build:site): the demo site, static files that work from any folder of any host
 export default defineConfig(({ mode }) => ({
   base: mode === "site" ? "./" : "/",
   plugins: [appFiles()],
   server: { port: 5180, strictPort: true, host: "127.0.0.1" },
+  // the lasting deployment (app-server.ps1): its own port, so `npm run dev` keeps 5180
+  preview: { port: 5190, strictPort: true, host: "127.0.0.1",
+             allowedHosts: (process.env.CROWNLINE_ALLOWED_HOSTS ?? "").split(",").map(h => h.trim()).filter(Boolean) },
   build: { target: "es2022", assetsDir: mode === "site" ? "app" : "assets" },       // the site: apart from repo/assets
   worker: { format: "es" },
 }));

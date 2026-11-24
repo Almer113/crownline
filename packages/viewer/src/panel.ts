@@ -104,7 +104,7 @@ export class Panel {
   private shown: string | null = null;
   private rel: RelationView | null = null;
 
-  constructor(private readonly layout: Layout, private readonly ev: PanelEvents, private readonly chartBase: URL,
+  constructor(private readonly layout: Layout, private readonly ev: PanelEvents, private readonly url: (path: string) => string,
               private readonly lang: () => Lang, private readonly glossary: Glossary) {
     this.el = document.createElement("aside");
     this.el.className = "clp-panel";
@@ -204,7 +204,7 @@ export class Panel {
       .map(g => `${g.full || g.term}: ${g.meaning}`).join(" · ");
     const f = p.family;
     const pic = p.portrait
-      ? `<div class="clp-pic"><img alt="" src="${esc(new URL(p.portrait, this.chartBase).href)}"></div>`
+      ? `<div class="clp-pic"><img alt="" src="${esc(this.url(p.portrait))}"></div>`
       : `<div class="clp-pic clp-none">${SILHOUETTE}</div>`;
     const facts: string[] = [];
     if (p.reign) facts.push(`<span class="clp-fact clp-crown">${esc(pickText(p.reign, this.lang()))}</span>`);

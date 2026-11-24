@@ -10,6 +10,11 @@ A chart document carries its own format number (`"format": 1`), separate from th
 
 - A logo, the crowned C: the wordmark on the library page and the home buttons, a favicon that follows the browser's light or dark theme, an icon for phones' home screens, and an image for links shared on social sites.
 - The viewer's panel shows each person's birth and death, with notes and numbered sources.
+- Fixed: on the demo site, the panel's portrait was missing.
+
+**Documentation**
+
+- The README now shows what Crownline does, with screenshots, and how to set it up and use it.
 
 **Charts**
 

@@ -16,7 +16,7 @@ import { MovesPanel } from "./moves.ts";
 import { bindRelayout } from "./relayout.ts";
 import { StylePanel } from "./style.ts";
 import { ChartPanel } from "./chartpanel.ts";
-import { showPage, type Store } from "./store.ts";
+import { onChartFile, showPage, type Store } from "./store.ts";
 import { bindExport } from "./export.ts";
 import { choose } from "./dialog.ts";
 import { WORDMARK } from "./wordmark.ts";
@@ -217,10 +217,9 @@ export async function mountEditor(app: HTMLElement, store: Store, path: string, 
   };
   const OUTSIDE = { loaded: "Changed outside the editor: Undo takes it back", kept: "Kept yours: the file on disk differs until you save",
     deferred: "The chart changed on disk: Save asks which version to keep" } as const;
-  if (import.meta.hot && store.kind === "server") {
+  if (store.kind === "server") {
     let pending: Promise<unknown> = Promise.resolve();
-    const hot = import.meta.hot;
-    const onFile = ({ path: changed }: { path: string }) => {
+    const onFile = (changed: string) => {
       if (changed !== ed.chartPath && changed !== ed.lockPath) return;
       pending = pending.then(async () => {
         const r = await ed.reload(ed.ask!);
@@ -230,8 +229,7 @@ export async function mountEditor(app: HTMLElement, store: Store, path: string, 
         bar();
       }).catch(err => { saveError = `Could not read the change on disk: ${(err as Error).message}`; bar(); });
     };
-    hot.on("crownline:file", onFile);
-    signal.addEventListener("abort", () => hot.off("crownline:file", onFile));
+    signal.addEventListener("abort", onChartFile(onFile));
   }
   return {
     ed, viewer, save: doSave,

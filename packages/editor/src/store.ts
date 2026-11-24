@@ -57,6 +57,20 @@ async function expectHeader(expect: string | null | undefined): Promise<Record<s
 
 const fail = async (r: Response) => { throw new Error(((await r.json().catch(() => ({}))) as { error?: string }).error ?? `HTTP ${r.status}`); };
 
+/** a chart file under charts/ changed on disk (a save in another tab, a model's batch, a person's edit): the dev
+ *  server tells the page over its own socket, the built app (vite preview) with server-sent events. The function
+ *  it returns stops listening */
+export function onChartFile(fn: (path: string) => void): () => void {
+  if (import.meta.hot) {
+    const hot = import.meta.hot, on = ({ path }: { path: string }) => fn(path);
+    hot.on("crownline:file", on);
+    return () => hot.off("crownline:file", on);
+  }
+  const es = new EventSource("/api/events");
+  es.addEventListener("file", e => fn((JSON.parse((e as MessageEvent).data) as { path: string }).path));
+  return () => es.close();
+}
+
 export class ServerStore implements Store {
   readonly kind = "server";
   readonly name = "this repository";

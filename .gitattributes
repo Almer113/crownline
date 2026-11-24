@@ -6,3 +6,6 @@
 *.webp binary
 *.ttf binary
 *.pdf binary
+# Windows batch files need CRLF
+*.cmd text eol=crlf
+*.ico binary

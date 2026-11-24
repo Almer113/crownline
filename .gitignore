@@ -38,3 +38,6 @@ _print_*.html
 
 # the public repository, built here by npm run public-repo (tools/public_repo.py); never committed here
 release/
+
+# a local background server's pid and logs
+.server/

@@ -165,7 +165,6 @@ export class CrownlineViewer extends HTMLElement {
     if (this.shown) { this.swap(html, layout, base); return; }
     this.shown = true;
     this.loading = true;
-    const src = base.href;
     this.layout = layout;
     this.mountChart(html, base);
     const pBase = this.getAttribute("portraits");
@@ -188,7 +187,7 @@ export class CrownlineViewer extends HTMLElement {
     this.glossary = new Glossary(layout);
     this.search = new Search(layout);
     this.tours = layout.tours ?? [];
-    if (!this.editor) this.readerUi(layout, src);
+    if (!this.editor) this.readerUi(layout);
     this.tip = document.createElement("div"); this.tip.className = "cl-tip"; this.tip.setAttribute("aria-hidden", "true");
     this.root.appendChild(this.tip);
     const h: HashState = this.start ?? (this.editor ? { view: null, person: null, from: null, year: null, tour: null } : readHash());
@@ -226,7 +225,7 @@ export class CrownlineViewer extends HTMLElement {
   }
 
   /** the reader's card panel and toolbar (not in the editor) */
-  private readerUi(layout: Layout, src: string): void {
+  private readerUi(layout: Layout): void {
     this.panel = new Panel(layout, {
       go: id => {
         // names in a relationship are on its path: look at them without leaving the relationship
@@ -240,7 +239,7 @@ export class CrownlineViewer extends HTMLElement {
       lineage: () => this.refreshLit(),
       relate: () => this.startPick(),
       clearRelation: () => { this.relFrom = null; this.select(this.selected, false, false); },
-    }, new URL(src, location.href), () => this.uiLang, this.glossary!);
+    }, u => this.resolve(u), () => this.uiLang, this.glossary!);
     this.root.appendChild(this.panel.el);
     this.toolbar = new Toolbar(layout, this.tours, {
       query: q => this.search!.find(q),
@@ -337,10 +336,17 @@ export class CrownlineViewer extends HTMLElement {
 
   /** put the engine's page into the shadow root: its CSS scoped to the stage, its relative URLs resolved */
   private files: ((path: string) => string | undefined) | undefined;
+  private base: URL | undefined;
+
+  /** a loadable URL for a path in the chart page (a portrait): the caller's files, or relative to the page */
+  private resolve(u: string, base = this.base!): string {
+    return /^(data:|https?:|\/\/|#)/.test(u) ? u : this.files?.(u) ?? new URL(u, base).href;
+  }
 
   private mountChart(html: string, base: URL): void {
+    this.base = base;
     const doc = new DOMParser().parseFromString(html, "text/html");
-    const abs = (u: string) => (/^(data:|https?:|\/\/|#)/.test(u) ? u : this.files?.(u) ?? new URL(u, base).href);
+    const abs = (u: string) => this.resolve(u, base);
     const fontFaces: string[] = [];
     for (const st of Array.from(doc.querySelectorAll("style"))) {
       let css = st.textContent ?? "";
